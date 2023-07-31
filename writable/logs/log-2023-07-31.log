@@ -202,6 +202,7 @@ CRITICAL - 2023-07-31 05:10:41 --> Call to undefined method App\Models\UserModel
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
 <<<<<<< HEAD
+<<<<<<< HEAD
 CRITICAL - 2023-07-31 05:57:39 --> Undefined variable $users
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(2234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2234)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
@@ -214,3 +215,26 @@ CRITICAL - 2023-07-31 05:57:39 --> Undefined variable $users
 #8 {main}
 =======
 >>>>>>> 0954883282c93e9aec8b7feb819d20283a17a81d
+=======
+CRITICAL - 2023-07-31 05:28:42 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 05:28:45 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 06:00:22 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+>>>>>>> fb6c3dbe8198a0eae0d0f0b16ff3af2ac45d9d56
