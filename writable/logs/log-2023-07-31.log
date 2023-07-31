@@ -247,4 +247,14 @@ CRITICAL - 2023-07-31 06:06:43 --> Call to undefined method App\Models\UserModel
 #5 {main}
 =======
 >>>>>>> fb6c3dbe8198a0eae0d0f0b16ff3af2ac45d9d56
+<<<<<<< HEAD
 >>>>>>> 9abe048194767a294c1044fa592861d6701f8612
+=======
+CRITICAL - 2023-07-31 06:36:45 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+>>>>>>> fe4379f0f8a4a0fc73a64212b03479dbf5b5d763

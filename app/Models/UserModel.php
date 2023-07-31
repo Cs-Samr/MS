@@ -21,5 +21,10 @@ class UserModel extends Model
         
         return $this->where('id_mem', $userId)->delete();
     }
+    public function dd(){
+
+        return $this->select('name')->findAll();
+
+    }
    
 }
