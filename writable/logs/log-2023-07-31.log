@@ -1,11 +1,61 @@
+<<<<<<< HEAD
 CRITICAL - 2023-07-31 02:35:01 --> Call to undefined method App\Models\UserModel::dd
+=======
+CRITICAL - 2023-07-31 04:25:01 --> Call to undefined method App\Models\UserModel::dd
+>>>>>>> 0954883282c93e9aec8b7feb819d20283a17a81d
 #0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
 #1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
 #2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+<<<<<<< HEAD
 CRITICAL - 2023-07-31 02:35:08 --> Undefined variable $users
+=======
+CRITICAL - 2023-07-31 04:25:27 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:28:11 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:29:40 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:32:21 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:34:09 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:35:06 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:37:30 --> Undefined variable $users
+>>>>>>> 0954883282c93e9aec8b7feb819d20283a17a81d
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(2234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2234)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
 #2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
@@ -15,7 +65,25 @@ CRITICAL - 2023-07-31 02:35:08 --> Undefined variable $users
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
 CRITICAL - 2023-07-31 04:17:56 --> Undefined variable $users
+=======
+CRITICAL - 2023-07-31 04:37:36 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:39:12 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:39:19 --> Undefined variable $users
+>>>>>>> 0954883282c93e9aec8b7feb819d20283a17a81d
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(2234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2234)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
 #2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
@@ -25,6 +93,7 @@ CRITICAL - 2023-07-31 04:17:56 --> Undefined variable $users
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
 ERROR - 2023-07-31 04:30:17 --> Error connecting to the database: No connection could be made because the target machine actively refused it
 CRITICAL - 2023-07-31 04:30:17 --> Unable to connect to the database.
 #0 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
@@ -52,26 +121,87 @@ CRITICAL - 2023-07-31 04:30:27 --> Unable to connect to the database.
 #9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #10 {main}
 CRITICAL - 2023-07-31 04:30:46 --> Call to undefined method App\Models\UserModel::dd
+=======
+CRITICAL - 2023-07-31 04:41:55 --> Call to undefined method App\Models\UserModel::dd
+>>>>>>> 0954883282c93e9aec8b7feb819d20283a17a81d
 #0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
 #1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
 #2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+<<<<<<< HEAD
 CRITICAL - 2023-07-31 04:30:59 --> Call to undefined method App\Models\UserModel::dd
+=======
+CRITICAL - 2023-07-31 04:43:29 --> Call to undefined method App\Models\UserModel::dd
+>>>>>>> 0954883282c93e9aec8b7feb819d20283a17a81d
 #0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
 #1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
 #2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+<<<<<<< HEAD
 CRITICAL - 2023-07-31 05:57:35 --> Call to undefined method App\Models\UserModel::dd
+=======
+CRITICAL - 2023-07-31 04:44:26 --> Call to undefined method App\Models\UserModel::dd
 #0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
 #1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
 #2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2023-07-31 04:44:53 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:54:35 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:54:39 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:58:11 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:59:54 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 04:59:57 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-31 05:10:41 --> Call to undefined method App\Models\UserModel::dd
+>>>>>>> 0954883282c93e9aec8b7feb819d20283a17a81d
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(160): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+<<<<<<< HEAD
 CRITICAL - 2023-07-31 05:57:39 --> Undefined variable $users
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(2234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2234)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
@@ -82,3 +212,5 @@ CRITICAL - 2023-07-31 05:57:39 --> Undefined variable $users
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+=======
+>>>>>>> 0954883282c93e9aec8b7feb819d20283a17a81d
