@@ -4046,7 +4046,7 @@
 							<i class="dw dw-edit2"></i> Edit</a>
 
                                 <button class="btn btn-edit"  href="http://localhost/MS/deskapp/ui/edit/<?= $user['id_mem'] ?>"> >Edit</button>
-                                <button class="btn btn-view">View</button>
+                                <button class="btn btn-view" href="http://localhost/MS/deskapp/ui/buttons" >View</button>
                             </div>
                         </div>
 
