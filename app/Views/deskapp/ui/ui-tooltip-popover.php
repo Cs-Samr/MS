@@ -451,6 +451,10 @@
       <div class="min-height-200px">
         
         <div class="pd-20 card-box mb-30">
+            <div class="clearfix">
+                <h4 class="text-blue h4">Edit Project</h4>
+
+            </div>
 <div class="wizard-content">
                 <form method="post" enctype="multipart/form-data" action="http://localhost/MS/deskapp/ui/save" abineguid="D2F04A5D8C084E508D43971DD7D78E62">
                     <div class="content clearfix">
