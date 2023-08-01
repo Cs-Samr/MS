@@ -465,6 +465,8 @@
                                     <div class="form-group">
                                         <label>Title</label>
                                         <input name="pro_name" type="text" class="form-control">
+                                        <input   name="pro_name" type="hidden" class="form-control" value ="<?= $user['pro_name'] ?>">
+
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -483,9 +485,9 @@
                                     <div class="form-group">
                                         <label>Add Members:</label>
                                         <select class="custom-select form-control">
-                                            <!--?php foreach ($users as $user) {
-                                            echo '<option-->' .$user['name'] . '';
-                                            } ?&gt;
+                                        <?php foreach ($users as $user) {
+                                            echo '<option>' .$user['name'] . '</option>';
+                                            } ?>
                                         </select>
                                     </div>
                                 </div>
@@ -494,10 +496,15 @@
                                     <div class="form-group">
                                         <label for="d_start">Start Date :</label>
                                         <input name="d_start" type="date" id="d_start" class="form-control" placeholder="Select Date">
+                                        <input   name="d_start" type="hidden" class="form-control" value ="<?= $user['d_start'] ?>">
+
                                     </div>
                                     <div class="form-group">
                                         <label for="d_end">End Date :</label>
                                         <input name="d_end" type="date" id="d_end" class="form-control" placeholder="Select Date">
+                                        <input   name="d_end" type="hidden" class="form-control" value ="<?= $user['d_end'] ?>">
+
+
 
 
                                     </div>
