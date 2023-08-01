@@ -140,10 +140,13 @@
 			$session = session();
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
-			 $data['user'] = $session->get('user');
+			//$data['user'] = $session->get('user');
+			 
 			 $userModel = new UserModel();
 			 $user = $userModel->dd();
-			return view('deskapp/ui/ui-cards-hover',$data);
+
+			 $data['users'] = $user;
+			 return view('deskapp/ui/ui-cards-hover',$data);
 			
 
 		}

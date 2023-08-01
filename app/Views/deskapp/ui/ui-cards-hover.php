@@ -749,7 +749,7 @@
                                                                                                                                         <div class="form-group row">
                                                                                                                                             <label class="col-md-4">Assigned
                                                                                                                                                 to</label>
-																																				<select class="custom-select form-control col-md-6">
+																																				<select class="custom-select form-control col-md-8">
                                                                                                                                                  <?php foreach ($users as $user) {
                                                                                                                                                  echo '<option>' .$user['name'] . '</option>';
                                                                                                                                                 } ?>
@@ -759,7 +759,7 @@
                                                                                                                                             <label class="col-md-4">
                                                                                                                                                 Date</label>
                                                                                                                                             <div class="col-md-8">
-                                                                                                                                                <input type="text" class="form-control date-picker">
+                                                                                                                                                <input type="date" class="form-control ">
                                                                                                                                             </div>
                                                                                                                                         </div>
                                                                                                                                     </form>
