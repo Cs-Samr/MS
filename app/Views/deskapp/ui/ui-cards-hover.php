@@ -1003,7 +1003,7 @@
                                                                             Chosen</div>
                                                                     </div>
                                                                 </div>
-<<<<<<< HEAD
+
                                                             </li>
                                                         </ul>
 														</div>
@@ -1235,7 +1235,7 @@
 	<script src="http://localhost/MS/assets/vendors/scripts/script.min.js"></script>
 	<script src="http://localhost/MS/assets/vendors/scripts/process.js"></script>
 	<script src="http://localhost/MS/assets/vendors/scripts/layout-settings.js"></script>
-=======
+
                                                             </button>
                                                             <div class="dropdown-menu ">
                                                                 <div class="inner show" role="listbox" id="bs-select-2" tabindex="-1">
