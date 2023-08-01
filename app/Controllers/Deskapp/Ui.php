@@ -106,6 +106,8 @@
 
 		}
 
+		
+
 		public function update()
  {
     // Load the UserModel
@@ -287,7 +289,49 @@
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
 			return view('deskapp/ui/ui-tooltip-popover',$data);
+
+
 		}
+
+		public function edit2($userId){
+
+			// Load the UserModel
+			$ProjectModel = new ProjectModel();
+	 
+
+			// Get the user details based on the user ID
+			$data['user'] = $ProjectModel->find($userId);
+		
+			return view('deskapp/ui/ui-tooltip-popover', $data);
+
+
+	  }
+
+	  public function update2()
+	  {
+		 // Load the UserModel
+		 $ProjectModel = new ProjectModel();
+	 
+		 // Get the user ID from the form submission
+		 $userId = $this->request->getPost('id_project');
+	 
+		 // Fetch the user details based on the user ID
+		 //$user = $userModel->find($userId);
+	 
+	 
+	   // Update the user's information based on the form data
+	   $user['pro_name'] = $this->request->getPost('pro_name');
+	   $user['d_start'] = $this->request->getPost('d_start');
+	   $user['d_end'] = $this->request->getPost('d_end');
+	   
+	 
+		  // Save the updated user data to the database using the update() method
+		  $userModel->update($userId, $user);
+	 
+		  // Redirect the user back to the users list page (buttons page)
+		  return redirect()->to(base_url("deskapp/ui/tooltip"));
+	  }
+			 
 		public function typography()
 		{
 			$session = session();
