@@ -1,0 +1,10 @@
+CRITICAL - 2023-08-01 01:17:32 --> Undefined variable $users
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards-hover.php(753): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 753)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-c...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(146): view('deskapp/ui/ui-c...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cardsHover()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
