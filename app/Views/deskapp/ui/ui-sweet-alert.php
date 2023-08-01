@@ -4043,7 +4043,9 @@
                                 <span>Project Manager</span>
                             </div>
                             <div class="buttons">
-                                <button class="btn btn-edit">Edit</button>
+							<i class="dw dw-edit2"></i> Edit</a>
+
+                                <button class="btn btn-edit"  href="http://localhost/MS/deskapp/ui/edit/<?= $user['id_mem'] ?>"> >Edit</button>
                                 <button class="btn btn-view">View</button>
                             </div>
                         </div>
