@@ -586,7 +586,7 @@
                             </div>
                         </section>
                     </div>
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next">
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Update">
                 </form>
             </div>  
         </div>
