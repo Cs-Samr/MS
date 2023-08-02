@@ -35,3 +35,479 @@ CRITICAL - 2023-08-02 01:22:41 --> Undefined variable $user
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+ERROR - 2023-08-02 03:33:00 --> mysqli_sql_exception: Table 'pro-manger.user' doesn't exist in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MS\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Login.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Login->auth()
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Login))
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-08-02 03:33:04 --> mysqli_sql_exception: Table 'pro-manger.user' doesn't exist in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MS\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Login.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Login->auth()
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Login))
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-08-02 03:33:06 --> mysqli_sql_exception: Table 'pro-manger.user' doesn't exist in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MS\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Login.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Login->auth()
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Login))
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-08-02 03:33:11 --> mysqli_sql_exception: Table 'pro-manger.user' doesn't exist in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MS\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Login.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Login->auth()
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Login))
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-02 07:10:12 --> Undefined array key "id_project"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4048): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 4048)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(276): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:10:21 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(297): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:10:36 --> Undefined array key "id_project"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4048): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 4048)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(276): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:11:12 --> Undefined variable $user
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4049)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(276): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:11:13 --> Undefined variable $user
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4049)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(276): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:11:13 --> Undefined variable $user
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4049)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(276): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:11:22 --> Undefined variable $user
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4049)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(276): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:16:10 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(297): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:16:22 --> Undefined array key "id_project"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 4049)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(276): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:27:35 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4036): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4036)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(277): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:27:36 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4036): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4036)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(277): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:27:42 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4036): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4036)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(277): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:27:46 --> Undefined variable $users
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\Users_page.php(442): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 442)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/User...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(16): view('deskapp/ui/User...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->index()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:28:14 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:35 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:35 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:36 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:36 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:36 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:36 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:37 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:37 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:37 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:37 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:38 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:38 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:38 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:38 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:39 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:39 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:39 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:39 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:40 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:40 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:40 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:40 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:32:41 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:33:22 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4036): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4036)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(277): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:33:29 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:33:36 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4036): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4036)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(277): view('deskapp/ui/ui-s...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 07:33:44 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(298): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 08:15:15 --> Undefined variable $users
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\Users_page.php(442): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 442)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/User...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(16): view('deskapp/ui/User...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->index()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

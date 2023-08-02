@@ -450,84 +450,76 @@
     <div class="pd-ltr-20 xs-pd-20-10">
       <div class="min-height-200px">
         
-        <div class="pd-20 card-box mb-30">
-            <div class="clearfix">
-                <h4 class="text-blue h4">Edit Project</h4>
-
-
-            </div>
-<div class="wizard-content">
-                <form method="post" enctype="multipart/form-data" action="http://localhost/MS/deskapp/ui/updateProject">
-                    <div class="content clearfix">
-
-                        <section id="steps-uid-1-p-0" role="tabpanel" aria-labelledby="steps-uid-1-h-0" class="body current" aria-hidden="false">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Title</label>
-                                        <input name="pro_name" type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Details</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
+      <div class="pd-20 card-box mb-30">
+    <div class="clearfix">
+        <h4 class="text-blue h4">Edit Project</h4>
+    </div>
+    <div class="wizard-content">
+    <form method="post" action="deskapp/ui/updateProject">
+            <!-- Add a hidden input field to store the project ID -->
+            <input type="hidden" name="project_id" value="<?= $project['id_project'] ?>">
+            <div class="content clearfix">
+                <!-- Step 1: Project Details -->
+                <section id="steps-uid-1-p-0" role="tabpanel" aria-labelledby="steps-uid-1-h-0" class="body current" aria-hidden="false">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Title</label>
+                                <input name="pro_name" type="text" class="form-control" value="<?= $project['pro_name'] ?>">
                             </div>
-                            <div class="row">
-
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Details</label>
+                                <input name="project_details" type="text" class="form-control" >
                             </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Add Members:</label>
-                                        <select class="custom-select form-control">
-                                            <!--?php foreach ($users as $user) {
-                                            echo '<option>' .$user['name'] . '</option>';
-                                          }-->
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-
-                                    <div class="form-group">
-                                        <label for="d_start">Start Date :</label>
-                                        <input name="d_start" type="date" id="d_start" class="form-control" placeholder="Select Date" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="d_end">End Date :</label>
-                                        <input name="d_end" type="date" id="d_end" class="form-control" placeholder="Select Date">
-
-
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Add Members:</label>
+                                <select name="add_members" class="custom-select form-control">
+                                    <?php foreach ($users as $user) { ?>
+                                        <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
+                                    <?php } ?>
+                                </select>
                             </div>
-                        </section>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="d_start">Start Date :</label>
+                                <input name="d_start" type="date" id="d_start" class="form-control" placeholder="Select Date" value="<?= $project['d_start'] ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="d_end">End Date :</label>
+                                <input name="d_end" type="date" id="d_end" class="form-control" placeholder="Select Date" value="<?= $project['d_end'] ?>">
+                            </div>
+                        </div>
+                    </div>
+                </section>
                         <!-- Step 2 -->
                         <section id="steps-uid-1-p-1" role="tabpanel" aria-labelledby="steps-uid-1-h-1" class="body" aria-hidden="true" style="display: none;">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Job Title :</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Company Name :</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label>Job Description :</label>
-                                        <textarea class="form-control"></textarea>
-                                    </div>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Job Title :</label>
+                                <input name="job_title" type="text" class="form-control">
                             </div>
-                        </section>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Company Name :</label>
+                                <input name="company_name" type="text" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Job Description :</label>
+                                <textarea name="job_description" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                         <!-- Step 3 -->
 
                         <section id="steps-uid-1-p-2" role="tabpanel" aria-labelledby="steps-uid-1-h-2" class="body" aria-hidden="true" style="display: none;">
@@ -591,10 +583,11 @@
                             </div>
                         </section>
                     </div>
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Update">
-                </form>
-            </div>  
-        </div>
+            
+            <input class="btn btn-primary btn-lg btn-block" type="submit" value="Update">
+        </form>
+    </div>
+</div>
         
       </div>
       <!-- footer -->
