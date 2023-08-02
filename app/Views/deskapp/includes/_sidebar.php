@@ -1,8 +1,8 @@
 <div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="<?php echo base_url('deskapp/dashboard'); ?>">
-				<img src="<?php echo base_url(); ?>/assets/vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
-				<img src="<?php echo base_url(); ?>/assets/vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
+				<img src="<?php echo base_url(); ?>/assets/vendors/images/logo-dark.png" alt="" class="dark-logo">
+				<img src="<?php echo base_url(); ?>/assets/vendors/images/logo-dark.png" alt="" class="light-logo">
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>

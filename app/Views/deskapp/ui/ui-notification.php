@@ -1162,7 +1162,7 @@ body.swal2-no-backdrop .swal2-shown {
 	<!-- echo header,rightsidebar,leftsidebar and loader -->
 	<div class="pre-loader" style="display: none;">
 	<div class="pre-loader-box">
-		<div class="loader-logo"><img src="http://localhost/MS/assets/vendors/images/deskapp-logo.svg" alt=""></div>
+		<div class="loader-logo"><img src="http://localhost/MS/assets/vendors/images/logo-dark.png" alt=""></div>
 		<div class="loader-progress" id="progress_div">
 			<div class="bar" id="bar1" style="width: 100%;"></div>
 		</div>
@@ -1322,8 +1322,8 @@ body.swal2-no-backdrop .swal2-shown {
 </div><div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="http://localhost/MS/deskapp/dashboard">
-				<img src="http://localhost/MS/assets/vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
-				<img src="http://localhost/MS/assets/vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
+				<img src="http://localhost/MS/assets/vendors/images/logo-dark.png" alt="" class="dark-logo">
+				<img src="http://localhost/MS/assets/vendors/images/logo-dark.png" alt="" class="light-logo">
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>
