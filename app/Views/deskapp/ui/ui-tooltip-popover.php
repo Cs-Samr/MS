@@ -46,7 +46,7 @@
 <div class="header">
   <div class="header-left">
     <div class="menu-icon dw dw-menu"></div>
-    <div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
+         
     <div class="header-search">
       <form abineguid="60E6A375F18D459086F1F524B29B42DB">
         <div class="form-group mb-0">
@@ -88,7 +88,7 @@
     <div class="dashboard-setting user-notification">
       <div class="dropdown">
         <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
-          <i class="dw dw-settings2"></i>
+            
         </a>
       </div>
     </div>
@@ -152,21 +152,15 @@
     <div class="user-info-dropdown">
       <div class="dropdown">
         <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-          <span class="user-icon">
-            <img src="http://localhost/MS/assets/vendors/images/img.jpg" alt="">
-          </span>
-          <span class="user-name"> </span>
+              
         </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-          <a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/profile"><i class="dw dw-user1"></i> Profile</a>
-          <a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/profile"><i class="dw dw-settings2"></i> Setting</a>
-          <a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/faq"><i class="dw dw-help"></i> Help</a>
-          <a class="dropdown-item" href="http://localhost/MS/deskapp/logout"><i class="dw dw-logout"></i> Log Out</a>
+          <a class="dropdown-item"     href="http://localhost/MS/deskapp/logout"><i class="dw dw-logout"></i> Log Out</a>
         </div>
       </div>
     </div>
     <div class="github-link">
-      <a href="https://github.com/dropways/deskapp" target="_blank"><img src="http://localhost/MS/assets/vendors/images/github.svg" alt=""></a>
+      <a        </a>
     </div>
   </div>
 </div>
@@ -598,9 +592,7 @@
         
       </div>
       <!-- footer -->
-      <div class="footer-wrap pd-20 mb-20 card-box">
-    DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">MusheAbdulHakim</a>
-</div>    </div>
+      <div class="footer-wrap pd-20 mb-20 card-box">© 2023 Security Forces Hospital</div>    </div>
   </div>
   <!-- js -->
   <script src="http://localhost/MS/assets/vendors/scripts/core.js"></script>

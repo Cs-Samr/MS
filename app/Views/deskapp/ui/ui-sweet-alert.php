@@ -3402,7 +3402,7 @@
             <div class="dashboard-setting user-notification">
                 <div class="dropdown">
                     <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
-                        <i class="dw dw-settings2"></i>
+                          
                     </a>
                 </div>
             </div>
@@ -3528,7 +3528,7 @@
                 </div>
             </div>
             <div class="github-link">
-                <a href="https://github.com/dropways/deskapp" target="_blank"></a>
+                <a       </a>
             </div>
         </div>
     </div>
