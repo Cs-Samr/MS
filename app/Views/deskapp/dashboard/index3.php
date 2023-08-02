@@ -1424,7 +1424,7 @@
 
     .card_button {
         padding: 10px 20px;
-        background-color: #1b00ff;
+        background-color: #2fb5ba;
         color: #ffffff;
         border: none;
         border-radius: 5px;
