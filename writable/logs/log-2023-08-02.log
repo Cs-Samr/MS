@@ -65,3 +65,10 @@ CRITICAL - 2023-08-02 17:32:59 --> Undefined array key "id_project"
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2023-08-02 17:58:34 --> Call to undefined method App\Models\UserModel::getUsersWithoutPasswordAndMemId
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Tables.php(28): CodeIgniter\Model->__call('getUsersWithout...', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Tables->basic()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Tables))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

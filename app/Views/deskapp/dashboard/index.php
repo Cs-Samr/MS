@@ -8295,7 +8295,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="all_Cards">
+                <div class="all_Cards  ">
                     <div class="card-container">
                         <div class="card">
                             <div class="card_icon">☰</div> <!-- Project Icon -->

@@ -32,18 +32,6 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script></head>
 <body class="header-white sidebar-dark active">
 	<!-- echo header,rightsidebar,leftsidebar and loader -->
-	<div class="pre-loader" style="display: none;">
-	<div class="pre-loader-box">
-		<div class="loader-logo"><img src="http://localhost/MS/assets/vendors/images/logo-white.png" alt=""></div>
-		<div class="loader-progress" id="progress_div">
-			<div class="bar" id="bar1" style="width: 100%;"></div>
-		</div>
-		<div class="percent" id="percent1">100%</div>
-		<div class="loading-text">
-			Loading...
-		</div>
-	</div>
-</div>
 
 <div class="header">
 	<div class="header-left">
