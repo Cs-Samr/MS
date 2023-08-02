@@ -347,7 +347,11 @@ CRITICAL - 2023-08-01 02:55:20 --> Undefined variable $user
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
 CRITICAL - 2023-08-01 03:36:54 --> Undefined variable $user
+=======
+CRITICAL - 2023-08-01 04:08:50 --> Undefined variable $user
+>>>>>>> 2112515331f72366f80a1e6468038ccb08a6e5e8
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4048): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4048)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
 #2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
@@ -357,6 +361,7 @@ CRITICAL - 2023-08-01 03:36:54 --> Undefined variable $user
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
 CRITICAL - 2023-08-01 03:38:08 --> Undefined variable $user
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4047): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4047)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
@@ -488,6 +493,19 @@ CRITICAL - 2023-08-01 04:27:34 --> Undefined variable $user
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
 CRITICAL - 2023-08-01 06:39:40 --> Undefined variable $user
+=======
+CRITICAL - 2023-08-01 04:09:13 --> Undefined variable $userModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(329): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 329)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->update2()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+<<<<<<< HEAD
+CRITICAL - 2023-08-01 07:08:21 --> Undefined variable $user
+=======
+CRITICAL - 2023-08-01 06:49:51 --> Undefined variable $user
+>>>>>>> 2112515331f72366f80a1e6468038ccb08a6e5e8
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4048): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4048)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
 #2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
@@ -497,7 +515,11 @@ CRITICAL - 2023-08-01 06:39:40 --> Undefined variable $user
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
 CRITICAL - 2023-08-01 06:47:34 --> Undefined variable $user
+=======
+CRITICAL - 2023-08-01 06:49:52 --> Undefined variable $user
+>>>>>>> 2112515331f72366f80a1e6468038ccb08a6e5e8
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4048): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4048)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
 #2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
@@ -507,7 +529,12 @@ CRITICAL - 2023-08-01 06:47:34 --> Undefined variable $user
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
 CRITICAL - 2023-08-01 06:48:34 --> Undefined variable $user
+=======
+CRITICAL - 2023-08-01 07:06:48 --> Undefined variable $user
+>>>>>>> 9e8f9607443098426a168f28a60851a09cadff83
+>>>>>>> 2112515331f72366f80a1e6468038ccb08a6e5e8
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4048): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4048)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
 #2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-s...', Array, true)
@@ -517,6 +544,7 @@ CRITICAL - 2023-08-01 06:48:34 --> Undefined variable $user
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
 CRITICAL - 2023-08-01 06:56:13 --> Undefined variable $user
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-sweet-alert.php(4048): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4048)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
@@ -707,3 +735,5 @@ CRITICAL - 2023-08-01 08:15:35 --> Undefined array key "id_project"
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+=======
+>>>>>>> 2112515331f72366f80a1e6468038ccb08a6e5e8

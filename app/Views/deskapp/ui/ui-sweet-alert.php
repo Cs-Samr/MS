@@ -4047,7 +4047,12 @@
 							<div class="buttons">
                             <a class="btn btn-edit" href="<?= base_url("deskapp/ui/editProject/{$project['id_project']}") ?>">Edit</a>
 
+<<<<<<< HEAD
                                 <button class="btn btn-view">View</button>
+=======
+                                <button class="btn btn-edit"  href="http://localhost/MS/deskapp/ui/edit/<?= $user['id_mem'] ?>"> >Edit</button>
+                                <button class="btn btn-view" href="http://localhost/MS/deskapp/ui/buttons" >View</button>
+>>>>>>> 2112515331f72366f80a1e6468038ccb08a6e5e8
                             </div>
                         </div>
 
