@@ -3361,7 +3361,8 @@
             <div class="menu-icon dw dw-menu"></div>
 
 
-            <form>
+			<form>
+
                 <div class="form-group mb-0">
 
 
@@ -4042,21 +4043,13 @@
                                 <span class="icon"><i class="fas fa-user-tie"></i></span>
                                 <span>Project Manager</span>
                             </div>
-                            <div class="buttons">
-							<i class="dw dw-edit2"></i> Edit</a>
+                            
+							<div class="buttons">
+                            <a class="btn btn-edit" href="<?= base_url("deskapp/ui/editProject/{$project['id_project']}") ?>">Edit</a>
 
-                                <button class="btn btn-edit"  href="http://localhost/MS/deskapp/ui/edit/<?= $user['id_mem'] ?>"> >Edit</button>
                                 <button class="btn btn-view">View</button>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
 
 
                 </div>

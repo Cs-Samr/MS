@@ -457,7 +457,7 @@
 
             </div>
 <div class="wizard-content">
-                <form method="post" enctype="multipart/form-data" action="http://localhost/MS/deskapp/ui/update2" abineguid="D2F04A5D8C084E508D43971DD7D78E62">
+                <form method="post" enctype="multipart/form-data" action="http://localhost/MS/deskapp/ui/updateProject">
                     <div class="content clearfix">
 
                         <section id="steps-uid-1-p-0" role="tabpanel" aria-labelledby="steps-uid-1-h-0" class="body current" aria-hidden="false">

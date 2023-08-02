@@ -14,7 +14,7 @@ class ProjectModel extends Model
     public function getuser()
     {
        // return $this->select('pro_name', 'd_start', 'd_end')->findAll();
-       return $this->findAll();
+       return $this->select('*')->findAll();
     }
 
 }

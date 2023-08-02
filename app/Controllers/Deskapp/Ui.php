@@ -267,6 +267,12 @@
 			$session = session();
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
+			// Load the ProjectModel
+		$ProjectModel = new ProjectModel();
+	
+		// Get the project details based on the project ID
+		$data['project'] = $ProjectModel->getuser();
+
 			return view('deskapp/ui/ui-sweet-alert',$data);
 		}
 		public function tabs()
@@ -293,45 +299,41 @@
 
 		}
 
-		public function edit2($userId){
 
-			// Load the UserModel
-			$ProjectModel = new ProjectModel();
-	 
-
-			// Get the user details based on the user ID
-			$data['user'] = $ProjectModel->find($userId);
+		public function editProject($projectId) {
+			// Load the ProjectModel
+			$projectModel = new ProjectModel();
+		
+			// Get the project details based on the project ID
+			$data['project'] = $projectModel->find($projectId);
 		
 			return view('deskapp/ui/ui-tooltip-popover', $data);
+		}
+	
 
+		public function updateProject() {
+			// Load the ProjectModel
+			$projectModel = new ProjectModel();
+		
+			// Get the project ID from the form submission
+			$projectId = $this->request->getPost('id_project');
+		
+			// Fetch the project details based on the project ID
+			$project = $projectModel->find($projectId);
+		
+			// Update the project's information based on the form data
+			$project['pro_name'] = $this->request->getPost('pro_name');
+			$project['d_start'] = $this->request->getPost('d_start');
+			$project['d_end'] = $this->request->getPost('d_end');
+		
 
-	  }
+			$projectModel->update($projectId, $project);
 
-	  public function update2()
-	  {
-		 // Load the UserModel
-		 $ProjectModel = new ProjectModel();
-	 
-		 // Get the user ID from the form submission
-		 $userId = $this->request->getPost('id_project');
-	 
-		 // Fetch the user details based on the user ID
-		 //$user = $userModel->find($userId);
-	 
-	 
-	   // Update the user's information based on the form data
-	   $user['pro_name'] = $this->request->getPost('pro_name');
-	   $user['d_start'] = $this->request->getPost('d_start');
-	   $user['d_end'] = $this->request->getPost('d_end');
-	   
-	 
-		  // Save the updated user data to the database using the update() method
-		  $userModel->update($userId, $user);
-	 
-		  // Redirect the user back to the users list page (buttons page)
-		  return redirect()->to(base_url("deskapp/ui/tooltip"));
-	  }
-			 
+			// Redirect the user back to the project's edit page
+			$project['edit_url'] = base_url("deskapp/ui/editProject/{$projectId}");
+			return view('deskapp/ui/ui-tooltip-popover', $project);
+			
+		} 
 		public function typography()
 		{
 			$session = session();
