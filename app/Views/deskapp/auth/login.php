@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -37,7 +39,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 </head>
 
-<body class="login-page" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
+<body class="login-page" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed=""
+    style="background-color: #2fb5ba;">
     <div class="login-header box-shadow">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="brand-logo">
@@ -54,12 +57,12 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-7">
-                    <img src="http://localhost/MS/assets/vendors/images/login-page-img.png" alt="">
+                    <img src="http://localhost/MS/assets/vendors/images/Login -vector.png" alt="">
                 </div>
                 <div class="col-md-6 col-lg-5">
                     <div class="login-box bg-white box-shadow border-radius-10">
                         <div class="login-title">
-                            <h2 class="text-center text-primary">Login</h2>
+                            <h2 class="text-center"  style="color: #2fb5ba;" >Login</h2>
                         </div>
                         <form method="post" action="http://localhost/MS/deskapp/login/auth"
                             abineguid="0B50633E42DB4B698EF011E336848FEE" pwmfilled="auto"
@@ -144,7 +147,9 @@
                                     <div class="input-group mb-0">
 
                                         <!-- use code for form submit -->
-                                        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In">
+                                        <input class="btn btn-lg btn-block"
+                                            style="background-color: #bda374; color: #fff;" type="submit"
+                                            value="Sign In">
 
                                         <!-- <a class="btn btn-primary btn-lg btn-block" href="index">Sign In</a> -->
                                     </div>
