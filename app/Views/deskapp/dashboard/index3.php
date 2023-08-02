@@ -1424,7 +1424,7 @@
 
     .card_button {
         padding: 10px 20px;
-        background-color: #2fb5ba;
+        background-color: #1b00ff;
         color: #ffffff;
         border: none;
         border-radius: 5px;
@@ -8277,7 +8277,7 @@
     <!-- echo header,rightsidebar,leftsidebar and loader -->
     <div class="pre-loader" style="display: none;">
         <div class="pre-loader-box">
-            <div class="loader-logo"><img src="http://localhost/MS/assets/vendors/images/logo-dark.png" alt=""></div>
+            <div class="loader-logo"><img src="http://localhost/MS/assets/vendors/images/logo-white.png" alt=""></div>
             <div class="loader-progress" id="progress_div">
                 <div class="bar" id="bar1" style="width: 100%;"></div>
             </div>
