@@ -420,11 +420,12 @@
 				
 				<!-- Simple Datatable start -->
 
-				<div class="card-box mb-30">
-    <div class="pd-20">
-        <h4 class="text-blue h4">Users table</h4> <?= $username ?>
-    </div>
-    <div class="pb-20">
+	<div class="card-box mb-30">
+  <div class="pd-20 d-flex align-items-center justify-content-between">
+    <h4 class="text-blue h4">Users table</h4>
+    <a class="btn btn-primary" href="<?php echo base_url('deskapp/register'); ?>">Add User</a>
+  </div>
+
 	<table class="data-table table stripe hover nowrap dataTable no-footer dtr-inline" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
     <thead>
                 <tr role="row">
