@@ -2004,7 +2004,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Details</label>
-                                        <input name="detalis" type="text" class="form-control" a href="http://localhost/MS/deskapp/ui/card-hover" >
+                                        <input name="detalis" type="text" class="form-control"  href="http://localhost/MS/deskapp/ui/card-hover" >
                                     </div>
                                 </div>
                             </div>
