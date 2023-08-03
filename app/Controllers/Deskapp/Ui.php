@@ -153,6 +153,40 @@
 
 		}
 
+		/*public function save()
+		{
+			ini_set('display_errors', 1);
+			ini_set('display_startup_errors', 1);
+			helper(['form','url']);
+			
+			$rules = [
+				//'project_code' => 'required|min_length[2]|max_length[100]',
+				'title' => 'required|min_length[2]|max_length[100]',
+				'details' => 'required|min_length[2]|max_length[100]',
+				'time' => 'required',
+				
+			];
+	
+			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
+				$model = new ProjectModel();
+				$data = [
+					'title' => $this->request->getVar('title'),
+					'details' => $this->request->getVar('details'),
+					'time' => $this->request->getVar('time'),
+				];
+	
+
+				 $model = new ProjectModel();
+				 $model->save($data); 
+	
+			} else {
+				$data['validation'] = $this->validator;
+				return view('deskapp/Ui/ui-cards', $data);
+			}
+	
+		
+		}*/
+
 
 		public function cards()
 		{
@@ -180,6 +214,7 @@
 			$rules = [
 				//'project_code' => 'required|min_length[2]|max_length[100]',
 				'pro_name' => 'required|min_length[2]|max_length[100]',
+				'detalis' => 'required|min_length[2]|max_length[500]'
 				'd_start' => 'required',
 				'd_end' => 'required'
 			];
@@ -191,6 +226,7 @@
 					'pro_name' => $this->request->getVar('pro_name'),
 					'd_start' => $this->request->getVar('d_start'),
 					'd_end' => $this->request->getVar('d_end'),
+					'detalis' => $this->request->getVar('detalis'),
 				];
 	
 
@@ -266,14 +302,16 @@
 		{
 			$session = session();
 			$data['session'] = \Config\Services::session();
- 			$data['username'] = $session->get('user_name');
+			$data['username'] = $session->get('user_name');
+		
 			// Load the ProjectModel
-		$ProjectModel = new ProjectModel();
-	
-		// Get the project details based on the project ID
-		$data['project'] = $ProjectModel->getuser();
+			$ProjectModel = new ProjectModel();
+		
+			// Get the projects details
+			$data['projects'] = $ProjectModel->getuser();
+		
+			return view('deskapp/ui/ui-sweet-alert', $data);
 
-			return view('deskapp/ui/ui-sweet-alert',$data);
 		}
 		public function tabs()
 		{
@@ -303,20 +341,22 @@
 		public function editProject($projectId) {
 			// Load the ProjectModel
 			$projectModel = new ProjectModel();
-		
+
 			// Get the project details based on the project ID
 			$data['project'] = $projectModel->find($projectId);
 		
 			return view('deskapp/ui/ui-tooltip-popover', $data);
+		
 		}
 	
 
 		public function updateProject() {
+
 			// Load the ProjectModel
 			$projectModel = new ProjectModel();
-		
+
 			// Get the project ID from the form submission
-			$projectId = $this->request->getPost('id_project');
+			$projectId = $this->request->getPost('project_id');
 		
 			// Fetch the project details based on the project ID
 			$project = $projectModel->find($projectId);
@@ -326,12 +366,11 @@
 			$project['d_start'] = $this->request->getPost('d_start');
 			$project['d_end'] = $this->request->getPost('d_end');
 		
-
+			// Save the updated project data to the database using the update() method
 			$projectModel->update($projectId, $project);
-
-			// Redirect the user back to the project's edit page
-			$project['edit_url'] = base_url("deskapp/ui/editProject/{$projectId}");
-			return view('deskapp/ui/ui-tooltip-popover', $project);
+		
+			// Redirect the user back to the projects list page or wherever you want to redirect after update
+			return redirect()->to(base_url("deskapp/ui/editProject/{$projectId}"));	
 			
 		} 
 		public function typography()

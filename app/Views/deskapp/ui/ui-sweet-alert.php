@@ -4032,31 +4032,24 @@
                     </head>
 
                     <body>
-                        <div class="project-card">
-                            <h2>Project Name</h2>
-                            <div class="project-info">
-                                <span class="icon"><i class="fas fa-rocket"></i></span>
-                                <span>Project State</span>
-                            </div>
+                    <div class="project-card">
+    <h2><?= $project['pro_name'] ?></h2>
+    <div class="project-info">
+        <span class="icon"><i class="fas fa-rocket"></i></span>
+        <span>Project State</span>
+    </div>
 
-                            <div class="project-info">
-                                <span class="icon"><i class="fas fa-user-tie"></i></span>
-                                <span>Project Manager</span>
-                            </div>
-                            
-							<div class="buttons">
-                            <a class="btn btn-edit" href="<?= base_url("deskapp/ui/editProject/{$project['id_project']}") ?>">Edit</a>
+    <div class="project-info">
+        <span class="icon"><i class="fas fa-user-tie"></i></span>
+        <span>Project Manager</span>
+    </div>
 
-<<<<<<< HEAD
-                                <button class="btn btn-view">View</button>
-=======
-                                <button class="btn btn-edit"  href="http://localhost/MS/deskapp/ui/edit/<?= $user['id_mem'] ?>"> >Edit</button>
-                                <button class="btn btn-view" href="http://localhost/MS/deskapp/ui/buttons" >View</button>
->>>>>>> 2112515331f72366f80a1e6468038ccb08a6e5e8
-                            </div>
-                        </div>
-
-
+    <div class="buttons">
+        <!-- Update the href attribute to include the project ID -->
+        <a class="btn btn-edit" href="<?= base_url('deskapp/ui/editProject/' . $projectId['id_project']) ?>">Edit</a>
+        <button class="btn btn-view" onclick="window.location.href='<?= base_url('deskapp/ui/buttons') ?>'">View</button>
+    </div>
+</div>
                 </div>
             </div>
             <!-- footer -->
