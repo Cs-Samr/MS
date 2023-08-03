@@ -4033,7 +4033,9 @@
 
                     <body>
                     <div class="project-card">
-    <h2><?= $project['pro_name'] ?></h2>
+    <?php foreach ($projects as $project) { ?>
+     <h2>  <?= $project['pro_name'] ?> </h2>
+     <?php } ?>
     <div class="project-info">
         <span class="icon"><i class="fas fa-rocket"></i></span>
         <span>Project State</span>
@@ -4046,7 +4048,12 @@
 
     <div class="buttons">
         <!-- Update the href attribute to include the project ID -->
-        <a class="btn btn-edit" href="<?= base_url('deskapp/ui/editProject/' . $projectId['id_project']) ?>">Edit</a>
+        <?php foreach ($projects as $project) { ?>
+        <!-- Update the href attribute to include the project ID -->
+        <a class="btn btn-edit" href="<?= base_url('deskapp/ui/editProject/' . $project['id_project']) ?>">Edit
+            <!-- Display the project name -->          
+        </a>
+    <?php } ?> 
         <button class="btn btn-view" onclick="window.location.href='<?= base_url('deskapp/ui/buttons') ?>'">View</button>
     </div>
 </div>
