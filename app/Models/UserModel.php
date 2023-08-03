@@ -27,4 +27,11 @@ class UserModel extends Model
 
     }
    
+    public function countUsers()
+    {
+        $userModel = new UserModel();
+        $userCount = $userModel->countAllResults();
+
+        echo "Total number of users: " . $userCount;
+    }
 }

@@ -2004,7 +2004,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Details</label>
-                                        <input type="text" class="form-control">
+                                        <input  name="detalis" type="text" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -2132,7 +2132,8 @@
                             </div>
                         </section>
                     </div>
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next">
+                   
+                    <a class="btn btn-next" href="<?= base_url('deskapp/ui/card-hover/') ?>">Next</a>
                 </form>
             </div>
         </div>

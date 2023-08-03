@@ -10433,10 +10433,12 @@
                             <div class="card_title">Users</div>
                             <div class="card_button-container">
                                 <a href="http://localhost/MS/deskapp/register" class="card_button">Add User</a>
-                                <a href="http://localhost/MS/deskapp/buttons" class="card_button">View All Users</a>
+                                <a href="http://localhost/MS/deskapp/ui/buttons" class="card_button">View All Users</a>
 
                             </div>
+
                             <div class="card_footer">
+                              
                                 Number of users: <span id="userCount">20</span>
                             </div>
                         </div>
