@@ -2132,8 +2132,8 @@
                             </div>
                         </section>
                     </div>
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next" >
-                    <a href="http://localhost/MS/deskapp/ui/card-hover" class="btn">Next</a>
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next"  href="http://localhost/MS/deskapp/ui/card-hover" class="btn" >
+                    
                 </form>
             </div>
         </div>
