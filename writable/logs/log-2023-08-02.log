@@ -72,3 +72,19 @@ CRITICAL - 2023-08-02 17:58:34 --> Call to undefined method App\Models\UserModel
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2023-08-02 20:23:42 --> Undefined property: CodeIgniter\View\View::$load
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\dashboard\index.php(11051): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11051)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/dashboa...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Dashboard.php(18): view('deskapp/dashboa...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Dashboard->index()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Dashboard))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-02 20:25:52 --> Class "PHPMailer\PHPMailer\PHPMailer" not found
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Email->send_email()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
