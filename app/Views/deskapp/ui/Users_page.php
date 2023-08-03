@@ -32,18 +32,6 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script></head>
 <body class="header-white sidebar-dark active">
 	<!-- echo header,rightsidebar,leftsidebar and loader -->
-	<div class="pre-loader" style="display: none;">
-	<div class="pre-loader-box">
-		<div class="loader-logo"><img src="http://localhost/MS/assets/vendors/images/deskapp-logo.svg" alt=""></div>
-		<div class="loader-progress" id="progress_div">
-			<div class="bar" id="bar1" style="width: 100%;"></div>
-		</div>
-		<div class="percent" id="percent1">100%</div>
-		<div class="loading-text">
-			Loading...
-		</div>
-	</div>
-</div>
 
 <div class="header">
 	<div class="header-left">
@@ -57,7 +45,7 @@
 		<div class="dashboard-setting user-notification">
 			<div class="dropdown">
 				<a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
-					<i class="dw dw-settings2"></i>
+					  
 				</a>
 			</div>
 		</div>
@@ -126,7 +114,7 @@
 				</a>
 				<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list" style="">
 					<a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/profile"><i class="dw dw-user1"></i> Profile</a>
-					<a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/profile"><i class="dw dw-settings2"></i> Setting</a>
+					<a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/profile">   Setting</a>
 					<a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/faq"><i class="dw dw-help"></i> Help</a>
 					<a class="dropdown-item" href="http://localhost/MS/deskapp/logout"><i class="dw dw-logout"></i> Log Out</a>
 				</div>
@@ -212,8 +200,8 @@
 </div><div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="http://localhost/MS/deskapp/dashboard">
-				<img src="http://localhost/MS/assets/vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
-				<img src="http://localhost/MS/assets/vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
+				<img src="http://localhost/MS/assets/vendors/images/logo-dark.png" alt="" class="dark-logo">
+				<img src="http://localhost/MS/assets/vendors/images/logo-dark.png" alt="" class="light-logo">
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>

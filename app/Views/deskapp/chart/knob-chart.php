@@ -33,7 +33,7 @@
 <body>
 	<div class="pre-loader">
 		<div class="pre-loader-box">
-			<div class="loader-logo"><img src="<?php echo base_url(); ?>/assets/vendors/images/deskapp-logo.svg" alt=""></div>
+			<div class="loader-logo"><img src="<?php echo base_url(); ?>/assets/vendors/images/logo-dark.png" alt=""></div>
 			<div class='loader-progress' id="progress_div">
 				<div class='bar' id='bar1'></div>
 			</div>
@@ -47,7 +47,7 @@
 	<div class="header">
 		<div class="header-left">
 			<div class="menu-icon dw dw-menu"></div>
-			<div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
+			     
 			<div class="header-search">
 				<form>
 					<div class="form-group mb-0">
@@ -89,7 +89,7 @@
 			<div class="dashboard-setting user-notification">
 				<div class="dropdown">
 					<a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
-						<i class="dw dw-settings2"></i>
+						  
 					</a>
 				</div>
 			</div>
@@ -159,14 +159,14 @@
 					</a>
 					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
 						<a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i> Profile</a>
-						<a class="dropdown-item" href="profile.html"><i class="dw dw-settings2"></i> Setting</a>
+						<a class="dropdown-item" href="profile.html">   Setting</a>
 						<a class="dropdown-item" href="faq.html"><i class="dw dw-help"></i> Help</a>
 						<a class="dropdown-item" href="login.html"><i class="dw dw-logout"></i> Log Out</a>
 					</div>
 				</div>
 			</div>
 			<div class="github-link">
-				<a href="https://github.com/dropways/deskapp" target="_blank"><img src="<?php echo base_url(); ?>/assets/vendors/images/github.svg" alt=""></a>
+				<a       <img src="<?php echo base_url(); ?>/assets/vendors/images/github.svg" alt=""></a>
 			</div>
 		</div>
 	</div>
@@ -249,8 +249,8 @@
 	<div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="index.html">
-				<img src="<?php echo base_url(); ?>/assets/vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
-				<img src="<?php echo base_url(); ?>/assets/vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
+				<img src="<?php echo base_url(); ?>/assets/vendors/images/logo-dark.png" alt="" class="dark-logo">
+				<img src="<?php echo base_url(); ?>/assets/vendors/images/logo-dark.png" alt="" class="light-logo">
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>
@@ -483,7 +483,7 @@
 					<div class="col-lg-3 col-md-6 col-sm-12 mb-30">
 						<div class="card-box pd-30 height-100-p">
 							<div class="progress-box text-center">
-								 <input type="text" class="knob dial1" value="80" data-width="120" data-height="120" data-linecap="round" data-thickness="0.12" data-bgColor="#fff" data-fgColor="#1b00ff" data-angleOffset="180" readonly>
+								 <input type="text" class="knob dial1" value="80" data-width="120" data-height="120" data-linecap="round" data-thickness="0.12" data-bgColor="#fff" data-fgColor="#2fb5ba" data-angleOffset="180" readonly>
 								<h5 class="text-blue padding-top-10 h5">My Earnings</h5>
 								<span class="d-block">80% Average <i class="fa fa-line-chart text-blue"></i></span>
 							</div>
