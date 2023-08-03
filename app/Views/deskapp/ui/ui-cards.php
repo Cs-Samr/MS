@@ -2132,8 +2132,8 @@
                             </div>
                         </section>
                     </div>
-                   
-                    <a class="btn btn-next" href="<?= base_url('deskapp/ui/card-hover/') ?>">Next</a>
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next"  href="http://localhost/MS/deskapp/ui/card-hover" class="btn" >
+                    
                 </form>
             </div>
         </div>
