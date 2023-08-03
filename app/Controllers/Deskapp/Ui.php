@@ -214,6 +214,7 @@
 			$rules = [
 				//'project_code' => 'required|min_length[2]|max_length[100]',
 				'pro_name' => 'required|min_length[2]|max_length[100]',
+				'detalis' => 'required|min_length[2]|max_length[500]'
 				'd_start' => 'required',
 				'd_end' => 'required'
 			];
@@ -225,6 +226,7 @@
 					'pro_name' => $this->request->getVar('pro_name'),
 					'd_start' => $this->request->getVar('d_start'),
 					'd_end' => $this->request->getVar('d_end'),
+					'detalis' => $this->request->getVar('detalis'),
 				];
 	
 

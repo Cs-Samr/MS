@@ -8,7 +8,7 @@ class ProjectModel extends Model
 {
     protected $table = 'projects';
     protected $primaryKey = 'id_project';
-    protected $allowedFields = [ 'pro_name', 'd_start', 'd_end'];
+    protected $allowedFields = [ 'pro_name', 'd_start', 'd_end','detalis'];
     
 
     public function getuser()
