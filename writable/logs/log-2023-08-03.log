@@ -243,7 +243,11 @@ CRITICAL - 2023-08-03 06:53:56 --> Undefined variable $users
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
 >>>>>>> 2c327b194b1359cba7371e958b599431e3583e0f
+<<<<<<< HEAD
 CRITICAL - 2023-08-03 06:59:00 --> Undefined variable $users
+=======
+CRITICAL - 2023-08-03 07:05:40 --> Undefined variable $users
+>>>>>>> c408ea1357b47f492320744399078ad10def8438
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(2020): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2020)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
 #2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/Ui/ui-c...', Array, true)
@@ -253,6 +257,7 @@ CRITICAL - 2023-08-03 06:59:00 --> Undefined variable $users
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
 ERROR - 2023-08-03 06:59:24 --> mysqli_sql_exception: Unknown column 'detalis' in 'field list' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
 Stack trace:
 #0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pr...')
@@ -279,3 +284,5 @@ CRITICAL - 2023-08-03 07:00:02 --> Undefined variable $project
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+=======
+>>>>>>> c408ea1357b47f492320744399078ad10def8438
