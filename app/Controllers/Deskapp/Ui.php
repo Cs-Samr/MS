@@ -214,7 +214,7 @@
 			$rules = [
 				//'project_code' => 'required|min_length[2]|max_length[100]',
 				'pro_name' => 'required|min_length[2]|max_length[100]',
-				'detalis' => 'required|min_length[2]|max_length[500]'
+				'detalis' => 'required|min_length[2]|max_length[500]',
 				'd_start' => 'required',
 				'd_end' => 'required'
 			];
