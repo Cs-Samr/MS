@@ -451,14 +451,6 @@
     </div>
 </div>
 
-				<!-- Simple Datatable End -->
-				<!-- multiple select row Datatable start -->
-				
-				<!-- multiple select row Datatable End -->
-				<!-- Checkbox select Datatable start -->
-				
-				<!-- Checkbox select Datatable End -->
-				<!-- Export Datatable start -->
 				
 				<!-- Export Datatable End -->
 			</div>
