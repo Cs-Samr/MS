@@ -63,7 +63,7 @@ class Register extends BaseController
                 $managerModel->save($data2);
             }
             
-             return redirect()->to('/deskapp/login');
+             return redirect()->to('/deskapp/ui/buttons');
 
         } else {
             $data['validation'] = $this->validator;
