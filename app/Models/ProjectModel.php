@@ -8,11 +8,7 @@ class ProjectModel extends Model
 {
     protected $table = 'projects';
     protected $primaryKey = 'id_project';
-<<<<<<< HEAD
     protected $allowedFields = [ 'pro_name', 'project_code','d_start', 'd_end','details'];
-=======
-    protected $allowedFields = [ 'pro_name', 'd_start', 'd_end','details'];
->>>>>>> 39ddde44849a2955af536edf1942570917d45f75
     
 
     public function getpro()
