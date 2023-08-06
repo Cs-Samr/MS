@@ -294,6 +294,7 @@
 			$ProjectModel = new ProjectModel();
 		
 			// Get the projects details
+			$data['projects'] = $ProjectModel->getpro();
 		
 			return view('deskapp/ui/ui-sweet-alert', $data);
 
@@ -321,7 +322,7 @@
 			$ProjectModel = new ProjectModel();
 		
 			// Get the projects details
-			$data['projects'] = $ProjectModel->getuser();
+			$data['projects'] = $ProjectModel->getpro();
 			$userModel = new UserModel();
 			 $user = $userModel->getUser();
 
