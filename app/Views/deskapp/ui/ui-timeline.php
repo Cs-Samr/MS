@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="http://localhost/MS/assets/vendors/styles/style.css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -28,7 +28,7 @@
 
 		gtag('config', 'UA-119386393-1');
 	</script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script></head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script></head>
 <body class="header-white active sidebar-dark" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
 	<!-- echo header,rightsidebar,leftsidebar and loader -->
 	<div class="pre-loader" style="display: none;">
@@ -65,7 +65,7 @@
 					<span class="badge notification-active"></span>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right">
-					<div class="notification-list mx-h-350 customscroll mCustomScrollbar _mCS_1 mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_1" class="mCustomScrollBox mCS-dark-2 mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+					<div class="notification-list mx-h-350 customscroll mCustomScrollbar _mCS_1 mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_1" class="mCustomScrollBox mCS-dark-2 mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
 						<ul>
 							<li>
 								<a href="#">
@@ -110,7 +110,7 @@
 								</a>
 							</li>
 						</ul>
-					</div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-dark-2 mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+					</div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-dark-2 mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
 				</div>
 			</div>
 		</div>
@@ -144,7 +144,7 @@
 			<i class="icon-copy ion-close-round"></i>
 		</div>
 	</div>
-	<div class="right-sidebar-body customscroll mCustomScrollbar _mCS_2"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_2" class="mCustomScrollBox mCS-dark-2 mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+	<div class="right-sidebar-body customscroll mCustomScrollbar _mCS_2"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_2" class="mCustomScrollBox mCS-dark-2 mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
 		<div class="right-sidebar-body-content">
 			<h4 class="weight-600 font-18 pb-10">Header Background</h4>
 			<div class="sidebar-btn-group pb-30 mb-10">
@@ -206,7 +206,7 @@
 				<button class="btn btn-danger" id="reset-settings">Reset Settings</button>
 			</div>
 		</div>
-	</div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-dark-2 mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 0px; height: 591px; top: 0px; display: block; max-height: 595.498px;"><div class="mCSB_dragger_bar" style="line-height: 0px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+	</div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-dark-2 mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 590.995px; height: 591px; top: 0px; display: block; max-height: 595.498px;"><div class="mCSB_dragger_bar" style="line-height: 590px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
 </div><div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="http://localhost/MS/deskapp/dashboard">
@@ -217,7 +217,7 @@
 				<i class="ion-close-round"></i>
 			</div>
 		</div>
-		<div class="menu-block customscroll mCustomScrollbar _mCS_3"><div id="mCSB_3" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_3" class="mCustomScrollBox mCS-dark-2 mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+		<div class="menu-block customscroll mCustomScrollbar _mCS_3"><div id="mCSB_3" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_3" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_3" class="mCustomScrollBox mCS-dark-2 mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
 			<div class="sidebar-menu icon-style-1 icon-list-style-1">
 				<ul id="accordion-menu">
 					<li class="dropdown">
@@ -410,7 +410,7 @@
 					</li>
 				</ul>
 			</div>
-		</div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-dark-2 mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 706.991px; display: block; height: 591px; max-height: 1064.32px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 706px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+		</div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-dark-2 mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 706.991px; display: block; height: 591px; max-height: 1064.32px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 706px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
 	</div>
 	<div class="mobile-menu-overlay"></div>
 	<div class="main-container">
@@ -478,13 +478,7 @@
     </style>
 
     <div class="step-wizard">
-        <div class="step active" id="step1">
-            <div class="step-header">Step 1</div>
-            <p>This is Step 1 content.</p>
-            <div class="step-footer">
-                <button class="btn next" onclick="nextStep(2)">Next</button>
-            </div>
-        </div>
+        
         <div class="step" id="step2">
             <div class="step-header">Step 2</div>
             <p>This is Step 2 content.</p>
@@ -639,23 +633,21 @@
 
 <form method="POST" action="">
 <div class="container">
-    <div id="app"><ol class="step-indicator"><li class="complete"><div class="step"><i class="fa fa-map-marker"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>1</span>: <span>Position</span></div></li>
-
-<li class="complete"><div class="step"><i class="fa fa-folder-open"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>2</span>: <span>Category</span></div></li><li class="complete"><div class="step"><i class="fa fa-folder-open"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>2</span>: <span>Category</span></div></li><li class="active"><div class="step"><i class="fa fa-paper-plane"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>3</span>: <span>Send</span></div></li></ol> <div style="display: none;"><h1>Step 1</h1> <div class="form-group"><label for="email">Email address</label> <input type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"> <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div> <div class="form-group"><label for="password">Password</label> <input type="password" name="password" placeholder="Password" class="form-control"></div></div> <div style="display: none;"><h1>Step 2</h1> <div class="form-group"><label for="select">Example select</label> <select name="select" class="form-control"><option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option></select></div></div> <div style=""><h1>Step 3</h1> <div class="form-group"><label for="textarea">Example textarea</label> <textarea name="textarea" rows="4" class="form-control"></textarea></div> <div class="form-group"><label for="file">File input</label> <input type="file" name="file" aria-describedby="fileHelp" class="form-control-file"> <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small></div></div> <div class="step-wrapper"><button type="button" class="btn btn-primary">
+    <div id="app"><ol class="step-indicator"><li class="complete"><div class="step"><i class="fa fa-map-marker"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>1</span>: <span>Position</span></div></li> <li class="complete"><div class="step"><i class="fa fa-folder-open"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>2</span>: <span>Category</span></div></li><li class="complete"><div class="step"><i class="fa fa-folder-open"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>2</span>: <span>Category</span></div></li><li class="active"><div class="step"><i class="fa fa-paper-plane"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>3</span>: <span>Send</span></div></li></ol> <div style="display: none;"><h1>Step 1</h1> <div class="form-group"><label for="email">Email address</label> <input type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"> <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div> <div class="form-group"><label for="password">Password</label> <input type="password" name="password" placeholder="Password" class="form-control"></div></div> <div style="display: none;"><h1>Step 2</h1> <div class="form-group"><label for="select">Example select</label> <select name="select" class="form-control"><option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option></select></div></div> <div><h1>Step 3</h1> <div class="form-group"><label for="textarea">Example textarea</label> <textarea name="textarea" rows="4" class="form-control"></textarea></div> <div class="form-group"><label for="file">File input</label> <input type="file" name="file" aria-describedby="fileHelp" class="form-control-file"> <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small></div></div> <div class="step-wrapper"><button type="button" class="btn btn-primary">
                     Back
-                </button> <button type="button" class="btn btn-primary" disabled="disabled">
+                </button> <button type="button" disabled="disabled" class="btn btn-primary">
                     Next
                 </button> <button type="submit" class="btn btn-primary">
                     Submit
                 </button></div><div class="step-wrapper"><button type="button" class="btn btn-primary">
                     Back
-                </button> <button type="button" class="btn btn-primary" disabled="disabled">
+                </button> <button type="button" disabled="disabled" class="btn btn-primary">
                     Next
                 </button> <button type="submit" class="btn btn-primary">
                     Submit
                 </button></div><div class="step-wrapper active"><button type="button" class="btn btn-primary">
                     Back
-                </button> <button type="button" class="btn btn-primary" disabled="disabled">
+                </button> <button type="button" disabled="disabled" class="btn btn-primary">
                     Next
                 </button> <button type="submit" class="btn btn-primary">
                     Submit
@@ -760,9 +752,13 @@ new Vue({
       id: 2,
       title: "Category",
       icon_class: "fa fa-folder-open" },
+    { 
+      id: 3,
+      title: "ddff",
+      icon_class: "fa fa-folder-open" },
 
     {
-      id: 3,
+      id: 4,
       title: "Send",
       icon_class: "fa fa-paper-plane" }] },
 
