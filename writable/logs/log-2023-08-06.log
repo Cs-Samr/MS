@@ -1113,3 +1113,12 @@ CRITICAL - 2023-08-06 03:06:20 --> syntax error, unexpected token "<<", expectin
 =======
 >>>>>>> f69a52aa6be0beb9a68ad9bf5867e53ab169e089
 >>>>>>> c088a4eda1f19ce73ac348c6da8f6beb46b8e2d0
+CRITICAL - 2023-08-06 03:44:15 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Dashboard.php(17): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Dashboard->index()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Dashboard))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
