@@ -630,11 +630,8 @@ body {
                 </button>
             </div>
         </script>
-<<<<<<< HEAD
     </div>
-=======
 	</div>
->>>>>>> f69a52aa6be0beb9a68ad9bf5867e53ab169e089
 </div>
 </form>
 <script>
