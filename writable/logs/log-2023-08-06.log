@@ -659,4 +659,457 @@ Stack trace:
 #11 {main}
 =======
 >>>>>>> 39ddde44849a2955af536edf1942570917d45f75
+<<<<<<< HEAD
+CRITICAL - 2023-08-06 03:04:12 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:04:19 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(321): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:04:25 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:05:44 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:05:46 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:05:46 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:05:47 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:05:47 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:05:47 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:05:47 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:05:48 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:07 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:10 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:11 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:11 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:11 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:11 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:11 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:11 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:12 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:12 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:12 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:12 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:12 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:13 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:13 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:13 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:15 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:15 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:15 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:16 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:16 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:16 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:16 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:16 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:17 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:17 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:17 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:17 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:17 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:18 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:18 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:18 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:18 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:19 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:19 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:19 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:19 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:19 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:06:20 --> syntax error, unexpected token "<<", expecting "function" or "const"
+#0 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\MS\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Proj...')
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(294): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Proj...')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->sweetAlert()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+=======
 >>>>>>> f69a52aa6be0beb9a68ad9bf5867e53ab169e089
+>>>>>>> c088a4eda1f19ce73ac348c6da8f6beb46b8e2d0
