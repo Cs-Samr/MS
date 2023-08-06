@@ -38,7 +38,7 @@
 		<div class="container-fluid d-flex justify-content-between align-items-center">
 			<div class="brand-logo">
 				<a href="<?php echo base_url('deskapp/login') ?>">
-					<img src="<?php echo base_url(); ?>/assets/vendors/images/logo-whait.png" alt="">
+					<img src="<?php echo base_url(); ?>/assets/vendors/images/logo-white.png" alt="">
 				</a>
 			</div>
 			<div class="login-menu">
@@ -52,7 +52,7 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-md-6">
-					<img src="<?php echo base_url(); ?>/assets/vendors/images/forgot-password.png" alt="">
+					<img src="<?php echo base_url(); ?>/assets/vendors/images/Reset-vector.png" alt="">
 				</div>
 				<div class="col-md-6">
 					<div class="login-box bg-white box-shadow border-radius-10">

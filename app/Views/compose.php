@@ -1,4 +1,4 @@
-<form action="<?php echo base_url('Email/send-email') ?>" class="form-horizontal" id="add_email_form" autocomplete="off" method="post" accept-charset="utf-8">
+<form action="<?php echo base_url('Email/send_email') ?>" class="form-horizontal" id="add_email_form" autocomplete="off" method="post" accept-charset="utf-8">
     <div class="form-group">
         <label for="inputName" class="col-sm-2 control-label">Recipient Email</label>
         <div class="col-sm-10">

@@ -11,11 +11,14 @@ class ProjectModel extends Model
     protected $allowedFields = [ 'pro_name', 'd_start', 'd_end','detalis'];
     
 
-    public function getuser()
+    public function getpro()
     {
        // return $this->select('pro_name', 'd_start', 'd_end')->findAll();
        return $this->select('*')->findAll();
     }
 
+    public function getProjectsCount()
+    {
+        return $this->countAllResults(); // This will return the total number of rows in the 'project' table
+    }
 }
-

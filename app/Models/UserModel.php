@@ -21,17 +21,19 @@ class UserModel extends Model
         
         return $this->where('id_mem', $userId)->delete();
     }
-    public function dd(){
-
-        return $this->select('name')->findAll();
-
-    }
    
-    public function countUsers()
+   
+    public function getUserCount()
     {
-        $userModel = new UserModel();
-        $userCount = $userModel->countAllResults();
-
-        echo "Total number of users: " . $userCount;
+        // Count the number of rows (users) in the 'user' table
+        return $this->countAllResults();
     }
+
+    public function getAllNames()
+    {
+        $query = $this->select('name')->findAll();
+        $names = array_column($query, 'name');
+        return $names;
+    }
+
 }
