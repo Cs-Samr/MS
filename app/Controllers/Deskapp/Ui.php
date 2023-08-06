@@ -241,20 +241,6 @@
 		
 		}
 		
-		/*public function button()
-		{
-			
-			$session = session();
-			$data['session'] = \Config\Services::session();
-			$data['username'] = $session->get('user_name');
-	
-			// Load the UserModel
-			$userModel = new UserModel();
-		    $user = $userModel->dd(); 
-		
-			
-		
-		}*/
 		
      	public function carousel()
 		{
@@ -332,6 +318,15 @@
 			$session = session();
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
+			// Load the ProjectModel
+			$ProjectModel = new ProjectModel();
+		
+			// Get the projects details
+			$data['projects'] = $ProjectModel->getuser();
+			$userModel = new UserModel();
+			 $user = $userModel->getUser();
+
+			 $data['user'] = $user;
 			return view('deskapp/ui/ui-tooltip-popover',$data);
 
 
@@ -341,6 +336,10 @@
 		public function editProject($projectId) {
 			// Load the ProjectModel
 			$projectModel = new ProjectModel();
+			// Get the users details
+			$userModel = new UserModel();
+			 $user = $userModel->getUser();
+			 $data['users'] = $user;
 
 			// Get the project details based on the project ID
 			$data['project'] = $projectModel->find($projectId);

@@ -33,7 +33,7 @@
   <!-- echo header,rightsidebar,leftsidebar and loader -->
   <div class="pre-loader" style="display: none;">
   <div class="pre-loader-box">
-    <div class="loader-logo"><img src="http://localhost/MS/assets/vendors/images/logo-white.png" alt=""></div>
+    <div class="loader-logo"><img src="http://localhost/MS/assets/vendors/images/deskapp-logo.svg" alt=""></div>
     <div class="loader-progress" id="progress_div">
       <div class="bar" id="bar1" style="width: 100%;"></div>
     </div>
@@ -46,7 +46,7 @@
 <div class="header">
   <div class="header-left">
     <div class="menu-icon dw dw-menu"></div>
-         
+    <div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
     <div class="header-search">
       <form abineguid="60E6A375F18D459086F1F524B29B42DB">
         <div class="form-group mb-0">
@@ -88,7 +88,7 @@
     <div class="dashboard-setting user-notification">
       <div class="dropdown">
         <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
-            
+          <i class="dw dw-settings2"></i>
         </a>
       </div>
     </div>
@@ -152,15 +152,21 @@
     <div class="user-info-dropdown">
       <div class="dropdown">
         <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-              
+          <span class="user-icon">
+            <img src="http://localhost/MS/assets/vendors/images/img.jpg" alt="">
+          </span>
+          <span class="user-name"> </span>
         </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-          <a class="dropdown-item"     href="http://localhost/MS/deskapp/logout"><i class="dw dw-logout"></i> Log Out</a>
+          <a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/profile"><i class="dw dw-user1"></i> Profile</a>
+          <a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/profile"><i class="dw dw-settings2"></i> Setting</a>
+          <a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/faq"><i class="dw dw-help"></i> Help</a>
+          <a class="dropdown-item" href="http://localhost/MS/deskapp/logout"><i class="dw dw-logout"></i> Log Out</a>
         </div>
       </div>
     </div>
     <div class="github-link">
-      <a        </a>
+      <a href="https://github.com/dropways/deskapp" target="_blank"><img src="http://localhost/MS/assets/vendors/images/github.svg" alt=""></a>
     </div>
   </div>
 </div>
@@ -238,8 +244,8 @@
 </div><div class="left-side-bar">
     <div class="brand-logo">
       <a href="http://localhost/MS/deskapp/dashboard">
-        <img src="http://localhost/MS/assets/vendors/images/logo-dark.png" alt="" class="dark-logo">
-        <img src="http://localhost/MS/assets/vendors/images/logo-dark.png" alt="" class="light-logo">
+        <img src="http://localhost/MS/assets/vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
+        <img src="http://localhost/MS/assets/vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
       </a>
       <div class="close-sidebar" data-toggle="left-sidebar-close">
         <i class="ion-close-round"></i>
@@ -446,54 +452,51 @@
         
       <div class="pd-20 card-box mb-30">
     <div class="clearfix">
-        <h4 class="text-blue h4">Edit Project</h4>
-    </div>
-    <div class="wizard-content">
-    <form method="post" action="deskapp/ui/updateProject">
-            <!-- Add a hidden input field to store the project ID -->
-            <input type="hidden" name="project_id" value="<?= $project['id_project'] ?>">
-            <div class="content clearfix">
-                <!-- Step 1: Project Details -->
-                <section id="steps-uid-1-p-0" role="tabpanel" aria-labelledby="steps-uid-1-h-0" class="body current" aria-hidden="false">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Title</label>
-                                <input name="pro_name" type="text" class="form-control" value="<?= $project['pro_name'] ?>">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Details</label>
-                                <input name="project_details" type="text" class="form-control" >
-                            </div>
+    <h4 class="text-blue h4">Edit Project</h4>
+</div>
+<div class="wizard-content">
+    <form method="post"  action="deskapp/ui/updateProject">
+        <!-- Add a hidden input field to store the project ID -->
+        <input type="hidden" name="project_id" value="<?= $project['id_project'] ?>">
+        <div class="content clearfix">
+            <!-- Step 1: Project Details -->
+            <section id="steps-uid-1-p-0" role="tabpanel" aria-labelledby="steps-uid-1-h-0" class="body current" aria-hidden="false">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input name="pro_name" type="text" class="form-control" value="<?= $project['pro_name'] ?>">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Add Members:</label>
-                                <select name="add_members" class="custom-select form-control">
-                                    <?php foreach ($users as $user) { ?>
-                                        <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="d_start">Start Date :</label>
-                                <input name="d_start" type="date" id="d_start" class="form-control" placeholder="Select Date" value="<?= $project['d_start'] ?>">
-                            </div>
-                            <div class="form-group">
-                                <label for="d_end">End Date :</label>
-                                <input name="d_end" type="date" id="d_end" class="form-control" placeholder="Select Date" value="<?= $project['d_end'] ?>">
-                            </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Details</label>
+                            <input name="project_details" type="text" class="form-control">
                         </div>
                     </div>
-                </section>
-                        <!-- Step 2 -->
-                        <section id="steps-uid-1-p-1" role="tabpanel" aria-labelledby="steps-uid-1-h-1" class="body" aria-hidden="true" style="display: none;">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Add Members:</label>
+                            <select name="add_members" class="custom-select form-control">
+                                <?php foreach ($users as $user) { ?>
+                                    <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
+                    </div>
+                        
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="d_start">Start Date:</label>
+                            <input name="d_start" type="date" id="d_start" class="form-control" placeholder="Select Date" value="<?= $project['d_start'] ?>">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Step 2: Placeholder for the next step -->
+            <section id="steps-uid-1-p-1" role="tabpanel" aria-labelledby="steps-uid-1-h-1" class="body" aria-hidden="true" style="display: none;">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -578,14 +581,16 @@
                         </section>
                     </div>
             
-            <input class="btn btn-primary btn-lg btn-block" type="submit" value="Update">
+            <input class="btn btn-primary btn-lg btn-block" type="submit"  value="Update">
         </form>
     </div>
 </div>
         
       </div>
       <!-- footer -->
-      <div class="footer-wrap pd-20 mb-20 card-box">© 2023 Security Forces Hospital</div>    </div>
+      <div class="footer-wrap pd-20 mb-20 card-box">
+    DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">MusheAbdulHakim</a>
+</div>    </div>
   </div>
   <!-- js -->
   <script src="http://localhost/MS/assets/vendors/scripts/core.js"></script>

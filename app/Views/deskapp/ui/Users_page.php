@@ -35,11 +35,9 @@
 
 <div class="header">
 	<div class="header-left">
-		
-		
-		<div class="header-search">
-			
-		</div>
+	<div class="menu-icon dw dw-menu"></div>
+
+
 	</div>
 	<div class="header-right">
 		<div class="dashboard-setting user-notification">
@@ -197,7 +195,7 @@
 			</div>
 		</div>
 	</div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-dark-2 mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 0px; height: 659px; top: 0px; display: block; max-height: 648.8px;"><div class="mCSB_dragger_bar" style="line-height: 0px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-</div><div class="left-side-bar">
+</div><div class="left-side-bar open">
 		<div class="brand-logo">
 			<a href="http://localhost/MS/deskapp/dashboard">
 				<img src="http://localhost/MS/assets/vendors/images/logo-dark.png" alt="" class="dark-logo">
@@ -453,14 +451,6 @@
     </div>
 </div>
 
-				<!-- Simple Datatable End -->
-				<!-- multiple select row Datatable start -->
-				
-				<!-- multiple select row Datatable End -->
-				<!-- Checkbox select Datatable start -->
-				
-				<!-- Checkbox select Datatable End -->
-				<!-- Export Datatable start -->
 				
 				<!-- Export Datatable End -->
 			</div>
@@ -495,7 +485,7 @@ $(document).ready(function() {
 });
 </script>
 			<!-- footer -->
-			<div class="footer-wrap pd-20 mb-20 card-box">SYSTEM MANGER
+			<div class="footer-wrap pd-20 mb-20 card-box">© 2023 Security Forces Hospital
 </div>		</div>
 	</div>
 	<!-- js -->
