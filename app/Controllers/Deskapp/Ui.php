@@ -328,7 +328,6 @@
 			 $data['user'] = $user;
 			return view('deskapp/ui/ui-tooltip-popover',$data);
 
-
 		}
 
 
