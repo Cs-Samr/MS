@@ -532,7 +532,6 @@ body {
 <body>
 <form method="POST" action="">
 <div class="container">
-<<<<<<< HEAD
     <div id="app">
         <step-navigation :steps="steps" :currentstep="currentstep">
         </step-navigation>
@@ -582,7 +581,6 @@ body {
 
         <script type="x-template" id="step-navigation-template">
             <ol class="step-indicator">
-=======
     <div id="app"><ol class="step-indicator"><li class="complete"><div class="step"><i class="fa fa-map-marker"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>1</span>: <span>Position</span></div></li> <li class="complete"><div class="step"><i class="fa fa-folder-open"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>2</span>: <span>Category</span></div></li><li class="complete"><div class="step"><i class="fa fa-folder-open"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>3</span>: <span>ddff</span></div></li><li class="active"><div class="step"><i class="fa fa-paper-plane"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>4</span>: <span>Send</span></div></li></ol> <div style="display: none;"><h1>Step 1</h1> <div class="form-group"><label for="email">Email address</label> <input type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"> <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div> <div class="form-group"><label for="password">Password</label> <input type="password" name="password" placeholder="Password" class="form-control"></div></div> <div style="display: none;"><h1>Step 2</h1> <div class="form-group"><label for="select">Example select</label> <select name="select" class="form-control"><option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option></select></div></div> <div><h1>Step 3</h1> <div class="form-group"><label for="textarea">Example textarea</label> <textarea name="textarea" rows="4" class="form-control"></textarea></div> </div> <div class="step-wrapper"><button type="button" class="btn btn-primary">
                     Back
                 </button> <button type="button" disabled="disabled" class="btn btn-primary">
@@ -604,7 +602,6 @@ body {
                 </button></div> <script type="x-template" id="step-navigation-template">
             
 			<ol class="step-indicator">
->>>>>>> f69a52aa6be0beb9a68ad9bf5867e53ab169e089
                 <li v-for="step in steps" is="step-navigation-step" :key="step.id" :step="step" :currentstep="currentstep">
                 </li>
             </ol>
