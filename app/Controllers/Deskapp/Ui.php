@@ -294,6 +294,7 @@
 			$ProjectModel = new ProjectModel();
 		
 			// Get the projects details
+			$data['projects'] = $ProjectModel->getpro();
 		
 			return view('deskapp/ui/ui-sweet-alert', $data);
 
@@ -321,7 +322,7 @@
 			$ProjectModel = new ProjectModel();
 		
 			// Get the projects details
-			$data['projects'] = $ProjectModel->getuser();
+			$data['projects'] = $ProjectModel->getpro();
 			$userModel = new UserModel();
 			 $user = $userModel->getUser();
 
@@ -360,9 +361,10 @@
 		
 			// Update the project's information based on the form data
 			$project['pro_name'] = $this->request->getPost('pro_name');
-			$project['Details'] = $this->request->getPost('Details');
 			$project['d_start'] = $this->request->getPost('d_start');
 			$project['d_end'] = $this->request->getPost('d_end');
+			$project['details'] = $this->request->getPost('details');
+
 		
 			// Save the updated project data to the database using the update() method
 			$projectModel->update($projectId, $project);
