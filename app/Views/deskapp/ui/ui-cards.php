@@ -446,7 +446,7 @@
     </style>
 </head>
 
-<body class="header-white active sidebar-light" data-select2-id="13">
+<body class="header-white active sidebar-dark" data-select2-id="13">
     <!-- echo header,rightsidebar,leftsidebar and loader -->
     <div class="pre-loader" style="display: none;">
         <div class="pre-loader-box">
@@ -2134,10 +2134,13 @@
                     </div>
                     <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next"  href="http://localhost/MS/deskapp/ui/card-hover" class="btn" >
                     
+                   
+                    <a class="btn btn-primary" href="<?= base_url('deskapp/ui/card-hover/') ?>">Next</a>
                 </form>
             </div>
         </div>
-    </div>
+    </div><!-- footer -->
+            <div class="footer-wrap pd-20 mb-20 card-box">© 2023 Security Forces Hospital</div>
     <!-- js -->
     <script src="http://localhost/MS/assets/vendors/scripts/core.js"></script>
     <script src="http://localhost/MS/assets/vendors/scripts/script.min.js"></script>
