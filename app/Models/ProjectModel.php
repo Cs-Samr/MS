@@ -8,7 +8,7 @@ class ProjectModel extends Model
 {
     protected $table = 'projects';
     protected $primaryKey = 'id_project';
-    protected $allowedFields = [ 'pro_name', 'd_start', 'd_end','details'];
+    protected $allowedFields = ['pro_name','project_code', 'd_start', 'd_end','details'];
     
 
     public function getpro()
@@ -20,5 +20,11 @@ class ProjectModel extends Model
     public function getProjectsCount()
     {
         return $this->countAllResults(); // This will return the total number of rows in the 'project' table
+    }
+
+    public function deleteProject($projectId)
+    {
+        
+        return $this->where('id_project', $projectId)->delete();
     }
 }

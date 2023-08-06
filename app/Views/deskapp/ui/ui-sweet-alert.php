@@ -408,12 +408,12 @@
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <div class="title">
-                                <h4>Users</h4>
+                                <h4>Projects</h4>
                             </div>
                             <nav aria-label="breadcrumb" role="navigation">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="http://localhost/MS/deskapp/dashboard">Home Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">All Users
+                                    <li class="breadcrumb-item active" aria-current="page">All Project
 </li>
                                 </ol>
                             </nav>
@@ -426,7 +426,6 @@
 	<div class="card-box mb-30">
   <div class="pd-20 d-flex align-items-center justify-content-between">
     <h4 class="text-blue h4">All Project Table</h4>
-    <a class="btn btn-primary" href="<?php echo base_url('deskapp/register'); ?>">Add Project</a>
   </div>
 
 	<table class="data-table table stripe hover nowrap dataTable no-footer dtr-inline" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
@@ -455,7 +454,8 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
                         <a class="dropdown-item"  href="http://localhost/MS/deskapp/ui/editProject/<?= $project['id_project'] ?>"><i class="dw dw-edit2"></i> Edit</a>
-                       <!-- <a class="dropdown-item delete-user" href="http://localhost/MS/deskapp/ui/delete/<?= $project['id_project'] ?>"><i class="dw dw-delete-3"></i> Delete</a>-->
+                        <a class="dropdown-item delete-user" href="http://localhost/MS/deskapp/ui/deletePro/<?= $project['id_project'] ?>"><i class="dw dw-delete-3"></i> Delete</a>
+                        <a class="dropdown-item " action="/MS/deskapp/Ui/timeline">View</a>
                     </div>
                             </div>
                         </td>
