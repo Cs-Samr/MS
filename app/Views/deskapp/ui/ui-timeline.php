@@ -637,10 +637,7 @@ body {
             </div>
         </script>
     </div>
-<<<<<<< HEAD
-=======
 	</div>
->>>>>>> 407068fd9a3473cb625f741fdeaabfa8fcd95170
 </div>
 </form>
 <script>
