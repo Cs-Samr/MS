@@ -204,8 +204,8 @@
 
 		public function save()
 		{
-			ini_set('display_errors', 1);
-			ini_set('display_startup_errors', 1);
+			//ini_set('display_errors', 1);
+			//ini_set('display_startup_errors', 1);
 			helper(['form','url']);
 			
 			$rules = [
@@ -229,6 +229,9 @@
 
 				 $model = new ProjectModel();
 				 $model->save($data); 
+				 
+				 return redirect()->to('http://localhost/MS/deskapp/ui/timeline');
+
 	
 			} else {
 				$data['validation'] = $this->validator;
