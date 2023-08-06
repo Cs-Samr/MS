@@ -2259,7 +2259,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Details</label>
-                                        <input name="detalis" type="text" class="form-control">
+                                        <input name="details" type="text" class="form-control">
                                     </div>
                                 </div>
                             </div>
