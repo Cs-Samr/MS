@@ -1260,4 +1260,21 @@ CRITICAL - 2023-08-06 03:45:25 --> syntax error, unexpected token "<<", expectin
 #5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #7 {main}
+<<<<<<< HEAD
 >>>>>>> 177ab37619c39cba30113af5b34f6acdb22722ff
+=======
+CRITICAL - 2023-08-06 03:47:28 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(148): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cardsHover()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-06 03:47:28 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(148): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cardsHover()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+>>>>>>> f929e79d90f66313c4f6f069c73c1ba1007aefca
