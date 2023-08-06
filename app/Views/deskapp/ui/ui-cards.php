@@ -2242,17 +2242,18 @@
 
             </div>
             <div class="wizard-content">
-                <form method="post" enctype="multipart/form-data" action="http://localhost/MS/deskapp/ui/save"
-                    abineguid="77396DBA8FFA4CFB8D9AA47DE07132D7">
+                <form method="post" enctype="multipart/form-data" action="/MS/deskapp/ui/save">
                     <div class="content clearfix">
 
                         <section id="steps-uid-1-p-0" role="tabpanel" aria-labelledby="steps-uid-1-h-0"
                             class="body current" aria-hidden="false">
+                            <?= csrf_field() ?>
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Title</label>
-                                        <input name="pro_name" type="text" class="form-control">
+                                        <input name="pro_name" type="text" class="form-control" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -2271,7 +2272,7 @@
                                     <div class="form-group">
                                         <label>Add Members:</label>
                                         <select class="custom-select form-control selectpicker" data-live-search="true"
-                                            multiple>
+                                            multiple  >
                                             <?php foreach ($names as $name): ?>
         <option><?php echo $name; ?></option>
     <?php endforeach; ?>
@@ -2283,120 +2284,24 @@
                                     <div class="form-group">
                                         <label for="d_start">Start Date :</label>
                                         <input name="d_start" type="date" id="d_start" class="form-control"
-                                            placeholder="Select Date">
+                                            placeholder="Select Date" require>
                                     </div>
                                     <div class="form-group">
                                         <label for="d_end">End Date :</label>
                                         <input name="d_end" type="date" id="d_end" class="form-control"
-                                            placeholder="Select Date">
+                                            placeholder="Select Date" require>
 
 
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <!-- Step 2 -->
+                       
 
-                        <section id="steps-uid-1-p-1" role="tabpanel" aria-labelledby="steps-uid-1-h-1" class="body"
-                            aria-hidden="true" style="display: none;">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Job Title :</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Company Name :</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label>Job Description :</label>
-                                        <textarea class="form-control"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Step 3 -->
 
-                        <section id="steps-uid-1-p-2" role="tabpanel" aria-labelledby="steps-uid-1-h-2" class="body"
-                            aria-hidden="true" style="display: none;">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Interview For :</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Interview Type :</label>
-                                        <select class="form-control">
-                                            <option>Normal</option>
-                                            <option>Difficult</option>
-                                            <option>Hard</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Interview Date :</label>
-                                        <input type="text" class="form-control date-picker" placeholder="Select Date">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Interview Time :</label>
-                                        <input class="form-control time-picker td-input" placeholder="Select time"
-                                            type="text" readonly="">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Step 4 -->
-
-                        <section id="steps-uid-1-p-3" role="tabpanel" aria-labelledby="steps-uid-1-h-3" class="body"
-                            aria-hidden="true" style="display: none;">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Behaviour :</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Confidance</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Result</label>
-                                        <select class="form-control">
-                                            <option>Select Result</option>
-                                            <option>Selected</option>
-                                            <option>Rejected</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-
-                                        <label>Comments</label>
-                                        <textarea class="form-control"></textarea>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </section>
                     </div>
-<<<<<<< HEAD
 
-                    <a class="btn btn-primary btn-block" href="http://localhost/MS/deskapp/ui/card-hover">Next</a>
-=======
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next"  href="http://localhost/MS/deskapp/ui/card-hover" class="btn" >
-                    
-                   
-                    <a class="btn btn-primary" href="<?= base_url('deskapp/ui/card-hover/') ?>">Next</a>
->>>>>>> 688477eba24f36b4a3248dae0e974944389984e9
-                </form>
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next"  >
+                    </form>
             </div>
         </div><!-- footer -->
         <div class="footer-wrap pd-20 mb-20 card-box">© 2023 Security Forces Hospital</div>
