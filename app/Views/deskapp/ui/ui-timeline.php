@@ -613,15 +613,12 @@ body {
                 <div class="caption hidden-xs hidden-sm">Step <span v-text="step.id"></span>: <span v-text="step.title"></span></div>
             </li>
         </script>
-<<<<<<< HEAD
 
         <script type="x-template" id="step-template">
             <div class="step-wrapper" :class="stepWrapperClass">
-=======
 		 <script type="x-template" id="step-template">
            
 		    <div class="step-wrapper" :class="stepWrapperClass">
->>>>>>> f69a52aa6be0beb9a68ad9bf5867e53ab169e089
                 <button type="button" class="btn btn-primary" @click="lastStep" :disabled="firststep">
                     Back
                 </button>
