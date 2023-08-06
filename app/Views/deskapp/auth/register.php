@@ -44,12 +44,16 @@
 <body class="login-page" style="background-color: #2fb5ba;">
 
     <div class="login-header box-shadow">
+
         <div class="container-fluid d-flex justify-content-between align-items-center">
+
             <div class="brand-logo">
                 <a href="<?php echo base_url('deskapp/login'); ?>">
                     <img src="<?php echo base_url(); ?>/assets/vendors/images/logo-white.png" alt="">
                 </a>
             </div>
+            <a class="btn btn-primary " href="javascript:history.go(-1)">Back ></a>
+
 
         </div>
     </div>
@@ -66,8 +70,10 @@
                 <div class="col-md-6 col-lg-5">
                     <div class="register-box container-fluid pt-4 pb-4 bg-white box-shadow border-radius-10">
                                     <div class="login-title ">
+
                                         <h3 class="text-center"  style="color: #2fb5ba;">Add New User</h3> <br>
                                     </div>
+
 					<form method="post" enctype="multipart/form-data" action="/MS/deskapp/register/save">
                             <?= csrf_field() ?>
                             <div class="form-group row">
@@ -124,7 +130,8 @@
                             </form>
                             <div class="col-sm-12">
                                 <div class="input-group mb-0">
-								<input class="btn  btn-lg btn-block" style="background-color: #bda374; color: #fff;" type="submit" value="Register">
+
+								<input class="btn  btn-lg btn-block" style="background-color: #bda374; color: #fff;" type="submit" value="Add">
                                 </div>
                         </form>
                     </div>

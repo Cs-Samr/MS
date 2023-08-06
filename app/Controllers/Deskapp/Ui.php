@@ -192,13 +192,10 @@
 		{
 			$session = session();
 			$data['session'] = \Config\Services::session();
- 			$data['username'] = $session->get('user_name');
-
+ 			$data['username'] = $session->get('user_name');			
 
 			 $userModel = new UserModel();
-			 $user = $userModel->dd();
-
-			 $data['users'] = $user;
+			 $data['names'] = $userModel->getAllNames();
 			 return view('deskapp/ui/ui-cards',$data);
 			
 
@@ -294,7 +291,6 @@
 			$ProjectModel = new ProjectModel();
 		
 			// Get the projects details
-			$data['projects'] = $ProjectModel->getuser();
 		
 			return view('deskapp/ui/ui-sweet-alert', $data);
 
@@ -380,4 +376,3 @@
 			return view('deskapp/ui/ui-typography',$data);
 		}
 	}
-

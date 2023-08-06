@@ -401,8 +401,25 @@
 		</div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-dark-2 mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 425px; display: block; height: 676px; max-height: 665.6px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 425px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position:absolute;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
 	</div>
 	<div class="mobile-menu-overlay"></div>	<div class="main-container">
+		
 		<div class="pd-ltr-20 xs-pd-20-10">
 			<div class="min-height-200px">
+			<div class="page-header">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="title">
+                                <h4>Users</h4>
+                            </div>
+                            <nav aria-label="breadcrumb" role="navigation">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="http://localhost/MS/deskapp/dashboard">Home Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">All Users
+</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
 				
 				<!-- Simple Datatable start -->
 
