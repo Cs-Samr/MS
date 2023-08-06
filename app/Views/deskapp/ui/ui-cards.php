@@ -2253,7 +2253,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Title</label>
-                                        <input name="pro_name" type="text" class="form-control" >
+                                        <input name="pro_name" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -2272,10 +2272,10 @@
                                     <div class="form-group">
                                         <label>Add Members:</label>
                                         <select class="custom-select form-control selectpicker" data-live-search="true"
-                                            multiple  >
+                                            multiple>
                                             <?php foreach ($names as $name): ?>
-        <option><?php echo $name; ?></option>
-    <?php endforeach; ?>
+                                            <option><?php echo $name; ?></option>
+                                            <?php endforeach; ?>
                                         </select>
                                     </div>
                                 </div>
@@ -2295,13 +2295,13 @@
                                     </div>
                                 </div>
                             </div>
-                       
+
 
 
                     </div>
 
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next"  >
-                    </form>
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next">
+                </form>
             </div>
         </div><!-- footer -->
         <div class="footer-wrap pd-20 mb-20 card-box">© 2023 Security Forces Hospital</div>
