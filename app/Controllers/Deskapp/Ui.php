@@ -361,8 +361,11 @@
 		
 			// Update the project's information based on the form data
 			$project['pro_name'] = $this->request->getPost('pro_name');
+			$project['project_code'] = $this->request->getPost('project_code');
 			$project['d_start'] = $this->request->getPost('d_start');
 			$project['d_end'] = $this->request->getPost('d_end');
+			$project['details'] = $this->request->getPost('details');
+
 		
 			// Save the updated project data to the database using the update() method
 			$projectModel->update($projectId, $project);
