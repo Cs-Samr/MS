@@ -204,14 +204,14 @@
 
 		public function save()
 		{
-			ini_set('display_errors', 1);
-			ini_set('display_startup_errors', 1);
+			//ini_set('display_errors', 1);
+			//ini_set('display_startup_errors', 1);
 			helper(['form','url']);
 			
 			$rules = [
 				//'project_code' => 'required|min_length[2]|max_length[100]',
 				'pro_name' => 'required|min_length[2]|max_length[100]',
-				'detalis' => 'required|min_length[2]|max_length[500]',
+				'details' => 'required|min_length[2]|max_length[500]',
 				'd_start' => 'required',
 				'd_end' => 'required'
 			];
@@ -223,12 +223,15 @@
 					'pro_name' => $this->request->getVar('pro_name'),
 					'd_start' => $this->request->getVar('d_start'),
 					'd_end' => $this->request->getVar('d_end'),
-					'detalis' => $this->request->getVar('detalis'),
+					'details' => $this->request->getVar('details'),
 				];
 	
 
 				 $model = new ProjectModel();
 				 $model->save($data); 
+				 
+				 return redirect()->to('http://localhost/MS/deskapp/ui/timeline');
+
 	
 			} else {
 				$data['validation'] = $this->validator;
