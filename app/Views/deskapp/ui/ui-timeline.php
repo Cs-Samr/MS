@@ -434,11 +434,15 @@
 <!-- ----------------------------- -->
 
 
-
-<!-- This script got from frontendfreecode.com -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js'></script>
 <style>
-
+@import "https://fonts.googleapis.com/css?family=Roboto";
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f6f6f6;
+  font-family: 'Roboto', sans-serif;
+}
 
 .container {
   background-color: #fff;
@@ -524,37 +528,72 @@
 }
 </style>
 
+</head>
+<body>
 <form method="POST" action="">
 <div class="container">
-    <div id="app"><ol class="step-indicator"><li class="complete"><div class="step"><i class="fa fa-map-marker"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>1</span>: <span>Position</span></div></li> <li class="complete"><div class="step"><i class="fa fa-folder-open"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>2</span>: <span>Category</span></div></li><li class="complete"><div class="step"><i class="fa fa-folder-open"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>3</span>: <span>ddff</span></div></li><li class="active"><div class="step"><i class="fa fa-paper-plane"></i></div> <div class="caption hidden-xs hidden-sm">Step <span>4</span>: <span>Send</span></div></li></ol> <div style="display: none;"><h1>Step 1</h1> <div class="form-group"><label for="email">Email address</label> <input type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"> <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div> <div class="form-group"><label for="password">Password</label> <input type="password" name="password" placeholder="Password" class="form-control"></div></div> <div style="display: none;"><h1>Step 2</h1> <div class="form-group"><label for="select">Example select</label> <select name="select" class="form-control"><option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option></select></div></div> <div><h1>Step 3</h1> <div class="form-group"><label for="textarea">Example textarea</label> <textarea name="textarea" rows="4" class="form-control"></textarea></div> <div class="form-group"><label for="file">File input</label> <input type="file" name="file" aria-describedby="fileHelp" class="form-control-file"> <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small></div></div> <div class="step-wrapper"><button type="button" class="btn btn-primary">
-                    Back
-                </button> <button type="button" disabled="disabled" class="btn btn-primary">
-                    Next
-                </button> <button type="submit" class="btn btn-primary">
-                    Submit
-                </button></div><div class="step-wrapper"><button type="button" class="btn btn-primary">
-                    Back
-                </button> <button type="button" disabled="disabled" class="btn btn-primary">
-                    Next
-                </button> <button type="submit" class="btn btn-primary">
-                    Submit
-                </button></div><div class="step-wrapper active"><button type="button" class="btn btn-primary">
-                    Back
-                </button> <button type="button" disabled="disabled" class="btn btn-primary">
-                    Next
-                </button> <button type="submit" class="btn btn-primary">
-                    Submit
-                </button></div> <script type="x-template" id="step-navigation-template">
+    <div id="app">
+        <step-navigation :steps="steps" :currentstep="currentstep">
+        </step-navigation>
+        
+        <div v-show="currentstep == 1">
+            <h1>Step 1</h1>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Password">
+            </div>
+        </div>
+
+        <div v-show="currentstep == 2">
+            <h1>Step 2</h1>
+            <div class="form-group">
+                <label for="select">Example select</label>
+                <select class="form-control" name="select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+        <div v-show="currentstep == 3">
+            <h1>Step 3</h1>
+            <div class="form-group">
+                <label for="textarea">Example textarea</label>
+                <textarea class="form-control" name="textarea" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">File input</label>
+                <input type="file" class="form-control-file" name="file" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+            </div>
+        </div>
+
+        <step v-for="step in steps" :currentstep="currentstep" :key="step.id" :step="step" :stepcount="steps.length" @step-change="stepChanged">
+        </step>
+
+        <script type="x-template" id="step-navigation-template">
             <ol class="step-indicator">
                 <li v-for="step in steps" is="step-navigation-step" :key="step.id" :step="step" :currentstep="currentstep">
                 </li>
             </ol>
-        </script> <script type="x-template" id="step-navigation-step-template">
+        </script>
+
+        <script type="x-template" id="step-navigation-step-template">
             <li :class="indicatorclass">
                 <div class="step"><i :class="step.icon_class"></i></div>
                 <div class="caption hidden-xs hidden-sm">Step <span v-text="step.id"></span>: <span v-text="step.title"></span></div>
             </li>
-        </script> <script type="x-template" id="step-template">
+        </script>
+
+        <script type="x-template" id="step-template">
             <div class="step-wrapper" :class="stepWrapperClass">
                 <button type="button" class="btn btn-primary" @click="lastStep" :disabled="firststep">
                     Back
@@ -566,10 +605,10 @@
                     Submit
                 </button>
             </div>
-        </script></div>
+        </script>
+    </div>
 </div>
 </form>
-
 <script>
 Vue.component("step-navigation-step", {
   template: "#step-navigation-step-template",
@@ -645,15 +684,15 @@ new Vue({
       id: 2,
       title: "Category",
       icon_class: "fa fa-folder-open" },
-    { 
-      id: 3,
-      title: "ddff",
-      icon_class: "fa fa-folder-open" },
 
     {
-      id: 4,
+      id: 3,
       title: "Send",
-      icon_class: "fa fa-paper-plane" }] },
+      icon_class: "fa fa-paper-plane" },
+      {
+      id: 4,
+      title: "Position",
+      icon_class: "fa fa-map-marker" },] },
 
 
 
