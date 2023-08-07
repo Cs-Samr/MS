@@ -194,19 +194,8 @@
 				$model->saveProject($data);
 				$id = $model->getInsertID();
 
-     			$data['project_code'] = $id.$data['d_start'];
-<<<<<<< HEAD
-=======
-=======
-				      // Merge 'id' and 'email' and set it to 'code'
-                //$data['project_code'] = $this->request->getPost('id_project') . $this->request->getPost('pro_name');
-<<<<<<< HEAD
-				$data['project_code'] = $id .$data['d_start'];
-=======
+			  // Merge 'id' and 'd_start' and set it to 'code'
 				$data['project_code'] = $id.$data['d_start'];
->>>>>>> 0745332614d9ae603f55c6e57362c2779804c14b
->>>>>>> ebe2dc05bc0e169187e572bcabbc406b39e4adf4
->>>>>>> 773b064a2ec7f2cf4541706aaeb68e6ef7c1937c
 				$data['id_project'] = $id ;
         
 				$model->replace($data);
