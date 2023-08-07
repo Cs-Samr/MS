@@ -315,32 +315,29 @@
 			return view('deskapp/ui/ui-timeline',$data);
 		}
 
-		public function tooltip()
-		{
-
-			// Get the session instance
-			$session = session();
-			$data['session'] = \Config\Services::session();
-
-
-			// Fetch the 'user_name' from the session
-			$data['username'] = $session->get('user_name');
-	
-			// Load the ProjectModel
-			$projectModel = new ProjectModel();
+			public function tooltip($projectId)
+			{
+				$session = session();
+				$data['session'] = \Config\Services::session();
+				
+				// Get the username from the session
+				$data['username'] = $session->get('user_name');
+				
+				// Load the ProjectModel
+				$projectModel = new ProjectModel();
+				
+				// Get all projects
+				$data['projects'] = $projectModel->getpro();
+				
+				// Load the UserModel
+				$userModel = new UserModel();
+				
+				// Get all users
+				$data['users'] = $userModel->getUser();
+				
+				return view('deskapp/ui/ui-tooltip-popover', $data);
+			}
 			
-			// Get all projects
-			$data['projects'] = $projectModel->getpro();
-	
-			// Load the UserModel
-			$userModel = new UserModel();
-	
-			// Get all users
-			$data['users'] = $userModel->getUser();
-	
-			return view('deskapp/ui/ui-tooltip-popover', $data);
-
-		}
 		public function deletePro($projectId){
 	
 				// Load the UserModel
@@ -422,9 +419,10 @@
 			$projectModel->update($projectId, $project);
 		
 			// Redirect the user back to the projects list page or wherever you want to redirect after update
-			return redirect()->to(base_url("deskapp/ui/editProject/{$projectId}"));	
+			return redirect()->to(base_url("deskapp/ui/editProject"));	
 			
 		} 
+
 		public function typography()
 		{
 			$session = session();
