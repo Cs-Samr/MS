@@ -294,6 +294,7 @@
 			$ProjectModel = new ProjectModel();
 		
 			// Get the projects details
+			$data['projects'] = $ProjectModel->getpro();
 		
 			return view('deskapp/ui/ui-sweet-alert', $data);
 
@@ -305,6 +306,7 @@
  			$data['username'] = $session->get('user_name');
 			return view('deskapp/ui/ui-tabs',$data);
 		}
+
 		public function timeline()
 		{
 			$session = session();
@@ -312,23 +314,73 @@
  			$data['username'] = $session->get('user_name');
 			return view('deskapp/ui/ui-timeline',$data);
 		}
+
 		public function tooltip()
 		{
+
+			// Get the session instance
 			$session = session();
 			$data['session'] = \Config\Services::session();
- 			$data['username'] = $session->get('user_name');
-			// Load the ProjectModel
-			$ProjectModel = new ProjectModel();
-		
-			// Get the projects details
-			$data['projects'] = $ProjectModel->getuser();
-			$userModel = new UserModel();
-			 $user = $userModel->getUser();
 
-			 $data['user'] = $user;
-			return view('deskapp/ui/ui-tooltip-popover',$data);
+
+			// Fetch the 'user_name' from the session
+			$data['username'] = $session->get('user_name');
+	
+			// Load the ProjectModel
+			$projectModel = new ProjectModel();
+			
+			// Get all projects
+			$data['projects'] = $projectModel->getpro();
+	
+			// Load the UserModel
+			$userModel = new UserModel();
+	
+			// Get all users
+			$data['users'] = $userModel->getUser();
+	
+			return view('deskapp/ui/ui-tooltip-popover', $data);
 
 		}
+		public function deletePro($projectId){
+	
+				// Load the UserModel
+				$userModel = new UserModel();
+	
+				// Perform the user deletion using the UserModel
+				$success = $projectModel->deleteProject($projectId);
+
+			   // Get the project details based on the project ID
+			   $data['project'] = $projectModel->find($projectId);
+			
+				$session = session();
+				$data['session'] = \Config\Services::session();
+				$data['username'] = $session->get('user_name');
+		
+				// Load the UserModel
+				$userModel = new UserModel();
+				$users = $userModel->getUser();
+				
+				
+				// Process the users based on the "rules" field
+				foreach ($users as &$user) {
+					if ($user['rules'] === '1') {
+						$user['rules'] = 'system manager';
+					} elseif ($user['rules'] === '2') {
+						$user['rules'] = 'manager';
+					} else {
+						$user['rules'] = 'member';
+					}
+	
+				}
+		
+				$data['users'] = $users;
+	
+				
+			return view('deskapp/ui/ui-sweet-alert', $data);
+	
+		}
+
+
 
 
 		public function editProject($projectId) {
@@ -353,15 +405,18 @@
 			$projectModel = new ProjectModel();
 
 			// Get the project ID from the form submission
-			$projectId = $this->request->getPost('project_id');
+			$projectId = $this->request->getPost('id_project ');
 		
 			// Fetch the project details based on the project ID
 			$project = $projectModel->find($projectId);
 		
 			// Update the project's information based on the form data
 			$project['pro_name'] = $this->request->getPost('pro_name');
+			$project['project_code'] = $this->request->getPost('project_code');
 			$project['d_start'] = $this->request->getPost('d_start');
 			$project['d_end'] = $this->request->getPost('d_end');
+			//$project['details'] = $this->request->getPost('details');
+
 		
 			// Save the updated project data to the database using the update() method
 			$projectModel->update($projectId, $project);
