@@ -197,10 +197,8 @@
 			 $userModel = new UserModel();
 			 $data['names'] = $userModel->getAllNames();
 			 return view('deskapp/ui/ui-cards',$data);
-			
 
 		}
-
 
 		public function save()
 		{
@@ -209,15 +207,15 @@
 			helper(['form','url']);
 			
 			$rules = [
-				//'project_code' => 'required|min_length[2]|max_length[100]',
 				'pro_name' => 'required|min_length[2]|max_length[100]',
-				'details' => 'required|min_length[2]|max_length[500]',
+				'details' => 'min_length[2]|max_length[500]',
 				'd_start' => 'required',
 				'd_end' => 'required'
 			];
 	
 			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
 				$model = new ProjectModel();
+
 				$data = [
 					//'project_code' => $this->request->getVar('project_code'),
 					'pro_name' => $this->request->getVar('pro_name'),
@@ -225,10 +223,18 @@
 					'd_end' => $this->request->getVar('d_end'),
 					'details' => $this->request->getVar('details'),
 				];
-	
+	            $model->saveProject($data);
+				$id = $model->getInsertID();
+				//print_r($id);
+				// $model = new ProjectModel();
+				// $model->save($data); 
 
-				 $model = new ProjectModel();
-				 $model->save($data); 
+				      // Merge 'id' and 'email' and set it to 'code'
+                //$data['project_code'] = $this->request->getPost('id_project') . $this->request->getPost('pro_name');
+				$data['project_code'] = $id .$data['d_start'];
+				$data['id_project'] = $id ;
+        
+				$model->replace($data);
 				 
 				 return redirect()->to('http://localhost/MS/deskapp/ui/timeline');
 
@@ -409,7 +415,6 @@
 		
 			// Update the project's information based on the form data
 			$project['pro_name'] = $this->request->getPost('pro_name');
-			$project['project_code'] = $this->request->getPost('project_code');
 			$project['d_start'] = $this->request->getPost('d_start');
 			$project['d_end'] = $this->request->getPost('d_end');
 			//$project['details'] = $this->request->getPost('details');
