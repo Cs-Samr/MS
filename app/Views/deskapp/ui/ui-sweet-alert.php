@@ -453,9 +453,9 @@
                         <i class="dw dw-more"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                        <a class="dropdown-item"  href="http://localhost/MS/deskapp/ui/editProject/<?= $project['id_project'] ?>"><i class="dw dw-edit2"></i> Edit</a>
+                        <a class="dropdown-item"  href="http://localhost/MS/deskapp/ui/tooltip/<?= $project['id_project'] ?>"><i class="dw dw-edit2"></i> Edit</a>
                         <a class="dropdown-item delete-user" href="http://localhost/MS/deskapp/ui/deletePro/<?= $project['id_project'] ?>"><i class="dw dw-delete-3"></i> Delete</a>
-                        <a class="dropdown-item " action="/MS/deskapp/Ui/timeline">View</a>
+                        <a class="dropdown-item " href="http://localhost/MS/deskapp/forms/wizard">View</a>
                     </div>
                             </div>
                         </td>
@@ -466,8 +466,7 @@
     </div>
 </div>
 
-				
-				<!-- Export Datatable End -->
+					<!-- Export Datatable End -->
 			</div>
 
 			<script>
