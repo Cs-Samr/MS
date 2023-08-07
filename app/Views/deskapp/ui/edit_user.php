@@ -38,21 +38,21 @@
 		<div class="container-fluid d-flex justify-content-between align-items-center">
 			<div class="brand-logo">
 				<a href="<?php echo base_url('deskapp/login'); ?>">
-					<img src="<?php echo base_url(); ?>/assets/vendors/images/logo-dark.png" alt="">
+					<img src="<?php echo base_url(); ?>/assets/vendors/images/logo-white.png" alt="">
 				</a>
 			</div>
-			<div class="login-menu">
-				<ul>
-					<li><a href="<?php echo base_url('deskapp/login'); ?>">Login</a></li>
-				</ul>
-			</div>
+			
+				
+				<a class="btn btn-primary " href="javascript:history.go(-1)">Back &gt;</a>
+				
+			
 		</div>
 	</div>
 	<div class="register-page-wrap d-flex align-items-center flex-wrap justify-content-center">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-md-6 col-lg-7">
-					<img src="<?php echo base_url(); ?>/assets/vendors/images/register-page-img.png" alt="">
+					<img src="<?php echo base_url(); ?>/assets/vendors/images/Update-cuate.png" alt="">
 				</div>
 				<?php if(isset($validation)):?>
                     <div class="alert alert-danger">
