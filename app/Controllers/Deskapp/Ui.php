@@ -191,20 +191,11 @@
 					'details' => $this->request->getVar('details'),
 				];
 
-<<<<<<< HEAD
 				$model->saveProject($data);
 				$id = $model->getInsertID();
 
-     			$data['project_code'] = $id.$data['d_start'];
-=======
-				      // Merge 'id' and 'email' and set it to 'code'
-                //$data['project_code'] = $this->request->getPost('id_project') . $this->request->getPost('pro_name');
-<<<<<<< HEAD
-				$data['project_code'] = $id .$data['d_start'];
-=======
+			  // Merge 'id' and 'd_start' and set it to 'code'
 				$data['project_code'] = $id.$data['d_start'];
->>>>>>> 0745332614d9ae603f55c6e57362c2779804c14b
->>>>>>> ebe2dc05bc0e169187e572bcabbc406b39e4adf4
 				$data['id_project'] = $id ;
         
 				$model->replace($data);
@@ -325,29 +316,32 @@
 			return view('deskapp/ui/ui-timeline',$data);
 		}
 
-			public function tooltip($projectId)
-			{
-				$session = session();
-				$data['session'] = \Config\Services::session();
-				
-				// Get the username from the session
-				$data['username'] = $session->get('user_name');
-				
-				// Load the ProjectModel
-				$projectModel = new ProjectModel();
-				
-				// Get all projects
-				$data['projects'] = $projectModel->getpro();
-				
-				// Load the UserModel
-				$userModel = new UserModel();
-				
-				// Get all users
-				$data['users'] = $userModel->getUser();
-				
-				return view('deskapp/ui/ui-tooltip-popover', $data);
-			}
+		public function tooltip()
+		{
+
+			// Get the session instance
+			$session = session();
+			$data['session'] = \Config\Services::session();
+
+
+			// Fetch the 'user_name' from the session
+			$data['username'] = $session->get('user_name');
+	
+			// Load the ProjectModel
+			$projectModel = new ProjectModel();
 			
+			// Get all projects
+			$data['projects'] = $projectModel->getpro();
+	
+			// Load the UserModel
+			$userModel = new UserModel();
+	
+			// Get all users
+			$data['users'] = $userModel->getUser();
+	
+			return view('deskapp/ui/ui-tooltip-popover', $data);
+
+		}
 		public function deletePro($projectId){
 
 				// Load the projectModels
@@ -414,10 +408,9 @@
 			$projectModel->update($projectId, $project);
 		
 			// Redirect the user back to the projects list page or wherever you want to redirect after update
-			return redirect()->to(base_url("http://localhost/MS/deskapp/ui/sweetAlert"));	
+			return redirect()->to(base_url("deskapp/ui/editProject/{$projectId}"));	
 			
 		} 
-
 		public function typography()
 		{
 			$session = session();

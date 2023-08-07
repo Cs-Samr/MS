@@ -1279,4 +1279,21 @@ CRITICAL - 2023-08-07 06:50:47 --> Class "App\Controllers\Deskapp\projectModels"
 =======
 =======
 >>>>>>> 0745332614d9ae603f55c6e57362c2779804c14b
+<<<<<<< HEAD
+CRITICAL - 2023-08-07 06:54:11 --> syntax error, unexpected token "<<"
+#0 C:\xampp\htdocs\MS\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('deskapp/ui/card...')
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('deskapp/ui/card...')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 06:59:41 --> Undefined variable $id
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 230)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+=======
 >>>>>>> ebe2dc05bc0e169187e572bcabbc406b39e4adf4
+>>>>>>> 773b064a2ec7f2cf4541706aaeb68e6ef7c1937c
