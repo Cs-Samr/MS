@@ -33,7 +33,6 @@ class ProjectModel extends Model
     }
     public function deleteProject($projectId)
     {
-        
         return $this->where('id_project', $projectId)->delete();
     }
 }
