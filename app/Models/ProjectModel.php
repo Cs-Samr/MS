@@ -35,4 +35,4 @@ class ProjectModel extends Model
     {
         return $this->where('id_project', $projectId)->delete();
     }
-}
+} 
