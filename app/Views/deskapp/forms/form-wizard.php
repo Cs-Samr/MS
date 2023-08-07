@@ -73,130 +73,71 @@
 
 				<div class="pd-20 card-box mb-30">
 					<div class="clearfix">
-						<h4 class="text-blue h4">Step wizard</h4>
-						<p class="mb-30">jQuery Step wizard</p>
+						<h4 class="text-blue h4">مراحل المشروع</h4>
+						<p class="mb-30">اسم المشروع</p>
 					</div>
 					<div class="wizard-content">
 						<form class="tab-wizard wizard-circle wizard">
-							<h5>Personal Info</h5>
+							<h5>استلام طلب المشروع</h5>
 							<section>
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<label >First Name :</label>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label >Last Name :</label>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Email Address :</label>
-											<input type="email" class="form-control">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Phone Number :</label>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Select City :</label>
-											<select class="custom-select form-control">
-												<option value="">Select City</option>
-												<option value="Amsterdam">India</option>
-												<option value="Berlin">UK</option>
-												<option value="Frankfurt">US</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label >Date of Birth :</label>
-											<input type="text" class="form-control date-picker" placeholder="Select Date">
-										</div>
-									</div>
-								</div>
-							</section>
-							<!-- Step 2 -->
-							<h5>Job Status</h5>
-							<section>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Job Title :</label>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Company Name :</label>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>Job Description :</label>
+											<label>تفاصيل المشروع</label>
 											<textarea class="form-control"></textarea>
 										</div>
 									</div>
 								</div>
 							</section>
-							<!-- Step 3 -->
-							<h5>Interview</h5>
+							<!-- Step 2 -->
+							<h5>دراسة طلب المشروع</h5>
 							<section>
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<label>Interview For :</label>
-											<input type="text" class="form-control">
+											<label>تفاصيل طلب المشروع</label>
+											<textarea class="form-control"></textarea>
+										</div>
+								</div>
+							</section>
+							<!-- Step 3 -->
+							<h5>جمع متطلبات المشروع</h5>
+							<section>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>كتابة المتطلبات المطلوبة</label>
+											<textarea class="form-control"></textarea>
 										</div>
 										<div class="form-group">
-											<label>Interview Type :</label>
+											<label>نوع متطلبات المشروع</label>
 											<select class="form-control">
-												<option>Normal</option>
-												<option>Difficult</option>
-												<option>Hard</option>
+												<option>منافسة</option>
+												<option>امر شراء مباشر</option>
+												<option>سلفة ادارية</option>
+												<option>مشروع داخلي</option>
 											</select>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<label>Interview Date :</label>
-											<input type="text" class="form-control date-picker" placeholder="Select Date">
+											<label>تاريخ البداية</label>
+											<input type="date" class="form-control" placeholder="Select Date">
 										</div>
 										<div class="form-group">
-											<label>Interview Time :</label>
-											<input class="form-control time-picker" placeholder="Select time" type="text">
+											<label>تاريخ النهاية</label>
+											<input type="date" class="form-control" placeholder="Select Date">
 										</div>
 									</div>
 								</div>
 							</section>
 							<!-- Step 4 -->
-							<h5>Remark</h5>
+							<h5>متطلبات المشروع</h5>
 							<section>
 								<div class="row">
-									<div class="col-md-6">
+									
 										<div class="form-group">
-											<label>Behaviour :</label>
-											<input type="text" class="form-control">
-										</div>
-										<div class="form-group">
-											<label>Confidance</label>
-											<input type="text" class="form-control">
-										</div>
-										<div class="form-group">
-											<label>Result</label>
+											<label>المسوؤل</label>
 											<select class="form-control">
 												<option>Select Result</option>
 												<option>Selected</option>
@@ -206,7 +147,7 @@
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<label>Comments</label>
+											<label>المتطلبات</label>
 											<textarea class="form-control"></textarea>
 										</div>
 									</div>
@@ -215,15 +156,15 @@
 						</form>
 					</div>
 				</div>
-
+            	<!-- 212 -->
 				<div class="pd-20 card-box mb-30">
 					<div class="clearfix">
-						<h4 class="text-blue h4">Step wizard vertical</h4>
-						<p class="mb-30">jQuery Step wizard</p>
+						<h4 class="text-blue h4">مراحل المشروع</h4>
+						<p class="mb-30">اسم المشروع</p>
 					</div>
 					<div class="wizard-content">
 						<form class="tab-wizard wizard-circle wizard vertical">
-							<h5>Personal Info</h5>
+							<h5>استلام طلب المشروع</h5>
 							<section>
 								<div class="row">
 									<div class="col-md-6">
@@ -274,7 +215,7 @@
 								</div>
 							</section>
 							<!-- Step 2 -->
-							<h5>Job Status</h5>
+							<h5>دراسة طلب المشروع</h5>
 							<section>
 								<div class="row">
 									<div class="col-md-6">
@@ -298,7 +239,7 @@
 								</div>
 							</section>
 							<!-- Step 3 -->
-							<h5>Interview</h5>
+							<h5>جمع متطلبات المشروع</h5>
 							<section>
 								<div class="row">
 									<div class="col-md-6">
@@ -328,7 +269,7 @@
 								</div>
 							</section>
 							<!-- Step 4 -->
-							<h5>Remark</h5>
+							<h5>متطلبات المشروع</h5>
 							<section>
 								<div class="row">
 									<div class="col-md-6">

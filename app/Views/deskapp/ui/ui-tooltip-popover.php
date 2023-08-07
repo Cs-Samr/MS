@@ -465,13 +465,17 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Title</label>
-                            <input name="pro_name" type="text" class="form-control" value="<?= $project['pro_name'] ?>">
+                            <input name="pro_name" type="text" class="form-control" > <?php foreach ($projects as $project) { ?>
+                                    <option value="<?= $project['pro_name'] ?></option>
+                                <?php } ?>">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Details</label>
-                            <input name="project_details" type="text" class="form-control">
+                            <input name="project_details" type="text" class="form-control">  <?php foreach ($projects as $project) { ?>
+                                    <option value="<?= $project['details'] ?></option>
+                                <?php } ?>">
                         </div>
                     </div>
                 </div>
@@ -490,9 +494,19 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="d_start">Start Date:</label>
-                            <input name="d_start" type="date" id="d_start" class="form-control" placeholder="Select Date" value="<?= $project['d_start'] ?>">
+                            <input name="d_start" type="date" id="d_start" class="form-control" placeholder="Select Date">
+                            
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="d_end">End Date:</label>
+                            <input name="d_end" type="date" id="d_end" class="form-control" placeholder="Select Date"> <?php foreach ($projects as $project) { ?>
+                                    <option value="<?= $project['d_end'] ?></option>
+                                <?php } ?>">
+                        </div>
+                    </div>
+
                 </div>
             </section>
             <!-- Step 2: Placeholder for the next step -->
