@@ -424,7 +424,7 @@
 			$projectModel->update($projectId, $project);
 		
 			// Redirect the user back to the projects list page or wherever you want to redirect after update
-			return redirect()->to(base_url("deskapp/ui/editProject"));	
+			return redirect()->to(base_url("http://localhost/MS/deskapp/ui/sweetAlert"));	
 			
 		} 
 
