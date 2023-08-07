@@ -3,6 +3,7 @@
 	use App\Controllers\BaseController;
 	use App\Models\UserModel;
 	use App\Models\ProjectModel;
+	use App\Models\ProjectAssign;
 	/**
 	 * ui controller
 	 */
@@ -223,20 +224,47 @@
 					'd_end' => $this->request->getVar('d_end'),
 					'details' => $this->request->getVar('details'),
 				];
-	            $model->saveProject($data);
-				$id = $model->getInsertID();
-				//print_r($id);
-				// $model = new ProjectModel();
-				// $model->save($data); 
 
-				      // Merge 'id' and 'email' and set it to 'code'
-                //$data['project_code'] = $this->request->getPost('id_project') . $this->request->getPost('pro_name');
-				$data['project_code'] = $id .$data['d_start'];
+				$model->saveProject($data);
+				$id = $model->getInsertID();
+
+     			$data['project_code'] = $id.$data['d_start'];
 				$data['id_project'] = $id ;
         
 				$model->replace($data);
 				 
-				 return redirect()->to('http://localhost/MS/deskapp/ui/timeline');
+
+			
+				// Load the models
+				$userModel = new UserModel();
+				$projectModel = new ProjectModel();
+				$ProjectAssign = new ProjectAssign();
+			
+				// Get data from the user and project tables
+				$users = $userModel->findAll();
+				$projects = $projectModel->findAll();
+		
+				// Loop through the users and transfer data to the project_assign table
+				foreach ($users as $user) {
+					foreach ($projects as $project) {
+						$data = [
+							'id_memfk' => $user['id_mem'],
+							'id_projectfk' => $project['id_project'], // Specify the source of this data
+							'rules' => $user['rules']
+							// Add other fields as needed
+						];
+		
+						// Insert data into the project_assign table
+						$ProjectAssign->insert($data);
+					}
+				}
+
+
+				
+			
+
+	          
+				 return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
 
 	
 			} else {
