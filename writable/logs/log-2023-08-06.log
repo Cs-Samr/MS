@@ -1145,3 +1145,30 @@ CRITICAL - 2023-08-06 03:47:28 --> Call to undefined method App\Models\UserModel
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2023-08-06 03:53:43 --> Invalid file: deskapp/ui/ui-typography.php
+#0 C:\xampp\htdocs\MS\system\View\View.php(207): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deskapp/ui/ui-t...')
+#1 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(378): view('deskapp/ui/ui-t...', Array)
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->typography()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 03:53:43 --> Invalid file: deskapp/ui/ui-typography.php
+#0 C:\xampp\htdocs\MS\system\View\View.php(207): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deskapp/ui/ui-t...')
+#1 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(378): view('deskapp/ui/ui-t...', Array)
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->typography()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-06 04:05:36 --> Invalid file: deskapp/ui/ui-typography.php
+#0 C:\xampp\htdocs\MS\system\View\View.php(207): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deskapp/ui/ui-t...')
+#1 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#2 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(378): view('deskapp/ui/ui-t...', Array)
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->typography()
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
