@@ -201,7 +201,6 @@
 
 		}
 
-
 		public function save()
 		{
 			//ini_set('display_errors', 1);
@@ -237,10 +236,6 @@
 				$data['id_project'] = $id ;
         
 				$model->replace($data);
-
-				    
-	  
-					  
 				 
 				 return redirect()->to('http://localhost/MS/deskapp/ui/timeline');
 
