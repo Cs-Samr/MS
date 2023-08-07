@@ -231,7 +231,7 @@
 
 				      // Merge 'id' and 'email' and set it to 'code'
                 //$data['project_code'] = $this->request->getPost('id_project') . $this->request->getPost('pro_name');
-				$data['project_code'] = $id .$data['d_start'];
+				$data['project_code'] = $id.$data['d_start'];
 				$data['id_project'] = $id ;
         
 				$model->replace($data);
@@ -417,7 +417,8 @@
 			$project['pro_name'] = $this->request->getPost('pro_name');
 			$project['d_start'] = $this->request->getPost('d_start');
 			$project['d_end'] = $this->request->getPost('d_end');
-			//$project['details'] = $this->request->getPost('details');
+			$project['details'] = $this->request->getPost('details');
+
 
 		
 			// Save the updated project data to the database using the update() method

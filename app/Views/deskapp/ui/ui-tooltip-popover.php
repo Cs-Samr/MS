@@ -469,7 +469,7 @@
                         <div class="form-group">
                             <label>Title</label>
                             <input name="pro_name" type="text" class="form-control" value ="<?= $project['pro_name'] ?>"> 
-                          <!--  <input   name="pro_name" type="hidden" class="form-control" value ="<?= $project['pro_name'] ?>">-->
+                          
 
      
 
