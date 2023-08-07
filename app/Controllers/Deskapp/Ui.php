@@ -197,7 +197,6 @@
 			 $userModel = new UserModel();
 			 $data['names'] = $userModel->getAllNames();
 			 return view('deskapp/ui/ui-cards',$data);
-			
 
 		}
 
