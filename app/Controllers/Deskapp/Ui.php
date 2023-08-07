@@ -154,40 +154,6 @@
 
 		}
 
-		/*public function save()
-		{
-			ini_set('display_errors', 1);
-			ini_set('display_startup_errors', 1);
-			helper(['form','url']);
-			
-			$rules = [
-				//'project_code' => 'required|min_length[2]|max_length[100]',
-				'title' => 'required|min_length[2]|max_length[100]',
-				'details' => 'required|min_length[2]|max_length[100]',
-				'time' => 'required',
-				
-			];
-	
-			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
-				$model = new ProjectModel();
-				$data = [
-					'title' => $this->request->getVar('title'),
-					'details' => $this->request->getVar('details'),
-					'time' => $this->request->getVar('time'),
-				];
-	
-
-				 $model = new ProjectModel();
-				 $model->save($data); 
-	
-			} else {
-				$data['validation'] = $this->validator;
-				return view('deskapp/Ui/ui-cards', $data);
-			}
-	
-		
-		}*/
-
 
 		public function cards()
 		{
@@ -229,6 +195,18 @@
 				$id = $model->getInsertID();
 
      			$data['project_code'] = $id.$data['d_start'];
+<<<<<<< HEAD
+=======
+=======
+				      // Merge 'id' and 'email' and set it to 'code'
+                //$data['project_code'] = $this->request->getPost('id_project') . $this->request->getPost('pro_name');
+<<<<<<< HEAD
+				$data['project_code'] = $id .$data['d_start'];
+=======
+				$data['project_code'] = $id.$data['d_start'];
+>>>>>>> 0745332614d9ae603f55c6e57362c2779804c14b
+>>>>>>> ebe2dc05bc0e169187e572bcabbc406b39e4adf4
+>>>>>>> 773b064a2ec7f2cf4541706aaeb68e6ef7c1937c
 				$data['id_project'] = $id ;
         
 				$model->replace($data);
@@ -376,57 +354,43 @@
 
 		}
 		public function deletePro($projectId){
-	
-				// Load the UserModel
-				$userModel = new UserModel();
+
+				// Load the projectModels
+				$projectModel = new projectModels();
+
 	
 				// Perform the user deletion using the UserModel
 				$success = $projectModel->deleteProject($projectId);
 
 			   // Get the project details based on the project ID
-			   $data['project'] = $projectModel->find($projectId);
+			  // $data['project'] = $projectModel->find($projectId);
 			
 				$session = session();
 				$data['session'] = \Config\Services::session();
 				$data['username'] = $session->get('user_name');
 		
 				// Load the UserModel
-				$userModel = new UserModel();
-				$users = $userModel->getUser();
+				$projectModel = new projectModel();
+				$project = $projectModel->getpro();
 				
-				
-				// Process the users based on the "rules" field
-				foreach ($users as &$user) {
-					if ($user['rules'] === '1') {
-						$user['rules'] = 'system manager';
-					} elseif ($user['rules'] === '2') {
-						$user['rules'] = 'manager';
-					} else {
-						$user['rules'] = 'member';
-					}
-	
-				}
-		
-				$data['users'] = $users;
-	
-				
-			return view('deskapp/ui/ui-sweet-alert', $data);
-	
+			return view('deskapp/ui/ui-sweet-alert');
+
 		}
 
 
 
 
 		public function editProject($projectId) {
-			// Load the ProjectModel
+			// Load the ProjectModel & UserModel
 			$projectModel = new ProjectModel();
-			// Get the users details
 			$userModel = new UserModel();
-			 $user = $userModel->getUser();
-			 $data['users'] = $user;
+
+		
+			// Get the users details
+			 $data['user'] = $userModel->find($userId);
 
 			// Get the project details based on the project ID
-			$data['project'] = $projectModel->find($projectId);
+			$data['projects'] = $projectModel->find($projectId);
 		
 			return view('deskapp/ui/ui-tooltip-popover', $data);
 		
@@ -442,7 +406,7 @@
 			$projectId = $this->request->getPost('id_project ');
 		
 			// Fetch the project details based on the project ID
-			$project = $projectModel->find($projectId);
+			//$project = $projectModel->find($projectId);
 		
 			// Update the project's information based on the form data
 			$project['pro_name'] = $this->request->getPost('pro_name');

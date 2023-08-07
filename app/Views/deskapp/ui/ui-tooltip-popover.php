@@ -469,19 +469,15 @@
                         <div class="form-group">
                             <label>Title</label>
                             <input name="pro_name" type="text" class="form-control" value ="<?= $project['pro_name'] ?>"> 
+                            <input   name="id_project" type="hidden" class="form-control" value ="<?= $project['id_project'] ?>">
+
                           
 
      
 
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Details</label>
-                            <input name="project_details" type="text" class="form-control" value ="<?= $project['details'] ?>">
-
-                        </div>
-                    </div>
+                   
                 </div>
                 <div class="row">
                     <div class="col-md-6">

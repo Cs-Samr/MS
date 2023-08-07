@@ -1131,22 +1131,155 @@ CRITICAL - 2023-08-07 03:45:12 --> Too few arguments to function App\Controllers
 #3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #4 {main}
 <<<<<<< HEAD
+CRITICAL - 2023-08-07 04:20:21 --> Undefined array key "id_mem"
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(346): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 346)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip('2')
+=======
+<<<<<<< HEAD
 CRITICAL - 2023-08-07 05:02:55 --> Undefined variable $projects
 #0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 256)
 #1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+>>>>>>> ebe2dc05bc0e169187e572bcabbc406b39e4adf4
 #2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+<<<<<<< HEAD
+CRITICAL - 2023-08-07 04:27:56 --> Undefined variable $projects
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 343)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip('2')
+=======
 CRITICAL - 2023-08-07 05:04:33 --> Undefined variable $projects
 #0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 256)
 #1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+>>>>>>> ebe2dc05bc0e169187e572bcabbc406b39e4adf4
 #2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+<<<<<<< HEAD
+CRITICAL - 2023-08-07 04:28:16 --> Undefined variable $projects
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 343)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip('2')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 04:50:01 --> Undefined variable $projectModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 354)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('2')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 04:50:08 --> Undefined variable $projectModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 354)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('2')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 04:53:33 --> Undefined variable $projectModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 354)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('2')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 04:54:54 --> Undefined variable $projectModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 354)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('2')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 04:55:02 --> Undefined variable $projectModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 354)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 04:55:10 --> Undefined variable $projectModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 354)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('2')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 04:55:16 --> Undefined variable $projectModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 354)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('4')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 04:55:22 --> Undefined variable $projectModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 354)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 04:56:56 --> Undefined variable $projectModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 354)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-07 04:57:46 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-07 04:59:24 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-07 05:09:57 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-07 05:13:21 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-07 05:18:17 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-07 06:42:17 --> Class "App\Controllers\Deskapp\projectModels" not found
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('2')
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-07 06:50:38 --> Class "App\Controllers\Deskapp\projectModels" not found
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('4')
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-07 06:50:47 --> Class "App\Controllers\Deskapp\projectModels" not found
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('3')
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+=======
 =======
 >>>>>>> 0745332614d9ae603f55c6e57362c2779804c14b
+<<<<<<< HEAD
 CRITICAL - 2023-08-07 06:54:11 --> syntax error, unexpected token "<<"
 #0 C:\xampp\htdocs\MS\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('deskapp/ui/card...')
 #1 C:\xampp\htdocs\MS\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('deskapp/ui/card...')
@@ -1161,3 +1294,6 @@ CRITICAL - 2023-08-07 06:59:41 --> Undefined variable $id
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+=======
+>>>>>>> ebe2dc05bc0e169187e572bcabbc406b39e4adf4
+>>>>>>> 773b064a2ec7f2cf4541706aaeb68e6ef7c1937c

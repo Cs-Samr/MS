@@ -435,7 +435,6 @@
                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="d_start: activate to sort column ascending">Project Code</th>
                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="d_start: activate to sort column ascending">Date Start</th>
                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="d_end: activate to sort column ascending">Date End</th>
-                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="detalis: activate to sort column ascending">Details</th>
                     <th class="datatable-nosort sorting_disabled" rowspan="1" colspan="1" aria-label="Action">Action</th>
                 </tr>
             </thead>
@@ -446,7 +445,6 @@
                         <td><?=$project['project_code'] ?></td>
                         <td><?= $project['d_start'] ?></td>
                         <td><?= $project['d_end'] ?></td>
-                        <td><?= $project['details'] ?></td>
                         <td>
 						<div class="dropdown">
                     <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
