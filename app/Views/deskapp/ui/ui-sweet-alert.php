@@ -455,52 +455,14 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
                         <a class="dropdown-item"  href="http://localhost/MS/deskapp/ui/editProject/<?= $project['id_project'] ?>"><i class="dw dw-edit2"></i> Edit</a>
-            <a class="dropdown-item delete-user" data-toggle="modal" data-target="#confirmation-modal" ><i class="dw dw-delete-3"></i> Delete</a>                        <a class="dropdown-item " action="/MS/deskapp/Ui/timeline">View</a>
+            <a class="dropdown-item delete-user" href="http://localhost/MS/deskapp/ui/deletePro/<?= $project['id_project'] ?>"><i class="dw dw-delete-3"></i> Delete</a>                    
+			    <a class="dropdown-item " herf="http://http://localhost/MS/deskapp/forms/wizard">View</a>
                     </div>
-                            </div>
-              <div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center font-18">
-                <h4 class="padding-top-30 mb-30 weight-500">
-                    Are you sure you want to continue?
-                </h4>
-                <div class="padding-bottom-30 row" style="max-width: 170px; margin: 0 auto">
-                    <div class="col-6">
-                        <button type="button" class="btn btn-secondary border-radius-100 btn-block confirmation-btn" data-dismiss="modal">
-                            <i class="fa fa-times"></i>
-                        </button>
-                        NO
-                    </div>
-					<div class="col-6">
-    <button type="button" class="btn btn-primary border-radius-100 btn-block confirmation-btn" data-dismiss="modal" id="confirmation-yes">
-        <i class="fa fa-check"></i>
-    </button>
-    YES
-</div>
-<script>
-    document.getElementById('confirmation-yes').addEventListener('click', function() {
-        // Make an AJAX request to the deletePro URL
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'http://localhost/MS/deskapp/ui/deletePro/', true);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // Redirect to the desired URL after the request is successful
-                window.location.href = 'http://localhost/MS/deskapp/ui/deletePro/';
-            }
-        };
-        xhr.send();
-    });
-</script>
 
-
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
-                        </td>
+                       </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
