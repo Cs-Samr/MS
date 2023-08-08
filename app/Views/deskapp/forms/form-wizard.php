@@ -98,6 +98,16 @@
                                             <textarea class="form-control"></textarea>
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>تاريخ البداية</label>
+                                            <input type="date" class="form-control" placeholder="Select Date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>تاريخ النهاية</label>
+                                            <input type="date" class="form-control" placeholder="Select Date">
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                             <!-- Step 2 -->
@@ -110,6 +120,17 @@
                                             <textarea class="form-control"></textarea>
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>تاريخ البداية</label>
+                                            <input type="date" class="form-control" placeholder="Select Date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>تاريخ النهاية</label>
+                                            <input type="date" class="form-control" placeholder="Select Date">
+                                        </div>
+                                    </div>
+                                </div> 
                             </section>
                             <!-- Step 3 -->
                             <h5>جمع متطلبات المشروع</h5>
@@ -157,6 +178,17 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>تاريخ البداية</label>
+                                            <input type="date" class="form-control" placeholder="Select Date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>تاريخ النهاية</label>
+                                            <input type="date" class="form-control" placeholder="Select Date">
+                                        </div>
+                                    </div>
+                                
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>المتطلبات</label>
