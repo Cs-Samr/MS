@@ -154,11 +154,6 @@
 
 		}
 
-<<<<<<< HEAD
-		
-
-=======
->>>>>>> 85c86a31de5633b3fa07a9fdff9bb3519efbc07f
 
 		public function cards()
 		{
@@ -354,7 +349,6 @@
 			$session = session();
 			$data['session'] = \Config\Services::session();
 			$data['username'] = $session->get('user_name');
-
 			
 			//ini_set('display_errors', 1);
 			$projectModel = new ProjectModel();
@@ -362,6 +356,7 @@
 
 			$projectAssign->deleteProject($projectId);
 			$projectModel->deleteProject($projectId);
+			
 			$data['alertMessage'] = 'Project has been deleted successfully.';
 
 			$projectModel = new ProjectModel();
