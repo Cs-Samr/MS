@@ -17,4 +17,8 @@ class ProjectAssign extends Model
         return $this->select('*')->findAll();
 
     }
+    public function deleteProject($id_project)
+    {
+        return $this->where('id_projectfk', $id_project)->delete();
+    }
 }

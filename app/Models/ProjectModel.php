@@ -31,8 +31,8 @@ class ProjectModel extends Model
 
         return $this->insert($data);
     }
-    public function deleteProject($projectId)
+    public function deleteProject($id_project)
     {
-        return $this->where('id_project', $projectId)->delete();
+        return $this->where('id_project', $id_project)->delete();
     }
 } 

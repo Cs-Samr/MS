@@ -316,67 +316,70 @@
 			return view('deskapp/ui/ui-timeline',$data);
 		}
 
-		public function tooltip()
+		public function tooltip($projectId)
 		{
 
-			// Get the session instance
 			$session = session();
 			$data['session'] = \Config\Services::session();
-
-
-			// Fetch the 'user_name' from the session
 			$data['username'] = $session->get('user_name');
 	
-			// Load the ProjectModel
-			$projectModel = new ProjectModel();
-			
-			// Get all projects
-			$data['projects'] = $projectModel->getpro();
-	
 			// Load the UserModel
-			$userModel = new UserModel();
-	
-			// Get all users
-			$data['users'] = $userModel->getUser();
-	
-			return view('deskapp/ui/ui-tooltip-popover', $data);
-
-		}
-		public function deletePro($projectId){
-
-				// Load the projectModels
-				$projectModel = new projectModels();
-
-	
-				// Perform the user deletion using the UserModel
-				$success = $projectModel->deleteProject($projectId);
-
-			   // Get the project details based on the project ID
-			  // $data['project'] = $projectModel->find($projectId);
+			$ProjectModel = new ProjectModel();
+			//$Projects = $ProjectModel->find($projectId); 
+			$Projects =	$ProjectModel->where('id_project', $projectId)->findAll();
 			
-				$session = session();
-				$data['session'] = \Config\Services::session();
-				$data['username'] = $session->get('user_name');
-		
-				// Load the UserModel
-				$projectModel = new projectModel();
-				$project = $projectModel->getpro();
-				
-			return view('deskapp/ui/ui-sweet-alert');
+			$userModel = new UserModel();
+			$users = $userModel->getUser();
+			$data['users'] = $users;
+
+			// Process the users based on the "rules" field
+			// foreach ($Projects as &$Project) {
+			
+			// 	$Project['edit_url'] = base_url("deskapp/ui/editProject/{$Project['id_project']}");
+
+			// }
+			$data['projects'] = $Projects;
+
+
+        return view('deskapp/ui/ui-tooltip-popover',$data);
 
 		}
 
+		public function deletePro($projectId) {
+			$session = session();
+			$data['session'] = \Config\Services::session();
+			$data['username'] = $session->get('user_name');
+
+			
+			//ini_set('display_errors', 1);
+			$projectModel = new ProjectModel();
+			$projectAssign = new ProjectAssign();
+
+			$projectAssign->deleteProject($projectId);
+			$projectModel->deleteProject($projectId);
+			$data['alertMessage'] = 'Project has been deleted successfully.';
+
+			$projectModel = new ProjectModel();
+			$project = $projectModel->getpro();
+			$data['projects'] = $project;
+			
+			$projectAssign = new ProjectAssign();
+			$assipro = $projectAssign->getUser(); 
+			$data['project_assign'] = $assipro;
+			
+			
+					
+			return view('deskapp/ui/ui-sweet-alert', $data);
+					
+		}
+		
+		
 
 
 
 		public function editProject($projectId) {
 			// Load the ProjectModel & UserModel
 			$projectModel = new ProjectModel();
-			$userModel = new UserModel();
-
-		
-			// Get the users details
-			 $data['user'] = $userModel->find($userId);
 
 			// Get the project details based on the project ID
 			$data['projects'] = $projectModel->find($projectId);
@@ -386,13 +389,13 @@
 		}
 	
 
-		public function updateProject() {
+		public function updateProject($projectId) {
 
 			// Load the ProjectModel
 			$projectModel = new ProjectModel();
 
 			// Get the project ID from the form submission
-			$projectId = $this->request->getPost('id_project ');
+			$projectId = $this->request->getPost('id_project');
 		
 			// Fetch the project details based on the project ID
 			//$project = $projectModel->find($projectId);
@@ -408,7 +411,9 @@
 			$projectModel->update($projectId, $project);
 		
 			// Redirect the user back to the projects list page or wherever you want to redirect after update
-			return redirect()->to(base_url("deskapp/ui/editProject/{$projectId}"));	
+			//return redirect()->to(base_url("deskapp/ui/editProject/{$projectId}"));
+			return redirect()->to(base_url("deskapp/ui/sweetAlert"));
+				
 			
 		} 
 		public function typography()
