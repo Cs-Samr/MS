@@ -154,11 +154,6 @@
 
 		}
 
-<<<<<<< HEAD
-		
-
-=======
->>>>>>> 85c86a31de5633b3fa07a9fdff9bb3519efbc07f
 
 		public function cards()
 		{
