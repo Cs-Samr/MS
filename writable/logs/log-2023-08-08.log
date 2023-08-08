@@ -1,0 +1,102 @@
+CRITICAL - 2023-08-08 01:28:00 --> require(PHPMailer/PHPMailer.php): Failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\MS\app\Controllers\Email.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(PHPMail...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\MS\app\Controllers\Email.php(11): require()
+#2 C:\xampp\htdocs\MS\system\Router\Router.php(562): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MS\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Email')
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Email')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-08 01:32:03 --> require(PHPMailer/PHPMailer.php): Failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\MS\app\Controllers\Email.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(PHPMail...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\MS\app\Controllers\Email.php(11): require()
+#2 C:\xampp\htdocs\MS\system\Router\Router.php(562): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MS\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Email')
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Email')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-08 02:18:59 --> Call to undefined function App\Controllers\data()
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 02:19:02 --> Call to undefined function App\Controllers\data()
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 02:19:04 --> Call to undefined function App\Controllers\data()
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 02:19:36 --> Call to undefined function App\Controllers\data()
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 02:20:33 --> Call to undefined function App\Controllers\data()
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 02:44:14 --> Call to undefined function App\Controllers\data()
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 02:44:25 --> Call to undefined function App\Controllers\data()
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-08-08 03:33:27 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-08-08 03:37:26 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-08-08 03:48:15 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2023-08-08 04:49:03 --> Undefined variable $projectModel
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 324)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro('20')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-08 05:16:34 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 05:19:28 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 05:20:28 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 05:20:50 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 05:23:55 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}

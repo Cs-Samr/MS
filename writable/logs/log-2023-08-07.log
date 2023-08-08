@@ -61,3 +61,13 @@ CRITICAL - 2023-08-07 02:00:09 --> syntax error, unexpected token "<<", expectin
 #5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2023-08-07 08:25:35 --> require(PHPMailer/PHPMailer.php): Failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\MS\app\Controllers\Email.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(PHPMail...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\MS\app\Controllers\Email.php(11): require()
+#2 C:\xampp\htdocs\MS\system\Router\Router.php(562): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MS\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Email')
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Email')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

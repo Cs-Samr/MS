@@ -153,39 +153,7 @@
 
 		}
 
-		/*public function save()
-		{
-			ini_set('display_errors', 1);
-			ini_set('display_startup_errors', 1);
-			helper(['form','url']);
-			
-			$rules = [
-				//'project_code' => 'required|min_length[2]|max_length[100]',
-				'title' => 'required|min_length[2]|max_length[100]',
-				'details' => 'required|min_length[2]|max_length[100]',
-				'time' => 'required',
-				
-			];
-	
-			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
-				$model = new ProjectModel();
-				$data = [
-					'title' => $this->request->getVar('title'),
-					'details' => $this->request->getVar('details'),
-					'time' => $this->request->getVar('time'),
-				];
-	
-
-				 $model = new ProjectModel();
-				 $model->save($data); 
-	
-			} else {
-				$data['validation'] = $this->validator;
-				return view('deskapp/Ui/ui-cards', $data);
-			}
-	
 		
-		}*/
 
 
 		public function cards()

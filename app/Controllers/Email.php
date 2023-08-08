@@ -1,55 +1,46 @@
 <?php
-
 namespace App\Controllers;
-
-use App\Controllers\BaseController;
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-
-// require '..\vendor\phpmailer\src\Exception.php';
-// require '..\vendor\phpmailer\src\PHPMailer.php';
-// require '..\vendor\phpmailer\src\SMTP.php';
-
 
 class Email extends BaseController
 {
-    public function compose()
+    public function sendEmail_ForgotPassword()
     {
-        return view('compose');
-    }
+        // Load the email library
+        $email = \Config\Services::email();
 
-    public function send_email()
-    {
-        $email = $this->request->getPost('email');
-        $subject = $this->request->getPost('subject');
-        $message = $this->request->getPost('message');
+        // Email configuration
+        $config = [
+            'protocol' => 'smtp',
+            'SMTPHost' => 'smtp.mailtrap.io',
+            'SMTPUser' => 'ece7d66ef6d99d',
+            'SMTPPass' => '9c54b44e082dfc',
+            'SMTPPort' => 2525,
+        ];
 
-        $mail = new PHPMailer(true);
+        $email->initialize($config);
+
+        // Get the email address from the form submission
+        $recipientEmail = $this->request->getPost('email');
+
+        // Set email details
+        $email->setFrom('smr.aff.alh@gmail.com', date('Y.m.d h:i:s'));
+        $email->setTo($recipientEmail); // Use the recipient email from the form
+        $email->setSubject('Reset your password');
+        $email->setMessage('Visit this link to reset your password: http://localhost/MS/deskapp/Additionalpages/reset_password');
 
         try {
-            // Enable SMTP debugging if needed
-            // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-
-            $mail->isSMTP();
-            $mail->Host = 'smtp.google.com'; // Replace with your SMTP server address
-            $mail->SMTPAuth = true;
-            $mail->Username = 'sama2r22@gmail.com'; // Replace with your Gmail address
-            $mail->Password = 'Ss0505541908'; // Replace with your Gmail password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 587;
-
-            $mail->setFrom('sama2r22@gmail.com', 'J3S'); // Replace with your Gmail address and your name
-            $mail->addAddress($email);
-
-            $mail->isHTML(true);
-            $mail->Subject = $subject;
-            $mail->Body = $message;
-
-            $mail->send();
-            echo "Email sent successfully.";
-        } catch (Exception $e) {
-            echo "Something went wrong. Please try again. Error: {$mail->ErrorInfo}";
+            // Send the email
+            if ($email->send()) {
+                // Set success flashdata
+                return redirect()->to(previous_url())->with('success_message', 'Email sent successfully.');
+            } else {
+                // Set error flashdata
+                return redirect()->to(previous_url())->with('error_message', 'Email sending failed.');
+            }
+        } catch (\Exception $e) {
+            // Set error flashdata
+            return redirect()->to(previous_url())->with('error_message', 'An error occurred: ' . $e->getMessage());
         }
     }
 }
+
