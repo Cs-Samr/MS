@@ -13,7 +13,7 @@ class Home extends BaseController
         // $email = \Config\Services::email();
 
         // // Email configuration
-        // $config = [
+         // $config = [
         //     'protocol' => 'smtp',
         //     'SMTPHost' => 'smtp.mailtrap.io',
         //     'SMTPUser' => 'ece7d66ef6d99d',
