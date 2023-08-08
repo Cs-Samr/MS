@@ -366,8 +366,6 @@
 			$projectAssign = new ProjectAssign();
 			$assipro = $projectAssign->getUser(); 
 			$data['project_assign'] = $assipro;
-			
-			
 					
 			return view('deskapp/ui/ui-sweet-alert', $data);
 					
