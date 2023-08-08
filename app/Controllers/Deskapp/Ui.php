@@ -3,6 +3,7 @@
 	use App\Controllers\BaseController;
 	use App\Models\UserModel;
 	use App\Models\ProjectModel;
+	use App\Models\ProjectAssign;
 	/**
 	 * ui controller
 	 */
@@ -153,8 +154,11 @@
 
 		}
 
+<<<<<<< HEAD
 		
 
+=======
+>>>>>>> 85c86a31de5633b3fa07a9fdff9bb3519efbc07f
 
 		public function cards()
 		{
@@ -191,20 +195,48 @@
 					'd_end' => $this->request->getVar('d_end'),
 					'details' => $this->request->getVar('details'),
 				];
-	            $model->saveProject($data);
-				$id = $model->getInsertID();
-				//print_r($id);
-				// $model = new ProjectModel();
-				// $model->save($data); 
 
-				      // Merge 'id' and 'email' and set it to 'code'
-                //$data['project_code'] = $this->request->getPost('id_project') . $this->request->getPost('pro_name');
-				$data['project_code'] = $id .$data['d_start'];
+				$model->saveProject($data);
+				$id = $model->getInsertID();
+
+			  // Merge 'id' and 'd_start' and set it to 'code'
+				$data['project_code'] = $id.$data['d_start'];
 				$data['id_project'] = $id ;
         
 				$model->replace($data);
 				 
-				 return redirect()->to('http://localhost/MS/deskapp/ui/timeline');
+
+			
+				// Load the models
+				$userModel = new UserModel();
+				$projectModel = new ProjectModel();
+				$ProjectAssign = new ProjectAssign();
+			
+				// Get data from the user and project tables
+				$users = $userModel->findAll();
+				$projects = $projectModel->findAll();
+		
+				// Loop through the users and transfer data to the project_assign table
+				foreach ($users as $user) {
+					foreach ($projects as $project) {
+						$data = [
+							'id_memfk' => $user['id_mem'],
+							'id_projectfk' => $project['id_project'], // Specify the source of this data
+							'rules' => $user['rules']
+							// Add other fields as needed
+						];
+		
+						// Insert data into the project_assign table
+						$ProjectAssign->insert($data);
+					}
+				}
+
+
+				
+			
+
+	          
+				 return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
 
 	
 			} else {
@@ -316,57 +348,43 @@
 
 		}
 		public function deletePro($projectId){
-	
-				// Load the UserModel
-				$userModel = new UserModel();
+
+				// Load the projectModels
+				$projectModel = new projectModels();
+
 	
 				// Perform the user deletion using the UserModel
 				$success = $projectModel->deleteProject($projectId);
 
 			   // Get the project details based on the project ID
-			   $data['project'] = $projectModel->find($projectId);
+			  // $data['project'] = $projectModel->find($projectId);
 			
 				$session = session();
 				$data['session'] = \Config\Services::session();
 				$data['username'] = $session->get('user_name');
 		
 				// Load the UserModel
-				$userModel = new UserModel();
-				$users = $userModel->getUser();
+				$projectModel = new projectModel();
+				$project = $projectModel->getpro();
 				
-				
-				// Process the users based on the "rules" field
-				foreach ($users as &$user) {
-					if ($user['rules'] === '1') {
-						$user['rules'] = 'system manager';
-					} elseif ($user['rules'] === '2') {
-						$user['rules'] = 'manager';
-					} else {
-						$user['rules'] = 'member';
-					}
-	
-				}
-		
-				$data['users'] = $users;
-	
-				
-			return view('deskapp/ui/ui-sweet-alert', $data);
-	
+			return view('deskapp/ui/ui-sweet-alert');
+
 		}
 
 
 
 
 		public function editProject($projectId) {
-			// Load the ProjectModel
+			// Load the ProjectModel & UserModel
 			$projectModel = new ProjectModel();
-			// Get the users details
 			$userModel = new UserModel();
-			 $user = $userModel->getUser();
-			 $data['users'] = $user;
+
+		
+			// Get the users details
+			 $data['user'] = $userModel->find($userId);
 
 			// Get the project details based on the project ID
-			$data['project'] = $projectModel->find($projectId);
+			$data['projects'] = $projectModel->find($projectId);
 		
 			return view('deskapp/ui/ui-tooltip-popover', $data);
 		
@@ -382,7 +400,7 @@
 			$projectId = $this->request->getPost('id_project ');
 		
 			// Fetch the project details based on the project ID
-			$project = $projectModel->find($projectId);
+			//$project = $projectModel->find($projectId);
 		
 			// Update the project's information based on the form data
 			$project['pro_name'] = $this->request->getPost('pro_name');

@@ -435,7 +435,6 @@
                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="d_start: activate to sort column ascending">Project Code</th>
                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="d_start: activate to sort column ascending">Date Start</th>
                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="d_end: activate to sort column ascending">Date End</th>
-                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="detalis: activate to sort column ascending">Details</th>
                     <th class="datatable-nosort sorting_disabled" rowspan="1" colspan="1" aria-label="Action">Action</th>
                 </tr>
             </thead>
@@ -446,15 +445,20 @@
                         <td><?=$project['project_code'] ?></td>
                         <td><?= $project['d_start'] ?></td>
                         <td><?= $project['d_end'] ?></td>
-                        <td><?= $project['details'] ?></td>
                         <td>
 						<div class="dropdown">
                     <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                         <i class="dw dw-more"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+<<<<<<< HEAD
                         <a class="dropdown-item"  href="http://localhost/MS/deskapp/ui/editProject/<?= $project['id_project'] ?>"><i class="dw dw-edit2"></i> Edit</a>
 						<a class="dropdown-item delete-user" data-toggle="modal" data-target="#confirmation-modal" href="http://localhost/MS/deskapp/ui/deletePro/"><i class="dw dw-delete-3"></i> Delete</a>                        <a class="dropdown-item " action="/MS/deskapp/Ui/timeline">View</a>
+=======
+                        <a class="dropdown-item"  href="http://localhost/MS/deskapp/ui/tooltip/<?= $project['id_project'] ?>"><i class="dw dw-edit2"></i> Edit</a>
+                        <a class="dropdown-item delete-user" href="http://localhost/MS/deskapp/ui/deletePro/<?= $project['id_project'] ?>"><i class="dw dw-delete-3"></i> Delete</a>
+                        <a class="dropdown-item " href="http://localhost/MS/deskapp/forms/wizard">View</a>
+>>>>>>> 85c86a31de5633b3fa07a9fdff9bb3519efbc07f
                     </div>
                             </div>
 							<div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
@@ -499,8 +503,7 @@
     </div>
 </div>
 
-				
-				<!-- Export Datatable End -->
+					<!-- Export Datatable End -->
 			</div>
 
 			<script>

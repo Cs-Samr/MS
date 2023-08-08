@@ -2356,5 +2356,28 @@ CRITICAL - 2023-08-06 07:22:19 --> Undefined variable $project
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
+CRITICAL - 2023-08-06 07:26:28 --> Undefined variable $projects
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(468): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 468)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(397): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->editProject('2')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-06 07:26:39 --> Undefined variable $projects
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(468): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 468)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(397): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->editProject('2')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+=======
 >>>>>>> 4958324042c542e9da72683a261421f80dd74e5d
 >>>>>>> 2de4a76f36a7ca2f898a178a63a35c2ac185adae
+>>>>>>> 2338ca019612778e8e442ae8d868c04838891338

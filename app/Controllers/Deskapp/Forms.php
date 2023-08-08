@@ -1,6 +1,7 @@
 <?php 
 	namespace App\Controllers\Deskapp;
 	use App\Controllers\BaseController;
+	use App\Models\UserModel;
 	/**
 	 * forms controller
 	 */
@@ -31,12 +32,25 @@
  			$data['username'] = $session->get('user_name');
 			return view('deskapp/forms/form-pickers',$data);
 		}
+
+
+
 		public function wizard() {
 			$session = session();
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
+			
+
+			$userModel = new UserModel();
+			$data['names'] = $userModel->getAllNames();
 			return view('deskapp/forms/form-wizard',$data);
+		   
 		}
+
+
+
+
+
 		public function html5Editor() {
 			$session = session();
 			$data['session'] = \Config\Services::session();

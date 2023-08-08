@@ -455,9 +455,12 @@
     <h4 class="text-blue h4">Edit Project</h4>
 </div>
 <div class="wizard-content">
-    <form method="post"  action="deskapp/ui/updateProject">
+    <form method="post"  action="/MS/deskapp/ui/updateProject">
+    <?= csrf_field() ?>
         <!-- Add a hidden input field to store the project ID -->
+        <?php foreach ($projects as $project) { ?>
         <input type="hidden" name="project_id" value="<?= $project['id_project'] ?>">
+        <?php } ?>
         <div class="content clearfix">
             <!-- Step 1: Project Details -->
             <section id="steps-uid-1-p-0" role="tabpanel" aria-labelledby="steps-uid-1-h-0" class="body current" aria-hidden="false">
@@ -465,19 +468,16 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Title</label>
-                            <input name="pro_name" type="text" class="form-control" > <?php foreach ($projects as $project) { ?>
-                                    <option value="<?= $project['pro_name'] ?></option>
-                                <?php } ?>">
+                            <input name="pro_name" type="text" class="form-control" value ="<?= $project['pro_name'] ?>"> 
+                            <input   name="id_project" type="hidden" class="form-control" value ="<?= $project['id_project'] ?>">
+
+                          
+
+     
+
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Details</label>
-                            <input name="project_details" type="text" class="form-control">  <?php foreach ($projects as $project) { ?>
-                                    <option value="<?= $project['details'] ?></option>
-                                <?php } ?>">
-                        </div>
-                    </div>
+                   
                 </div>
                 <div class="row">
                     <div class="col-md-6">
@@ -494,16 +494,14 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="d_start">Start Date:</label>
-                            <input name="d_start" type="date" id="d_start" class="form-control" placeholder="Select Date">
-                            
+                            <input name="d_start" type="date" id="d_start" class="form-control" placeholder="Select Date" value ="<?= $project['d_start'] ?>">
+                          
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="d_end">End Date:</label>
-                            <input name="d_end" type="date" id="d_end" class="form-control" placeholder="Select Date"> <?php foreach ($projects as $project) { ?>
-                                    <option value="<?= $project['d_end'] ?></option>
-                                <?php } ?>">
+                            <input name="d_end" type="date" id="d_end" class="form-control" placeholder="Select Date"value ="<?= $project['d_end'] ?>">
                         </div>
                     </div>
 
@@ -595,7 +593,7 @@
                         </section>
                     </div>
             
-            <input class="btn btn-primary btn-lg btn-block" type="submit"  value="Update">
+            <input class="btn btn-primary btn-lg btn-block" type="submit"  value="Update"  herf="http://localhost/MS/deskapp/ui/sweet-alert">
         </form>
     </div>
 </div>
