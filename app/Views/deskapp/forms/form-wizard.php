@@ -89,7 +89,9 @@
                     </div>
                     <div class="wizard-content">
                         <form class="tab-wizard wizard-circle wizard">
-                            <h5>استلام طلب المشروع</h5>
+                            <h5>استلام طلب المشروع
+                            <p class="mb-30">الحالة</p>
+                              </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -111,7 +113,9 @@
                                 </div>
                             </section>
                             <!-- Step 2 -->
-                            <h5>دراسة طلب المشروع</h5>
+                            <h5>دراسة طلب المشروع
+                            <p class="mb-30">الحالة</p>
+                            </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -133,7 +137,9 @@
                                 </div> 
                             </section>
                             <!-- Step 3 -->
-                            <h5>جمع متطلبات المشروع</h5>
+                            <h5>جمع متطلبات المشروع
+                            <p class="mb-30">الحالة</p>
+                            </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -164,7 +170,9 @@
                                 </div>
                             </section>
                             <!-- Step 4 -->
-                            <h5>متطلبات المشروع</h5>
+                            <h5>متطلبات المشروع
+                            <p class="mb-30">الحالة</p>
+                            </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -207,140 +215,108 @@
                         <p class="mb-30">اسم المشروع</p>
                     </div>
                     <div class="wizard-content">
-                        <form class="tab-wizard wizard-circle wizard vertical">
-                            <h5>استلام طلب المشروع</h5>
+                    <form class="tab-wizard wizard-circle wizard">
+                            <h5>استلام طلب المشروع
+                            <p class="mb-30">الحالة</p>
+                            </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>First Name :</label>
-                                            <input type="text" class="form-control">
+                                            <label>تفاصيل المشروع</label>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Last Name :</label>
-                                            <input type="text" class="form-control">
+                                            <label>تاريخ البداية</label>
+                                            
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Email Address :</label>
-                                            <input type="email" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Phone Number :</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Select City :</label>
-                                            <select class="custom-select form-control">
-                                                <option value="">Select City</option>
-                                                <option value="Amsterdam">India</option>
-                                                <option value="Berlin">UK</option>
-                                                <option value="Frankfurt">US</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Date of Birth :</label>
-                                            <input type="text" class="form-control date-picker"
-                                                placeholder="Select Date">
+                                            <label>تاريخ النهاية</label>
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </section>
                             <!-- Step 2 -->
-                            <h5>دراسة طلب المشروع</h5>
+                            <h5>دراسة طلب المشروع
+                            <p class="mb-30">الحالة</p>
+                            </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Job Title :</label>
-                                            <input type="text" class="form-control">
+                                            <label>تفاصيل طلب المشروع</label>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Company Name :</label>
-                                            <input type="text" class="form-control">
+                                            <label>تاريخ البداية</label>
+                                            
                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Job Description :</label>
-                                            <textarea class="form-control"></textarea>
+                                            <label>تاريخ النهاية</label>
+                                            
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </section>
                             <!-- Step 3 -->
-                            <h5>جمع متطلبات المشروع</h5>
+                            <h5>جمع متطلبات المشروع
+                            <p class="mb-30">الحالة</p>
+                            </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Interview For :</label>
-                                            <input type="text" class="form-control">
+                                            <label>كتابة المتطلبات المطلوبة</label>
+                                           
                                         </div>
                                         <div class="form-group">
-                                            <label>Interview Type :</label>
-                                            <select class="form-control">
-                                                <option>Normal</option>
-                                                <option>Difficult</option>
-                                                <option>Hard</option>
-                                            </select>
+                                            <label>نوع متطلبات المشروع</label>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Interview Date :</label>
-                                            <input type="text" class="form-control date-picker"
-                                                placeholder="Select Date">
+                                            <label>تاريخ البداية</label>
+                                            
                                         </div>
                                         <div class="form-group">
-                                            <label>Interview Time :</label>
-                                            <input class="form-control time-picker" placeholder="Select time"
-                                                type="text">
+                                            <label>تاريخ النهاية</label>
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </section>
                             <!-- Step 4 -->
-                            <h5>متطلبات المشروع</h5>
+                            <h5>متطلبات المشروع
+                            <p class="mb-30">الحالة</p>
+                            </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Behaviour :</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Confidance</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Result</label>
-                                            <select class="form-control">
-                                                <option>Select Result</option>
-                                                <option>Selected</option>
-                                                <option>Rejected</option>
-                                            </select>
+                                            <label>المسوؤل</label>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Comments</label>
-                                            <textarea class="form-control"></textarea>
+                                            <label>تاريخ البداية</label>
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label>تاريخ النهاية</label>
+                                            
+                                    </div>
+                                
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>المتطلبات</label>
+                                            
                                         </div>
                                     </div>
                                 </div>

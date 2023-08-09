@@ -2237,7 +2237,7 @@
         </div>
         <div class="pd-20 card-box mb-30">
             <div class="clearfix">
-                <h4 class="text-blue h4">Create Project</h4>
+                <h4 class="text-blue h4">انشاء مشروع</h4>
 
 
             </div>
@@ -2252,14 +2252,14 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Title</label>
-                                        <input name="pro_name" type="text" class="form-control">
+                                        <label>اسم المشروع</label>
+                                        <input name="pro_name" type="text" class="form-control" require>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Details</label>
-                                        <input name="details" type="text" class="form-control">
+                                        <label>تفاصيل المشروع</label>
+                                        <input name="details" type="text" class="form-control" require>
                                     </div>
                                 </div>
                             </div>
@@ -2270,9 +2270,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Add Members:</label>
+                                        <label>اضافة اعضاء</label>
                                         <select class="custom-select form-control selectpicker" data-live-search="true"
-                                            multiple>
+                                            multiple require>
                                             <?php foreach ($names as $name): ?>
                                             <option><?php echo $name; ?></option>
                                             <?php endforeach; ?>
@@ -2282,12 +2282,12 @@
                                 <div class="col-md-6">
 
                                     <div class="form-group">
-                                        <label for="d_start">Start Date :</label>
+                                        <label for="d_start">تاريخ البداية </label>
                                         <input name="d_start" type="date" id="d_start" class="form-control"
                                             placeholder="Select Date" require>
                                     </div>
                                     <div class="form-group">
-                                        <label for="d_end">End Date :</label>
+                                        <label for="d_end">تاريخ النهاية </label>
                                         <input name="d_end" type="date" id="d_end" class="form-control"
                                             placeholder="Select Date" require>
 
@@ -2300,7 +2300,7 @@
 
                     </div>
 
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Next">
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="حفظ">
                 </form>
             </div>
         </div><!-- footer -->

@@ -474,6 +474,10 @@
                             <input name="pro_name" type="text" class="form-control" value ="<?= $project['pro_name'] ?>"> 
                             <input   name="id_project" type="hidden" class="form-control" value ="<?= $project['id_project'] ?>">
 
+                          
+
+     
+
                         </div>
                     </div>
                    
