@@ -33,6 +33,27 @@ class ProjectModel extends Model
     }
     public function deleteProject($id_project)
     {
+<<<<<<< HEAD
+        return $this->where('id_project', $projectId)->delete();
+
+=======
         return $this->where('id_project', $id_project)->delete();
+>>>>>>> 50efe4cfae72cf2bfc61e55221a10c7a05a41961
     }
+
+    public function getNames()
+    {
+        $query = $this->select('pro_name, project_code')->findAll();
+    
+        $data = array(
+            'pro_name' => array_column($query, 'pro_name'),
+            'project_code' => array_column($query, 'project_code')
+        );
+    
+        return $data;
+    }
+    
+        
+
+
 } 
