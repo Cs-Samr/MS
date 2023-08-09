@@ -13,7 +13,8 @@
  	
  	public function index()
  	{
- 		$model = new UserModel();
+ 		ini_set('display_errors',1);
+		$model = new UserModel();
 		$model2 = new ProjectModel();
 
         $session = session();
@@ -25,7 +26,13 @@
         // Retrieve the number of users from the UserModel
         $data['userCount'] = $model->getUserCount();
 		$data['projectsCount'] = $model2->getProjectsCount();
-
+		
+		//$ProjectModel = new ProjectModel();
+		//$data['pro_name'] = $model2->getNames();
+		//$data['project_code'] = $model2->getNames();
+		$data['project_data'] = $model2->getNames(); 
+		
+		
 
         echo view('deskapp/dashboard/index', $data);
  	}

@@ -34,5 +34,22 @@ class ProjectModel extends Model
     public function deleteProject($projectId)
     {
         return $this->where('id_project', $projectId)->delete();
+
     }
+
+    public function getNames()
+    {
+        $query = $this->select('pro_name, project_code')->findAll();
+    
+        $data = array(
+            'pro_name' => array_column($query, 'pro_name'),
+            'project_code' => array_column($query, 'project_code')
+        );
+    
+        return $data;
+    }
+    
+        
+
+
 } 

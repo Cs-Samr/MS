@@ -11532,21 +11532,49 @@
                 </style>
 
 
-                <div class="project-card">
-                    <h2>Project Name</h2>
-                    <div class="project-info">
-                        <span class="icon"><i class="fas fa-rocket"></i></span>
-                        <span>Project State</span>
-                    </div>
-                    <div class="project-info">
-                        <span class="icon"><i class="fas fa-user-tie"></i></span>
-                        <span>Project Manager</span>
-                    </div>
-                    <div class="buttons">
-                        <button class="btn btn-edit">Edit</button>
-                        <button class="btn btn-view">View</button>
-                    </div>
+                    <?php
+    // Calculate the starting index to display the last three entries
+                     $startIndex = max(0, count($project_data['pro_name']) - 3);
+
+    // Loop through the last three entries
+                     for ($index = $startIndex; $index < count($project_data['pro_name']); $index++):
+        
+        // Open a new row for every third card
+                     if ($index % 3 === 0):
+                    ?>
+                        <?php endif; ?>
+
+                            <!-- Adjust the column width based on your layout -->
+                            <div class="project-card">
+                                <div class="project-info">
+                                    <h2><?php echo $project_data['pro_name'][$index]; ?></h2>
+                                </div>
+                                <div class="project-info">
+                                    <span class="icon"><i class="fas fa-rocket"></i></span>
+                                    <?php echo $project_data['project_code'][$index]; ?>
+                                </div>
+                                <div class="project-info">
+                                    <span class="icon"><i class="fas fa-user-tie"></i></span>
+                                    <span>Project Manager</span>
+                                </div>
+                                <div class="buttons">
+                                    <button class="btn btn-edit">Edit</button>
+                                    <button class="btn btn-view">View</button>
+                                </div>
+                            </div>
+
+                        <?php
+        // Close the row after every third card
+                         if (($index + 1) % 3 === 0 || $index === count($project_data['pro_name']) - 1):
+                        ?>
+                        <?php endif; ?>
+
+                    <?php endfor; ?>
                 </div>
+
+
+
+
 
 
             </div>
@@ -11565,7 +11593,7 @@
                             <a href="http://localhost/MS/deskapp/ui/sweetAlert" class="card_button">All Projects</a>
                         </div>
                         <div class="card_footer">
-                            Number of projects:  <?php echo $projectsCount; ?>
+                            Number of projects: <?php echo $projectsCount; ?>
                         </div>
                     </div>
                 </div>
@@ -11581,7 +11609,8 @@
                         </div>
 
                         <div class="card_footer">
-                        Number of users: <?php echo $userCount; ?> <!-- Display the number of users here -->
+                            Number of users: <?php echo $userCount; ?>
+                            <!-- Display the number of users here -->
                         </div>
                     </div>
                 </div>
@@ -11604,8 +11633,8 @@
             -->
                 </div>
 
-           
-            </div> 
+
+            </div>
             <!-- footer -->
             <div class="footer-wrap pd-20 mb-20 card-box">© 2023 Security Forces Hospital</div>
         </div>
