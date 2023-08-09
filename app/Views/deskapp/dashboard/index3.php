@@ -12275,8 +12275,7 @@
                                 </ol>
                             </nav>
                         <a class="btn btn-primary btn-sm float-right" href="http://localhost/MS/deskapp/ui/notification">Archives</a>
-
-</div>
+                         </div>
                     </div>
                 </div>
         <div class="pd-ltr-20">
