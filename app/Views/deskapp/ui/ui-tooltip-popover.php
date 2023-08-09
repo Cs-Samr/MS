@@ -455,7 +455,10 @@
     <h4 class="text-blue h4">Edit Project</h4>
 </div>
 <div class="wizard-content">
-    <form method="post"  action="/MS/deskapp/ui/updateProject">
+<?php foreach ($projects as $project) {
+        $id= $project['id_project'] ;
+        } ?>
+    <form method="post"  action="/MS/deskapp/ui/updateProject/<?=$id?>">
     <?= csrf_field() ?>
         <!-- Add a hidden input field to store the project ID -->
         <?php foreach ($projects as $project) { ?>

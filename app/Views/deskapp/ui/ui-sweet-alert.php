@@ -427,14 +427,16 @@
   <div class="pd-20 d-flex align-items-center justify-content-between">
     <h4 class="text-blue h4">All Project Table</h4>
   </div>
+  
 
-	<table class="data-table table stripe hover nowrap dataTable no-footer dtr-inline" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+  <table class="data-table table stripe hover nowrap dataTable no-footer dtr-inline" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
     <thead>
                 <tr role="row">
                     <th class="table-plus datatable-nosort sorting_asc" rowspan="1" colspan="1" aria-label="pro_name">Project Name</th>
                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="d_start: activate to sort column ascending">Project Code</th>
                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="d_start: activate to sort column ascending">Date Start</th>
                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="d_end: activate to sort column ascending">Date End</th>
+                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="detalis: activate to sort column ascending">Details</th>
                     <th class="datatable-nosort sorting_disabled" rowspan="1" colspan="1" aria-label="Action">Action</th>
                 </tr>
             </thead>
@@ -445,29 +447,32 @@
                         <td><?=$project['project_code'] ?></td>
                         <td><?= $project['d_start'] ?></td>
                         <td><?= $project['d_end'] ?></td>
+                        <td><?= $project['details'] ?></td>
                         <td>
-						<div class="dropdown">
+            <div class="dropdown">
                     <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                         <i class="dw dw-more"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                        <a class="dropdown-item"  href="http://localhost/MS/deskapp/ui/tooltip/<?= $project['id_project'] ?>"><i class="dw dw-edit2"></i> Edit</a>
-                        <a class="dropdown-item delete-user" href="http://localhost/MS/deskapp/ui/deletePro/<?= $project['id_project'] ?>"><i class="dw dw-delete-3"></i> Delete</a>
-                        <a class="dropdown-item " href="http://localhost/MS/deskapp/forms/wizard">View</a>
+                        <a class="dropdown-item"  href="http://localhost/MS/deskapp/ui/editProject/<?= $project['id_project'] ?>"><i class="dw dw-edit2"></i> Edit</a>
+            <a class="dropdown-item delete-user" href="http://localhost/MS/deskapp/ui/deletePro/<?= $project['id_project'] ?>"><i class="dw dw-delete-3"></i> Delete</a>                    
+			    <a class="dropdown-item " herf="http://http://localhost/MS/deskapp/forms/wizard">View</a>
                     </div>
-                            </div>
-                        </td>
+
+    </div>
+</div>
+
+                       </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
+
     </div>
 </div>
-
 					<!-- Export Datatable End -->
 			</div>
-
-			<script>
+	<script>		
 $(document).ready(function() {
     $('.delete-user').on('click', function(e) {
         e.preventDefault();

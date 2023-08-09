@@ -31,10 +31,14 @@ class ProjectModel extends Model
 
         return $this->insert($data);
     }
-    public function deleteProject($projectId)
+    public function deleteProject($id_project)
     {
+<<<<<<< HEAD
         return $this->where('id_project', $projectId)->delete();
 
+=======
+        return $this->where('id_project', $id_project)->delete();
+>>>>>>> 50efe4cfae72cf2bfc61e55221a10c7a05a41961
     }
 
     public function getNames()
