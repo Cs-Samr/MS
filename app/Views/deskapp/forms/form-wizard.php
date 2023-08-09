@@ -66,15 +66,7 @@
                                 </ol>
                             </nav>
                         </div>
-<<<<<<< HEAD
-                        <div class="col-md-6 col-sm-12 text-right">
-                            <div class="dropdown">
-                              
-                            </div>
-                        </div>
-=======
                         
->>>>>>> a9597d844874c934bd810674195722cf598690df
                     </div>
                 </div>
 
@@ -86,13 +78,8 @@
                     <div class="wizard-content">
                         <form class="tab-wizard wizard-circle wizard">
                             <h5>استلام طلب المشروع
-<<<<<<< HEAD
-                                <p class="mb-30">الحالة</p>
-                            </h5>
-=======
                             
                               </h5>
->>>>>>> a9597d844874c934bd810674195722cf598690df
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -133,11 +120,7 @@
                             </section>
                             <!-- Step 2 -->
                             <h5>دراسة طلب المشروع
-<<<<<<< HEAD
-                                <p class="mb-30">الحالة</p>
-=======
                             
->>>>>>> a9597d844874c934bd810674195722cf598690df
                             </h5>
                             <section>
                                 <div class="row">
@@ -179,11 +162,7 @@
                             </section>
                             <!-- Step 3 -->
                             <h5>جمع متطلبات المشروع
-<<<<<<< HEAD
-                                <p class="mb-30">الحالة</p>
-=======
                             
->>>>>>> a9597d844874c934bd810674195722cf598690df
                             </h5>
                             <section>
                                 <div class="row">
