@@ -234,11 +234,7 @@
                             </section>
                             <!-- Step 4 -->
                             <h5>متطلبات المشروع
-<<<<<<< HEAD
-                                <p class="mb-30">الحالة</p>
-=======
                             
->>>>>>> a9597d844874c934bd810674195722cf598690df
                             </h5>
                             <section>
                                 <div class="row">
@@ -293,13 +289,8 @@
                     <div class="wizard-content">
                         <form class="tab-wizard wizard-circle wizard">
                             <h5>استلام طلب المشروع
-<<<<<<< HEAD
-                                <p class="mb-30">الحالة</p>
-                            </h5>
-=======
                             
                               </h5>
->>>>>>> a9597d844874c934bd810674195722cf598690df
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -330,11 +321,7 @@
                             </section>
                             <!-- Step 2 -->
                             <h5>دراسة طلب المشروع
-<<<<<<< HEAD
-                                <p class="mb-30">الحالة</p>
-=======
                             
->>>>>>> a9597d844874c934bd810674195722cf598690df
                             </h5>
                             <section>
                                 <div class="row">
@@ -366,26 +353,18 @@
                             </section>
                             <!-- Step 3 -->
                             <h5>جمع متطلبات المشروع
-<<<<<<< HEAD
-                                <p class="mb-30">الحالة</p>
-=======
                             
->>>>>>> a9597d844874c934bd810674195722cf598690df
                             </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>كتابة المتطلبات المطلوبة</label>
-<<<<<<< HEAD
-
-=======
                                             
                                         </div>
                                         <div>
                                         <label>اختر الحالة</label>
                                             
->>>>>>> a9597d844874c934bd810674195722cf598690df
                                         </div>
                                         <div class="form-group">
                                             <label>نوع متطلبات المشروع</label>
@@ -410,11 +389,7 @@
                             </section>
                             <!-- Step 4 -->
                             <h5>متطلبات المشروع
-<<<<<<< HEAD
-                                <p class="mb-30">الحالة</p>
-=======
                             
->>>>>>> a9597d844874c934bd810674195722cf598690df
                             </h5>
                             <section>
                                 <div class="row">
@@ -431,20 +406,6 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>تاريخ البداية</label>
-<<<<<<< HEAD
-
-                                        </div>
-                                        <div class="form-group">
-                                            <label>تاريخ النهاية</label>
-
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>المتطلبات</label>
-
-                                            </div>
-=======
                                            
                                         </div>
                                         <div class="form-group">
@@ -457,7 +418,6 @@
                                         <div class="form-group">
                                             <label>المتطلبات</label>
                                             
->>>>>>> a9597d844874c934bd810674195722cf598690df
                                         </div>
                                     </div>
                             </section>
