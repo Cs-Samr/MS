@@ -195,6 +195,7 @@
 				$id = $model->getInsertID();
 
 				$data['state'] = 'قيد الإنشاء';
+				
 
 			  // Merge 'id' and 'd_start' and set it to 'code'
 				$data['project_code'] = $id.$data['d_start'];

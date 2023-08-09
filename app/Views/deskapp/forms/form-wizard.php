@@ -67,16 +67,8 @@
                             </nav>
                         </div>
                         <div class="col-md-6 col-sm-12 text-right">
-                                <div class="dropdown">
-                          <a class="btn btn-primary dropdown-toggle" href="#" role="button"
-                                         data-toggle="dropdown">
-                                           January 2018
-                                   </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Export List</a>
-                                    <a class="dropdown-item" href="#">Policies</a>
-                                    <a class="dropdown-item" href="#">View Assets</a>
-                                </div>
+                            <div class="dropdown">
+                              
                             </div>
                         </div>
                     </div>
@@ -90,8 +82,8 @@
                     <div class="wizard-content">
                         <form class="tab-wizard wizard-circle wizard">
                             <h5>استلام طلب المشروع
-                            <p class="mb-30">الحالة</p>
-                              </h5>
+                                <p class="mb-30">الحالة</p>
+                            </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -114,7 +106,7 @@
                             </section>
                             <!-- Step 2 -->
                             <h5>دراسة طلب المشروع
-                            <p class="mb-30">الحالة</p>
+                                <p class="mb-30">الحالة</p>
                             </h5>
                             <section>
                                 <div class="row">
@@ -134,11 +126,11 @@
                                             <input type="date" class="form-control" placeholder="Select Date">
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
                             </section>
                             <!-- Step 3 -->
                             <h5>جمع متطلبات المشروع
-                            <p class="mb-30">الحالة</p>
+                                <p class="mb-30">الحالة</p>
                             </h5>
                             <section>
                                 <div class="row">
@@ -171,7 +163,7 @@
                             </section>
                             <!-- Step 4 -->
                             <h5>متطلبات المشروع
-                            <p class="mb-30">الحالة</p>
+                                <p class="mb-30">الحالة</p>
                             </h5>
                             <section>
                                 <div class="row">
@@ -196,7 +188,7 @@
                                             <input type="date" class="form-control" placeholder="Select Date">
                                         </div>
                                     </div>
-                                
+
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>المتطلبات</label>
@@ -215,111 +207,111 @@
                         <p class="mb-30">اسم المشروع</p>
                     </div>
                     <div class="wizard-content">
-                    <form class="tab-wizard wizard-circle wizard">
+                        <form class="tab-wizard wizard-circle wizard">
                             <h5>استلام طلب المشروع
-                            <p class="mb-30">الحالة</p>
+                                <p class="mb-30">الحالة</p>
                             </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>تفاصيل المشروع</label>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>تاريخ البداية</label>
-                                            
+
                                         </div>
                                         <div class="form-group">
                                             <label>تاريخ النهاية</label>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
                             </section>
                             <!-- Step 2 -->
                             <h5>دراسة طلب المشروع
-                            <p class="mb-30">الحالة</p>
+                                <p class="mb-30">الحالة</p>
                             </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>تفاصيل طلب المشروع</label>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>تاريخ البداية</label>
-                                            
+
                                         </div>
                                         <div class="form-group">
                                             <label>تاريخ النهاية</label>
-                                            
+
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
                             </section>
                             <!-- Step 3 -->
                             <h5>جمع متطلبات المشروع
-                            <p class="mb-30">الحالة</p>
+                                <p class="mb-30">الحالة</p>
                             </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>كتابة المتطلبات المطلوبة</label>
-                                           
+
                                         </div>
                                         <div class="form-group">
                                             <label>نوع متطلبات المشروع</label>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>تاريخ البداية</label>
-                                            
+
                                         </div>
                                         <div class="form-group">
                                             <label>تاريخ النهاية</label>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
                             </section>
                             <!-- Step 4 -->
                             <h5>متطلبات المشروع
-                            <p class="mb-30">الحالة</p>
+                                <p class="mb-30">الحالة</p>
                             </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>المسوؤل</label>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>تاريخ البداية</label>
-                                            
+
                                         </div>
                                         <div class="form-group">
                                             <label>تاريخ النهاية</label>
-                                            
-                                    </div>
-                                
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>المتطلبات</label>
-                                            
+
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>المتطلبات</label>
+
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                             </section>
                         </form>
                     </div>
@@ -334,7 +326,7 @@
                                 <h3 class="mb-20">أتممت جميع المراحل </h3>
                                 <div class="mb-30 text-center"><img
                                         src="<?php echo base_url(); ?>/assets/vendors/images/success.png"></div>
-                                تهانينا أنتهى المشروع 
+                                تهانينا أنتهى المشروع
                             </div>
                             <div class="modal-footer justify-content-center">
                                 <button type="button" class="btn btn-primary" data-dismiss="modal">تم</button>
