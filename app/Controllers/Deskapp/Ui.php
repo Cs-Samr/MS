@@ -194,6 +194,9 @@
 				$model->saveProject($data);
 				$id = $model->getInsertID();
 
+				$data['state'] = 'قيد الإنشاء';
+				
+
 			  // Merge 'id' and 'd_start' and set it to 'code'
 				$data['project_code'] = $id.$data['d_start'];
 				$data['id_project'] = $id ;
@@ -366,8 +369,6 @@
 			$projectAssign = new ProjectAssign();
 			$assipro = $projectAssign->getUser(); 
 			$data['project_assign'] = $assipro;
-			
-			
 					
 			return view('deskapp/ui/ui-sweet-alert', $data);
 					
