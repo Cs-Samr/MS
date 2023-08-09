@@ -2233,20 +2233,20 @@
                         </ol>
                     </nav>
                 </div>
-                
-                            </div>
+
             </div>
             <div class="text-right">
-                          <button type="button" class="btn btn-warning">Warning</button>
-                                <type="button" class="btn btn-secondary">Secondary
-                            </type="button"><div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Export List</a>
-                                    <a class="dropdown-item" href="#">Policies</a>
-                                    <a class="dropdown-item" href="#">View Assets</a>
-                                </div>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Export List</a>
+                    <a class="dropdown-item" href="#">Policies</a>
+                    <a class="dropdown-item" href="#">View Assets</a>
+                </div>
+
+            </div>
+
         </div>
         <div class="pd-20 card-box mb-30">
-            
+
             <div class="clearfix">
                 <h4 class="text-blue h4">انشاء مشروع</h4>
 
@@ -2344,16 +2344,17 @@
                     </svg></div>
             </nav>
             <div class="col-md-6 col-sm-12 text-right">
-                                <div class="dropdown">
-                          <button type="button" class="btn btn-warning">Warning</button>
-                                <type="button" class="btn btn-secondary">Secondary
-                            </type="button"><div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Export List</a>
-                                    <a class="dropdown-item" href="#">Policies</a>
-                                    <a class="dropdown-item" href="#">View Assets</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <type="button" class="btn btn-secondary">Secondary
+                    </type="button">
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Export List</a>
+                        <a class="dropdown-item" href="#">Policies</a>
+                        <a class="dropdown-item" href="#">View Assets</a>
+                    </div>
+                </div>
+            </div>
             <div class="datepicker--content">
                 <div class="datepicker--days datepicker--body active">
                     <div class="datepicker--days-names">
