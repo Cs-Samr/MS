@@ -66,19 +66,7 @@
                                 </ol>
                             </nav>
                         </div>
-                        <div class="col-md-6 col-sm-12 text-right">
-                                <div class="dropdown">
-                          <a class="btn btn-primary dropdown-toggle" href="#" role="button"
-                                         data-toggle="dropdown">
-                                           January 2018
-                                   </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Export List</a>
-                                    <a class="dropdown-item" href="#">Policies</a>
-                                    <a class="dropdown-item" href="#">View Assets</a>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -90,7 +78,7 @@
                     <div class="wizard-content">
                         <form class="tab-wizard wizard-circle wizard">
                             <h5>استلام طلب المشروع
-                            <p class="mb-30">الحالة</p>
+                            
                               </h5>
                             <section>
                                 <div class="row">
@@ -99,6 +87,15 @@
                                             <label>تفاصيل المشروع</label>
                                             <textarea class="form-control"></textarea>
                                         </div>
+                                        <div>
+                                        <label>اختر الحالة</label>
+                                            <select class="form-control">
+                                                <option>جديد</option>
+                                                <option>متوقف</option>
+                                                <option>مكتمل</option>
+                                                
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -109,12 +106,21 @@
                                             <label>تاريخ النهاية</label>
                                             <input type="date" class="form-control" placeholder="Select Date">
                                         </div>
+                                        <div class="form-group">
+                                            <label>المسوؤل</label>
+                                            <select class="custom-select form-control selectpicker"
+                                                data-live-search="true" multiple>
+                                                <?php foreach ($names as $name): ?>
+                                                <option><?php echo $name; ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
                             <!-- Step 2 -->
                             <h5>دراسة طلب المشروع
-                            <p class="mb-30">الحالة</p>
+                            
                             </h5>
                             <section>
                                 <div class="row">
@@ -123,6 +129,15 @@
                                             <label>تفاصيل طلب المشروع</label>
                                             <textarea class="form-control"></textarea>
                                         </div>
+                                        <div>
+                                        <label>اختر الحالة</label>
+                                            <select class="form-control">
+                                                <option>جديد</option>
+                                                <option>متوقف</option>
+                                                <option>مكتمل</option>
+                                                
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -133,12 +148,21 @@
                                             <label>تاريخ النهاية</label>
                                             <input type="date" class="form-control" placeholder="Select Date">
                                         </div>
+                                        <div class="form-group">
+                                            <label>المسوؤل</label>
+                                            <select class="custom-select form-control selectpicker"
+                                                data-live-search="true" multiple>
+                                                <?php foreach ($names as $name): ?>
+                                                <option><?php echo $name; ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div> 
                             </section>
                             <!-- Step 3 -->
                             <h5>جمع متطلبات المشروع
-                            <p class="mb-30">الحالة</p>
+                            
                             </h5>
                             <section>
                                 <div class="row">
@@ -146,6 +170,15 @@
                                         <div class="form-group">
                                             <label>كتابة المتطلبات المطلوبة</label>
                                             <textarea class="form-control"></textarea>
+                                        </div>
+                                        <div>
+                                        <label>اختر الحالة</label>
+                                            <select class="form-control">
+                                                <option>جديد</option>
+                                                <option>متوقف</option>
+                                                <option>مكتمل</option>
+                                                
+                                            </select>
                                         </div>
                                         <div class="form-group">
                                             <label>نوع متطلبات المشروع</label>
@@ -166,12 +199,21 @@
                                             <label>تاريخ النهاية</label>
                                             <input type="date" class="form-control" placeholder="Select Date">
                                         </div>
+                                        <div class="form-group">
+                                            <label>المسوؤل</label>
+                                            <select class="custom-select form-control selectpicker"
+                                                data-live-search="true" multiple>
+                                                <?php foreach ($names as $name): ?>
+                                                <option><?php echo $name; ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
                             <!-- Step 4 -->
                             <h5>متطلبات المشروع
-                            <p class="mb-30">الحالة</p>
+                            
                             </h5>
                             <section>
                                 <div class="row">
@@ -183,6 +225,15 @@
                                                 <?php foreach ($names as $name): ?>
                                                 <option><?php echo $name; ?></option>
                                                 <?php endforeach; ?>
+                                            </select>
+                                        </div>
+                                        <div>
+                                        <label>اختر الحالة</label>
+                                            <select class="form-control">
+                                                <option>جديد</option>
+                                                <option>متوقف</option>
+                                                <option>مكتمل</option>
+                                                
                                             </select>
                                         </div>
                                     </div>
@@ -217,13 +268,17 @@
                     <div class="wizard-content">
                     <form class="tab-wizard wizard-circle wizard">
                             <h5>استلام طلب المشروع
-                            <p class="mb-30">الحالة</p>
-                            </h5>
+                            
+                              </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>تفاصيل المشروع</label>
+                                            
+                                        </div>
+                                        <div>
+                                        <label>اختر الحالة</label>
                                             
                                         </div>
                                     </div>
@@ -236,12 +291,16 @@
                                             <label>تاريخ النهاية</label>
                                             
                                         </div>
+                                        <div class="form-group">
+                                            <label>المسوؤل</label>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </section>
                             <!-- Step 2 -->
                             <h5>دراسة طلب المشروع
-                            <p class="mb-30">الحالة</p>
+                            
                             </h5>
                             <section>
                                 <div class="row">
@@ -250,6 +309,10 @@
                                             <label>تفاصيل طلب المشروع</label>
                                             
                                         </div>
+                                        <div>
+                                        <label>اختر الحالة</label>
+                                            
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -260,19 +323,27 @@
                                             <label>تاريخ النهاية</label>
                                             
                                         </div>
+                                        <div class="form-group">
+                                            <label>المسوؤل</label>
+                                            
+                                        </div>
                                     </div>
                                 </div> 
                             </section>
                             <!-- Step 3 -->
                             <h5>جمع متطلبات المشروع
-                            <p class="mb-30">الحالة</p>
+                            
                             </h5>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>كتابة المتطلبات المطلوبة</label>
-                                           
+                                            
+                                        </div>
+                                        <div>
+                                        <label>اختر الحالة</label>
+                                            
                                         </div>
                                         <div class="form-group">
                                             <label>نوع متطلبات المشروع</label>
@@ -288,12 +359,16 @@
                                             <label>تاريخ النهاية</label>
                                             
                                         </div>
+                                        <div class="form-group">
+                                            <label>المسوؤل</label>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </section>
                             <!-- Step 4 -->
                             <h5>متطلبات المشروع
-                            <p class="mb-30">الحالة</p>
+                            
                             </h5>
                             <section>
                                 <div class="row">
@@ -302,15 +377,20 @@
                                             <label>المسوؤل</label>
                                             
                                         </div>
+                                        <div>
+                                        <label> الحالة</label>
+                                           
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>تاريخ البداية</label>
-                                            
+                                           
                                         </div>
                                         <div class="form-group">
                                             <label>تاريخ النهاية</label>
                                             
+                                        </div>
                                     </div>
                                 
                                     <div class="col-md-6">
@@ -322,7 +402,6 @@
                                 </div>
                             </section>
                         </form>
-                    </div>
                 </div>
 
                 <!-- success Popup html Start -->
