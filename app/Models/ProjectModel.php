@@ -8,7 +8,7 @@ class ProjectModel extends Model
 {
     protected $table = 'projects';
     protected $primaryKey = 'id_project';
-    protected $allowedFields = ['pro_name','project_code', 'd_start', 'd_end','details'];
+    protected $allowedFields = ['pro_name','project_code', 'd_start', 'd_end','details','level#','state','type'];
     
 
     public function getpro()
@@ -33,8 +33,7 @@ class ProjectModel extends Model
     }
     public function deleteProject($id_project)
     {
-        return $this->where('id_project', $projectId)->delete();
-
+        return $this->where('id_project', $id_project)->delete();
     }
 
     public function getNames()

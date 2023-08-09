@@ -654,4 +654,68 @@ CRITICAL - 2023-08-08 06:34:25 --> syntax error, unexpected token "<<", expectin
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+<<<<<<< HEAD
+CRITICAL - 2023-08-08 11:10:08 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 11:17:16 --> syntax error, unexpected token "public", expecting end of file
+#0 C:\xampp\htdocs\MS\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('deskapp/ui/swee...')
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('deskapp/ui/swee...')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-08 11:18:07 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 11:21:31 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 11:23:49 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 11:24:13 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 11:27:55 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 11:28:02 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 11:29:00 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-08 11:30:17 --> Too few arguments to function App\Controllers\Deskapp\Ui::deletePro(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->deletePro()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+=======
 >>>>>>> 50efe4cfae72cf2bfc61e55221a10c7a05a41961
+>>>>>>> fad4e8ab376f47a3de7e205c942ebbc98dac592e

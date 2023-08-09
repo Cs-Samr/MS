@@ -12275,8 +12275,7 @@
                                 </ol>
                             </nav>
                         <a class="btn btn-primary btn-sm float-right" href="http://localhost/MS/deskapp/ui/notification">Archives</a>
-
-</div>
+                         </div>
                     </div>
                 </div>
         <div class="pd-ltr-20">
@@ -12369,9 +12368,6 @@
                     </div>
                 </div>
 
-
-
-
                 <div class="project-card">
                     <h2>Project Name</h2>
                     <div class="project-info">
@@ -12387,6 +12383,7 @@
                         <button class="btn btn-view">View</button>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <h2>Project Name</h2>
                     <div class="project-info">

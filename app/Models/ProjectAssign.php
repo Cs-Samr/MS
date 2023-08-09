@@ -18,7 +18,8 @@ class ProjectAssign extends Model
 
     }
     public function deleteProject($id_project)
-    {
-        return $this->where('id_projectfk', $id_project)->delete();
-    }
+{
+    return $this->where('id_projectfk', $id_project)->delete();
+}
+
 }
