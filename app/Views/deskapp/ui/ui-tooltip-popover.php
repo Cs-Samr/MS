@@ -452,7 +452,7 @@
         
       <div class="pd-20 card-box mb-30">
     <div class="clearfix">
-    <h4 class="text-blue h4">Edit Project</h4>
+    <h4 class="text-blue h4">تعديل المشروع</h4>
 </div>
 <div class="wizard-content">
 <?php foreach ($projects as $project) {
@@ -470,13 +470,11 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Title</label>
+                            <label>اسم المشروع</label>
                             <input name="pro_name" type="text" class="form-control" value ="<?= $project['pro_name'] ?>"> 
                             <input   name="id_project" type="hidden" class="form-control" value ="<?= $project['id_project'] ?>">
 
-                          
-
-     
+      
 
                         </div>
                     </div>
@@ -485,8 +483,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Add Members:</label>
-                            <select name="add_members" class="custom-select form-control">
+                            <label>اضافة اعضاء</label>
+                            <select name="add_members" class="custom-select form-control selectpicker" multiple>
                                 <?php foreach ($users as $user) { ?>
                                     <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
                                 <?php } ?>
@@ -496,14 +494,14 @@
                         
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="d_start">Start Date:</label>
+                            <label for="d_start">تاريخ البداية </label>
                             <input name="d_start" type="date" id="d_start" class="form-control" placeholder="Select Date" value ="<?= $project['d_start'] ?>">
                           
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="d_end">End Date:</label>
+                            <label for="d_end">تاريخ النهاية </label>
                             <input name="d_end" type="date" id="d_end" class="form-control" placeholder="Select Date"value ="<?= $project['d_end'] ?>">
                         </div>
                     </div>
@@ -596,7 +594,7 @@
                         </section>
                     </div>
             
-            <input class="btn btn-primary btn-lg btn-block" type="submit"  value="Update"  herf="http://localhost/MS/deskapp/ui/sweet-alert">
+            <input class="btn btn-primary btn-lg btn-block" type="submit"  value="حفظ"  herf="http://localhost/MS/deskapp/ui/sweet-alert">
         </form>
     </div>
 </div>
