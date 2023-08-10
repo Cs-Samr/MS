@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2023-08-10 02:00:56 --> Undefined variable $project_data
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\dashboard\index2.php(12332): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12332)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
@@ -18,3 +19,13 @@ CRITICAL - 2023-08-10 02:01:09 --> Undefined variable $project_data
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+=======
+CRITICAL - 2023-08-10 01:20:11 --> syntax error, unexpected token "endforeach", expecting end of file
+#0 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/dashboa...', Array, true)
+#1 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Dashboard.php(37): view('deskapp/dashboa...', Array)
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Dashboard->index()
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Dashboard))
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+>>>>>>> 900375a48ad0ba79db4ffb68d1d2742db03baa0b
