@@ -11533,119 +11533,116 @@
 
                 <div class="project-card-container">
                     <?php
-    // Calculate the starting index to display the last three entries
+    // Calculate the starting index to display the last two entries
     $startIndex = max(0, count($project_data['pro_name']) - 3);
 
-    // Loop through the last three entries
-    for ($index = $startIndex; $index < count($project_data['pro_name']); $index++):
-        
-        // Open a new row for every third card
-        if ($index % 3 === 0):
-    ?>
-                    <div class="row">
-                        <?php endif; ?>
-
-                        <div class="col-md-4">
-                            <!-- Adjust the column width based on your layout -->
-                            <div class="project-card">
-                                <div class="project-info">
-                                    <h2><?php echo $project_data['pro_name'][$index]; ?></h2>
-                                </div>
-                                <div class="project-info">
-                                    <span class="icon"><i class="fas fa-rocket"></i></span>
-                                    <?php echo $project_data['project_code'][$index]; ?>
-                                </div>
-                                <div class="project-info">
-                                    <span class="icon"><i class="fas fa-user-tie"></i></span>
-                                    <span>Project Manager</span>
-                                </div>
-                                <div class="buttons">
-                                    <button class="btn btn-edit">Edit</button>
-                                    <button class="btn btn-view">View</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <?php
-        // Close the row after every third card
-        if (($index + 1) % 3 === 0 || $index === count($project_data['pro_name']) - 1):
+    // Open a new row for the last two cards
+    echo '<div class="row">';
+    
+    // Loop through the last two entries
+    for ($index = $startIndex; $index < count($project_data['pro_name']); $index++) {
+        echo '<div class="col-md-6">';
+        // Adjust the column width based on your layout
         ?>
+
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2><?php echo $project_data['pro_name'][$index]; ?></h2>
+                        </div>
+                        <div class="project-info">
+                            <span class="icon"><i class="fas fa-rocket"></i></span>
+                            <?php echo $project_data['project_code'][$index]; ?>
+                        </div>
+                        <div class="project-info">
+                            <span class="icon"><i class="fas fa-user-tie"></i></span>
+                            <span>Project Manager</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn btn-edit">Edit</button>
+                            <button class="btn btn-view">View</button>
+                        </div>
                     </div>
-                    <?php endif; ?>
 
-                    <?php endfor; ?>
-                </div>
+                    <?php
+        echo '</div>'; // Close col-md-6
+    }
 
-
-
-
-
-
-
-
-
-
+    // Close the row after displaying the last two cards
+    echo '</div>';
+    ?>
             </div>
 
 
-            <div class="row">
-                <div class="card">
-                    <div style="text-align: center;">
 
-                        <div class="card_icon">☰</div> <!-- Project Icon -->
-                        <div class="card_title">Projects</div>
-                        <div class="card_button-container">
 
-                            <a href="http://localhost/MS/deskapp/ui/cards" class="card_button">New Project</a>
 
-                            <a href="http://localhost/MS/deskapp/ui/sweetAlert" class="card_button">All Projects</a>
-                        </div>
-                        <div class="card_footer">
-                            Number of projects: <?php echo $projectsCount; ?>
-                        </div>
+
+
+
+
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="card">
+                <div style="text-align: center;">
+
+                    <div class="card_icon">☰</div> <!-- Project Icon -->
+                    <div class="card_title">Projects</div>
+                    <div class="card_button-container">
+
+                        <a href="http://localhost/MS/deskapp/ui/cards" class="card_button">New Project</a>
+
+                        <a href="http://localhost/MS/deskapp/ui/sweetAlert" class="card_button">All Projects</a>
+                    </div>
+                    <div class="card_footer">
+                        Number of projects: <?php echo $projectsCount; ?>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div style="text-align: center;">
+                    <div class="card_icon">👤</div> <!-- User Icon -->
+                    <div class="card_title">Users</div>
+                    <div class="card_button-container">
+                        <a href="http://localhost/MS/deskapp/register" class="card_button">Add User</a>
+                        <a href="http://localhost/MS/deskapp/ui/buttons" class="card_button">View All Users</a>
+                    </div>
+
+                    <div class="card_footer">
+                        Number of users: <?php echo $userCount; ?>
+                        <!-- Display the number of users here -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div style="text-align: center;">
+                    <div class="card_icon">📊</div> <!-- Statistics Icon -->
+                    <div class="card_title">Statistics</div>
+                    <div class="card_center-button">
+                        <!-- Centering the button in the card -->
+                        <a href="http://localhost/MS/deskapp/ui/modals" class="card_button">View Stats</a>
                     </div>
                 </div>
 
-
-                <div class="card">
-                    <div style="text-align: center;">
-                        <div class="card_icon">👤</div> <!-- User Icon -->
-                        <div class="card_title">Users</div>
-                        <div class="card_button-container">
-                            <a href="http://localhost/MS/deskapp/register" class="card_button">Add User</a>
-                            <a href="http://localhost/MS/deskapp/ui/buttons" class="card_button">View All Users</a>
-                        </div>
-
-                        <div class="card_footer">
-                            Number of users: <?php echo $userCount; ?>
-                            <!-- Display the number of users here -->
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div style="text-align: center;">
-                        <div class="card_icon">📊</div> <!-- Statistics Icon -->
-                        <div class="card_title">Statistics</div>
-                        <div class="card_center-button">
-                            <!-- Centering the button in the card -->
-                            <a href="http://localhost/MS/deskapp/ui/modals" class="card_button">View Stats</a>
-                        </div>
-                    </div>
-
-                    <!-- 
+                <!-- 
             <div class="card_footer">
                 Stats data: <span id="statsData">0</span>
             </div>
             -->
-                </div>
-
-
             </div>
-            <!-- footer -->
-            <div class="footer-wrap pd-20 mb-20 card-box">© 2023 Security Forces Hospital</div>
+
+
         </div>
+        <!-- footer -->
+        <div class="footer-wrap pd-20 mb-20 card-box">© 2023 Security Forces Hospital</div>
+    </div>
     </div>
     <!-- js -->
     <script src="http://localhost/MS/assets/vendors/scripts/core.js"></script>

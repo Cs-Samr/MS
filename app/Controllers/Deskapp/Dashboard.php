@@ -57,6 +57,7 @@
 
         // Retrieve the number of users from the UserModel
 		$data['projectsCount'] = $model2->getProjectsCount();
+		$data['project_data'] = $model2->getNames(); 
 
  		echo view('deskapp/dashboard/index2',$data);
  	}
