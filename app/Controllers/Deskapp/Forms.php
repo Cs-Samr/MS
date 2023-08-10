@@ -36,13 +36,17 @@
 
 
 		public function wizard() {
+			ini_set('display_errors', 1);
+
 			$session = session();
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
 			
 
 			$userModel = new UserModel();
-			$data['names'] = $userModel->getAllNames();
+      $users = $userModel->getUser();
+      $data['users'] = $users;
+			//$data['names'] = $userModel->getAllNames();
 			return view('deskapp/forms/form-wizard',$data);
 		   
 		}

@@ -11768,37 +11768,6 @@
 
 
 
-                <div class="project-card">
-                    <h2>Project Name</h2>
-                    <div class="project-info">
-                        <span class="icon"><i class="fas fa-rocket"></i></span>
-                        <span>Project State</span>
-                    </div>
-                    <div class="project-info">
-                        <span class="icon"><i class="fas fa-user-tie"></i></span>
-                        <span>Project Manager</span>
-                    </div>
-                    <div class="buttons">
-                        <button class="btn btn-edit">Edit</button>
-                        <button class="btn btn-view">View</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h2>Project Name</h2>
-                    <div class="project-info">
-                        <span class="icon"><i class="fas fa-rocket"></i></span>
-                        <span>Project State</span>
-                    </div>
-                    <div class="project-info">
-                        <span class="icon"><i class="fas fa-user-tie"></i></span>
-                        <span>Project Manager</span>
-                    </div>
-                    <div class="buttons">
-                        <button class="btn btn-edit">Edit</button>
-                        <button class="btn btn-view">View</button>
-                    </div>
-                </div>
-
 
             </div>
 

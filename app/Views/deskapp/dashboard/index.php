@@ -10171,7 +10171,10 @@
         width: 200%;
         height: 200%;
     }
+
+    
     </style>
+
 </head>
 
 <body class="header-white active sidebar-dark" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
@@ -11462,95 +11465,24 @@
             <div class="row">
                 <link rel="stylesheet"
                     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-                <style>
-                body {
-                    font-family: Arial, sans-serif;
-                    background-color: #f2f2f2;
-                }
+                
 
-                .project-card {
 
-                    background-color: #fff;
-                    border-radius: 5px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                    padding: 20px;
-                    width: 300px;
-                    margin: 20px auto;
-                }
-
-                .project-card h2 {
-                    font-size: 24px;
-                    margin: 0 0 10px;
-                    color: #007bff;
-                }
-
-                .project-info {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 10px;
-                }
-
-                .project-info .icon {
-                    font-size: 24px;
-                    margin-right: 10px;
-                    color: #007bff;
-                }
-
-                .project-info span {
-                    color: #444;
-                }
-
-                .buttons {
-                    display: flex;
-                    justify-content: space-between;
-                }
-
-                .btn {
-                    padding: 8px 12px;
-                    border: none;
-                    border-radius: 5px;
-                    color: #fff;
-                    cursor: pointer;
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    transition: background-color 0.3s ease;
-                }
-
-                .btn-edit {
-                    background-color: #007bff;
-                }
-
-                .btn-view {
-                    background-color: #28a745;
-                }
-
-                .btn-edit:hover,
-                .btn-view:hover {
-                    background-color: #0056b3;
-                }
-                </style>
 
                 <div class="project-card-container">
-                    <?php
+                    <div class="row">
+                        <?php
+
     // Calculate the starting index to display the last three entries
     $startIndex = max(0, count($project_data['pro_name']) - 3);
 
     // Loop through the last three entries
-    for ($index = $startIndex; $index < count($project_data['pro_name']); $index++):
-        
-        // Open a new row for every third card
-        if ($index % 3 === 0):
+    for ($index = $startIndex; $index < count($project_data['pro_name']); $index++) {
     ?>
-                    <div class="row">
-                        <?php endif; ?>
 
                         <div class="col-md-4">
-                            <!-- Adjust the column width based on your layout -->
                             <div class="project-card">
-                                <div class="project-info">
-                                    <h2><?php echo $project_data['pro_name'][$index]; ?></h2>
-                                </div>
+                                <h2><?php echo $project_data['pro_name'][$index]; ?></h2>
                                 <div class="project-info">
                                     <span class="icon"><i class="fas fa-rocket"></i></span>
                                     <?php echo $project_data['project_code'][$index]; ?>
@@ -11567,14 +11499,25 @@
                         </div>
 
                         <?php
-        // Close the row after every third card
-        if (($index + 1) % 3 === 0 || $index === count($project_data['pro_name']) - 1):
-        ?>
+    }
+    ?>
                     </div>
-                    <?php endif; ?>
-
-                    <?php endfor; ?>
                 </div>
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 791fff942ce125b0ee77e06ba9ad0942fcca9e04
             </div>
 
 
