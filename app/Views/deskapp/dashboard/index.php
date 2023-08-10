@@ -10189,19 +10189,16 @@
         </div>
     </div>
 
-    <div class="header">
-        <div class="header-left">
-            <div class="menu-icon dw dw-menu"></div>
+    <
+        
+        <div >
+        <?php 
+		echo view('deskapp/includes/_header');
+		echo view('deskapp/includes/_sidebar');
 
+	?>
 
-        </div>
-        <div class="header-right">
-            <div class="dashboard-setting user-notification">
-                <div class="dropdown">
-                    <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
-
-                    </a>
-                </div>
+            
             </div>
             <div class="user-notification">
                 <div class="dropdown">

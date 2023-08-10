@@ -56,3 +56,10 @@ CRITICAL - 2023-08-10 06:36:50 --> Call to undefined method CodeIgniter\View\Vie
 #5 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2023-08-10 07:51:18 --> Call to undefined method App\Models\UserModel::dd
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(149): CodeIgniter\Model->__call('dd', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cardsHover()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

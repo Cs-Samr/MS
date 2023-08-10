@@ -11791,7 +11791,7 @@
                             <a href="http://localhost/MS/deskapp/ui/sweetAlert" class="card_button">All Projects</a>
                         </div>
                         <div class="card_footer">
-                            Number of projects:   <?php echo $projectsCount; ?>                        </div>
+                        <?php echo view('deskapp/includes/_footer'); ?>                     </div>
                     </div>
                 </div>
 
