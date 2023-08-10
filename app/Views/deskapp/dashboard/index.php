@@ -11536,8 +11536,7 @@
 
         <?php if ($index % 3 === 0): ?>
             <div class="row">
-        <?php endif; ?>
-
+         <?php endif; ?>
             <!-- Adjust the column width based on your layout -->
             <div class="col-md-4">
                 <div class="project-card">
@@ -11564,6 +11563,7 @@
         <?php endif; ?>
 
     <?php endforeach; ?>
+
 </div>
 
 
