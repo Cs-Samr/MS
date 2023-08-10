@@ -11530,42 +11530,37 @@
                     background-color: #0056b3;
                 }
                 </style>
+                    <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
 
-<div class="project-cards">
-    <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                    <?php if ($index % 3 === 0): ?>
+                        <?php endif; ?>
 
-        <?php if ($index % 3 === 0): ?>
-            <div class="row">
-        <?php endif; ?>
+                        <!-- Adjust the column width based on your layout -->
+                        <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
+                            <div class="project-card">
+                                <div class="project-info">
+                                    <h2><?php echo $pro_name; ?></h2>
+                                </div>
+                                <div class="project-info">
+                                    <span class="icon"><i class="fas fa-rocket"></i></span>
+                                    <?php echo $project_data['project_code'][$index]; ?>
+                                </div>
+                                <div class="project-info">
+                                    <span class="icon"><i class="fas fa-user-tie"></i></span>
+                                    <span>Project Manager</span>
+                                </div>
+                                <div class="buttons">
+                                    <a class="btn btn-edit"
+                                        href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">Edit</a>
+                                    <button class="btn btn-view">View</button>
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- Adjust the column width based on your layout -->
-            <div class="col-md-4">
-                <div class="project-card">
-                    <div class="project-info">
-                        <h2><?php echo $pro_name; ?></h2>
-                    </div>
-                    <div class="project-info">
-                        <span class="icon"><i class="fas fa-rocket"></i></span>
-                        <?php echo $project_data['project_code'][$index]; ?>
-                    </div>
-                    <div class="project-info">
-                        <span class="icon"><i class="fas fa-user-tie"></i></span>
-                        <span>Project Manager</span>
-                    </div>
-                    <div class="buttons">
-                    <a class="btn btn-edit" href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>" >Edit</a>
-                        <button class="btn btn-view">View</button>
-                    </div>
-                </div>
-            </div>
+                        <?php if (($index + 1) % 3 === 0 || $index === count($project_data['pro_name']) - 1): ?>
+                    <?php endif; ?>
 
-        <?php if (($index + 1) % 3 === 0 || $index === count($project_data['pro_name']) - 1): ?>
-            </div>
-        <?php endif; ?>
-
-    <?php endforeach; ?>
-</div>
-
+                    <?php endforeach; ?>
 
 
 
