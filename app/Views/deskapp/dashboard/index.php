@@ -10171,74 +10171,7 @@
         width: 200%;
         height: 200%;
     }
-    /*  */
-                body {
-                    font-family: Arial, sans-serif;
-                    background-color: #f2f2f2;
-                }
 
-                .project-card {
-
-                    background-color: #fff;
-                    border-radius: 5px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                    padding: 20px;
-                    width: 300px;
-                    margin: 20px auto;
-                }
-
-                .project-card h2 {
-                    font-size: 24px;
-                    margin: 0 0 10px;
-                    color: #007bff;
-                }
-
-                .project-info {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 10px;
-                }
-
-                .project-info .icon {
-                    font-size: 24px;
-                    margin-right: 10px;
-                    color: #007bff;
-                }
-
-                .project-info span {
-                    color: #444;
-                }
-
-                .buttons {
-                    display: flex;
-                    justify-content: space-between;
-                }
-
-                .btn {
-                    padding: 8px 12px;
-                    border: none;
-                    border-radius: 5px;
-                    color: #fff;
-                    cursor: pointer;
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    transition: background-color 0.3s ease;
-                }
-
-                .btn-edit {
-                    background-color: #007bff;
-                }
-
-                .btn-view {
-                    background-color: #28a745;
-                }
-
-                .btn-edit:hover,
-                .btn-view:hover {
-                    background-color: #0056b3;
-                }
-                </style>
     
     </style>
 

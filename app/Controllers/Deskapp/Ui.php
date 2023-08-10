@@ -4,6 +4,8 @@
 	use App\Models\UserModel;
 	use App\Models\ProjectModel;
 	use App\Models\ProjectAssign;
+	use App\Models\LevelsModel;
+
 	/**
 	 * ui controller
 	 */
@@ -163,12 +165,15 @@
 
 			 $userModel = new UserModel();
 			 $data['names'] = $userModel->getAllNames();
+			 
 			 return view('deskapp/ui/ui-cards',$data);
 
 		}
 
 		public function save()
 		{
+			ini_set('display_errors', 1);
+
 			//ini_set('display_errors', 1);
 			//ini_set('display_startup_errors', 1);
 			helper(['form','url']);
@@ -179,9 +184,22 @@
 				'd_start' => 'required',
 				'd_end' => 'required'
 			];
+
+			$rules = [
+				'title' => 'required|min_length[2]|max_length[100]',
+				'details' => 'min_length[2]|max_length[500]',
+				'id_mem' => 'required',
+				'id_project' => 'required',
+				'd_start' => 'required',
+				'd_end' => 'required',
+				'level#' => 'min_length[1]',
+				'states' => 'required'
+			];
 	
 			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
 				$model = new ProjectModel();
+				$model2 = new LevelsModel();
+
 
 				$data = [
 					//'project_code' => $this->request->getVar('project_code'),
@@ -189,6 +207,14 @@
 					'd_start' => $this->request->getVar('d_start'),
 					'd_end' => $this->request->getVar('d_end'),
 					'details' => $this->request->getVar('details'),
+				]; 
+
+				$data2 = [
+					'details' => $this->request->getVar('details'),
+					'id_mem' => $this->request->getVar('id_mem'),
+					'd_start' => $this->request->getVar('d_start'),
+					'd_end' => $this->request->getVar('d_end'),
+					'states' => $this->request->getVar('states'),
 				];
 
 				$model->saveProject($data);
@@ -239,7 +265,9 @@
 	
 			} else {
 				$data['validation'] = $this->validator;
-				return view('deskapp/Ui/ui-cards', $data);
+				$data2['validation'] = $this->validator;
+
+				return view('deskapp/Ui/ui-cards', $data,$data2);
 			}
 	
 		
