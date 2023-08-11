@@ -12412,7 +12412,7 @@
            
             </div> 
             <!-- footer -->
-            <div class="footer-wrap pd-20 mb-20 card-box">© 2023 Security Forces Hospital</div>
+                <?php echo view('deskapp/includes/_footer'); ?>
         </div>
     
     <!-- js -->

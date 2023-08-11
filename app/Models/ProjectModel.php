@@ -38,12 +38,14 @@ class ProjectModel extends Model
 
     public function getNames()
     {
-        $query = $this->select('pro_name, project_code,id_project')->findAll();
+        $query = $this->select('pro_name, project_code,id_project,state')->findAll();
     
         $data = array(
             'pro_name' => array_column($query, 'pro_name'),
             'project_code' => array_column($query, 'project_code'),
-            'id_project' => array_column($query, 'id_project')
+            'id_project' => array_column($query, 'id_project'),
+            'state' => array_column($query, 'state')
+
 
         );
     

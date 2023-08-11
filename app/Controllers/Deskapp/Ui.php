@@ -205,7 +205,9 @@
 				$model->saveProject($data);
 				$id = $model->getInsertID();
 
-				$data['state'] = 'قيد الإنشاء';
+				//$data['state'] = 'قيد الإنشاء';
+				$data['state'] = 'منتهي';
+
 				
 
 			  // Merge 'id' and 'd_start' and set it to 'code'
@@ -250,7 +252,6 @@
 	
 			} else {
 				$data['validation'] = $this->validator;
-				$data2['validation'] = $this->validator;
 
 				return view('deskapp/Ui/ui-cards', $data,$data2);
 			}
@@ -416,8 +417,9 @@
 		
 			// Update the project's information based on the form data
 			$project['pro_name'] = $this->request->getPost('pro_name');
-			$project['state'] = $this->request->getPost('state');
-			$project['level#'] = $this->request->getPost('level#');
+			//$project['state'] = $this->request->getPost('state');
+			//$project['level#'] = $this->request->getPost('level#');
+			$project['details'] = $this->request->getPost('details');
 			$project['d_start'] = $this->request->getPost('d_start');
 			$project['d_end'] = $this->request->getPost('d_end');
 			

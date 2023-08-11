@@ -43,7 +43,7 @@
 </head>
 
 <body>
-    <!-- echo header,rightsidebar,leftsidebar and loader -->
+       <!-- echo header,rightsidebar,leftsidebar and loader -->
     <?php 
 		echo view('deskapp/includes/_header');
 		echo view('deskapp/includes/_sidebar');

@@ -41,6 +41,7 @@
 
 <body class="login-page" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed=""
     style="background-color: #2fb5ba;">
+    
     <div class="login-header box-shadow">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="brand-logo">
@@ -54,7 +55,8 @@
         </div>
     </div>
     <div class="login-wrap d-flex align-items-center flex-wrap justify-content-center">
-        <div class="container">
+        
+    <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-7">
                     <img src="http://localhost/MS/assets/vendors/images/Login -vector.png" alt="">

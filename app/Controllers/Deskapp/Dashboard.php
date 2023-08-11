@@ -18,21 +18,21 @@
 		$model2 = new ProjectModel();
 
         $session = session();
-
-
         $data['username'] = $session->get('user_name');
         $data['session'] = \Config\Services::session();
 
         // Retrieve the number of users from the UserModel
         $data['userCount'] = $model->getUserCount();
+		
+        // Retrieve the number of Project from the ProjectModel
 		$data['projectsCount'] = $model2->getProjectsCount();
 		
 		//$ProjectModel = new ProjectModel();
 		//$data['pro_name'] = $model2->getNames();
 		//$data['project_code'] = $model2->getNames();
 		$data['project_data'] = $model2->getNames(); 
-		
-		
+
+	
 
         echo view('deskapp/dashboard/index', $data);
  	}
@@ -50,14 +50,16 @@
 		$model2 = new ProjectModel();
 
         $session = session();
-
-
         $data['username'] = $session->get('user_name');
         $data['session'] = \Config\Services::session();
 
-        // Retrieve the number of users from the UserModel
+       
+		// Retrieve the number of Project from the ProjectModel
 		$data['projectsCount'] = $model2->getProjectsCount();
+		
+	
 		$data['project_data'] = $model2->getNames(); 
+		
 
  		echo view('deskapp/dashboard/index2',$data);
  	}
