@@ -530,4 +530,27 @@ CRITICAL - 2023-08-10 06:36:50 --> Call to undefined method CodeIgniter\View\Vie
 #6 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #7 {main}
 >>>>>>> ac030f758bdad1479711b377e8d7aff25fdbee25
+<<<<<<< HEAD
 >>>>>>> 791fff942ce125b0ee77e06ba9ad0942fcca9e04
+=======
+CRITICAL - 2023-08-10 07:26:12 --> Undefined variable $names
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(2287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2287)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/Ui/ui-c...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(270): view('deskapp/Ui/ui-c...', Array, Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-10 07:26:26 --> Undefined variable $names
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(2287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2287)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/Ui/ui-c...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(270): view('deskapp/Ui/ui-c...', Array, Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+>>>>>>> c47fa15c1c81abd9b1528785e2e8128c112e38fd

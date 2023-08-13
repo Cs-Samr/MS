@@ -10171,10 +10171,7 @@
         width: 200%;
         height: 200%;
     }
-
-    
     </style>
-
 </head>
 
 <body class="header-white active sidebar-dark" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
@@ -11465,47 +11462,109 @@
             <div class="row">
                 <link rel="stylesheet"
                     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-                
+                <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                }
 
+                .project-card {
 
+                    background-color: #fff;
+                    border-radius: 5px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    padding: 20px;
+                    width: 300px;
+                    margin: 20px auto;
+                }
 
-                <div class="project-card-container">
-                    <div class="row">
-                        <?php
+                .project-card h2 {
+                    font-size: 24px;
+                    margin: 0 0 10px;
+                    color: #007bff;
+                }
 
-    // Calculate the starting index to display the last three entries
-    $startIndex = max(0, count($project_data['pro_name']) - 3);
+                .project-info {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
 
-    // Loop through the last three entries
-    for ($index = $startIndex; $index < count($project_data['pro_name']); $index++) {
-    ?>
+                .project-info .icon {
+                    font-size: 24px;
+                    margin-right: 10px;
+                    color: #007bff;
+                }
 
-                        <div class="col-md-4">
-                            <div class="project-card">
-                                <h2><?php echo $project_data['pro_name'][$index]; ?></h2>
-                                <div class="project-info">
-                                    <span class="icon"><i class="fas fa-rocket"></i></span>
-                                    <?php echo $project_data['project_code'][$index]; ?>
-                                </div>
-                                <div class="project-info">
-                                    <span class="icon"><i class="fas fa-user-tie"></i></span>
-                                    <span>Project Manager</span>
-                                </div>
-                                <div class="buttons">
-                                    <button class="btn btn-edit">Edit</button>
-                                    <button class="btn btn-view">View</button>
-                                </div>
-                            </div>
-                        </div>
+                .project-info span {
+                    color: #444;
+                }
 
-                        <?php
-    }
-    ?>
+                .buttons {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .btn {
+                    padding: 8px 12px;
+                    border: none;
+                    border-radius: 5px;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: background-color 0.3s ease;
+                }
+
+                .btn-edit {
+                    background-color: #007bff;
+                }
+
+                .btn-view {
+                    background-color: #28a745;
+                }
+
+                .btn-edit:hover,
+                .btn-view:hover {
+                    background-color: #0056b3;
+                }
+                </style>
+
+<div class="project-cards">
+    <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+
+        <?php if ($index % 3 === 0): ?>
+            <div class="row">
+        <?php endif; ?>
+
+            <!-- Adjust the column width based on your layout -->
+            <div class="col-md-4">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h2><?php echo $pro_name; ?></h2>
+                    </div>
+                    <div class="project-info">
+                        <span class="icon"><i class="fas fa-rocket"></i></span>
+                        <?php echo $project_data['project_code'][$index]; ?>
+                    </div>
+                    <div class="project-info">
+                        <span class="icon"><i class="fas fa-user-tie"></i></span>
+                        <span>Project Manager</span>
+                    </div>
+                    <div class="buttons">
+                    <a class="btn btn-edit" href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>" >Edit</a>
+                        <button class="btn btn-view">View</button>
                     </div>
                 </div>
+            </div>
 
+        <?php if (($index + 1) % 3 === 0 || $index === count($project_data['pro_name']) - 1): ?>
+            </div>
+        <?php endif; ?>
 
-
+    <?php endforeach; ?>
+</div>
 
 
 
