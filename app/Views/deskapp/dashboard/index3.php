@@ -310,43 +310,45 @@
             </div>
 
 
-            <div class="alert alert-secondary">
+           <!-- <div class="alert alert-secondary">
             This is a secondary alert—check it out!
             </div>
             <div class="row">
-                <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
-                <?php if ($project_data['state'][$index] === 'منتهي'): ?>
+                <//?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                <//?php if ($project_data['state'][$index] === 'منتهي'): ?>
 
 
-                <!-- Adjust the column width based on your layout -->
+                 Adjust the column width based on your layout 
                 <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
                     <div class="project-card">
                         <div class="project-info">
-                            <h2><?php echo $pro_name; ?></h2>
+                            <h2><//?php echo $pro_name; ?></h2>
                         </div>
                         <div class="project-info">
                             <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
                             <span class="state"
-                                style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
+                                style="color: blue;"><//?php echo $project_data['state'][$index]; ?></span>
                         </div>
 
                         <div class="project-info">
                             <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
-                            <?php echo $project_data['project_code'][$index]; ?>
+                            <//?php echo $project_data['project_code'][$index]; ?>
                         </div>
                         <div class="buttons">
                             <a class="btn btn-edit"
-                                href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
+                                href="http://localhost/MS/deskapp/ui/tooltip/<//?= $project_data['id_project'][$index] ?>">تعديل</a>
                             <a class="btn btn-view"
-                                href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                                href="http://localhost/MS/deskapp/forms/wizard/<//?= $project_data['id_project'][$index] ?>">عرض</a>
                         </div>
                     </div>
                 </div>
 
-                <?php endif; ?>
-                <?php endforeach; ?>
-            </div>
-            <div class="alert alert-success">
+                <//?php endif; ?>
+                <//?php endforeach; ?>
+            </div>-->
+            
+            
+            <!--<div class="alert alert-success">
                 This is a success alert—check it out!
             </div>
             <div class="alert alert-danger">
@@ -363,7 +365,7 @@
             </div>
             <div class="alert alert-dark">
                 This is a dark alert—check it out!
-            </div>
+            </div>-->
 
 
 
