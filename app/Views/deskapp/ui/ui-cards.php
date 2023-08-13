@@ -115,7 +115,7 @@
 
                                 <input name="state" type="hidden" value="قيد الإنشاء" require>
 
-                                <?php
+                                <!-- <?php
                                     // Initialize the variable to store selected names as a comma-separated string
                                     $selectedNamesString = '';
 
@@ -124,20 +124,23 @@
                                         // Convert the array of selected names to a comma-separated string
                                         $selectedNamesString = implode(', ', $selectedNames);
                                     }
-                                    ?>
-<div class="col-md-6">
-    <div class="form-group">
-        <label>اضافة اعضاء</label>
-        <select name="selected_names[]" class="custom-select form-control selectpicker" multiple>
-            <?php foreach ($users as $user): ?>
-                <option value="<?= $user['id_mem'] ?>">
-                    <?= $user['name'] ?>
-                </option>
-            <?php endforeach; ?>
-        </select>
-    </div>
-</div>
+                                    ?> -->
 
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>اضافة اعضاء</label>
+                                        <select name="selected_names[]" class="custom-select form-control selectpicker"
+                                            multiple>
+                                            <?php foreach ($users as $user): ?>
+                                            <option value="<?= $user['id_mem'] ?>">
+                                                <?= $user['name'] ?>
+                                            </option>
+                                            <?php endforeach; ?>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="row">
                                 <div class="col-md-6">

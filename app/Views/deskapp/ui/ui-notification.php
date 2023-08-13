@@ -96,111 +96,38 @@
 						<table class="table hover multiple-select-row data-table-export nowrap">
 							<thead>
 								<tr>
-									<th class="table-plus datatable-nosort">Name</th>
-									<th>Age</th>
-									<th>Office</th>
-									<th>Address</th>
-									<th>Start Date</th>
-									<th>Salart</th>
+									<th class="table-plus datatable-nosort">اسم المشروع</th>
+									<th>رمز المشروع</th>
+									<th>حالة المشروع</th>
+									<th>تاريخ البداية</th>
+									<th>تاريخ النهاية</th>
+
 								</tr>
 							</thead>
+							
 							<tbody>
-								<tr>
-									<td class="table-plus">Gloria F. Mead</td>
-									<td>25</td>
-									<td>Sagittarius</td>
-									<td>2829 Trainer Avenue Peoria, IL 61602 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Gemini</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>20</td>
-									<td>Gemini</td>
-									<td>2829 Trainer Avenue Peoria, IL 61602 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Sagittarius</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>25</td>
-									<td>Gemini</td>
-									<td>2829 Trainer Avenue Peoria, IL 61602 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>20</td>
-									<td>Sagittarius</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>18</td>
-									<td>Gemini</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Sagittarius</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Sagittarius</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Gemini</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Gemini</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Gemini</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>$162,700</td>
-								</tr>
+								
+							<?php foreach ($projects as $project) : ?>
+    <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+        <?php if ($project_data['state'][$index] === 'منتهي'): ?>
+            <?php if ($project['state'] === 'منتهي'): ?>
+                <tr>
+                    <td><?= $project['pro_name'] ?></td>
+                    <td><?= $project['project_code'] ?></td>
+                    <td><?= $project['state'] ?></td>
+                    <td><?= $project['d_start'] ?></td>
+                    <td><?= $project['d_end'] ?></td>
+                    <td>
+                        <!-- Additional columns or data can be added here -->
+                    </td>
+                </tr>
+            <?php endif; ?>
+        <?php endif; ?>
+    <?php endforeach; ?>
+<?php endforeach; ?>
+
+				
+           
 							</tbody>
 						</table>
 					</div>
