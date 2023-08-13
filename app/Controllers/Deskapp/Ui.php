@@ -188,12 +188,10 @@
 
 		}
 
+		
+
 		public function save()
 		{
-			ini_set('display_errors', 1);
-
-			//ini_set('display_errors', 1);
-			//ini_set('display_startup_errors', 1);
 			helper(['form','url']);
 			
 			$rules = [
@@ -202,117 +200,59 @@
 				'd_start' => 'required',
 				'state' => 'required'
 			];
-
 		
-	
 			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
 				$model = new ProjectModel();
-				$model2 = new LevelsModel();
-
-
+				$mode2=  new LevelsModel();
+				
+				// Gather project data
 				$data = [
-					//'project_code' => $this->request->getVar('project_code'),
 					'pro_name' => $this->request->getVar('pro_name'),
 					'd_start' => $this->request->getVar('d_start'),
 					'd_end' => $this->request->getVar('d_end'),
 					'state' => $this->request->getVar('state'),
 					'details' => $this->request->getVar('details'),
-
-
 				]; 
-
 				
-
+				// Save the project and get its ID
 				$model->saveProject($data);
 				$id = $model->getInsertID();
-
-				//$data['state'] = 'قيد الإنشاء';
-				//$data['state'] = 'منتهي';
-
-			  // Merge 'id' and 'd_start' and set it to 'code'
+		
+				// Update project_code and id_project
 				$data['project_code'] = $id. $data['d_start'];
-				$data['id_project'] = $id ;
-        
+				$data['id_project'] = $id;
 				$model->replace($data);
-				 
 				
-				// Load the models
-				$userModel = new UserModel();  // Assuming UserModel class is available
-				$projectModel = new ProjectModel();  // Assuming ProjectModel class is available
-				$ProjectAssign = new ProjectAssign();  // Assuming ProjectAssign class is available
-				
-				// Get data from the user and project tables
-				$users = $userModel->findAll();
-				$projects = $projectModel->findAll();
-				
-				// // Initialize an array to store selected user IDs for assignment
-				// $selectedUserIDs = [];
-				
-				
-				//old
-				// // // Set selected_names to an empty array
-				// // $selectedNames = [];
-				
-				// // Retrieve selected names from the form submission
-				// if(isset($_POST['selected_names']) && is_array($_POST['selected_names'])) {
-				// 	$selectedUserIDs = $_POST['selected_names'];
-				
-				// 	// Convert the array to a comma-separated string for storage
-				// 	$selectedNamesString = implode(', ', $selectedUserIDs);
-				
-				// 	// Convert the string back to an array using explode
-				// 	$selectedNames = explode(', ', $selectedNamesString);
-				
-				// 	// Delete existing assignments for the specific project
-				// 	$ProjectAssign->where('id_projectfk', $id)->delete();
-				// 	$ProjectAssign->where('id_memfk', $id)->delete();
-
-				
-				// 	// Loop through the users and projects to assign selected users to projects
-				// 	foreach ($users as $user) {
-				// 		if (in_array($user['id_mem'], $selectedNames)) {
-				// 			foreach ($projects as $project) {
-				// 				$assignmentData = [
-				// 					'id_memfk' => $user['id_mem'],
-				// 					'id_projectfk' => $project['id_project'],
-				// 					// Add other fields as needed for the assignment
-				// 				];
-				
-				// 				// Insert data into the project_assign table
-				// 				$ProjectAssign->insert($assignmentData);
-				// 			}
-				// 		}
-				// 	}
-				
-				// 	// Clear the selected names array after saving
-				// 	$selectedUserIDs = [];
-				//   // Set selected_names to an empty array
-				//    $selectedNames = [];
-				
-				
-				
+				// Load necessary models
+				$userModel = new UserModel();
+				$projectModel = new ProjectModel();
+				$ProjectAssign = new ProjectAssign();
+		
+				// Process selected user assignments
+				if (isset($_POST['selected_names']) && is_array($_POST['selected_names'])) {
+					$selectedUserIDs = $_POST['selected_names'];
+		
+					foreach ($selectedUserIDs as $projId => $userIds) {
+						$selectedUsers = [];
+						foreach ($userIds as $userId) {
+							[$projId, $userId] = explode(',', $userId);
+							$selectedUsers[] = $userModel->getUserName($userId);
+						}
+						
+						// Perform assignment operations based on your business logic
+						// Here you can insert assignments to the ProjectAssign table
+						// and perform any other related actions.
+					}
 				}
-				
-				
-
-
-				
-			
-
-	          
-				 return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
-
-	
+		
+				return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
 			} else {
 				$data['validation'] = $this->validator;
-
 				return view('deskapp/Ui/ui-cards', $data);
 			}
-	
-		
 		}
 		
-		
+
      	public function carousel()
 		{
 			$session = session();
