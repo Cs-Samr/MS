@@ -1789,3 +1789,10 @@ CRITICAL - 2023-08-13 16:11:09 --> syntax error, unexpected token "public", expe
 #3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2023-08-13 16:11:43 --> syntax error, unexpected token "public", expecting end of file
+#0 C:\xampp\htdocs\MS\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('deskapp/ui/card...')
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('deskapp/ui/card...')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
