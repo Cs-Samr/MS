@@ -461,6 +461,46 @@ CRITICAL - 2023-08-10 01:20:11 --> syntax error, unexpected token "endforeach", 
 #4 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #6 {main}
+<<<<<<< HEAD
+CRITICAL - 2023-08-10 02:10:41 --> Undefined variable $names
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(490): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 490)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(347): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip('1')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-10 02:13:59 --> Undefined variable $names
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(490): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 490)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(347): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip('1')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-10 02:15:02 --> Undefined variable $names
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-tooltip-popover.php(491): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 491)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-t...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(347): view('deskapp/ui/ui-t...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->tooltip('1')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-10 03:06:38 --> syntax error, unexpected token "endfor", expecting end of file
+#0 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/dashboa...', Array, true)
+#1 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Dashboard.php(37): view('deskapp/dashboa...', Array)
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Dashboard->index()
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Dashboard))
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+=======
 >>>>>>> 900375a48ad0ba79db4ffb68d1d2742db03baa0b
 CRITICAL - 2023-08-10 06:34:13 --> Call to undefined method CodeIgniter\View\View::getNames()
 #0 C:\xampp\htdocs\MS\system\View\View.php(223): include()
@@ -499,6 +539,9 @@ CRITICAL - 2023-08-10 07:51:18 --> Call to undefined method App\Models\UserModel
 #5 {main}
 =======
 >>>>>>> ac030f758bdad1479711b377e8d7aff25fdbee25
+<<<<<<< HEAD
+>>>>>>> 791fff942ce125b0ee77e06ba9ad0942fcca9e04
+=======
 CRITICAL - 2023-08-10 07:26:12 --> Undefined variable $names
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(2287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2287)
 #1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
@@ -519,6 +562,9 @@ CRITICAL - 2023-08-10 07:26:26 --> Undefined variable $names
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
+>>>>>>> c47fa15c1c81abd9b1528785e2e8128c112e38fd
+=======
 <<<<<<< HEAD
 CRITICAL - 2023-08-10 16:31:51 --> Undefined variable $names
 #0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(2287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2287)
@@ -1406,3 +1452,4 @@ CRITICAL - 2023-08-10 22:55:24 --> Undefined variable $projects
 #6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #8 {main}
+>>>>>>> c12054c078aae71602078d3ecc014618eb7d8292
