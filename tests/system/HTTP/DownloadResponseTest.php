@@ -207,7 +207,7 @@ class DownloadResponseTest extends \CodeIgniter\Test\CIUnitTestCase
 
 	public function testFileExtensionIsUpperCaseWhenAndroidOSIs2()
 	{
-		$_SERVER['HTTP_USER_AGENT'] = 'Mozilla/5.0 (Linux; U; Android 2.0.3; ja-jp; SC-02C Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30';
+		$_SERVER['HTTP_USER_AGENT'] = 'Mozilla/5.0 (Linux; U; Android 2.0.3; ja-jp; SC-02C Build/IML74K) sfhmWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30';
 		$response                   = new DownloadResponse('unit-test.php', false);
 
 		$response->setFilePath(__FILE__);

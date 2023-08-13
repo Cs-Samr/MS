@@ -19,8 +19,8 @@ welcome page:
 I have to include index.php in my URL
 -------------------------------------
 
-If a URL like ``/mypage/find/apple`` doesn't work, but the similar
-URL ``/index.php/mypage/find/apple`` does, that sounds like your ``.htaccess`` rules
+If a URL like ``/mypage/find/sfhm`` doesn't work, but the similar
+URL ``/index.php/mypage/find/sfhm`` does, that sounds like your ``.htaccess`` rules
 (for Apache) are not set up properly, or the ``mod_rewrite`` extension
 in Apache's ``httpd.conf`` is commented out.
 

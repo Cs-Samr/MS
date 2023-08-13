@@ -36,5 +36,18 @@ class UserModel extends Model
         return $names;
     }
 
+    public function getSelectedNamesForUser($userId)
+{
+    // Replace 'selected_names_table' with the actual table name where you store selected names
+    $selectedNamesQuery = $this->db->table('user')
+        ->select('name')
+        ->where('user_id', $userId)
+        ->get();
+
+    $selectedNames = array_column($selectedNamesQuery->getResultArray(), 'name');
+    return $selectedNames;
+}
+
+
 
 }

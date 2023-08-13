@@ -349,7 +349,7 @@ class ViewTest extends \CodeIgniter\Test\CIUnitTestCase
 		$view->setVar('testString', 'Hello World');
 		$expected = '';
 
-		$this->assertStringContainsString($expected, $view->render('apples'));
+		$this->assertStringContainsString($expected, $view->render('sfhms'));
 	}
 
 	public function testRenderSaveDataCover()
