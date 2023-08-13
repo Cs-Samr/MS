@@ -89,7 +89,7 @@
             </div>
 
             <div class="wizard-content">
-                <form method="post" enctype="multipart/form-data" action="/MS/deskapp/ui/save">
+                <form method="post" enctype="multipart/form-data" action="/MS/deskapp/forms/save">
                     <div class="content clearfix">
 
                         <section id="steps-uid-1-p-0" role="tabpanel" aria-labelledby="steps-uid-1-h-0"
