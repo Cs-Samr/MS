@@ -194,6 +194,12 @@
 		{
 			helper(['form','url']);
 			
+			// Load the models
+			$userModel = new UserModel();  // Assuming UserModel class is available
+			$projectModel = new ProjectModel();  // Assuming ProjectModel class is available
+			$ProjectAssign = new ProjectAssign();  // Assuming ProjectAssign class is available
+			
+			
 			$rules = [
 				'pro_name' => 'required|min_length[2]|max_length[100]',
 				'details' => 'min_length[2]|max_length[500]',
@@ -202,10 +208,16 @@
 			];
 		
 			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
+<<<<<<< HEAD
 				$model = new ProjectModel();
 				$mode2=  new LevelsModel();
 				
 				// Gather project data
+=======
+				
+
+
+>>>>>>> 765c7e7aeb73b2405067833fffe8c369265f9d37
 				$data = [
 					'pro_name' => $this->request->getVar('pro_name'),
 					'd_start' => $this->request->getVar('d_start'),
@@ -214,6 +226,7 @@
 					'details' => $this->request->getVar('details'),
 				]; 
 				
+<<<<<<< HEAD
 				// Save the project and get its ID
 				$model->saveProject($data);
 				$id = $model->getInsertID();
@@ -246,6 +259,90 @@
 				}
 		
 				return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
+=======
+
+				$projectModel->saveProject($data);
+				$id = $projectModel->getInsertID();
+			  // Merge 'id' and 'd_start' and set it to 'code'
+				$data['project_code'] = $id. $data['d_start'];
+				$data['id_project'] = $id ;
+				$projectModel->replace($data);
+				 
+
+				if (isset($_POST['selected_names'])) {
+					$selectedUserIDs = $_POST['selected_names'];
+					$assignmentData = [];
+			
+					foreach ($selectedUserIDs as $value) {
+						$assignmentData[] = [
+							'id_memfk' => $value,
+							'id_projectfk' => $id,
+						];
+					}
+
+		
+				//print_r($assignmentData);
+				$ProjectAssign->insertBatch($assignmentData);
+			}
+
+
+				// Get data from the user and project tables
+				//$users = $userModel->findAll();
+				//$projects = $projectModel->findAll();
+				
+				// // Initialize an array to store selected user IDs for assignment
+				// $selectedUserIDs = [];
+				
+					
+				
+				//old
+				// // // Set selected_names to an empty array
+				// // $selectedNames = [];
+				
+				// // Retrieve selected names from the form submission
+				// if(isset($_POST['selected_names']) && is_array($_POST['selected_names'])) {
+				// 	$selectedUserIDs = $_POST['selected_names'];
+				
+				// 	// Convert the array to a comma-separated string for storage
+				// 	$selectedNamesString = implode(', ', $selectedUserIDs);
+				
+				// 	// Convert the string back to an array using explode
+				// 	$selectedNames = explode(', ', $selectedNamesString);
+				
+				// 	// Delete existing assignments for the specific project
+				// 	$ProjectAssign->where('id_projectfk', $id)->delete();
+				// 	$ProjectAssign->where('id_memfk', $id)->delete();
+
+				
+				// 	// Loop through the users and projects to assign selected users to projects
+				// 	foreach ($users as $user) {
+				// 		if (in_array($user['id_mem'], $selectedNames)) {
+				// 			foreach ($projects as $project) {
+				// 				$assignmentData = [
+				// 					'id_memfk' => $user['id_mem'],
+				// 					'id_projectfk' => $project['id_project'],
+				// 					// Add other fields as needed for the assignment
+				// 				];
+				
+				// 				// Insert data into the project_assign table
+				// 				$ProjectAssign->insert($assignmentData);
+				// 			}
+				// 		}
+				// 	}
+				
+				// 	// Clear the selected names array after saving
+				// 	$selectedUserIDs = [];
+				//   // Set selected_names to an empty array
+				//    $selectedNames = [];
+				
+				
+
+
+	          
+				return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
+
+	
+>>>>>>> 765c7e7aeb73b2405067833fffe8c369265f9d37
 			} else {
 				$data['validation'] = $this->validator;
 				return view('deskapp/Ui/ui-cards', $data);
