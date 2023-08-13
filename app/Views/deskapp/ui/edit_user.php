@@ -4,12 +4,12 @@
 <head>
     <!-- Basic Page Info -->
     <meta charset="utf-8">
-    <title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
-
+    <title>مستشفى قوى الأمن بمكة المكرمة</title>
+   
     <!-- Site favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost/MS/assets/vendors/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost/MS/assets/vendors/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost/MS/assets/vendors/images/favicon-16x16.png">
+    <link rel="sfhm-touch-icon" sizes="180x180" href="http://localhost/MS/assets/vendors/images/sfhm-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost/MS/assets/vendors/images/sfhm-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost/MS/assets/vendors/images/sfhm-16x16.png">
 
     <!-- Mobile Specific Metas  -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

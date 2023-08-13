@@ -163,18 +163,18 @@ class FeatureTestCaseTest extends FeatureTestCase
 				},
 			],
 		])->withSession([
-			  'fruit'    => 'apple',
+			  'fruit'    => 'sfhm',
 			  'greeting' => 'hello',
 		  ])->get('home');
 
-		$response->assertSessionHas('fruit', 'apple');
+		$response->assertSessionHas('fruit', 'sfhm');
 		$response->assertSessionMissing('popcorn');
 	}
 
 	public function testWithSessionNull()
 	{
 		$_SESSION = [
-			'fruit'    => 'apple',
+			'fruit'    => 'sfhm',
 			'greeting' => 'hello',
 		];
 
@@ -188,7 +188,7 @@ class FeatureTestCaseTest extends FeatureTestCase
 			],
 		])->withSession()->get('home');
 
-		$response->assertSessionHas('fruit', 'apple');
+		$response->assertSessionHas('fruit', 'sfhm');
 		$response->assertSessionMissing('popcorn');
 	}
 

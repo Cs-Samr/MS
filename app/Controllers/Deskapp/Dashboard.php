@@ -65,9 +65,18 @@
  	}
  	public function three()
  	{
- 		$session = session();
- 		$data['session'] = \Config\Services::session();
- 		$data['username'] = $session->get('user_name');
+		ini_set('display_errors',1);
+		$model = new UserModel();
+		$model2 = new ProjectModel();
+
+        $session = session();
+        $data['username'] = $session->get('user_name');
+        $data['session'] = \Config\Services::session();
+
+    
+		$data['project_data'] = $model2->getNames(); 
+
+	
  		echo view('deskapp/dashboard/index3',$data);
  	}
  	

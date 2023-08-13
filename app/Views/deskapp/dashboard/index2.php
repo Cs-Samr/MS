@@ -5,15 +5,15 @@
 <head>
     <!-- Basic Page Info -->
     <meta charset="utf-8">
-    <title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
-
+    <title>مستشفى قوى الأمن بمكة المكرمة</title>
+   
     <!-- Site favicon -->
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="<?php echo base_url(); ?>/assets/vendors/images/apple-touch-icon.png">
+    <link rel="sfhm-touch-icon" sizes="180x180"
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
-        href="<?php echo base_url(); ?>/assets/vendors/images/favicon-32x32.png">
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
-        href="<?php echo base_url(); ?>/assets/vendors/images/favicon-16x16.png">
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-16x16.png">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -66,7 +66,7 @@
     <!-- _________________________________________________________START CSS________________________________________________________________________________ -->
 
     <style>
-    /*________________________Uer + Project + Statistics  cards style________________________________________*/
+    /*________________________User + Project + Statistics  cards style________________________________________*/
 
     .card {
         background-color: #fff;
@@ -213,7 +213,9 @@
                         <div class="buttons">
                             <a class="btn btn-edit"
                                 href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">Edit</a>
-                            <button class="btn btn-view">View</button>
+                                <a class="btn btn-view"
+                                href="http://localhost/MS/deskapp/forms/pickers/<?= $project_data['id_project'][$index] ?>">View</a>
+
                         </div>
                     </div>
                 </div>

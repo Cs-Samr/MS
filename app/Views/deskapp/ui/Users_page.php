@@ -2,15 +2,15 @@
 <head>
     <!-- Basic Page Info -->
     <meta charset="utf-8">
-    <title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
-
+    <title>مستشفى قوى الأمن بمكة المكرمة</title>
+   
     <!-- Site favicon -->
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="<?php echo base_url(); ?>/assets/vendors/images/apple-touch-icon.png">
+    <link rel="sfhm-touch-icon" sizes="180x180"
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
-        href="<?php echo base_url(); ?>/assets/vendors/images/favicon-32x32.png">
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
-        href="<?php echo base_url(); ?>/assets/vendors/images/favicon-16x16.png">
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-16x16.png">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -50,7 +50,7 @@
 
         <div class="pd-ltr-20 xs-pd-20-10">
             <div class="min-height-200px">
-                <div class="page-header">
+            <div class="page-header">
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <div class="title">
@@ -58,10 +58,8 @@
                             </div>
                             <nav aria-label="breadcrumb" role="navigation">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="http://localhost/MS/deskapp/dashboard">Home
-                                            Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">All Users
-                                    </li>
+                                    <li class="breadcrumb-item">المستخدمين</li>
+                                    <li class="breadcrumb-item active" aria-current="page">جدول كل المستخدمين</li>
                                 </ol>
                             </nav>
                         </div>
@@ -73,30 +71,30 @@
                 <div class="card-box mb-30">
                     <div class="pd-20 d-flex align-items-center justify-content-between">
                         <h4 class="text-blue h4">Users table</h4>
-                        <a class="btn btn-primary" href="<?php echo base_url('deskapp/register'); ?>">Add User</a>
+                        <a class="btn btn-primary" href="<?php echo base_url('deskapp/register'); ?>">إضافة مستخدم جديد</a>
                     </div>
 
-                    <table class="data-table table stripe hover nowrap dataTable no-footer dtr-inline"
+                    <table class="data-table table stripe hover nowrap dataTable no-footer dtr-inline "
                         id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
                         <thead>
                             <tr role="row">
                                 <th class="table-plus datatable-nosort sorting_asc" rowspan="1" colspan="1"
-                                    aria-label="Name">Name</th>
+                                    aria-label="Name">الإسم الثلاثي</th>
                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                    colspan="1" aria-label="department: activate to sort column ascending">Department
+                                    colspan="1" aria-label="department: activate to sort column ascending">القسم
                                 </th>
                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                    colspan="1" aria-label="Employee_No: activate to sort column ascending">Employee_No
+                                    colspan="1" aria-label="Employee_No: activate to sort column ascending">رقم الموظف
                                 </th>
                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                    colspan="1" aria-label="Email Date: activate to sort column ascending">Email</th>
+                                    colspan="1" aria-label="Email Date: activate to sort column ascending">البريد الإلكتروني</th>
                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                    colspan="1" aria-label="Job Type Date: activate to sort column ascending">Job Type
+                                    colspan="1" aria-label="Job Type Date: activate to sort column ascending">المسمى الوطيفي
                                 </th>
                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                    colspan="1" aria-label="Rules Date: activate to sort column ascending">Rules</th>
+                                    colspan="1" aria-label="Rules Date: activate to sort column ascending">الصلاحية</th>
                                 <th class="datatable-nosort sorting_disabled" rowspan="1" colspan="1"
-                                    aria-label="Action">Action</th>
+                                    aria-label="Action">الإجراءات</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -117,10 +115,10 @@
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
                                             <a class="dropdown-item"
                                                 href="http://localhost/MS/deskapp/ui/edit/<?= $user['id_mem'] ?>"><i
-                                                    class="dw dw-edit2"></i> Edit</a>
+                                                    class="dw dw-edit2"></i> تعديل</a>
                                             <a class="dropdown-item delete-user"
                                                 href="http://localhost/MS/deskapp/ui/delete/<?= $user['id_mem'] ?>"><i
-                                                    class="dw dw-delete-3"></i> Delete</a>
+                                                    class="dw dw-delete-3"></i> حذف</a>
                                         </div>
                                     </div>
                                 </td>
