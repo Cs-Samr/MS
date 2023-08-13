@@ -6,7 +6,7 @@
     <!-- Basic Page Info -->
     <meta charset="utf-8">
     <title>مستشفى قوى الأمن بمكة المكرمة</title>
-   
+
     <!-- Site favicon -->
     <link rel="sfhm-touch-icon" sizes="180x180"
         href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-touch-icon.png">
@@ -45,19 +45,6 @@
 
 <body class="header-white active sidebar-dark" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
     <!-- echo header,rightsidebar,leftsidebar and loader -->
-    <div class="pre-loader" style="display: none;">
-        <div class="pre-loader-box">
-            <div class="loader-logo"><img src="http://localhost/MS/assets/vendors/images/logo-white.png" alt=""></div>
-            <div class="loader-progress" id="progress_div">
-                <div class="bar" id="bar1" style="width: 100%;"></div>
-            </div>
-            <div class="percent" id="percent1">100%</div>
-            <div class="loading-text">
-                Loading...
-            </div>
-        </div>
-    </div>
-
     <?php 
 		echo view('deskapp/includes/_header');
 		echo view('deskapp/includes/_sidebar');
@@ -191,48 +178,45 @@
                 <link rel="stylesheet"
                     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-                <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                <?php
+    $numProjects = count($project_data['pro_name']);
+    $startIdx = max(0, $numProjects - 3); // Start index for the last three projects
 
-                <?php if ($index % 3 === 0): ?>
-                <?php endif; ?>
-
+    for ($index = $startIdx; $index < $numProjects; $index++):
+    ?>
                 <!-- Adjust the column width based on your layout -->
                 <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
                     <div class="project-card">
                         <div class="project-info">
-                            <h2><?php echo $pro_name; ?></h2>
+                            <h2><?php echo $project_data['pro_name'][$index]; ?></h2>
                         </div>
                         <div class="project-info">
-                            <span class="icon"><i class="fas fa-rocket"></i></span>
+                            <?php
+                if ($project_data['state'][$index] === 'قيد الإنشاء') {
+                    echo '<span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>';
+                } else {
+                    echo '<span class="icon"><i class="icon-copy fa fa-check-circle-o" aria-hidden="true"></i></span>';
+                }
+                echo $project_data['state'][$index];
+                ?>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
                             <?php echo $project_data['project_code'][$index]; ?>
-                        </div>
-                        <div class="project-info">
-                            <span class="icon"><i class="fas fa-user-tie"></i></span>
-                            <span>Project Manager</span>
+
                         </div>
                         <div class="buttons">
                             <a class="btn btn-edit"
-                                href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">Edit</a>
-                                <a class="btn btn-view"
-                                href="http://localhost/MS/deskapp/forms/pickers/<?= $project_data['id_project'][$index] ?>">View</a>
-
+                                href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
+                            <a class="btn btn-view"
+                                href="http://localhost/MS/deskapp/forms/pickers/<?= $project_data['id_project'][$index] ?>">عرض</a>
                         </div>
                     </div>
                 </div>
-
-                <?php if (($index + 1) % 3 === 0 || $index === count($project_data['pro_name']) - 1): ?>
-                <?php endif; ?>
-
-                <?php endforeach; ?>
-
-
-
-
-
-
-
-
+                <?php endfor; ?>
             </div>
+
 
 
             <div class="row">
@@ -252,9 +236,6 @@
                         </div>
                     </div>
                 </div>
-
-
-              
 
 
                 <div class="card">
