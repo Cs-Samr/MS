@@ -115,7 +115,7 @@
 
                                 <input name="state" type="hidden" value = "قيد الانشاء" require>
 
-                                <?php
+                                <!-- <?php
                                     // Initialize the variable to store selected names as a comma-separated string
                                     $selectedNamesString = '';
 
@@ -124,7 +124,8 @@
                                         // Convert the array of selected names to a comma-separated string
                                         $selectedNamesString = implode(', ', $selectedNames);
                                     }
-                                    ?>
+                                    ?> -->
+                                    
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>اضافة اعضاء</label>
@@ -159,7 +160,7 @@
                             </div>
                     </div>
             </div>
-            <input class="btn btn-primary btn-lg btn-block" type="submit" value="حفظ">
+            <input class="btn btn-primary btn-lg btn-block"  type="submit" value="حفظ">
 
         </div>
 
