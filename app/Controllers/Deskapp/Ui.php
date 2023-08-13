@@ -331,6 +331,13 @@
 			$session = session();
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
+
+			// Load the ProjectModel
+			$ProjectModel = new ProjectModel();
+		
+			// Get the projects details
+			$data['projects'] = $ProjectModel->getpro();
+		
 			return view('deskapp/ui/ui-notification',$data);
 		}
 		public function progressBar()
