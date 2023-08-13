@@ -80,12 +80,33 @@
 			//$data['names'] = $userModel->getAllNames();
 			return view('deskapp/forms/form-wizard', $data);
 		}
+
+		public function saveForm() {
+			$levelsModel = new LevelsModel();
 		
+			if ($this->request->getMethod() === 'post') {
+				$formData = $this->request->getPost();
+		
+				if ($levelsModel->saveLevel($formData)) {
+					// Success! Redirect or display a success message
+					return redirect()->to('/path/to/redirect');
+				} else {
+					// Error! Handle the error, maybe show an error message
+					// You can get validation errors using $levelsModel->errors()
+					return redirect()->back()->withInput()->with('error', 'Failed to save the form.');
+				}
+			}
+		}
+		
+		
+
+
 		public function save(){
+			ini_set('display_errors', 1);
+
 			helper(['form','url']);
 
 			// Load the model
-			$levelsModel = new LevelsModel();
 		
 			// Get the number of steps (assumes you have 4 steps)
 			$numSteps = 4;
@@ -99,10 +120,12 @@
 				'd_start' => 'required',
 				'd_end' => 'required',
 				'id_mem' => 'required',
+
 			];
 
 			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
-          
+				$levelsModel = new LevelsModel();
+
 			$data = [
 				'title' => $this->request->getPost('title'),  
 				'level#' => $this->request->getPost('level#'),
@@ -116,8 +139,10 @@
 
 
 			// Call the insert method on the model to save the data for this step
-			$levelsModel->insert($data);
-			$levelsModel->save($data); 
+			// $levelsModel->insert($data);
+			// $levelsModel->save($data); 
+			$levelsModel->saveLevel($data);
+
 
 		
 			// Uncomment and modify the code below if you want to save data to the ProjectModel
