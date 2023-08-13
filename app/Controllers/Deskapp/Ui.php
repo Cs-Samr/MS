@@ -249,45 +249,44 @@
 				// $selectedUserIDs = [];
 				
 				
-				//old
-				// // // Set selected_names to an empty array
-				// // $selectedNames = [];
+				// // Set selected_names to an empty array
+				// $selectedNames = [];
 				
-				// // Retrieve selected names from the form submission
-				// if(isset($_POST['selected_names']) && is_array($_POST['selected_names'])) {
-				// 	$selectedUserIDs = $_POST['selected_names'];
+				// Retrieve selected names from the form submission
+				if(isset($_POST['selected_names']) && is_array($_POST['selected_names'])) {
+					$selectedUserIDs = $_POST['selected_names'];
 				
-				// 	// Convert the array to a comma-separated string for storage
-				// 	$selectedNamesString = implode(', ', $selectedUserIDs);
+					// Convert the array to a comma-separated string for storage
+					$selectedNamesString = implode(', ', $selectedUserIDs);
 				
-				// 	// Convert the string back to an array using explode
-				// 	$selectedNames = explode(', ', $selectedNamesString);
+					// Convert the string back to an array using explode
+					$selectedNames = explode(', ', $selectedNamesString);
 				
-				// 	// Delete existing assignments for the specific project
-				// 	$ProjectAssign->where('id_projectfk', $id)->delete();
-				// 	$ProjectAssign->where('id_memfk', $id)->delete();
+					// Delete existing assignments for the specific project
+					$ProjectAssign->where('id_projectfk', $id)->delete();
+					$ProjectAssign->where('id_memfk', $id)->delete();
 
 				
-				// 	// Loop through the users and projects to assign selected users to projects
-				// 	foreach ($users as $user) {
-				// 		if (in_array($user['id_mem'], $selectedNames)) {
-				// 			foreach ($projects as $project) {
-				// 				$assignmentData = [
-				// 					'id_memfk' => $user['id_mem'],
-				// 					'id_projectfk' => $project['id_project'],
-				// 					// Add other fields as needed for the assignment
-				// 				];
+					// Loop through the users and projects to assign selected users to projects
+					foreach ($users as $user) {
+						if (in_array($user['id_mem'], $selectedNames)) {
+							foreach ($projects as $project) {
+								$assignmentData = [
+									'id_memfk' => $user['id_mem'],
+									'id_projectfk' => $project['id_project'],
+									// Add other fields as needed for the assignment
+								];
 				
-				// 				// Insert data into the project_assign table
-				// 				$ProjectAssign->insert($assignmentData);
-				// 			}
-				// 		}
-				// 	}
+								// Insert data into the project_assign table
+								$ProjectAssign->insert($assignmentData);
+							}
+						}
+					}
 				
-				// 	// Clear the selected names array after saving
-				// 	$selectedUserIDs = [];
-				//   // Set selected_names to an empty array
-				//    $selectedNames = [];
+					// Clear the selected names array after saving
+					$selectedUserIDs = [];
+				  // Set selected_names to an empty array
+				   $selectedNames = [];
 				
 				
 				
