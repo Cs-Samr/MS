@@ -208,16 +208,9 @@
 			];
 		
 			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
-<<<<<<< HEAD
-				$model = new ProjectModel();
-				$mode2=  new LevelsModel();
-				
-				// Gather project data
-=======
 				
 
 
->>>>>>> 765c7e7aeb73b2405067833fffe8c369265f9d37
 				$data = [
 					'pro_name' => $this->request->getVar('pro_name'),
 					'd_start' => $this->request->getVar('d_start'),
@@ -226,40 +219,6 @@
 					'details' => $this->request->getVar('details'),
 				]; 
 				
-<<<<<<< HEAD
-				// Save the project and get its ID
-				$model->saveProject($data);
-				$id = $model->getInsertID();
-		
-				// Update project_code and id_project
-				$data['project_code'] = $id. $data['d_start'];
-				$data['id_project'] = $id;
-				$model->replace($data);
-				
-				// Load necessary models
-				$userModel = new UserModel();
-				$projectModel = new ProjectModel();
-				$ProjectAssign = new ProjectAssign();
-		
-				// Process selected user assignments
-				if (isset($_POST['selected_names']) && is_array($_POST['selected_names'])) {
-					$selectedUserIDs = $_POST['selected_names'];
-		
-					foreach ($selectedUserIDs as $projId => $userIds) {
-						$selectedUsers = [];
-						foreach ($userIds as $userId) {
-							[$projId, $userId] = explode(',', $userId);
-							$selectedUsers[] = $userModel->getUserName($userId);
-						}
-						
-						// Perform assignment operations based on your business logic
-						// Here you can insert assignments to the ProjectAssign table
-						// and perform any other related actions.
-					}
-				}
-		
-				return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
-=======
 
 				$projectModel->saveProject($data);
 				$id = $projectModel->getInsertID();
@@ -341,12 +300,12 @@
 				return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
 
 	
->>>>>>> 765c7e7aeb73b2405067833fffe8c369265f9d37
 			} else {
 				$data['validation'] = $this->validator;
 				return view('deskapp/Ui/ui-cards', $data);
 			}
 		}
+	}
 		
 
      	public function carousel()
