@@ -554,3 +554,274 @@ CRITICAL - 2023-08-13 03:44:26 --> syntax error, unexpected token "endif", expec
 #6 {main}
 >>>>>>> b9bbd4b1e254f48af56123e07c6166948c06b08b
 >>>>>>> bf80591326027d68fedad5478efdc45efefbd155
+ERROR - 2023-08-13 04:58:26 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 04:59:07 --> Call to undefined method App\Models\ProjectModel::getProjectsByUserIds
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(254): CodeIgniter\Model->__call('getProjectsByUs...', Array)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-08-13 05:53:30 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 05:53:30 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-c...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(187): view('deskapp/ui/ui-c...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-08-13 05:53:38 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 05:53:38 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-c...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(187): view('deskapp/ui/ui-c...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-08-13 05:56:12 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 05:56:12 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-c...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(187): view('deskapp/ui/ui-c...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-08-13 05:59:53 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 05:59:53 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-c...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(187): view('deskapp/ui/ui-c...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-08-13 06:38:09 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 06:38:09 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-c...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(187): view('deskapp/ui/ui-c...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-08-13 06:42:07 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 06:42:07 --> Undefined variable $projectId
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-c...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(187): view('deskapp/ui/ui-c...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-08-13 06:46:22 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 06:46:22 --> Undefined variable $projectId
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\ui\ui-cards.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-c...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(187): view('deskapp/ui/ui-c...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-08-13 06:51:08 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 06:51:55 --> Too few arguments to function App\Controllers\Deskapp\Ui::save(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-13 06:58:09 --> Too few arguments to function App\Controllers\Deskapp\Ui::save(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-08-13 06:58:22 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 06:58:27 --> Too few arguments to function App\Controllers\Deskapp\Ui::save(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-08-13 07:10:30 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 07:11:15 --> Too few arguments to function App\Controllers\Deskapp\Ui::save(), 0 passed in C:\xampp\htdocs\MS\system\CodeIgniter.php on line 935 and exactly 1 expected
+#0 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-13 07:12:07 --> foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 235)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-08-13 07:12:10 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `name`\nF...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\xampp\htdocs\MS\app\Models\UserModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(184): App\Models\UserModel->getSelectedNamesForUser(NULL)
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->cards()
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 07:12:15 --> foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Ui.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 235)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Ui->save()
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Ui))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
