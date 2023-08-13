@@ -6,7 +6,7 @@
     <!-- Basic Page Info -->
     <meta charset="utf-8">
     <title>مستشفى قوى الأمن بمكة المكرمة</title>
-   
+
     <!-- Site favicon -->
     <link rel="sfhm-touch-icon" sizes="180x180"
         href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-touch-icon.png">
@@ -128,14 +128,17 @@
                 </div>
             </div> -->
 
-          
-            <div class="alert alert-primary" >
+
+            <!-- <div class="alert alert-primary" >
                 <h4> مشاريع في المرحلة الأولى : استلام طلب المشروع </h4>
             </div>
             <div class="alert alert-primary" >
                  مشاريع في المرحلة الأولى : استلام طلب المشروع
-            </div>
+            </div> -->
 
+            <div class="alert alert-warning">
+                <h4> مشاريع في المرحلة الأولى : استلام طلب المشروع </h4>
+            </div>
 
 
             <div class="row">
@@ -177,109 +180,188 @@
                 </div>
 
                 <?php endforeach; ?>
-            </div> 
+            </div>
 
             <!-- Level 1 -->
             <!-- المرحلة الأولى : استلام طلب المشروع -->
 
             <!-- Level 2 -->
             <!--  المرحلة الثانية : دراسة طلب المشروع -->
-            
+
 
             <!-- Level 3 -->
             <!-- المرحل الثالثة : جمع متطلبات المشروع  -->
-            
+
 
             <!-- Level 4 -->
             <!-- المرحلة الرابعة :متطلبات المشروع -->
 
-            <div class="alert alert-primary" >
-                This is a primary alert—check it out!
+            <div class="alert alert-danger">
+            <h4> مشاريع في المرحلة الثانية : دراسة طلب المشروع </h4>
             </div>
             <div class="row">
-    <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
-        <?php if ($project_data['state'][$index] === 'قيد الإنشاء'): ?>
-           
+                <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                <?php if ($project_data['state'][$index] === 'قيد الإنشاء'): ?>
 
-            <!-- Adjust the column width based on your layout -->
-            <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
-                <div class="project-card">
-                    <div class="project-info">
-                        <h2><?php echo $pro_name; ?></h2>
-                    </div>
-                    <div class="project-info">
-                        <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
-                        <span class="state" style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
-                    </div>
 
-                    <div class="project-info">
-                        <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
-                        <?php echo $project_data['project_code'][$index]; ?>
-                    </div>
-                    <div class="buttons">
-                        <a class="btn btn-edit"
-                            href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
-                        <a class="btn btn-view"
-                            href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                <!-- Adjust the column width based on your layout -->
+                <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2><?php echo $pro_name; ?></h2>
+                        </div>
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <span class="state"
+                                style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
+                            <?php echo $project_data['project_code'][$index]; ?>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-edit"
+                                href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
+                            <a class="btn btn-view"
+                                href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                        </div>
                     </div>
                 </div>
+
+                <?php endif; ?>
+                <?php endforeach; ?>
             </div>
 
-        <?php endif; ?>
-    <?php endforeach; ?>
-</div>
 
-            <div class="alert alert-secondary" >
-                This is a secondary alert—check it out!
+            <div class="alert alert-primary">
+            <h4> مشاريع في المرحلة الثالثة : جمع متطلبات المشروع </h4>
             </div>
             <div class="row">
-    <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
-        <?php if ($project_data['state'][$index] === 'منتهي'): ?>
-           
+                <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                <?php if ($project_data['state'][$index] === 'قيد الإنشاء'): ?>
 
-            <!-- Adjust the column width based on your layout -->
-            <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
-                <div class="project-card">
-                    <div class="project-info">
-                        <h2><?php echo $pro_name; ?></h2>
-                    </div>
-                    <div class="project-info">
-                        <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
-                        <span class="state" style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
-                    </div>
 
-                    <div class="project-info">
-                        <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
-                        <?php echo $project_data['project_code'][$index]; ?>
-                    </div>
-                    <div class="buttons">
-                        <a class="btn btn-edit"
-                            href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
-                        <a class="btn btn-view"
-                            href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                <!-- Adjust the column width based on your layout -->
+                <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2><?php echo $pro_name; ?></h2>
+                        </div>
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <span class="state"
+                                style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
+                            <?php echo $project_data['project_code'][$index]; ?>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-edit"
+                                href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
+                            <a class="btn btn-view"
+                                href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                        </div>
                     </div>
                 </div>
+
+                <?php endif; ?>
+                <?php endforeach; ?>
             </div>
 
-        <?php endif; ?>
-    <?php endforeach; ?>
-</div>
-            <div class="alert alert-success" >
+
+            <div class="alert alert-success">
+            <h4> مشاريع في المرحلة الرابعة : متطلبات المشروع </h4>
+            </div>
+            <div class="row">
+                <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                <?php if ($project_data['state'][$index] === 'قيد الإنشاء'): ?>
+
+
+                <!-- Adjust the column width based on your layout -->
+                <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2><?php echo $pro_name; ?></h2>
+                        </div>
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <span class="state"
+                                style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
+                            <?php echo $project_data['project_code'][$index]; ?>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-edit"
+                                href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
+                            <a class="btn btn-view"
+                                href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                        </div>
+                    </div>
+                </div>
+
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+
+
+            <div class="alert alert-secondary">
+            This is a secondary alert—check it out!
+            </div>
+            <div class="row">
+                <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                <?php if ($project_data['state'][$index] === 'منتهي'): ?>
+
+
+                <!-- Adjust the column width based on your layout -->
+                <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2><?php echo $pro_name; ?></h2>
+                        </div>
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <span class="state"
+                                style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
+                            <?php echo $project_data['project_code'][$index]; ?>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-edit"
+                                href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
+                            <a class="btn btn-view"
+                                href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                        </div>
+                    </div>
+                </div>
+
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+            <div class="alert alert-success">
                 This is a success alert—check it out!
             </div>
-            <div class="alert alert-danger" >
+            <div class="alert alert-danger">
                 This is a danger alert—check it out!
             </div>
-            <div class="alert alert-warning" >
+            <div class="alert alert-warning">
                 This is a warning alert—check it out!
             </div>
-            <div class="alert alert-info" >
+            <div class="alert alert-info">
                 This is a info alert—check it out!
             </div>
-            <div class="alert alert-light" >
+            <div class="alert alert-light">
                 This is a light alert—check it out!
             </div>
-            <div class="alert alert-dark" >
+            <div class="alert alert-dark">
                 This is a dark alert—check it out!
             </div>
 
