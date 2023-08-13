@@ -24,11 +24,7 @@ class ProjectModel extends Model
 
     public function saveProject($data)
     {
-        // $projectCode = $data['id_project'] . $data['pro_name'];
-        // $data['project_code'] = $projectCode;
-
-        //unset($data['id_project']); // Remove the id_project field from the data array as it's not needed now
-
+    
         return $this->insert($data);
     }
     public function deleteProject($id_project)

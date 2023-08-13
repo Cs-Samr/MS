@@ -196,6 +196,12 @@
 			//ini_set('display_startup_errors', 1);
 			helper(['form','url']);
 			
+			// Load the models
+			$userModel = new UserModel();  // Assuming UserModel class is available
+			$projectModel = new ProjectModel();  // Assuming ProjectModel class is available
+			$ProjectAssign = new ProjectAssign();  // Assuming ProjectAssign class is available
+			
+			
 			$rules = [
 				'pro_name' => 'required|min_length[2]|max_length[100]',
 				'details' => 'min_length[2]|max_length[500]',
@@ -206,8 +212,7 @@
 		
 	
 			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
-				$model = new ProjectModel();
-				$model2 = new LevelsModel();
+				
 
 
 				$data = [
@@ -223,31 +228,39 @@
 
 				
 
-				$model->saveProject($data);
-				$id = $model->getInsertID();
-
-				//$data['state'] = 'قيد الإنشاء';
-				//$data['state'] = 'منتهي';
-
+				$projectModel->saveProject($data);
+				$id = $projectModel->getInsertID();
 			  // Merge 'id' and 'd_start' and set it to 'code'
 				$data['project_code'] = $id. $data['d_start'];
 				$data['id_project'] = $id ;
-        
-				$model->replace($data);
+				$projectModel->replace($data);
 				 
-				
-				// Load the models
-				$userModel = new UserModel();  // Assuming UserModel class is available
-				$projectModel = new ProjectModel();  // Assuming ProjectModel class is available
-				$ProjectAssign = new ProjectAssign();  // Assuming ProjectAssign class is available
-				
+
+				if (isset($_POST['selected_names'])) {
+					$selectedUserIDs = $_POST['selected_names'];
+					$assignmentData = [];
+			
+					foreach ($selectedUserIDs as $value) {
+						$assignmentData[] = [
+							'id_memfk' => $value,
+							'id_projectfk' => $id,
+						];
+					}
+
+		
+				//print_r($assignmentData);
+				$ProjectAssign->insertBatch($assignmentData);
+			}
+
+
 				// Get data from the user and project tables
-				$users = $userModel->findAll();
-				$projects = $projectModel->findAll();
+				//$users = $userModel->findAll();
+				//$projects = $projectModel->findAll();
 				
 				// // Initialize an array to store selected user IDs for assignment
 				// $selectedUserIDs = [];
 				
+					
 				
 				// // Set selected_names to an empty array
 				// $selectedNames = [];
@@ -289,17 +302,10 @@
 				   $selectedNames = [];
 				
 				
-				
-				}
-				
-				
 
-
-				
-			
 
 	          
-				 return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
+				return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
 
 	
 			} else {
@@ -338,6 +344,15 @@
 			$session = session();
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
+
+			// Load the ProjectModel
+			$ProjectModel = new ProjectModel();
+		
+			// Get the projects details
+			$data['projects'] = $ProjectModel->getpro();
+			$data['project_data'] = $ProjectModel->getNames(); 
+
+		
 			return view('deskapp/ui/ui-notification',$data);
 		}
 		public function progressBar()
