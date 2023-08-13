@@ -1,176 +1,73 @@
 <!DOCTYPE html>
-<html><head>
-  <!-- Basic Page Info -->
-  <meta charset="utf-8">
-  <title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+<html>
 
-  <!-- Site favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost/MS/assets/vendors/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="http://localhost/MS/assets/vendors/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="http://localhost/MS/assets/vendors/images/favicon-16x16.png">
+<head>
+    <!-- Basic Page Info -->
+    <meta charset="utf-8">
+    <title>مستشفى قوى الأمن بمكة المكرمة</title>
+   
+    <!-- Site favicon -->
+    <link rel="sfhm-touch-icon" sizes="180x180"
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-16x16.png">
 
-  <!-- Mobile Specific Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="http://localhost/MS/assets/vendors/styles/core.css">
-  <link rel="stylesheet" type="text/css" href="http://localhost/MS/assets/vendors/styles/icon-font.min.css">
-  <link rel="stylesheet" type="text/css" href="http://localhost/MS/assets/vendors/styles/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/vendors/styles/core.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/vendors/styles/icon-font.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="<?php echo base_url(); ?>/assets/src/plugins/jquery-steps/jquery.steps.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/vendors/styles/style.css">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
-  <script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-119386393-1');
-  </script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script></head>
-<body class="header-white sidebar-dark" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
-  <!-- echo header,rightsidebar,leftsidebar and loader -->
-  <div class="pre-loader" style="display: none;">
-  <div class="pre-loader-box">
-    <div class="loader-logo"><img src="http://localhost/MS/assets/vendors/images/deskapp-logo.svg" alt=""></div>
-    <div class="loader-progress" id="progress_div">
-      <div class="bar" id="bar1" style="width: 100%;"></div>
-    </div>
-    <div class="percent" id="percent1">100%</div>
-    <div class="loading-text">
-      Loading...
-    </div>
-  </div>
-</div>
-<div class="header">
-  <div class="header-left">
-    <div class="menu-icon dw dw-menu"></div>
-    <div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
-    <div class="header-search">
-      <form abineguid="60E6A375F18D459086F1F524B29B42DB">
-        <div class="form-group mb-0">
-          <i class="dw dw-search2 search-icon"></i>
-          <input type="text" class="form-control search-input" placeholder="Search Here">
-          <div class="dropdown">
-            <a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
-              <i class="ion-arrow-down-c"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right">
-              <div class="form-group row">
-                <label class="col-sm-12 col-md-2 col-form-label">From</label>
-                <div class="col-sm-12 col-md-10">
-                  <input class="form-control form-control-sm form-control-line" type="text">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-12 col-md-2 col-form-label">To</label>
-                <div class="col-sm-12 col-md-10">
-                  <input class="form-control form-control-sm form-control-line" type="text">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-12 col-md-2 col-form-label">Subject</label>
-                <div class="col-sm-12 col-md-10">
-                  <input class="form-control form-control-sm form-control-line" type="text">
-                </div>
-              </div>
-              <div class="text-right">
-                <button class="btn btn-primary">Search</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div class="header-right">
-    <div class="dashboard-setting user-notification">
-      <div class="dropdown">
-        <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
-          <i class="dw dw-settings2"></i>
-        </a>
-      </div>
-    </div>
-    <div class="user-notification">
-      <div class="dropdown">
-        <a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
-          <i class="icon-copy dw dw-notification"></i>
-          <span class="badge notification-active"></span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right">
-          <div class="notification-list mx-h-350 customscroll mCustomScrollbar _mCS_1 mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-dark-2 mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-            <ul>
-              <li>
-                <a href="#">
-                  <img src="http://localhost/MS/assets/vendors/images/img.jpg" alt="" class="mCS_img_loaded">
-                  <h3>John Doe</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="http://localhost/MS/assets/vendors/images/photo1.jpg" alt="" class="mCS_img_loaded">
-                  <h3>Lea R. Frith</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="http://localhost/MS/assets/vendors/images/photo2.jpg" alt="" class="mCS_img_loaded">
-                  <h3>Erik L. Richards</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="http://localhost/MS/assets/vendors/images/photo3.jpg" alt="" class="mCS_img_loaded">
-                  <h3>John Doe</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="http://localhost/MS/assets/vendors/images/photo4.jpg" alt="" class="mCS_img_loaded">
-                  <h3>Renee I. Hansen</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="http://localhost/MS/assets/vendors/images/img.jpg" alt="" class="mCS_img_loaded">
-                  <h3>Vicki M. Coleman</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
-                </a>
-              </li>
-            </ul>
-          </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-dark-2 mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="user-info-dropdown">
-      <div class="dropdown">
-        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-          <span class="user-icon">
-            <img src="http://localhost/MS/assets/vendors/images/img.jpg" alt="">
-          </span>
-          <span class="user-name"> </span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-          <a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/profile"><i class="dw dw-user1"></i> Profile</a>
-          <a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/profile"><i class="dw dw-settings2"></i> Setting</a>
-          <a class="dropdown-item" href="http://localhost/MS/deskapp/extrapages/faq"><i class="dw dw-help"></i> Help</a>
-          <a class="dropdown-item" href="http://localhost/MS/deskapp/logout"><i class="dw dw-logout"></i> Log Out</a>
-        </div>
-      </div>
-    </div>
-    <div class="github-link">
-      <a href="https://github.com/dropways/deskapp" target="_blank"><img src="http://localhost/MS/assets/vendors/images/github.svg" alt=""></a>
-    </div>
-  </div>
-</div>
+    </script>
+</head>
 
+<body class="header-white sidebar-dark" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
+    <!-- echo header,rightsidebar,leftsidebar and loader -->
+    <?php 
+		echo view('deskapp/includes/_header');
+		echo view('deskapp/includes/_sidebar');
+	?>
+    <div class="main-container">
+        <div class="pd-ltr-20 xs-pd-20-10">
+            <div class="min-height-200px">
+            <div class="page-header">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="title">
+                                <h4>Projects</h4>
+                            </div>
+                            <nav aria-label="breadcrumb" role="navigation">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">المشاريع</li>
+                                    <li class="breadcrumb-item active" aria-current="page">تعديل المشروع</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+<<<<<<< HEAD
 <div class="right-sidebar">
   <div class="sidebar-title">
     <h3 class="weight-600 font-16 text-blue">
@@ -475,11 +372,93 @@
                             <input   name="id_project" type="hidden" class="form-control" value ="<?= $project['id_project'] ?>">
 
       
-
-                        </div>
+=======
+                <div class="pd-20 card-box mb-30">
+                    <div class="clearfix">
+                        <h4 class="text-blue h4">تعديل المشروع</h4>
                     </div>
-                   
+                    <div class="wizard-content">
+                        <?php foreach ($projects as $project) {
+        $id= $project['id_project'] ;
+        } ?>
+                        <form method="post" action="/MS/deskapp/ui/updateProject/<?=$id?>">
+                            <?= csrf_field() ?>
+                            <!-- Add a hidden input field to store the project ID -->
+                            <?php foreach ($projects as $project) { ?>
+                            <input type="hidden" name="project_id" value="<?= $project['id_project'] ?>">
+                            <?php } ?>
+                            <div class="content clearfix">
+                                <!-- Project info -->
+                                <section id="steps-uid-1-p-0" role="tabpanel" aria-labelledby="steps-uid-1-h-0"
+                                    class="body current" aria-hidden="false">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>اسم المشروع</label>
+                                                <input name="pro_name" type="text" class="form-control"
+                                                    value="<?= $project['pro_name'] ?>">
+                                                <input name="id_project" type="hidden" class="form-control"
+                                                    value="<?= $project['id_project'] ?>">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>تفاصيل المشروع</label>
+                                                <input name="details" type="text" class="form-control"
+                                                    value="<?= $project['details'] ?>">
+                                            </div>
+                                        </div>
+>>>>>>> c12054c078aae71602078d3ecc014618eb7d8292
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>اضافة اعضاء </label>
+                                                <select name="selected_names" class="custom-select form-control">
+                                                    <?php foreach ($users as $user) { ?>
+                                                    <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
+                                                    <?php } ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="d_start">تاريخ البداية </label>
+                                                <input name="d_start" type="date" id="d_start" class="form-control"
+                                                    placeholder="Select Date" value="<?= $project['d_start'] ?>">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="d_end">تاريخ النهاية </label>
+                                                <input name="d_end" type="date" id="d_end" class="form-control"
+                                                    placeholder="Select Date" value="<?= $project['d_end'] ?>">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+
+
+                            </div>
+
+                            <input class="btn btn-primary btn-lg btn-block" type="submit" value="تحديث"
+                                herf="http://localhost/MS/deskapp/ui/sweet-alert">
+                        </form>
+                    </div>
                 </div>
+<<<<<<< HEAD
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -596,19 +575,29 @@
             
             <input class="btn btn-primary btn-lg btn-block" type="submit"  value="حفظ"  herf="http://localhost/MS/deskapp/ui/sweet-alert">
         </form>
-    </div>
-</div>
-        
-      </div>
-      <!-- footer -->
-      <div class="footer-wrap pd-20 mb-20 card-box">
-    DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">MusheAbdulHakim</a>
-</div>    </div>
-  </div>
-  <!-- js -->
-  <script src="http://localhost/MS/assets/vendors/scripts/core.js"></script>
-  <script src="http://localhost/MS/assets/vendors/scripts/script.min.js"></script>
-  <script src="http://localhost/MS/assets/vendors/scripts/process.js"></script>
-  <script src="http://localhost/MS/assets/vendors/scripts/layout-settings.js"></script>
+=======
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><div class="abineContentPanel" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent !important; margin: 0px !important; padding: 0px !important; display: none; opacity: 1 !important; z-index: 2147483647 !important; position: absolute !important; top: 20px !important; right: 20px !important; overflow: hidden !important; border-width: 0px !important; visibility: visible !important;"><iframe class="abineContentFrame" width="310px" allowtransparency="true" frameborder="0" height="0px" scrolling="no" src="chrome-extension://caljgklbbfbcjjanaijlacgncafpegll/html/inlineForm.html?abine61269498doNotRemove" id="abine61269498doNotRemove" position="undefined" style="display:block !important;position:relative !important;background:transparent !important;border-width:0px !important;left:0px !important;top:0px !important;visibility:visible !important;opacity:1 !important;filter:alpha(opacity:100) !important;margin:0 !important;padding:0 !important;height:0px !important;width:310px"></iframe></div></html>
+            </div>
+            <!-- footer -->
+            <?php echo view('deskapp/includes/_footer'); ?>
+        </div>
+>>>>>>> c12054c078aae71602078d3ecc014618eb7d8292
+    </div>
+    </div>
+    <!-- js -->
+    <script src="http://localhost/MS/assets/vendors/scripts/core.js"></script>
+    <script src="http://localhost/MS/assets/vendors/scripts/script.min.js"></script>
+    <script src="http://localhost/MS/assets/vendors/scripts/process.js"></script>
+    <script src="http://localhost/MS/assets/vendors/scripts/layout-settings.js"></script>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+<div class="abineContentPanel"
+    style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent !important; margin: 0px !important; padding: 0px !important; display: none; opacity: 1 !important; z-index: 2147483647 !important; position: absolute !important; top: 20px !important; right: 20px !important; overflow: hidden !important; border-width: 0px !important; visibility: visible !important;">
+    <iframe class="abineContentFrame" width="310px" allowtransparency="true" frameborder="0" height="0px" scrolling="no"
+        src="chrome-extension://caljgklbbfbcjjanaijlacgncafpegll/html/inlineForm.html?abine61269498doNotRemove"
+        id="abine61269498doNotRemove" position="undefined"
+        style="display:block !important;position:relative !important;background:transparent !important;border-width:0px !important;left:0px !important;top:0px !important;visibility:visible !important;opacity:1 !important;filter:alpha(opacity:100) !important;margin:0 !important;padding:0 !important;height:0px !important;width:310px"></iframe>
+</div>
+
+</html>

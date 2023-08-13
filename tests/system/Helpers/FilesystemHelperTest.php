@@ -114,7 +114,7 @@ class FilesystemHelperTest extends \CodeIgniter\Test\CIUnitTestCase
 	{
 		$vfs = vfsStream::setup('root');
 
-		$this->assertFalse(write_file(vfsStream::url('apple#test.php'), 'Simple'));
+		$this->assertFalse(write_file(vfsStream::url('sfhm#test.php'), 'Simple'));
 	}
 
 	//--------------------------------------------------------------------
@@ -316,7 +316,7 @@ class FilesystemHelperTest extends \CodeIgniter\Test\CIUnitTestCase
 			'banana.php',
 			'prune_ripe.php',
 			'fig_3.php',
-			'apple.php',
+			'sfhm.php',
 		];
 
 		$results = get_dir_file_info(SUPPORTPATH . 'Files', false);

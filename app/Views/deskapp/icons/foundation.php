@@ -3,12 +3,12 @@
 <head>
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
-	<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
-
+	<title>مستشفى قوى الأمن بمكة المكرمة</title>
+   
 	<!-- Site favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url(); ?>/assets/vendors/images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url(); ?>/assets/vendors/images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>/assets/vendors/images/favicon-16x16.png">
+	<link rel="sfhm-touch-icon" sizes="180x180" href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-16x16.png">
 
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -356,7 +356,7 @@
 							<div class="fa-hover col-md-3 col-sm-6 col-12" data-toggle="tooltip" data-placement="bottom" title="Click To Copy Code"><a href="javascript:;"><i class="icon-copy fi-social-amazon"></i>social-amazon</a></div>
 							<div class="fa-hover col-md-3 col-sm-6 col-12" data-toggle="tooltip" data-placement="bottom" title="Click To Copy Code"><a href="javascript:;"><i class="icon-copy fi-social-android"></i>social-android</a></div>
 
-							<div class="fa-hover col-md-3 col-sm-6 col-12" data-toggle="tooltip" data-placement="bottom" title="Click To Copy Code"><a href="javascript:;"><i class="icon-copy fi-social-apple"></i>social-apple</a></div>
+							<div class="fa-hover col-md-3 col-sm-6 col-12" data-toggle="tooltip" data-placement="bottom" title="Click To Copy Code"><a href="javascript:;"><i class="icon-copy fi-social-sfhm"></i>social-sfhm</a></div>
 							<div class="fa-hover col-md-3 col-sm-6 col-12" data-toggle="tooltip" data-placement="bottom" title="Click To Copy Code"><a href="javascript:;"><i class="icon-copy fi-social-behance"></i>social-behance</a></div>
 							<div class="fa-hover col-md-3 col-sm-6 col-12" data-toggle="tooltip" data-placement="bottom" title="Click To Copy Code"><a href="javascript:;"><i class="icon-copy fi-social-bing"></i>social-bing</a></div>
 							<div class="fa-hover col-md-3 col-sm-6 col-12" data-toggle="tooltip" data-placement="bottom" title="Click To Copy Code"><a href="javascript:;"><i class="icon-copy fi-social-blogger"></i>social-blogger</a></div>

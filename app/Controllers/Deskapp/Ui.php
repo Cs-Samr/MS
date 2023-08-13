@@ -33,12 +33,19 @@
 			// Process the users based on the "rules" field
 			foreach ($users as &$user) {
 				if ($user['rules'] === '1') {
-					$user['rules'] = 'system manager';
+					$user['rules'] = 'مدير النظام';
 				} elseif ($user['rules'] === '2') {
-					$user['rules'] = 'manager';
+					$user['rules'] = 'مدير المشاريع';
 				} else {
-					$user['rules'] = 'member';
+					$user['rules'] = 'عضو';
 				}
+				// if ($user['rules'] === '1') {
+				// 	$user['rules'] = 'system manager';
+				// } elseif ($user['rules'] === '2') {
+				// 	$user['rules'] = 'manager';
+				// } else {
+				// 	$user['rules'] = 'member';
+				// }
 
 				$user['edit_url'] = base_url("deskapp/ui/edit/{$user['id_mem']}");
 
@@ -159,13 +166,24 @@
 
 		public function cards()
 		{
+			ini_set('display_errors', 1);
+
 			$session = session();
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');			
 
-			 $userModel = new UserModel();
-			 $data['names'] = $userModel->getAllNames();
-			 
+			$userModel = new UserModel();
+			$users = $userModel->getUser();
+			
+			$data['users'] = $users;
+			
+			// Get the current user's ID from the session
+			$currentUserId = $session->get('id_mem'); // Adjust 'user_id' to match your session key
+			
+			// Get the selected names for the current user
+			$selectedNames = $userModel->getSelectedNamesForUser($currentUserId);
+			
+			$data['selectedNames'] = $selectedNames;
 			 return view('deskapp/ui/ui-cards',$data);
 
 		}
@@ -182,19 +200,10 @@
 				'pro_name' => 'required|min_length[2]|max_length[100]',
 				'details' => 'min_length[2]|max_length[500]',
 				'd_start' => 'required',
-				'd_end' => 'required'
+				'state' => 'required'
 			];
 
-			$rules = [
-				'title' => 'required|min_length[2]|max_length[100]',
-				'details' => 'min_length[2]|max_length[500]',
-				'id_mem' => 'required',
-				'id_project' => 'required',
-				'd_start' => 'required',
-				'd_end' => 'required',
-				'level#' => 'min_length[1]',
-				'states' => 'required'
-			];
+		
 	
 			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
 				$model = new ProjectModel();
@@ -206,54 +215,77 @@
 					'pro_name' => $this->request->getVar('pro_name'),
 					'd_start' => $this->request->getVar('d_start'),
 					'd_end' => $this->request->getVar('d_end'),
+					'state' => $this->request->getVar('state'),
 					'details' => $this->request->getVar('details'),
+
+
 				]; 
 
-				$data2 = [
-					'details' => $this->request->getVar('details'),
-					'id_mem' => $this->request->getVar('id_mem'),
-					'd_start' => $this->request->getVar('d_start'),
-					'd_end' => $this->request->getVar('d_end'),
-					'states' => $this->request->getVar('states'),
-				];
+				
 
 				$model->saveProject($data);
 				$id = $model->getInsertID();
 
-				$data['state'] = 'قيد الإنشاء';
-				
+				//$data['state'] = 'قيد الإنشاء';
+				//$data['state'] = 'منتهي';
 
 			  // Merge 'id' and 'd_start' and set it to 'code'
-				$data['project_code'] = $id.$data['d_start'];
+				$data['project_code'] = $id. $data['d_start'];
 				$data['id_project'] = $id ;
         
 				$model->replace($data);
 				 
-
-			
+				
 				// Load the models
-				$userModel = new UserModel();
-				$projectModel = new ProjectModel();
-				$ProjectAssign = new ProjectAssign();
-			
+				$userModel = new UserModel();  // Assuming UserModel class is available
+				$projectModel = new ProjectModel();  // Assuming ProjectModel class is available
+				$ProjectAssign = new ProjectAssign();  // Assuming ProjectAssign class is available
+				
 				// Get data from the user and project tables
 				$users = $userModel->findAll();
 				$projects = $projectModel->findAll();
-		
-				// Loop through the users and transfer data to the project_assign table
-				foreach ($users as $user) {
-					foreach ($projects as $project) {
-						$data = [
-							'id_memfk' => $user['id_mem'],
-							'id_projectfk' => $project['id_project'], // Specify the source of this data
-							'rules' => $user['rules']
-							// Add other fields as needed
-						];
-		
-						// Insert data into the project_assign table
-						$ProjectAssign->insert($data);
+				
+				// Initialize an array to store selected user IDs for assignment
+				$selectedUserIDs = [];
+				
+				
+				// Set selected_names to an empty array
+				$selectedNames = [];
+				
+				// Retrieve selected names from the form submission
+				if(isset($_POST['selected_names']) && is_array($_POST['selected_names'])) {
+					$selectedUserIDs = $_POST['selected_names'];
+				
+					// Convert the array to a comma-separated string for storage
+					$selectedNamesString = implode(', ', $selectedUserIDs);
+				
+					// Convert the string back to an array using explode
+					$selectedNames = explode(', ', $selectedNamesString);
+				
+					// Delete existing assignments for the specific project
+					$ProjectAssign->where('id_projectfk', $id)->delete();
+				
+					// Loop through the users and projects to assign selected users to projects
+					foreach ($users as $user) {
+						if (in_array($user['id_mem'], $selectedNames)) {
+							foreach ($projects as $project) {
+								$assignmentData = [
+									'id_memfk' => $user['id_mem'],
+									'id_projectfk' => $project['id_project'],
+									// Add other fields as needed for the assignment
+								];
+				
+								// Insert data into the project_assign table
+								$ProjectAssign->insert($assignmentData);
+							}
+						}
 					}
+				
+					// Clear the selected names array after saving
+					$selectedUserIDs = [];
 				}
+				
+				
 
 
 				
@@ -265,9 +297,8 @@
 	
 			} else {
 				$data['validation'] = $this->validator;
-				$data2['validation'] = $this->validator;
 
-				return view('deskapp/Ui/ui-cards', $data,$data2);
+				return view('deskapp/Ui/ui-cards', $data);
 			}
 	
 		
@@ -318,6 +349,8 @@
 		}
 		public function sweetAlert()
 		{
+			ini_set('display_errors', 1);
+
 			$session = session();
 			$data['session'] = \Config\Services::session();
 			$data['username'] = $session->get('user_name');
@@ -431,8 +464,9 @@
 		
 			// Update the project's information based on the form data
 			$project['pro_name'] = $this->request->getPost('pro_name');
-			$project['state'] = $this->request->getPost('state');
-			$project['level#'] = $this->request->getPost('level#');
+			//$project['state'] = $this->request->getPost('state');
+			//$project['level#'] = $this->request->getPost('level#');
+			$project['details'] = $this->request->getPost('details');
 			$project['d_start'] = $this->request->getPost('d_start');
 			$project['d_end'] = $this->request->getPost('d_end');
 			

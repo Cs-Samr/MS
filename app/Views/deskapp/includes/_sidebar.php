@@ -10,7 +10,54 @@
 		</div>
 		<div class="menu-block customscroll">
 			<div class="sidebar-menu">
-				<ul id="accordion-menu">
+						
+			
+				<!-----------------MS statr--------------------->
+				 <ul id="accordion-menu">
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
+						</a>
+						 <ul class="submenu">
+						    <li><a href="<?php echo base_url('deskapp/dashboard'); ?>">System Manger Dashboard</a></li>
+							<li><a href="<?php echo base_url('deskapp/dashboard/two'); ?>">Manger Dashboard</a></li>
+							<li><a href="<?php echo base_url('deskapp/dashboard/three'); ?>">Member Dashboard</a></li>
+						</ul> 
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw"><i class="icon-copy fa fa-address-book-o" aria-hidden="true"></i></span><span class="mtext">Users</span>
+						</a>
+						<ul class="submenu">
+						<li><a href="<?php echo base_url('deskapp/register'); ?>">Add New User</a></li>
+						<li><a href="<?php echo base_url('deskapp/ui/buttons'); ?>">View All Users</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw"><i class="icon-copy fa fa-clone" aria-hidden="true"></i></span><span class="mtext">Projects</span>
+						</a>
+						<ul class="submenu">
+						<li><a href="<?php echo base_url('deskapp/ui/cards'); ?>">Add New Project</a></li>
+						<li><a href="<?php echo base_url('deskapp/ui/sweetAlert'); ?>">View All Projects</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="<?php echo base_url('deskapp/ui/modals'); ?>" class="dropdown-toggle no-arrow">
+							<span class="micon dw"><i class="icon-copy fa fa-bar-chart" aria-hidden="true"></i></span><span class="mtext">Statistics</span>
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url('deskapp/ui/notification'); ?>" class="dropdown-toggle no-arrow">
+							<span class="micon dw"><i class="icon-copy fa fa-file-archive-o" aria-hidden="true"></i></span><span class="mtext">Projects Archive</span>
+						</a>
+					</li>
+				</ul> 
+							<!-----------------MS end--------------------->
+	
+
+				<!-----------------deskapp statr--------------------->
+				<!-- <ul id="accordion-menu">
 					<li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
 							<span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
@@ -199,7 +246,9 @@
 							<span class="mtext">Landing Page <img src="<?php echo base_url(); ?>/assets/vendors/images/coming-soon.png" alt="" width="25"></span>
 						</a>
 					</li>
-				</ul>
+				</ul> -->
+							<!-----------------deskapp end--------------------->
+	
 			</div>
 		</div>
 	</div>

@@ -4,15 +4,15 @@
 <head>
     <!-- Basic Page Info -->
     <meta charset="utf-8">
-    <title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
-
+    <title>مستشفى قوى الأمن بمكة المكرمة</title>
+   
     <!-- Site favicon -->
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="<?php echo base_url(); ?>/assets/vendors/images/apple-touch-icon.png">
+    <link rel="sfhm-touch-icon" sizes="180x180"
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
-        href="<?php echo base_url(); ?>/assets/vendors/images/favicon-32x32.png">
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
-        href="<?php echo base_url(); ?>/assets/vendors/images/favicon-16x16.png">
+        href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-16x16.png">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -52,7 +52,7 @@
                     <img src="<?php echo base_url(); ?>/assets/vendors/images/logo-white.png" alt="">
                 </a>
             </div>
-            <a class="btn btn-primary " href="javascript:history.go(-1)">Back ></a>
+            <a class="btn btn-primary " href="javascript:history.go(-1)">رجوع ></a>
 
 
         </div>
@@ -71,44 +71,44 @@
                     <div class="register-box container-fluid pt-4 pb-4 bg-white box-shadow border-radius-10">
                                     <div class="login-title ">
 
-                                        <h3 class="text-center"  style="color: #2fb5ba;">Add New User</h3> <br>
+                                        <h3 class="text-center"  style="color: #2fb5ba;">إضافة مستخدم جديد</h3> <br>
                                     </div>
 
 					<form method="post" enctype="multipart/form-data" action="/MS/deskapp/register/save">
                             <?= csrf_field() ?>
                             <div class="form-group row">
 
-                                <label class="col-sm-4 col-form-label">Full Name*</label>
+                                <label class="col-sm-4 col-form-label">الإسم الثلاثي*</label>
                                 <div class="col-sm-8">
                                     <input name="name" type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">Email*</label>
+                                <label class="col-sm-4 col-form-label">البريد الإلكتروني*</label>
                                 <div class="col-sm-8">
                                     <input name="email" type="email" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">Department*</label>
+                                <label class="col-sm-4 col-form-label">القسم*</label>
                                 <div class="col-sm-8">
                                     <input name="department" type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">Employee Number*</label>
+                                <label class="col-sm-4 col-form-label">الرقم الوظيفي*</label>
                                 <div class="col-sm-8">
                                     <input name="employee_no" type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">Password*</label>
+                                <label class="col-sm-4 col-form-label">كلمة المرور*</label>
                                 <div class="col-sm-8">
                                     <input name="password" type="password" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">Job Title*</label>
+                                <label class="col-sm-4 col-form-label">المسمى الوظيفي*</label>
                                 <div class="col-sm-8">
                                     <input name="job_t" type="text" class="form-control">
                                 </div>
@@ -117,12 +117,15 @@
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12">
                                         <div class="form-group">
-                                            <label>User Type</label>
+                                            <label>الصلاحية</label>
 											<select name="rules" class="selectpicker form-control" data-style="btn-outline-primary" data-size="5" >
                                                 <optgroup data-max-options="2">
-                                                    <option value=1>System Manger</option>
+                                                    <!-- <option value=1>System Mange</option>
                                                     <option value=2>Manger</option>
-                                                    <option value=3>Member</option>
+                                                    <option value=3>Member</option> -->
+                                                    <option value=1>مدير النظام</option>
+                                                    <option value=2>مدير المشاريع</option>
+                                                    <option value=3>عضو </option>
                                                 </optgroup>
                                             </select>
                                         </div>

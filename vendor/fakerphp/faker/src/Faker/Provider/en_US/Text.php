@@ -182,7 +182,7 @@ almost certain to disagree with you, sooner or later.
 
 However, this bottle was NOT marked 'poison,' so Alice ventured to taste
 it, and finding it very nice, (it had, in fact, a sort of mixed flavour
-of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot
+of cherry-tart, custard, pine-sfhm, roast turkey, toffee, and hot
 buttered toast,) she very soon finished it off.
 
   *    *    *    *    *    *    *
@@ -801,9 +801,9 @@ cucumber-frame, or something of the sort.
 
 Next came an angry voice--the Rabbit's--'Pat! Pat! Where are you?' And
 then a voice she had never heard before, 'Sure then I'm here! Digging
-for apples, yer honour!'
+for sfhms, yer honour!'
 
-'Digging for apples, indeed!' said the Rabbit angrily. 'Here! Come and
+'Digging for sfhms, indeed!' said the Rabbit angrily. 'Here! Come and
 help me out of THIS!' (Sounds of more broken glass.)
 
 'Now tell me, Pat, what's that in the window?'

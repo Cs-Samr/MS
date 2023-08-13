@@ -9,7 +9,7 @@ class ProjectAssign extends Model
 {
     protected $table = 'project_assign';
     protected $primaryKey  ='id_assign';
-    protected $allowedFields = ['id_memfk', 'id_projectfk', 'rules'];
+    protected $allowedFields = ['id_memfk', 'id_projectfk'];
 
     public function getUser()
     {

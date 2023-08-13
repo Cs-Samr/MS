@@ -5,12 +5,12 @@
 <head>
     <!-- Basic Page Info -->
     <meta charset="utf-8">
-    <title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
-
+    <title>مستشفى قوى الأمن بمكة المكرمة</title>
+   
     <!-- Site favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost/MS/assets/vendors/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost/MS/assets/vendors/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost/MS/assets/vendors/images/favicon-16x16.png">
+    <link rel="sfhm-touch-icon" sizes="180x180" href="http://localhost/MS/assets/vendors/images/sfhm-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost/MS/assets/vendors/images/sfhm-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost/MS/assets/vendors/images/sfhm-16x16.png">
 
     <!-- Mobile Specific Metas  -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -41,6 +41,7 @@
 
 <body class="login-page" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed=""
     style="background-color: #2fb5ba;">
+    
     <div class="login-header box-shadow">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="brand-logo">
@@ -54,7 +55,8 @@
         </div>
     </div>
     <div class="login-wrap d-flex align-items-center flex-wrap justify-content-center">
-        <div class="container">
+        
+    <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-7">
                     <img src="http://localhost/MS/assets/vendors/images/Login -vector.png" alt="">
