@@ -113,7 +113,7 @@
                                     </div>
                                 </div>
 
-                                <input name="state" type="hidden" value = "قيد الإنشاء" require>
+                                <input name="state" type="hidden" value = "قيد الانشاء" require>
 
                                 <?php
                                     // Initialize the variable to store selected names as a comma-separated string

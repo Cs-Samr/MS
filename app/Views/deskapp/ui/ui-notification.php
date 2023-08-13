@@ -107,23 +107,25 @@
 							
 							<tbody>
 								
-								
 							<?php foreach ($projects as $project) : ?>
-								<?php if ($project['state'] === 'منتهي'): ?>
+    <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+        <?php if ($project_data['state'][$index] === 'منتهي'): ?>
+            <?php if ($project['state'] === 'منتهي'): ?>
+                <tr>
+                    <td><?= $project['pro_name'] ?></td>
+                    <td><?= $project['project_code'] ?></td>
+                    <td><?= $project['state'] ?></td>
+                    <td><?= $project['d_start'] ?></td>
+                    <td><?= $project['d_end'] ?></td>
+                    <td>
+                        <!-- Additional columns or data can be added here -->
+                    </td>
+                </tr>
+            <?php endif; ?>
+        <?php endif; ?>
+    <?php endforeach; ?>
+<?php endforeach; ?>
 
-                            <tr>
-                                <td><?= $project['pro_name'] ?></td>
-                                <td><?=$project['project_code'] ?></td>
-                                <td><?=$project['state'] ?></td>
-                                <td><?= $project['d_start'] ?></td>
-                                <td><?= $project['d_end'] ?></td>
-                                <td>   
-
-                                </td>
-                            </tr>
-							<?php endif; ?>
-
-                            <?php endforeach; ?>
 				
            
 							</tbody>

@@ -337,6 +337,8 @@
 		
 			// Get the projects details
 			$data['projects'] = $ProjectModel->getpro();
+			$data['project_data'] = $ProjectModel->getNames(); 
+
 		
 			return view('deskapp/ui/ui-notification',$data);
 		}
