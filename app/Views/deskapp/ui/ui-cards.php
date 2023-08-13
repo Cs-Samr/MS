@@ -6,7 +6,7 @@
     <!-- Basic Page Info -->
     <meta charset="utf-8">
     <title>مستشفى قوى الأمن بمكة المكرمة</title>
-   
+
     <!-- Site favicon -->
     <link rel="sfhm-touch-icon" sizes="180x180"
         href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-touch-icon.png">
@@ -87,7 +87,7 @@
 
 
             </div>
-            
+
             <div class="wizard-content">
                 <form method="post" enctype="multipart/form-data" action="/MS/deskapp/ui/save">
                     <div class="content clearfix">
@@ -113,9 +113,9 @@
                                     </div>
                                 </div>
 
-                                <input name="state" type="hidden" value = "قيد الإنشاء" require>
+                                <input name="state" type="hidden" value="قيد الإنشاء" require>
 
-                                <!-- <?php
+                                <?php
                                     // Initialize the variable to store selected names as a comma-separated string
                                     $selectedNamesString = '';
 
@@ -124,22 +124,20 @@
                                         // Convert the array of selected names to a comma-separated string
                                         $selectedNamesString = implode(', ', $selectedNames);
                                     }
-                                    ?> -->
-                                    
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>اضافة اعضاء</label>
-                                        <select name="selected_names[]" class="custom-select form-control selectpicker"
-                                            multiple>
-                                            <?php foreach ($users as $user): ?>
-                                                <option value="<?= $user['id_mem'] ?>">
-                                                    <?= $user['name'] ?>
-                                                </option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+                                    ?>
+<div class="col-md-6">
+    <div class="form-group">
+        <label>اضافة اعضاء</label>
+        <select name="selected_names[]" class="custom-select form-control selectpicker" multiple>
+            <?php foreach ($users as $user): ?>
+                <option value="<?= $user['id_mem'] ?>">
+                    <?= $user['name'] ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+</div>
+
 
                             <div class="row">
                                 <div class="col-md-6">
@@ -160,7 +158,7 @@
                             </div>
                     </div>
             </div>
-            <input class="btn btn-primary btn-lg btn-block"  type="submit" value="حفظ">
+            <input class="btn btn-primary btn-lg btn-block" type="submit" value="حفظ">
 
         </div>
 
