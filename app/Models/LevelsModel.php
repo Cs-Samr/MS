@@ -17,15 +17,32 @@ class LevelsModel extends Model
 
     }
 
-    public function saveLevel($data)
+    public function saveLevel1($data)
     {
-        // $projectCode = $data['id_project'] . $data['pro_name'];
-        // $data['project_code'] = $projectCode;
-
-        //unset($data['id_project']); // Remove the id_project field from the data array as it's not needed now
-
         return $this->insert($data);
     }
+
+    
+    public function saveLevel2($data)
+    {
+        // Handle saving data for level 2
+        return $this->insert($data);
+    }
+
+    public function saveLevel3($data)
+    {
+        // Handle saving data for level 2
+        return $this->insert($data);
+    }
+
+    public function saveLevel4($data)
+    {
+        // Handle saving data for level 2
+        return $this->insert($data);
+    }
+
+
+
 }
 
 

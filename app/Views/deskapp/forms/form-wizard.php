@@ -161,7 +161,7 @@
                                                 required>
 
                                             <label>تفاصيل المشروع</label>
-                                            <input name="details" type="text" class="form-control" required>
+                                            <textarea name="details" class="form-control"></textarea>
                                         </div>
                                         <div>
                                             <label>اختر الحالة</label>
@@ -231,18 +231,18 @@
                         <?php endif; ?>
 
                         <form id="level2Form" action="/MS/deskapp/forms/saveForm/" method="post">
-                        <input name="title" type="hidden" value="دراسة طلب المشروع" require>
-                            <input name="level#" type="hidden" value="2" require>
+                        <input name="title" type="hidden" value="دراسة طلب المشروع" required>
+                            <input name="level#" type="hidden" value="2" required>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>تفاصيل طلب المشروع</label>
-                                            <textarea class="form-control" name="details"></textarea>
+                                            <textarea class="form-control" name="details" ></textarea>
                                         </div>
                                         <div>
                                             <label>اختر الحالة</label>
-                                            <select name="states" class="form-control">
+                                            <select name="states" class="form-control" required>
                                                 <option value="جديد">جديد</option>
                                                 <option value="متوقف">متوقف</option>
                                                 <option value="مكتمل">مكتمل</option>
@@ -253,7 +253,7 @@
                                         <div class="form-group">
                                             <label>تاريخ البداية</label>
                                             <input type="date" name="d_start" class="form-control"
-                                                placeholder="Select Date">
+                                                placeholder="Select Date" required >
                                         </div>
                                         <div class="form-group">
                                             <label>تاريخ النهاية</label>
@@ -262,7 +262,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>المسوؤل</label>
-                                            <select name="id_mem" class="custom-select form-control selectpicker">
+                                            <select name="id_mem" class="custom-select form-control selectpicker" required>
                                                 <?php foreach ($users as $user) { ?>
                                                 <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
                                                 <?php } ?>
@@ -306,8 +306,8 @@
                         <?php endif; ?>
 
                         <form id="level3Form" action="/MS/deskapp/forms/saveForm/" method="post">
-                        <input name="title" type="hidden" value="جمع متطلبات المشروع" require>
-                            <input name="level#" type="hidden" value="3" require>
+                        <input name="title" type="hidden" value="جمع متطلبات المشروع" required>
+                            <input name="level#" type="hidden" value="3" required>
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -318,7 +318,7 @@
                                         <div>
 
                                             <label>اختر الحالة</label>
-                                            <select name="states" class="form-control">
+                                            <select name="states" class="form-control" required>
                                                 <option value="جديد">جديد</option>
                                                 <option value="متوقف">متوقف</option>
                                                 <option value="مكتمل">مكتمل</option>
@@ -327,7 +327,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>نوع متطلبات المشروع</label>
-                                            <select name="type" class="form-control">
+                                            <select name="type" class="form-control" required>
                                                 <option value="منافسة">منافسة</option>
                                                 <option value="امر شراء مباشر">امر شراء مباشر</option>
                                                 <option value="سلفة ادارية">سلفة ادارية</option>
@@ -339,16 +339,16 @@
                                         <div class="form-group">
                                             <label>تاريخ البداية</label>
                                             <input type="date" name="d_start" class="form-control"
-                                                placeholder="Select Date">
+                                                placeholder="Select Date" required>
                                         </div>
                                         <div class="form-group">
                                             <label>تاريخ النهاية</label>
                                             <input type="date" name="d_end" class="form-control"
-                                                placeholder="Select Date">
+                                                placeholder="Select Date" required>
                                         </div>
                                         <div class="form-group">
                                             <label>المسوؤل</label>
-                                            <select name="id_mem" class="custom-select form-control selectpicker">
+                                            <select name="id_mem" class="custom-select form-control selectpicker" required>
                                                 <?php foreach ($users as $user) { ?>
                                                 <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
                                                 <?php } ?>
@@ -398,7 +398,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>المسوؤل</label>
-                                            <select name="id_mem" class="custom-select form-control selectpicker">
+                                            <select name="id_mem" class="custom-select form-control selectpicker" required>
                                                 <?php foreach ($users as $user) { ?>
                                                 <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
                                                 <?php } ?>
@@ -406,7 +406,7 @@
                                         </div>
                                         <div>
                                             <label>اختر الحالة</label>
-                                            <select name="states" class="form-control">
+                                            <select name="states" class="form-control" required>
                                                 <option value="جديد">جديد</option>
                                                 <option value="متوقف">متوقف</option>
                                                 <option value="مكتمل">مكتمل</option>
@@ -418,12 +418,12 @@
                                         <div class="form-group">
                                             <label>تاريخ البداية</label>
                                             <input type="date" name="d_start" class="form-control"
-                                                placeholder="Select Date">
+                                                placeholder="Select Date" required>
                                         </div>
                                         <div class="form-group">
                                             <label>تاريخ النهاية</label>
                                             <input type="date" name="d_end" class="form-control"
-                                                placeholder="Select Date">
+                                                placeholder="Select Date" required>
                                         </div>
                                     </div>
 
@@ -441,7 +441,7 @@
                                     onclick="prevlevel('level4', 'level3')">السابق</button>
                                 </div>
                                 <div class="col">
-                                    <button class="btn btn-outline-success btn-block" type="button" type="submit">حفظ المرحلة
+                                    <button class="btn btn-outline-success btn-block"  type="submit">حفظ المرحلة
                                         الرابعة و الأخيرة</button>
                                 </div>
                             </div>
@@ -501,10 +501,10 @@
         showlevel(prevlevelId);
     }
 
-    function submitlevel(formId) {
-        const form = document.getElementById(formId);
-        form.submit();
-    }
+    // function submitlevel(formId) {
+    //     const form = document.getElementById(formId);
+    //     form.submit();
+    // }
 
     function goTolevel(levelNum) {
         currentlevel = levelNum;
