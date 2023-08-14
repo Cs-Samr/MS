@@ -178,12 +178,12 @@
 			$data['users'] = $users;
 			
 			// Get the current user's ID from the session
-			$currentUserId = $session->get('id_mem'); // Adjust 'user_id' to match your session key
+			//$currentUserId = $session->get('id_mem'); // Adjust 'user_id' to match your session key
 			
 			// Get the selected names for the current user
-			$selectedNames = $userModel->getSelectedNamesForUser($currentUserId);
+			//$selectedNames = $userModel->getSelectedNamesForUser($currentUserId);
 			
-			$data['selectedNames'] = $selectedNames;
+			//$data['selectedNames'] = $selectedNames;
 			 return view('deskapp/ui/ui-cards',$data);
 
 		}
@@ -192,6 +192,8 @@
 
 		public function save()
 		{
+			ini_set('display_errors', 1);
+
 			helper(['form','url']);
 			
 			// Load the models
@@ -240,58 +242,59 @@
 					}
 
 		
-				//print_r($assignmentData);
-				$ProjectAssign->insertBatch($assignmentData);
+				print_r($assignmentData);
+				//$ProjectAssign->insertBatch($assignmentData);
 			}
+		
 
-
-				// Get data from the user and project tables
-				//$users = $userModel->findAll();
-				//$projects = $projectModel->findAll();
+//old
+				// // Get data from the user and project tables
+				// //$users = $userModel->findAll();
+				// //$projects = $projectModel->findAll();
 				
-				// // Initialize an array to store selected user IDs for assignment
-				// $selectedUserIDs = [];
+				// // // Initialize an array to store selected user IDs for assignment
+				// // $selectedUserIDs = [];
 				
 					
 				
-				// // Set selected_names to an empty array
-				// $selectedNames = [];
+				// // // Set selected_names to an empty array
+				// // $selectedNames = [];
 				
-				// Retrieve selected names from the form submission
-				if(isset($_POST['selected_names']) && is_array($_POST['selected_names'])) {
-					$selectedUserIDs = $_POST['selected_names'];
+				// // Retrieve selected names from the form submission
+				// if(isset($_POST['selected_names']) && is_array($_POST['selected_names'])) {
+				// 	$selectedUserIDs = $_POST['selected_names'];
 				
-					// Convert the array to a comma-separated string for storage
-					$selectedNamesString = implode(', ', $selectedUserIDs);
+				// 	// Convert the array to a comma-separated string for storage
+				// 	$selectedNamesString = implode(', ', $selectedUserIDs);
 				
-					// Convert the string back to an array using explode
-					$selectedNames = explode(', ', $selectedNamesString);
+				// 	// Convert the string back to an array using explode
+				// 	$selectedNames = explode(', ', $selectedNamesString);
 				
-					// Delete existing assignments for the specific project
-					$ProjectAssign->where('id_projectfk', $id)->delete();
-					$ProjectAssign->where('id_memfk', $id)->delete();
+				// 	// Delete existing assignments for the specific project
+				// 	$ProjectAssign->where('id_projectfk', $id)->delete();
+				// 	$ProjectAssign->where('id_memfk', $id)->delete();
 
 				
-					// Loop through the users and projects to assign selected users to projects
-					foreach ($users as $user) {
-						if (in_array($user['id_mem'], $selectedNames)) {
-							foreach ($projects as $project) {
-								$assignmentData = [
-									'id_memfk' => $user['id_mem'],
-									'id_projectfk' => $project['id_project'],
-									// Add other fields as needed for the assignment
-								];
+				// 	// Loop through the users and projects to assign selected users to projects
+				// 	foreach ($users as $user) {
+				// 		if (in_array($user['id_mem'], $selectedNames)) {
+				// 			foreach ($projects as $project) {
+				// 				$assignmentData = [
+				// 					'id_memfk' => $user['id_mem'],
+				// 					'id_projectfk' => $project['id_project'],
+				// 					// Add other fields as needed for the assignment
+				// 				];
 				
-								// Insert data into the project_assign table
-								$ProjectAssign->insert($assignmentData);
-							}
-						}
-					}
+				// 				// Insert data into the project_assign table
+				// 				$ProjectAssign->insert($assignmentData);
+				// 			}
+				// 		}
+				// 	}
 				
-					// Clear the selected names array after saving
-					$selectedUserIDs = [];
-				  // Set selected_names to an empty array
-				   $selectedNames = [];
+				// 	// Clear the selected names array after saving
+				// 	$selectedUserIDs = [];
+				//   // Set selected_names to an empty array
+				//    $selectedNames = [];
 				
 			
 
@@ -304,7 +307,8 @@
 				return view('deskapp/Ui/ui-cards', $data);
 			}
 		}
-	}
+	
+
 		
 
      	public function carousel()

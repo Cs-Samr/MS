@@ -1,0 +1,79 @@
+<<<<<<< HEAD
+ERROR - 2023-08-14 01:30:34 --> mysqli_sql_exception: Unknown column 'level#' in 'field list' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `pro_nam...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pro_nam...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pro_nam...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `pro_nam...', Array, false)
+#4 C:\xampp\htdocs\MS\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MS\app\Models\ProjectModel.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Dashboard.php(33): App\Models\ProjectModel->getNames()
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Dashboard->index()
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Dashboard))
+#10 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-08-14 01:30:44 --> mysqli_sql_exception: Unknown column 'level#' in 'field list' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `pro_nam...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pro_nam...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pro_nam...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `pro_nam...', Array, false)
+#4 C:\xampp\htdocs\MS\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MS\app\Models\ProjectModel.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Dashboard.php(33): App\Models\ProjectModel->getNames()
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Dashboard->index()
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Dashboard))
+#10 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-08-14 01:30:52 --> mysqli_sql_exception: Unknown column 'level#' in 'field list' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `pro_nam...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pro_nam...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pro_nam...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `pro_nam...', Array, false)
+#4 C:\xampp\htdocs\MS\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MS\app\Models\ProjectModel.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Dashboard.php(33): App\Models\ProjectModel->getNames()
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Dashboard->index()
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Dashboard))
+#10 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-08-14 01:32:17 --> mysqli_sql_exception: Unknown column 'level#' in 'field list' in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `pro_nam...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pro_nam...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pro_nam...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `pro_nam...', Array, false)
+#4 C:\xampp\htdocs\MS\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MS\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MS\app\Models\ProjectModel.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Dashboard.php(33): App\Models\ProjectModel->getNames()
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Dashboard->index()
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Dashboard))
+#10 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+=======
+ERROR - 2023-08-14 01:30:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`pro-manger`.`levels`, CONSTRAINT `levels_ibfk_2` FOREIGN KEY (`id_project`) REFERENCES `projects` (`id_project`)) in C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\MS\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `le...')
+#1 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `le...')
+#2 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `le...')
+#3 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(2265): CodeIgniter\Database\BaseConnection->query('INSERT INTO `le...', Array, false)
+#4 C:\xampp\htdocs\MS\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\MS\system\BaseModel.php(751): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\MS\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\MS\app\Models\LevelsModel.php(22): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(135): App\Models\LevelsModel->saveLevel1(Array)
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->saveForm()
+#10 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#11 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+>>>>>>> f2cdcf731f2fcbceda44e5675024fd5c7926fe07

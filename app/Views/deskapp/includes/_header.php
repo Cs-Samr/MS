@@ -88,7 +88,7 @@
 					<span class="user-icon">
 						<img src="<?php echo base_url(); ?>/assets/vendors/images/img.png" alt="">
 					</span>
-					<span class="user-name"><?= esc($session->get('firstname').' '.$session->get('lastname')); ?></span>
+            <span class="user-name"><?= esc($session->get('firstname').' '.$session->get('lastname')); ?></span>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
 					<a class="dropdown-item" href="<?php echo base_url('deskapp/extrapages/faq'); ?>"><i class="dw dw-help"></i> Help</a>
