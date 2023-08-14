@@ -17,28 +17,28 @@ class LevelsModel extends Model
 
     }
 
-    public function saveLevel1($data)
+    public function saveLevel1($leveldata)
     {
-        return $this->insert($data);
+        return $this->insert($leveldata);
     }
 
     
-    public function saveLevel2($data)
+    public function saveLevel2($leveldata)
     {
         // Handle saving data for level 2
-        return $this->insert($data);
+        return $this->insert($leveldata);
     }
 
-    public function saveLevel3($data)
+    public function saveLevel3($leveldata)
     {
         // Handle saving data for level 2
-        return $this->insert($data);
+        return $this->insert($leveldata);
     }
 
-    public function saveLevel4($data)
+    public function saveLevel4($leveldata)
     {
         // Handle saving data for level 2
-        return $this->insert($data);
+        return $this->insert($leveldata);
     }
 
 

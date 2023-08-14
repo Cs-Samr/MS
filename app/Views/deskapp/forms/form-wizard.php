@@ -133,15 +133,7 @@
                         <br>
                     </div>
 
-
-
-                    <div class="level" id="level1">
-
-                        <div class="alert alert-warning" style="text-align: center;">
-                            <h4> المرحلة الأولى : استلام طلب المشروع </h4>
-                        </div>
-
-                        <?php if (session()->getFlashdata('form_success')): ?>
+                    <?php if (session()->getFlashdata('form_success')): ?>
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
                             <?= session()->getFlashdata('form_success') ?>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -149,6 +141,14 @@
                             </button>
                         </div>
                         <?php endif; ?>
+
+                    <div class="level" id="level1">
+
+                        <div class="alert alert-warning" style="text-align: center;">
+                            <h4> المرحلة الأولى : استلام طلب المشروع </h4>
+                        </div>
+
+                         
 
                         <form id="level1Form" action="/MS/deskapp/forms/saveForm" method="post">
                             <section>
@@ -221,18 +221,12 @@
                             <h4> المرحلة الثانية : دراسة طلب المشروع </h4>
                         </div>
 
-                        <?php if (session()->getFlashdata('form_success')): ?>
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            <?= session()->getFlashdata('form_success') ?>
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <?php endif; ?>
+                         
 
                         <form id="level2Form" action="/MS/deskapp/forms/saveForm/" method="post">
                         <input name="title" type="hidden" value="دراسة طلب المشروع" required>
                             <input name="level#" type="hidden" value="2" required>
+                            <input name="id_project" type="hidden" value="<?= session('id_project') ?>">
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -242,7 +236,7 @@
                                         </div>
                                         <div>
                                             <label>اختر الحالة</label>
-                                            <select name="states" class="form-control" required>
+                                            <select name="states" class="form-control selectpicker" required>
                                                 <option value="جديد">جديد</option>
                                                 <option value="متوقف">متوقف</option>
                                                 <option value="مكتمل">مكتمل</option>
@@ -296,18 +290,12 @@
                             <h4> المرحلة الثالثة : جمع متطلبات المشروع </h4>
                         </div>
 
-                        <?php if (session()->getFlashdata('form_success')): ?>
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            <?= session()->getFlashdata('form_success') ?>
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <?php endif; ?>
+                         
 
                         <form id="level3Form" action="/MS/deskapp/forms/saveForm/" method="post">
                         <input name="title" type="hidden" value="جمع متطلبات المشروع" required>
                             <input name="level#" type="hidden" value="3" required>
+                            <input name="id_project" type="hidden" value="<?= session('id_project') ?>">
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -318,7 +306,7 @@
                                         <div>
 
                                             <label>اختر الحالة</label>
-                                            <select name="states" class="form-control" required>
+                                            <select name="states" class="form-control selectpicker" required>
                                                 <option value="جديد">جديد</option>
                                                 <option value="متوقف">متوقف</option>
                                                 <option value="مكتمل">مكتمل</option>
@@ -382,17 +370,11 @@
                             <h4> المرحلة الرابعة : متطلبات المشروع </h4>
                         </div>
 
-                        <?php if (session()->getFlashdata('form_success')): ?>
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            <?= session()->getFlashdata('form_success') ?>
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <?php endif; ?>
+                         
                         <form id="level4Form" action="/MS/deskapp/forms/saveForm/" method="post">
                         <input name="title" type="hidden" value="متطلبات المشروع" require>
                             <input name="level#" type="hidden" value="4" require>
+                            <input name="id_project" type="hidden" value="<?= session('id_project') ?>">
                             <section>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -406,7 +388,7 @@
                                         </div>
                                         <div>
                                             <label>اختر الحالة</label>
-                                            <select name="states" class="form-control" required>
+                                            <select name="states" class="form-control selectpicker" required>
                                                 <option value="جديد">جديد</option>
                                                 <option value="متوقف">متوقف</option>
                                                 <option value="مكتمل">مكتمل</option>
