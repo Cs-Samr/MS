@@ -170,6 +170,11 @@
                             <?php echo $project_data['project_code'][$index]; ?>
 
                         </div>
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
+                            <?php echo $project_data['level#'][$index]; ?>
+
+                        </div>
                         <div class="buttons">
                             <a class="btn btn-edit"
                                 href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
@@ -201,7 +206,7 @@
             </div>
             <div class="row">
                 <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
-                <?php if ($project_data['state'][$index] === 'قيد الإنشاء'): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === 1): ?>
 
 
                 <!-- Adjust the column width based on your layout -->
@@ -239,7 +244,7 @@
             </div>
             <div class="row">
                 <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
-                <?php if ($project_data['state'][$index] === 'قيد الإنشاء'): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === 3): ?>
 
 
                 <!-- Adjust the column width based on your layout -->
@@ -277,7 +282,7 @@
             </div>
             <div class="row">
                 <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
-                <?php if ($project_data['state'][$index] === 'قيد الإنشاء'): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === 4): ?>
 
 
                 <!-- Adjust the column width based on your layout -->

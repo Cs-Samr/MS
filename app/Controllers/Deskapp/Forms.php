@@ -4,6 +4,7 @@
 	use App\Models\UserModel;
 	use App\Models\ProjectModel;
 	use App\Models\LevelsModel;
+	use App\Models\ProjectAssign;
 
 	
 	/**
@@ -81,91 +82,229 @@
 			return view('deskapp/forms/form-wizard', $data);
 		}
 
-		public function saveForm() {
-			$levelsModel = new LevelsModel();
+		// public function saveForm() {
+		// 	ini_set('display_errors', 1);
+
+		// 	helper(['form','url']);
+
+		// 	$levelsModel = new LevelsModel();
+
+		// 		$rules = [
+		// 		'title' => 'required',
+		// 		'level#' => 'required',
+		// 		'states' => 'required',
+		// 		'd_start' => 'required',
+		// 		'd_end' => 'required',
+		// 		'id_mem' => 'required',
+
+		// 		];
+
+		// 		if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
+
+
+		// 	$leveldata = [
+		// 		'title' => $this->request->getPost('title'),  
+		// 		'level#' => $this->request->getPost('level#'),
+		// 		'details' => $this->request->getPost('details'),
+
+		// 		//'id_project' => $this->request->getPost('id_project'),
+		// 		'states' => $this->request->getPost('states'),
+		// 		'd_start' => $this->request->getPost('d_start'),
+		// 		'd_end' => $this->request->getPost('d_end'),
+		// 		//'id_mem' => $this->request->getPost('id_mem'),
+		// 	];
+
+		//     $levelsModel->insert($leveldata);
+
+		// 	// Redirect after successful save
+		// 	return redirect()->to('/MS/deskapp/forms/wizard');
+		// } else {
+		// 	// Validation failed, return to the view with validation errors
+		// 	$data['validation'] = $this->validator;
+		// 	return view('deskapp/forms/form-wizard', $data);
+		// }
+
 		
-			if ($this->request->getMethod() === 'post') {
-				$formData = $this->request->getPost();
+			
+		// }
+
+		public function saveForm()
+			{
+				helper(['form', 'url']);
+
+				// Load the LevelsModel
+				$levelsModel = new LevelsModel(); // Assuming LevelsModel class is available
+				$ProjectModel = new ProjectModel(); // Assuming ProjectAssign class is available
+
+				$leveldata = [
+					'title' => $this->request->getVar('title'),
+					'details' => $this->request->getVar('details'),
+                    'id_mem' => $this->request->getVar('id_mem'),
+					'id_project' => $this->request->getVar('id_project'),
+					'd_start' => $this->request->getVar('d_start'),
+					'd_end' => $this->request->getVar('d_end'),
+					'level#' => $this->request->getVar('level#'),
+					'states' => $this->request->getVar('states'),
+				];
+
+				
+				//print_r($leveldata);
+				// Save form data to the levels table
+				
+				$levelsModel->insert($leveldata);
+
+				// Update the "level#" column in the project table
+				$projectData = [
+					'level#' => $this->request->getVar('level#')
+				];
+				$ProjectModel->update($this->request->getVar('id_project'), $projectData);
+			
+				//print_r($ProjectModel->getpro());
+
+				// Redirect after successful save
+				$this->session->setFlashdata('form_success', 'Form data has been saved successfully.');
+
+				
+				return redirect()->to('/MS/deskapp/forms/wizard');
+			}
+
 		
-				if ($levelsModel->saveLevel($formData)) {
-					// Success! Redirect or display a success message
-					return redirect()->to('/path/to/redirect');
-				} else {
-					// Error! Handle the error, maybe show an error message
-					// You can get validation errors using $levelsModel->errors()
-					return redirect()->back()->withInput()->with('error', 'Failed to save the form.');
+		
+		public function save()
+		{
+			ini_set('display_errors', 1);
+			helper(['form','url']);
+			
+			// Load the models
+			$userModel = new UserModel(); // Assuming UserModel class is available
+			$projectModel = new ProjectModel(); // Assuming ProjectModel class is available
+			$ProjectAssign = new ProjectAssign(); // Assuming ProjectAssign class is available
+		    $LevelsModel = new LevelsModel();
+		
+			$rules = [
+				'pro_name' => 'required|min_length[2]|max_length[100]',
+				'details' => 'min_length[2]|max_length[500]',
+				'd_start' => 'required',
+				'd_end' => 'required',
+				'state' => 'required'
+			];
+		
+			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
+				$data = [
+					'pro_name' => $this->request->getVar('pro_name'),
+					'd_start' => $this->request->getVar('d_start'),
+					'd_end' => $this->request->getVar('d_end'),
+					'state' => $this->request->getVar('state'),
+					'details' => $this->request->getVar('details'),
+				]; 
+
+				
+
+		
+				// Save project details
+				//$projectModel->saveProject($data);
+				$projectModel->insert($data);
+				$id = $projectModel->getInsertID();
+		
+				// Update project with project code and ID
+				$data['project_code'] = $id . $data['d_start'];
+				$data['id_project'] = $id;
+				$projectModel->replace($data);
+		
+				// Handle user assignment
+				if ($this->request->getPost('selected_names')) {
+					$selectedUserIDs = $this->request->getPost('selected_names');
+					$assignmentData = [];
+		
+					foreach ($selectedUserIDs as $value) {
+						$assignmentData[] = [
+							'id_memfk' => $value,
+							'id_projectfk' => $id,
+						];
+					}
+		
+					if (!empty($assignmentData)) {
+						$ProjectAssign->insertBatch($assignmentData);
+					}
 				}
+				$this->session->setFlashdata('id_project', $id);
+
+		
+				// Redirect after successful save
+				return redirect()->to('/MS/deskapp/forms/wizard');
+			} else {
+				// Validation failed, return to the view with validation errors
+				$data['validation'] = $this->validator;
+				return view('deskapp/Ui/ui-cards', $data);
 			}
 		}
 		
+
+		// public function save(){
+		// 	ini_set('display_errors', 1);
+
+		// 	helper(['form','url']);
+
+		// 	// Load the model
 		
+		// 	// Get the number of steps (assumes you have 4 steps)
+		// 	$numSteps = 4;
+
+		// 	// Loop through each step and save the data
+		// 	// Create an array to hold the data for this step
+		// 	$rules = [
+		// 		'title' => 'required',
+		// 		'level#' => 'required',
+		// 		'states' => 'required',
+		// 		'd_start' => 'required',
+		// 		'd_end' => 'required',
+		// 		'id_mem' => 'required',
+
+		// 	];
+
+		// 	if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
+		// 		$levelsModel = new LevelsModel();
+
+		// 	$data = [
+		// 		'title' => $this->request->getPost('title'),  
+		// 		'level#' => $this->request->getPost('level#'),
+		// 		'details' => $this->request->getPost('details'),
+		// 		'states' => $this->request->getPost('states'),
+		// 		'd_start' => $this->request->getPost('d_start'),
+		// 		'd_end' => $this->request->getPost('d_end'),
+		// 		'id_mem' => $this->request->getPost('id_mem')
+		// 	];
+		// 	print_r($levelsModel->errors()); // Print validation errors
 
 
-		public function save(){
-			ini_set('display_errors', 1);
-
-			helper(['form','url']);
-
-			// Load the model
-		
-			// Get the number of steps (assumes you have 4 steps)
-			$numSteps = 4;
-
-			// Loop through each step and save the data
-			// Create an array to hold the data for this step
-			$rules = [
-				'title' => 'required',
-				'level#' => 'required',
-				'states' => 'required',
-				'd_start' => 'required',
-				'd_end' => 'required',
-				'id_mem' => 'required',
-
-			];
-
-			if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
-				$levelsModel = new LevelsModel();
-
-			$data = [
-				'title' => $this->request->getPost('title'),  
-				'level#' => $this->request->getPost('level#'),
-				'details' => $this->request->getPost('details'),
-				'states' => $this->request->getPost('states'),
-				'd_start' => $this->request->getPost('d_start'),
-				'd_end' => $this->request->getPost('d_end'),
-				'id_mem' => $this->request->getPost('id_mem')
-			];
-			print_r($levelsModel->errors()); // Print validation errors
-
-
-			// Call the insert method on the model to save the data for this step
-			// $levelsModel->insert($data);
-			// $levelsModel->save($data); 
-			$levelsModel->saveLevel($data);
+		// 	// Call the insert method on the model to save the data for this step
+		// 	// $levelsModel->insert($data);
+		// 	// $levelsModel->save($data); 
+		// 	$levelsModel->saveLevel($data);
 
 
 		
-			// Uncomment and modify the code below if you want to save data to the ProjectModel
-			/*
-			$ProjectModel = new ProjectModel();
+		// 	// Uncomment and modify the code below if you want to save data to the ProjectModel
+		// 	/*
+		// 	$ProjectModel = new ProjectModel();
 		
-			// Create an array to hold the data for this step
-			$prodata = [
-				'type' => $this->request->getPost('type'),
-			];
+		// 	// Create an array to hold the data for this step
+		// 	$prodata = [
+		// 		'type' => $this->request->getPost('type'),
+		// 	];
 		
-			// Call the insert method on the model to save the data for this step
-			$ProjectModel->insert($prodata);
-			*/
-			return redirect()->to('deskapp/forms/form-wizard'); // Redirect after saving
+		// 	// Call the insert method on the model to save the data for this step
+		// 	$ProjectModel->insert($prodata);
+		// 	*/
+		// 	return redirect()->to('deskapp/forms/form-wizard'); // Redirect after saving
 
-		} else {
-            $data['validation'] = $this->validator;
-			echo 'fild';
-            return view('deskapp/forms/form-wizard', $data);
-        }
+		// } else {
+        //     $data['validation'] = $this->validator;
+		// 	echo 'fild';
+        //     return view('deskapp/forms/form-wizard', $data);
+        // }
 		
-		}
+		// }
 		
 
 		

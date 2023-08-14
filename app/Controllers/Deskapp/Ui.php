@@ -178,12 +178,12 @@
 			$data['users'] = $users;
 			
 			// Get the current user's ID from the session
-			$currentUserId = $session->get('id_mem'); // Adjust 'user_id' to match your session key
+			//$currentUserId = $session->get('id_mem'); // Adjust 'user_id' to match your session key
 			
 			// Get the selected names for the current user
-			$selectedNames = $userModel->getSelectedNamesForUser($currentUserId);
+			//$selectedNames = $userModel->getSelectedNamesForUser($currentUserId);
 			
-			$data['selectedNames'] = $selectedNames;
+			//$data['selectedNames'] = $selectedNames;
 			 return view('deskapp/ui/ui-cards',$data);
 
 		}
@@ -192,6 +192,8 @@
 
 		public function save()
 		{
+			ini_set('display_errors', 1);
+
 			helper(['form','url']);
 			
 			// Load the models
@@ -240,9 +242,10 @@
 					}
 
 		
-				//print_r($assignmentData);
-				$ProjectAssign->insertBatch($assignmentData);
+				print_r($assignmentData);
+				//$ProjectAssign->insertBatch($assignmentData);
 			}
+		
 
 //old
 				// // Get data from the user and project tables
@@ -305,7 +308,8 @@
 				return view('deskapp/Ui/ui-cards', $data);
 			}
 		}
-	}
+	
+
 		
 
      	public function carousel()

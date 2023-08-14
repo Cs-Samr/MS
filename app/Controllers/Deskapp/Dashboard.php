@@ -67,17 +67,18 @@
  	{
 		ini_set('display_errors',1);
 		$model = new UserModel();
-		$model2 = new ProjectModel();
+		$projectModel = new projectModel();
 
         $session = session();
         $data['username'] = $session->get('user_name');
         $data['session'] = \Config\Services::session();
 
     
-		$data['project_data'] = $model2->getNames(); 
+		$data['project_data'] = $projectModel->getNames(); 
+		//$data['project_data'] = $projectModel->findAll();
 
-	
- 		echo view('deskapp/dashboard/index3',$data);
+	//print_r($data);
+	 		echo view('deskapp/dashboard/index3',$data);
  	}
  	
  }

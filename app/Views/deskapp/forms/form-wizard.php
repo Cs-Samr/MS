@@ -72,24 +72,22 @@
 
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <style>
-                body {
-                    font-family: Arial, sans-serif;
-                }
-
                 .level {
                     display: none;
-                    text-align: center;
+                    /* text-align: center; */
                     margin: 0 auto;
                 }
 
                 .level form {
-                    width: 300px;
+                    /* width: 300px; */
                     margin: 0 auto;
                 }
 
                 .level form label {
                     display: block;
                     margin-bottom: 10px;
+                    font-size: 22px;
+
                 }
 
                 .level form input {
@@ -102,84 +100,357 @@
 
                 .level-indicator {
                     display: inline-block;
-                    width: 50px;
-                    height: 50px;
+                    width: 80px;
+                    /* Increase the width to make the circle bigger */
+                    height: 80px;
+                    /* Increase the height to make the circle bigger */
                     border-radius: 50%;
                     background-color: gray;
-                    margin: 0 5px;
+                    margin: 0 15px;
+                    /* Increase the margin value for bigger spacing */
                     text-align: center;
-                    line-height: 50px;
+                    line-height: 80px;
+                    /* Adjust line-height to vertically center content */
                     color: white;
                     font-weight: bold;
                     cursor: pointer;
                 }
 
+
+                /* Change the background color of the active level indicator */
                 .level-indicator.active {
-                    background-color: green;
+                    background-color: #2fb5ba;
+                    /* Change to the desired color */
                 }
                 </style>
-
                 <div class="pd-20 card-box height-100-p">
                     <div style="text-align: center;">
                         <span class="level-indicator active" onclick="goTolevel(1)">1</span>
                         <span class="level-indicator" onclick="goTolevel(2)">2</span>
                         <span class="level-indicator" onclick="goTolevel(3)">3</span>
                         <span class="level-indicator" onclick="goTolevel(4)">4</span>
+                        <br>
+                        <br>
                     </div>
 
+
+
                     <div class="level" id="level1">
-                        <h2>level 1</h2>
-                        <form id="level1Form" action="/MS/deskapp/forms/save/level1" method="post">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                            <div>
-                                <button class="btn btn-outline-success" type="button" onclick="submitlevel('level1Form')">حفظ المرحلة الأولى</button>
-                                <button class="btn btn-outline-primary"  type="button" onclick="nextlevel('level1', 'level2')">التالي</button>
+
+                        <div class="alert alert-warning" style="text-align: center;">
+                            <h4> المرحلة الأولى : استلام طلب المشروع </h4>
+                        </div>
+
+                        <?php if (session()->getFlashdata('form_success')): ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <?= session()->getFlashdata('form_success') ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <?php endif; ?>
+
+                        <form id="level1Form" action="/MS/deskapp/forms/saveForm" method="post">
+                            <section>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="title" type="hidden" value="استلام طلب المشروع" required>
+                                            <input name="level#" type="hidden" value="1" required>
+                                            <input name="id_project" type="hidden" value="<?= session('id_project') ?>"
+                                                required>
+
+                                            <label>تفاصيل المشروع</label>
+                                            <input name="details" type="text" class="form-control" required>
+                                        </div>
+                                        <div>
+                                            <label>اختر الحالة</label>
+                                            <select name="states" class="form-control" required>
+                                                <option value="جديد">جديد</option>
+                                                <option value="متوقف">متوقف</option>
+                                                <option value="مكتمل">مكتمل</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>تاريخ البداية</label>
+                                            <input type="date" name="d_start" class="form-control"
+                                                placeholder="Select Date" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>تاريخ النهاية</label>
+                                            <input type="date" name="d_end" class="form-control"
+                                                placeholder="Select Date" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>المسوؤل</label>
+
+                                            <select name="id_mem" class="custom-select form-control selectpicker"
+                                                required>
+                                                <?php foreach ($users as $user) { ?>
+                                                <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
+                                                <?php } ?>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-outline-success btn-block" type="submit"
+                                        name="submit_form">حفظ
+                                        المرحلة
+                                        الأولى</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-primary btn-block" type="button"
+                                        onclick="nextlevel('level1', 'level2')">التالي</button>
+                                </div>
 
                             </div>
+
                         </form>
                     </div>
 
                     <div class="level" id="level2">
-                        <h2>level 2</h2>
-                        <form id="level2Form" action="/MS/deskapp/forms/save/level2" method="post">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                            <div>
-                                <button class="btn btn-outline-secondary  type="button" onclick="prevlevel('level2', 'level1')">السابق</button>
-                                <button class="btn btn-outline-success" type="button" onclick="submitlevel('level2Form')">حفظ المرحلة الثانية</button>
-                                <button class="btn btn-outline-primary"  type="button" onclick="nextlevel('level2', 'level3')">التالي</button>
+                        <div class="alert alert-danger" style="text-align: center;">
+                            <h4> المرحلة الثانية : دراسة طلب المشروع </h4>
+                        </div>
+
+                        <?php if (session()->getFlashdata('form_success')): ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <?= session()->getFlashdata('form_success') ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <?php endif; ?>
+
+                        <form id="level2Form" action="/MS/deskapp/forms/saveForm/" method="post">
+                        <input name="title" type="hidden" value="دراسة طلب المشروع" require>
+                            <input name="level#" type="hidden" value="2" require>
+                            <section>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>تفاصيل طلب المشروع</label>
+                                            <textarea class="form-control" name="details"></textarea>
+                                        </div>
+                                        <div>
+                                            <label>اختر الحالة</label>
+                                            <select name="states" class="form-control">
+                                                <option value="جديد">جديد</option>
+                                                <option value="متوقف">متوقف</option>
+                                                <option value="مكتمل">مكتمل</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>تاريخ البداية</label>
+                                            <input type="date" name="d_start" class="form-control"
+                                                placeholder="Select Date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>تاريخ النهاية</label>
+                                            <input type="date" name="d_end" class="form-control"
+                                                placeholder="Select Date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>المسوؤل</label>
+                                            <select name="id_mem" class="custom-select form-control selectpicker">
+                                                <?php foreach ($users as $user) { ?>
+                                                <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                           
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-outline-secondary btn-block" type="button"
+                                        onclick="prevlevel('level2', 'level1')">السابق</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-success btn-block" type="submit"
+                                        name="submit_form">حفظ
+                                        المرحلة
+                                        الثانية</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-primary btn-block" type="button"
+                                        onclick="nextlevel('level2', 'level3')">التالي</button>
+                                </div>
                             </div>
                         </form>
                     </div>
 
                     <div class="level" id="level3">
-                        <h2>level 3</h2>
-                        <form id="level3Form" action="/MS/deskapp/forms/save/level3" method="post">
-                            <label for="address">Address:</label>
-                            <input type="text" id="address" name="address" required>
-                            <div>
-                                <button class="btn btn-outline-secondary"  type="button" onclick="prevlevel('level3', 'level2')">السابق</button>
-                                <button class="btn btn-outline-success" type="button" onclick="submitlevel('level3Form')">حفظ المرحلة الثالثة</button>
-                                <button class="btn btn-outline-primary" type="button" onclick="nextlevel('level3', 'level4')">التالي</button>
+                    <div class="alert alert-success" style="text-align: center;">
+                            <h4> المرحلة الثالثة : جمع متطلبات المشروع </h4>
+                        </div>
+
+                        <?php if (session()->getFlashdata('form_success')): ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <?= session()->getFlashdata('form_success') ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <?php endif; ?>
+
+                        <form id="level3Form" action="/MS/deskapp/forms/saveForm/" method="post">
+                        <input name="title" type="hidden" value="جمع متطلبات المشروع" require>
+                            <input name="level#" type="hidden" value="3" require>
+                            <section>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>كتابة المتطلبات المطلوبة</label>
+                                            <textarea name="details" class="form-control"></textarea>
+                                        </div>
+                                        <div>
+
+                                            <label>اختر الحالة</label>
+                                            <select name="states" class="form-control">
+                                                <option value="جديد">جديد</option>
+                                                <option value="متوقف">متوقف</option>
+                                                <option value="مكتمل">مكتمل</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>نوع متطلبات المشروع</label>
+                                            <select name="type" class="form-control">
+                                                <option value="منافسة">منافسة</option>
+                                                <option value="امر شراء مباشر">امر شراء مباشر</option>
+                                                <option value="سلفة ادارية">سلفة ادارية</option>
+                                                <option value="مشروع داخلي">مشروع داخلي</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>تاريخ البداية</label>
+                                            <input type="date" name="d_start" class="form-control"
+                                                placeholder="Select Date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>تاريخ النهاية</label>
+                                            <input type="date" name="d_end" class="form-control"
+                                                placeholder="Select Date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>المسوؤل</label>
+                                            <select name="id_mem" class="custom-select form-control selectpicker">
+                                                <?php foreach ($users as $user) { ?>
+                                                <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                 
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-outline-secondary btn-block" type="button"
+                                        onclick="prevlevel('level3', 'level2')">السابق</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-success btn-block" type="submit"
+                                        name="submit_form">حفظ
+                                        المرحلة
+                                        الثالثة</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-primary btn-block" type="button"
+                                        onclick="nextlevel('level3', 'level4')">التالي</button>
+                                </div>
                             </div>
                         </form>
                     </div>
 
                     <div class="level" id="level4">
-                        <h2>level 4</h2>
-                        <form id="level4Form" action="/MS/deskapp/forms/save/level4" method="post">
-                            <label for="phone">Phone:</label>
-                            <input type="tel" id="phone" name="phone" required>
-                            <div>
-                                <button  class="btn btn-outline-secondary " type="button" onclick="prevlevel('level4', 'level3')">السابق</button>
-                                <button  class="btn btn-outline-success" type="button" onclick="submitlevel('level4Form')">حفظ المرحلة الرابعة و الأخيرة</button>
+                    <div class="alert alert-success" style="text-align: center;">
+                            <h4> المرحلة الرابعة : متطلبات المشروع </h4>
+                        </div>
+
+                        <?php if (session()->getFlashdata('form_success')): ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <?= session()->getFlashdata('form_success') ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <?php endif; ?>
+                        <form id="level4Form" action="/MS/deskapp/forms/saveForm/" method="post">
+                        <input name="title" type="hidden" value="متطلبات المشروع" require>
+                            <input name="level#" type="hidden" value="4" require>
+                            <section>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>المسوؤل</label>
+                                            <select name="id_mem" class="custom-select form-control selectpicker">
+                                                <?php foreach ($users as $user) { ?>
+                                                <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label>اختر الحالة</label>
+                                            <select name="states" class="form-control">
+                                                <option value="جديد">جديد</option>
+                                                <option value="متوقف">متوقف</option>
+                                                <option value="مكتمل">مكتمل</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>تاريخ البداية</label>
+                                            <input type="date" name="d_start" class="form-control"
+                                                placeholder="Select Date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>تاريخ النهاية</label>
+                                            <input type="date" name="d_end" class="form-control"
+                                                placeholder="Select Date">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>المتطلبات</label>
+                                            <textarea name="details" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-outline-secondary btn-block " type="button"
+                                    onclick="prevlevel('level4', 'level3')">السابق</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-success btn-block" type="button" type="submit">حفظ المرحلة
+                                        الرابعة و الأخيرة</button>
+                                </div>
                             </div>
+
                         </form>
                     </div>
 
                     <div id="result" style="display: none;">
-                        <h2>Form Completed</h2>
+                        <h4>Form Completed</h4>
                     </div>
                 </div>
 
@@ -195,55 +466,55 @@
     <script src="<?php echo base_url(); ?>/assets/vendors/scripts/layout-settings.js"></script>
     <script src="<?php echo base_url(); ?>/assets/src/plugins/jquery-levels/jquery.levels.js"></script>
     <script src="<?php echo base_url(); ?>/assets/vendors/scripts/levels-setting.js"></script>
-<!-- levell script  -->
+    <!-- levell script  -->
     <script>
-                let currentlevel = 1;
+    let currentlevel = 1;
 
-                function showlevel(levelId) {
-                    const levels = document.querySelectorAll('.level');
-                    levels.forEach(level => {
-                        level.style.display = 'none';
-                    });
-                    document.getElementById(levelId).style.display = 'block';
-                }
+    function showlevel(levelId) {
+        const levels = document.querySelectorAll('.level');
+        levels.forEach(level => {
+            level.style.display = 'none';
+        });
+        document.getElementById(levelId).style.display = 'block';
+    }
 
-                function updatelevelIndicators(levelNum) {
-                    const indicators = document.querySelectorAll('.level-indicator');
-                    indicators.forEach((indicator, index) => {
-                        if (index + 1 === levelNum) {
-                            indicator.classList.add('active');
-                        } else {
-                            indicator.classList.remove('active');
-                        }
-                    });
-                }
+    function updatelevelIndicators(levelNum) {
+        const indicators = document.querySelectorAll('.level-indicator');
+        indicators.forEach((indicator, index) => {
+            if (index + 1 === levelNum) {
+                indicator.classList.add('active');
+            } else {
+                indicator.classList.remove('active');
+            }
+        });
+    }
 
-                function nextlevel(currentlevelId, nextlevelId) {
-                    currentlevel++;
-                    updatelevelIndicators(currentlevel);
-                    showlevel(nextlevelId);
-                }
+    function nextlevel(currentlevelId, nextlevelId) {
+        currentlevel++;
+        updatelevelIndicators(currentlevel);
+        showlevel(nextlevelId);
+    }
 
-                function prevlevel(currentlevelId, prevlevelId) {
-                    currentlevel--;
-                    updatelevelIndicators(currentlevel);
-                    showlevel(prevlevelId);
-                }
+    function prevlevel(currentlevelId, prevlevelId) {
+        currentlevel--;
+        updatelevelIndicators(currentlevel);
+        showlevel(prevlevelId);
+    }
 
-                function submitlevel(formId) {
-                    const form = document.getElementById(formId);
-                    form.submit();
-                }
+    function submitlevel(formId) {
+        const form = document.getElementById(formId);
+        form.submit();
+    }
 
-                function goTolevel(levelNum) {
-                    currentlevel = levelNum;
-                    updatelevelIndicators(currentlevel);
-                    showlevel(`level${levelNum}`);
-                }
+    function goTolevel(levelNum) {
+        currentlevel = levelNum;
+        updatelevelIndicators(currentlevel);
+        showlevel(`level${levelNum}`);
+    }
 
-                showlevel('level1');
-                updatelevelIndicators(currentlevel);
-                </script>
+    showlevel('level1');
+    updatelevelIndicators(currentlevel);
+    </script>
 
 
 
