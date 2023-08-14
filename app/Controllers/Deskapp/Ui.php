@@ -296,8 +296,7 @@
 				//   // Set selected_names to an empty array
 				//    $selectedNames = [];
 				
-				
-
+			
 
 	          
 				return redirect()->to('http://localhost/MS/deskapp/forms/wizard');
