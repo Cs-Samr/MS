@@ -210,7 +210,7 @@
                             <a class="btn btn-edit"
                                 href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
                             <a class="btn btn-view"
-                                href="http://localhost/MS/deskapp/forms/pickers/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                            href="http://localhost/MS/deskapp/forms/pickers/<?= urlencode($project_data['id_project'][$index]) ?>">عرض</a>
                         </div>
                     </div>
                 </div>

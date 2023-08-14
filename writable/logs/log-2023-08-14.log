@@ -77,3 +77,518 @@ Stack trace:
 #12 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #13 {main}
 >>>>>>> f2cdcf731f2fcbceda44e5675024fd5c7926fe07
+CRITICAL - 2023-08-14 02:05:33 --> Undefined variable $project
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 165)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(57): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('5')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 03:00:27 --> Undefined variable $levels
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 196)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(57): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 03:00:50 --> Undefined variable $levels
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 196)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(57): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 03:02:51 --> Undefined variable $levels
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(57): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 03:06:06 --> Undefined variable $levels
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(57): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 03:06:08 --> Undefined variable $levels
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(57): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 03:06:08 --> Undefined variable $levels
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(57): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 03:06:09 --> Undefined variable $levels
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(57): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 03:22:12 --> Undefined variable $levels
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(58): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 03:22:13 --> Undefined variable $levels
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(58): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:08:49 --> Undefined variable $level
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(63): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:09:07 --> Undefined array key "id_mem"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(63): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:09:09 --> Undefined array key "id_mem"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(63): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:09:10 --> Undefined array key "id_mem"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(63): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:09:42 --> Undefined array key "id_mem"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(63): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:09:43 --> Undefined array key "id_mem"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(63): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:09:43 --> Undefined array key "id_mem"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(63): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:09:43 --> Undefined array key "id_mem"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(63): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:09:43 --> Undefined array key "id_mem"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(63): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:09:49 --> Undefined array key "id_mem"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(63): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('8')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 04:42:44 --> syntax error, unexpected token "as", expecting variable or "{" or "$"
+#0 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#1 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(64): view('deskapp/forms/f...', Array)
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('7')
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-08-14 04:58:02 --> Undefined array key "details"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 311)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(64): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('9')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 05:01:09 --> Undefined array key "state"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(321): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 321)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(64): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('9')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 05:20:07 --> Undefined array key "state"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(321): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 321)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(64): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('13')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 06:01:00 --> Undefined variable $session
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\includes\_header.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 91)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/include...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(51): view('deskapp/include...')
+#4 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#6 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(69): view('deskapp/forms/f...', Array)
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-14 06:01:02 --> Undefined variable $session
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\includes\_header.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 91)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/include...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(51): view('deskapp/include...')
+#4 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#6 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(69): view('deskapp/forms/f...', Array)
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-14 06:01:09 --> Undefined variable $session
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\includes\_header.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 91)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/include...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(51): view('deskapp/include...')
+#4 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#6 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(69): view('deskapp/forms/f...', Array)
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-14 06:27:56 --> Undefined variable $session
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\includes\_header.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 91)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/include...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(51): view('deskapp/include...')
+#4 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#6 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(75): view('deskapp/forms/f...', Array)
+#7 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#8 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#9 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-14 06:29:18 --> Undefined variable $users
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(75): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 07:16:24 --> Undefined array key "d_starta"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 163)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(75): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 08:00:36 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:02:26 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:02:27 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:04:53 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:04:54 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:05:47 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:05:49 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:05:49 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:05:50 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:05:50 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:05:50 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:06:50 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:08:40 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:08:42 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:12:10 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('3')
+#2 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#3 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-14 08:41:28 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 420)
+#1 C:\xampp\htdocs\MS\system\Database\Query.php(420): implode(',', Array)
+#2 C:\xampp\htdocs\MS\system\Database\Query.php(387): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#3 C:\xampp\htdocs\MS\system\Database\Query.php(178): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#6 C:\xampp\htdocs\MS\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#7 C:\xampp\htdocs\MS\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#8 C:\xampp\htdocs\MS\app\Models\UserModel.php(26): CodeIgniter\BaseModel->findAll()
+#9 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(53): App\Models\UserModel->getAssignmentsByProject(Array)
+#10 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#11 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#12 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-08-14 08:42:49 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 420)
+#1 C:\xampp\htdocs\MS\system\Database\Query.php(420): implode(',', Array)
+#2 C:\xampp\htdocs\MS\system\Database\Query.php(387): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#3 C:\xampp\htdocs\MS\system\Database\Query.php(178): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#6 C:\xampp\htdocs\MS\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#7 C:\xampp\htdocs\MS\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#8 C:\xampp\htdocs\MS\app\Models\UserModel.php(26): CodeIgniter\BaseModel->findAll()
+#9 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(53): App\Models\UserModel->getAssignmentsByProject(Array)
+#10 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#11 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#12 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-08-14 08:43:00 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 420)
+#1 C:\xampp\htdocs\MS\system\Database\Query.php(420): implode(',', Array)
+#2 C:\xampp\htdocs\MS\system\Database\Query.php(387): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#3 C:\xampp\htdocs\MS\system\Database\Query.php(178): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#6 C:\xampp\htdocs\MS\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#7 C:\xampp\htdocs\MS\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#8 C:\xampp\htdocs\MS\app\Models\UserModel.php(26): CodeIgniter\BaseModel->findAll()
+#9 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(53): App\Models\UserModel->getAssignmentsByProject(Array)
+#10 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#11 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#12 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-08-14 08:43:05 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 420)
+#1 C:\xampp\htdocs\MS\system\Database\Query.php(420): implode(',', Array)
+#2 C:\xampp\htdocs\MS\system\Database\Query.php(387): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#3 C:\xampp\htdocs\MS\system\Database\Query.php(178): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#6 C:\xampp\htdocs\MS\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#7 C:\xampp\htdocs\MS\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#8 C:\xampp\htdocs\MS\app\Models\UserModel.php(26): CodeIgniter\BaseModel->findAll()
+#9 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(53): App\Models\UserModel->getAssignmentsByProject(Array)
+#10 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#11 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#12 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-08-14 08:43:57 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 420)
+#1 C:\xampp\htdocs\MS\system\Database\Query.php(420): implode(',', Array)
+#2 C:\xampp\htdocs\MS\system\Database\Query.php(387): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#3 C:\xampp\htdocs\MS\system\Database\Query.php(178): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\MS\system\Database\BaseConnection.php(643): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\MS\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#6 C:\xampp\htdocs\MS\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#7 C:\xampp\htdocs\MS\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#8 C:\xampp\htdocs\MS\app\Models\UserModel.php(26): CodeIgniter\BaseModel->findAll()
+#9 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(53): App\Models\UserModel->getAssignmentsByProject(Array)
+#10 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#11 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#12 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-08-14 08:44:20 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 150)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(71): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-14 08:46:49 --> Undefined variable $ProjectAssign
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-pickers.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 150)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(71): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->pickers('1')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

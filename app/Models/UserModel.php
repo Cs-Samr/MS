@@ -21,7 +21,10 @@ class UserModel extends Model
         
         return $this->where('id_mem', $userId)->delete();
     }
-   
+    public function getAssignmentsByProject($users_id)
+    {
+        return $this->where('id_mem', $users_id)->findAll();
+    }
    
     public function getUserCount()
     {

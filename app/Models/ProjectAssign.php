@@ -22,4 +22,9 @@ class ProjectAssign extends Model
     return $this->where('id_projectfk', $id_project)->delete();
 }
 
+public function getAssignmentsByProject($id_project)
+{
+    return $this->select('id_memfk')->where('id_projectfk', $id_project)->findAll();
+}
+
 }
