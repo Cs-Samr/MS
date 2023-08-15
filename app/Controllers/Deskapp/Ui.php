@@ -178,7 +178,7 @@
 			$data['users'] = $users;
 			
 			// Get the current user's ID from the session
-			//$currentUserId = $session->get('id_mem'); // Adjust 'user_id' to match your session key
+			$currentUserId = $session->get('id_mem'); // Adjust 'user_id' to match your session key
 			
 			// Get the selected names for the current user
 			//$selectedNames = $userModel->getSelectedNamesForUser($currentUserId);
@@ -223,6 +223,7 @@
 				
 
 				$projectModel->saveProject($data);
+
 				$id = $projectModel->getInsertID();
 			  // Merge 'id' and 'd_start' and set it to 'code'
 				$data['project_code'] = $id. $data['d_start'];
@@ -466,38 +467,98 @@
 		
 		}
 	
-
 		public function updateProject($projectId) {
-
 			// Load the ProjectModel
 			$projectModel = new ProjectModel();
+			$assignmentModel = new ProjectAssign();
 
-			// Get the project ID from the form submission
-			$projectId = $this->request->getPost('id_project');
-		
+			
 			// Fetch the project details based on the project ID
-			//$project = $projectModel->find($projectId);
+			$project = $projectModel->find($projectId);
+			
+			// If the project doesn't exist, handle the error (add appropriate logic)
+		
+			// Get the updated project data from the form submission
+			$updatedProjectData = [
+				'pro_name' => $this->request->getPost('pro_name'),
+				'details' => $this->request->getPost('details'),
+				'd_start' => $this->request->getPost('d_start'),
+				'd_end' => $this->request->getPost('d_end')
+			];
 		
 			// Update the project's information based on the form data
-			$project['pro_name'] = $this->request->getPost('pro_name');
-			//$project['state'] = $this->request->getPost('state');
-			//$project['level#'] = $this->request->getPost('level#');
-			$project['details'] = $this->request->getPost('details');
-			$project['d_start'] = $this->request->getPost('d_start');
-			$project['d_end'] = $this->request->getPost('d_end');
+			$projectModel->update($projectId, $updatedProjectData);
+		
+			 // Delete existing assignments for the project
+			 $assignmentModel->where('id_projectfk', $projectId)->delete();
+
+			// Get the inserted ID (assuming it's an auto-incremented field)
+			$insertedId = $projectModel->getInsertID();
+			
+			// Generate the project code by merging 'id' and 'd_start'
+			$projectCode = $projectId . $updatedProjectData['d_start'];
+			
+			// Update the 'project_code' and 'id_project' fields
+			$projectModel->update($projectId, [
+				'project_code' => $projectCode,
+				'id_project' => $insertedId
+			]);
+		
+			if (isset($_POST['selected_names'])) {
+				$selectedUserIDs = $_POST['selected_names'];
+				$assignmentData = [];
+				
+				// Prepare assignment data for each selected user
+				foreach ($selectedUserIDs as $value) {
+					$assignmentData[] = [
+						'id_memfk' => $value,
+						'id_projectfk' => $projectId
+					];
+				}
+		
+				// Assuming you have an AssignmentModel to handle assignments
+		
+				// Insert assignment data into the AssignmentModel
+				if (!empty($assignmentData)) {
+					$assignmentModel->insertBatch($assignmentData);
+				}
+			}
+		
+			// Redirect the user after the update
+			return redirect()->to(base_url("deskapp/ui/sweetAlert"));
+		}
+		
+
+		// public function updateProject($projectId) {
+
+		// 	// Load the ProjectModel
+		// 	$projectModel = new ProjectModel();
+
+		// 	// Get the project ID from the form submission
+		// 	$projectId = $this->request->getPost('id_project');
+		
+		// 	// Fetch the project details based on the project ID
+		// 	//$project = $projectModel->find($projectId);
+		
+		// 	// Update the project's information based on the form data
+		// 	$project['pro_name'] = $this->request->getPost('pro_name');
+		// 	$project['details'] = $this->request->getPost('details');
+		// 	$project['d_start'] = $this->request->getPost('d_start');
+		// 	$project['d_end'] = $this->request->getPost('d_end');
 			
 
 
 		
-			// Save the updated project data to the database using the update() method
-			$projectModel->update($projectId, $project);
+		// 	// Save the updated project data to the database using the update() method
+		// 	$projectModel->update($projectId, $project);
 		
-			// Redirect the user back to the projects list page or wherever you want to redirect after update
-			//return redirect()->to(base_url("deskapp/ui/editProject/{$projectId}"));
-			return redirect()->to(base_url("deskapp/ui/sweetAlert"));
+		// 	// Redirect the user back to the projects list page or wherever you want to redirect after update
+		// 	//return redirect()->to(base_url("deskapp/ui/editProject/{$projectId}"));
+		// 	return redirect()->to(base_url("deskapp/ui/sweetAlert"));
 				
 			
-		} 
+		// } 
+
 		public function typography()
 		{
 			$session = session();

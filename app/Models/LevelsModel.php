@@ -17,16 +17,17 @@ class LevelsModel extends Model
 
     }
 
-    public function saveLevel1($leveldata)
+    public function saveLevel1($data)
     {
-        return $this->insert($leveldata);
+        return $this->insert($data);
+
     }
 
     
     public function saveLevel2($leveldata)
     {
         // Handle saving data for level 2
-        return $this->insert($leveldata);
+        return $this->db->add('levels')->insert($leveldata);
     }
 
     public function saveLevel3($leveldata)

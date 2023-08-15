@@ -57,14 +57,14 @@
 			return view('deskapp/forms/form-pickers',$data);
 		}
 
-
-		public function wizard() {
+		public function wizard()
+		{
 			ini_set('display_errors', 1);
 		
 			$session = session();
 			$data['username'] = $session->get('user_name');
 			$data['session'] = $session;
-			
+		
 			$userModel = new UserModel();
 			$ProjectModel = new ProjectModel();
 		
@@ -79,74 +79,91 @@
 			$data['project_names'] = $projectNames;
 		
 			//$data['names'] = $userModel->getAllNames();
+		
+			// Get the id_project from the query parameter and pass it to the view
+			$data['id_project'] = $this->request->getGet('id_project');
+		
 			return view('deskapp/forms/form-wizard', $data);
 		}
+		
 
 
+		// public function saveForm()
+		// 	{
+		// 		ini_set('display_errors', 1); 
+		// 		helper(['form', 'url']);
 
-		public function saveForm()
-			{
-				ini_set('display_errors', 1); 
-				helper(['form', 'url']);
+		// 		// Load the LevelsModel
+		// 		$levelsModel = new LevelsModel(); 
+		// 		$ProjectModel = new ProjectModel(); 
 
-				// Load the LevelsModel
-				$levelsModel = new LevelsModel(); 
-				$ProjectModel = new ProjectModel(); 
+		// 		$session = session();
+		// 		$data['username'] = $session->get('user_name');
+		// 		$data['session'] = $session;
+ 
+		// 		$userModel = new UserModel();
+		// 		$ProjectModel = new ProjectModel();
+			
+		// 		$users = $userModel->getUser();
+		// 		$projects = $ProjectModel->getpro();
+			
+		// 		$data['users'] = $users;
+		// 		$data['projects'] = $projects;
+			
+		// 		// Assuming 'getNames()' is a method of your ProjectModel
+		// 		$projectNames = array_column($projects, 'pro_name'); // Extract 'pro_name' from each project
+		// 		$data['project_names'] = $projectNames;
 
 
-				if ($this->request->getMethod() == 'post' ) {
-				$leveldata = [
-					'title' => $this->request->getVar('title'),
-					'details' => $this->request->getVar('details'),
-                    'id_mem' => $this->request->getVar('id_mem'),
-					'id_project' => $this->request->getVar('id_project'),
-					'd_start' => $this->request->getVar('d_start'),
-					'd_end' => $this->request->getVar('d_end'),
-					'level#' => $this->request->getVar('level#'),
-					'states' => $this->request->getVar('states'),
-				];
+		// 		// if ($this->request->getMethod() == 'post' ) {
+		// 		$leveldata = [
+		// 			'title' => $this->request->getVar('title'),
+		// 			'details' => $this->request->getVar('details'),
+        //             'id_mem' => $this->request->getVar('id_mem'),
+		// 			'id_project' => $this->request->getVar('id_project'),
+		// 			'd_start' => $this->request->getVar('d_start'),
+		// 			'd_end' => $this->request->getVar('d_end'),
+		// 			'level#' => $this->request->getVar('level#'),
+		// 			'states' => $this->request->getVar('states'),
+		// 		];
 
 				
-				//print_r($leveldata);
-				// Save form data to the levels table
-				// $levelsModel->insert($leveldata);
+		// 		print_r($leveldata);
+		// 		// Save form data to the levels table
+		// 		//$levelsModel->insert($leveldata);
+		// 		   // Determine the appropriate method to call based on the level
+		// 		//    $saveMethod = 'saveLevel' . $data['level#'];
 
-				// Update the "level#" column in the project table
-				$projectData = [
-					'level#' => $this->request->getVar('level#')
-				];
-				$ProjectModel->update($this->request->getVar('id_project'), $projectData);
+		// 		//    // Call the appropriate save method
+		// 		//    if (method_exists($levelsModel, $saveMethod)) {
+		// 		// 	   $levelsModel->$saveMethod($data);
+		// 		//    }
+				   
+
+		// 		// Update the "level#" column in the project table
+		// 		$projectData = [
+		// 			'level#' => $this->request->getVar('level#')
+		// 		];
+
+		// 		$ProjectModel->update($this->request->getVar('id_project'), $projectData);
 			
-				// $projectData2 = [
+		// 		$projectData2 = [
 					
-				// 	'type' => $this->request->getVar('type')
-				// ];
-				// $ProjectModel->update($this->request->getVar('type'), $projectData2);
+		// 			'type' => $this->request->getVar('type')
+		// 		];
+		// 		$ProjectModel->update($this->request->getVar('type'), $projectData2);
 			
-				//print_r($ProjectModel->getpro());
 
-				// Redirect after successful save
+		// 		$this->session->setFlashdata('form_success', 'تم حفظ المرحلة الحالية');
+			
 
-				 // Determine the appropriate method to call based on the level
-				 $saveMethod = 'saveLevel' . $leveldata['level#'];
-
-				 // Call the appropriate save method
-				 if (method_exists($levelsModel, $saveMethod)) {
-					 $levelsModel->$saveMethod($leveldata);
-				 }
-
-				$this->session->setFlashdata('form_success', 'تم حفظ المرحلة الحالية');
-				
-
-
-				
-				return redirect()->to('/MS/deskapp/forms/wizard');
-			} else {
-				// Validation failed, return to the view with validation errors
-				$data['validation'] = $this->validator;
-				return view('deskapp/forms/form-wizard', $data);
-			}
-		}
+		// 		//return redirect()->to('/MS/deskapp/forms/wizard');
+		// 	// } else {
+		// 	// 	// Validation failed, return to the view with validation errors
+		// 	// 	$data['validation'] = $this->validator;
+		// 	// 	return view('deskapp/forms/form-wizard', $data);
+		// 	// }
+		// }
 
 		
 		
@@ -177,13 +194,11 @@
 					'state' => $this->request->getVar('state'),
 					'details' => $this->request->getVar('details'),
 				]; 
-
-				
-
 		
 				// Save project details
 				//$projectModel->saveProject($data);
 				$projectModel->insert($data);
+				//print_r($data);
 				$id = $projectModel->getInsertID();
 		
 				// Update project with project code and ID
@@ -207,11 +222,12 @@
 						$ProjectAssign->insertBatch($assignmentData);
 					}
 				}
+
 				$this->session->setFlashdata('id_project', $id);
 
 		
-				// Redirect after successful save
-				return redirect()->to('/MS/deskapp/forms/wizard');
+				    // Redirect to the wizard page with id_project as a query parameter
+					return redirect()->to("http://localhost/MS/deskapp/forms/wizard?id_project=$id");
 			} else {
 				// Validation failed, return to the view with validation errors
 				$data['validation'] = $this->validator;
@@ -219,26 +235,278 @@
 			}
 		}
 		
+
+
+		public function saveForm()
+		{
+			ini_set('display_errors', 1);
+			helper(['form','url']);
+
+
+			if ($this->request->getMethod() === 'post') {
+				$levelModel = new LevelsModel();
+				$ProjectModel = new ProjectModel();
+
 		
+				$data = [
+					'title' => $this->request->getPost('title'),
+					'level#' => $this->request->getPost('level#'),
+					'id_project' => $this->request->getPost('id_project'),
+					'details' => $this->request->getPost('details'),
+					'states' => $this->request->getPost('states'),
+					'd_start' => $this->request->getPost('d_start'),
+					'd_end' => $this->request->getPost('d_end'),
+					'id_mem' => $this->request->getPost('id_mem'),
+				];
+		
+				// Insert data into the database
+				$levelModel->insert($data);
+		
+				// Update the "level#" column in the project table
+				$projectData = [
+					'level#' => $this->request->getVar('level#')
+				];
+		
+				$ProjectModel->update($this->request->getVar('id_project'), $projectData);
+		
+				$projectData2 = [
+					'type' => $this->request->getVar('type')
+				];
+				$ProjectModel->update($this->request->getVar('id_project'), $projectData2);
+
+					
+				$projectData3 = [
+					'states' => $this->request->getVar('proState')
+				];
+				$ProjectModel->update($this->request->getVar('id_project'), $projectData3);
+
+				if ($this->request->getVar('level#') === '4' && $this->request->getVar('states') === 'مكتمل') {
+					$projectData4 = [
+						'state' => $this->request->getVar('statepro') // Use the correct field name from your form
+					];
+					$ProjectModel->update($this->request->getVar('id_project'), $projectData4);
+				}
+				
+
+			
+		
+				$this->session->setFlashdata('form_success', ' تم حفظ المرحلة الحالية يمكنك الإنتقال إلى المرحلة التالية');
+			} else {
+				echo "Invalid request method.";
+			}
+		
+			return redirect()->back();
+		}
+		
+
+	// 	public function saveForm()
+	// 	{
+	// 		if ($this->request->getMethod() === 'post') {
+	// 			$validation = \Config\Services::validation();
+	
+	// 			// Define validation rules
+	// 			$validation->setRules([
+	// 				'title' => 'required',
+	// 				'level#' => 'required',
+	// 				'id_project' => 'required',
+	// 				'details' => 'required',
+	// 				'states' => 'required',
+	// 				'd_start' => 'required|valid_date',
+	// 				'd_end' => 'required|valid_date',
+	// 				'id_mem' => 'required',
+	// 			]);
+	
+	// 			// Run validation
+	// 			if ($validation->withRequest($this->request)->run()) {
+	// 				$levelModel = new LevelsModel();
+	
+	// 				$data = [
+	// 					'title' => $this->request->getPost('title'),
+	// 					'level#' => $this->request->getPost('level#'),
+	// 					'id_project' => $this->request->getPost('id_project'),
+	// 					'details' => $this->request->getPost('details'),
+	// 					'states' => $this->request->getPost('states'),
+	// 					'd_start' => $this->request->getPost('d_start'),
+	// 					'd_end' => $this->request->getPost('d_end'),
+	// 					'id_mem' => $this->request->getPost('id_mem'),
+	// 				];
+
+	// 				$levelModel->insert($data) ;
+					
+	// 			// Update the "level#" column in the project table
+	// 			$projectData = [
+	// 				'level#' => $this->request->getVar('level#')
+	// 			];
+
+	// 			$ProjectModel->update($this->request->getVar('id_project'), $projectData);
+			
+	// 			$projectData2 = [
+					
+	// 				'type' => $this->request->getVar('type')
+	// 			];
+	// 			$ProjectModel->update($this->request->getVar('type'), $projectData2);
+			
+
+	// 			$this->session->setFlashdata('form_success', 'تم حفظ المرحلة الحالية');
+			
+	// 		// 		// Insert data into the database
+	// 		// 		if ($levelModel->insert($data)) {
+	// 		// 			echo "Form data saved successfully.";
+	// 		// 		} else {
+	// 		// 			// Database insert error
+	// 		// 			$error = $levelModel->errors();
+	// 		// 			echo "Error saving form data: " . print_r($error, true);
+	// 		// 		}
+	// 		// 	} else {
+	// 		// 		// Validation errors
+	// 		// 		$errors = $validation->getErrors();
+	// 		// 		echo "Validation errors: " . print_r($errors, true);
+	// 		// 	}
+	// 		// } else {
+	// 		// 	echo "Invalid request method.";
+	// 		// }
+	// 		return redirect()->back();
+
+
+	// 			}
+
+
+	// 	}
+	// }
+		
+
+
+	
+	
+// 	public function saveForm()
+		
+// 		{
+// 			ini_set('display_errors', 1);
+
+// 			helper(['form','url']);
+
+// 			// Create an instance of LevelsModel
+// $levelsModel = new LevelsModel();
+
+
+// $rules = [
+// 	'title' => 'required|min_length[2]|max_length[100]',
+// 	'details' => 'min_length[2]|max_length[500]',
+// 	'd_start' => 'required',
+// 	'd_end' => 'required',
+// 	'states' => 'required'
+// ];
+ 
+// if ($this->request->getMethod() == 'post' && $this->validate($rules)) {
+
+// // Loop four times to process the forms
+//     $leveldata = [
+//         'title' => $this->request->getVar('title' ), // Assuming you have input names like 'title_1', 'title_2', ...
+//         'details' => $this->request->getVar('details'),
+//         'id_mem' => $this->request->getVar('id_mem' ),
+//         'id_project' => $this->request->getVar('id_project' ),
+//         'd_start' => $this->request->getVar('d_start'  ),
+//         'd_end' => $this->request->getVar('d_end'  ),
+//         'level#' => $this->request->getVar('level#'  ), // Note: 'level#' is not a valid key name, use 'level_' instead
+//         'states' => $this->request->getVar('states'  ),
+//     ];
+
+//     // Print the data for the current form
+//     print_r($leveldata);
+
+// 	// $this->levelsModel->add($leveldata);
+
+// 				//$levelsModel->saveLevel1($leveldata);
+
+//         $levelsModel->insert($leveldata); // Insert data into the database
+// }
+// 			// Redirect back to the page after processing
+// 				//return redirect()->to('/MS/deskapp/forms/wizard');
+// 	}
+	
+	
+
 
 
 
 		public function html5Editor() {
-			$session = session();
-			$data['session'] = \Config\Services::session();
- 			$data['username'] = $session->get('user_name');
+			
+			 ini_set('display_errors', 1);
+		
+			 $session = session();
+			 $data['username'] = $session->get('user_name');
+			 $data['session'] = $session;
+ 
+			 $userModel = new UserModel();
+			 $ProjectModel = new ProjectModel();
+		 
+			 $users = $userModel->getUser();
+			 $projects = $ProjectModel->getpro();
+		 
+			 $data['users'] = $users;
+			 $data['projects'] = $projects;
+		 
+			 // Assuming 'getNames()' is a method of your ProjectModel
+			 $projectNames = array_column($projects, 'pro_name'); // Extract 'pro_name' from each project
+			 $data['project_names'] = $projectNames;
+		 
+
 			return view('deskapp/forms/html5-editor',$data);
 		}
+
 		public function imageCropper() {
+			ini_set('display_errors', 1);
+ 
 			$session = session();
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
+		
+			 $session = session();
+			 $data['username'] = $session->get('user_name');
+			 $data['session'] = $session;
+ 
+			 $userModel = new UserModel();
+			 $ProjectModel = new ProjectModel();
+		 
+			 $users = $userModel->getUser();
+			 $projects = $ProjectModel->getpro();
+		 
+			 $data['users'] = $users;
+			 $data['projects'] = $projects;
+		 
+			 // Assuming 'getNames()' is a method of your ProjectModel
+			 $projectNames = array_column($projects, 'pro_name'); // Extract 'pro_name' from each project
+			 $data['project_names'] = $projectNames;
+		 
+	
 			return view('deskapp/forms/image-cropper',$data);
 		}
 		public function imageDropZone() {
+			ini_set('display_errors', 1);
+
 			$session = session();
 			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
+
+		
+			 $session = session();
+			 $data['username'] = $session->get('user_name');
+			 $data['session'] = $session;
+ 
+			 $userModel = new UserModel();
+			 $ProjectModel = new ProjectModel();
+		 
+			 $users = $userModel->getUser();
+			 $projects = $ProjectModel->getpro();
+		 
+			 $data['users'] = $users;
+			 $data['projects'] = $projects;
+		 
+			 // Assuming 'getNames()' is a method of your ProjectModel
+			 $projectNames = array_column($projects, 'pro_name'); // Extract 'pro_name' from each project
+			 $data['project_names'] = $projectNames;
+		 
+
 			return view('deskapp/forms/image-dropzone',$data);
 		}
 	}

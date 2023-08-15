@@ -107,6 +107,7 @@
                                 <td><?= $project['pro_name'] ?></td>
                                 <td><?=$project['project_code'] ?></td>
                                 <td><?=$project['state'] ?></td>
+                                <td><?=$project['level#'] ?></td>
                                 <td><?= $project['d_start'] ?></td>
                                 <td><?= $project['d_end'] ?></td>
                                 <td>
