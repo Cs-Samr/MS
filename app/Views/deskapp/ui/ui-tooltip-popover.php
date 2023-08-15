@@ -5,7 +5,7 @@
     <!-- Basic Page Info -->
     <meta charset="utf-8">
     <title>مستشفى قوى الأمن بمكة المكرمة</title>
-   
+
     <!-- Site favicon -->
     <link rel="sfhm-touch-icon" sizes="180x180"
         href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-touch-icon.png">
@@ -51,7 +51,7 @@
     <div class="main-container">
         <div class="pd-ltr-20 xs-pd-20-10">
             <div class="min-height-200px">
-            <div class="page-header">
+                <div class="page-header">
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <div class="title">
@@ -110,10 +110,13 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>اضافة اعضاء </label>
-                                                <select name="selected_names" class="custom-select form-control">
-                                                    <?php foreach ($users as $user) { ?>
-                                                    <option value="<?= $user['id_mem'] ?>"><?= $user['name'] ?></option>
-                                                    <?php } ?>
+                                                <select name="selected_names[]"
+                                                    class="custom-select form-control selectpicker" multiple>
+                                                    <?php foreach ($users as $user): ?>
+                                                    <option value="<?= $user['id_mem'] ?>">
+                                                        <?= $user['name'] ?>
+                                                    </option>
+                                                    <?php endforeach; ?>
                                                 </select>
                                             </div>
                                         </div>
@@ -148,6 +151,9 @@
 
                             <input class="btn btn-primary btn-lg btn-block" type="submit" value="تحديث"
                                 herf="http://localhost/MS/deskapp/ui/sweet-alert">
+                            <a class="btn btn-warning btn-lg btn-block"
+                                href="http://localhost/MS/deskapp/forms/wizard?id_project=<?= $project['id_project'] ?>">تعديل
+                                المراحل</a>
                         </form>
                     </div>
                 </div>

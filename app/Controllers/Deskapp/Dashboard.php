@@ -68,7 +68,6 @@
 		ini_set('display_errors',1);
 		$model = new UserModel();
 		$projectModel = new projectModel();
-		$projectAssign = new ProjectAssign();
 
         $session = session();
         $data['username'] = $session->get('user_name');
@@ -78,8 +77,7 @@
 		$data['project_data'] = $projectModel->getNames(); 
 		//$data['project_data'] = $projectModel->findAll();
 
- 
-	
+	//print_r($data);
 	 		echo view('deskapp/dashboard/index3',$data);
  	}
  	
