@@ -21,7 +21,10 @@ class UserModel extends Model
         
         return $this->where('id_mem', $userId)->delete();
     }
-   
+    public function getAssignmentsByProject($users_id)
+    {
+        return $this->where('id_mem', $users_id)->findAll();
+    }
    
     public function getUserCount()
     {
@@ -47,7 +50,14 @@ class UserModel extends Model
     $selectedNames = array_column($selectedNamesQuery->getResultArray(), 'name');
     return $selectedNames;
 }
+public function getProjectAssignments($userId)
+{
+    $query = $this->db->table('project_assign')
+        ->select('*')
+        ->where('id_memfk', $userId)
+        ->get();
 
-
+    return $query->getResultArray();
+}
 
 }

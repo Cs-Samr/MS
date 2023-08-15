@@ -22,8 +22,12 @@ class LevelsModel extends Model
         return $this->insert($data);
 
     }
+  //  هنا لازم اسوي فنكشن على شان و انادي بالايدي لكل من اللفل و اقارنو بالايدي حق البروجكت   
 
-    
+    //public function Hlevel1(){
+       // return $this->where('id_level', $users_id)->findAll();
+
+   // }
     public function saveLevel2($leveldata)
     {
         // Handle saving data for level 2

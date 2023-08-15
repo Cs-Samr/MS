@@ -88,7 +88,11 @@
 					<span class="user-icon">
 						<img src="<?php echo base_url(); ?>/assets/vendors/images/img.png" alt="">
 					</span>
+<<<<<<< HEAD
 					<?php $session = \Config\Services::session(); ?>
+=======
+					<?php $session = session();?>
+>>>>>>> 89dfd53fccef2eca50e5c21ba082346c7794a43a
             <span class="user-name"><?= esc($session->get('firstname').' '.$session->get('lastname')); ?></span>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
