@@ -88,7 +88,9 @@
                                     colspan="1" aria-label="d_start: activate to sort column ascending">رمز المشروع</th>
                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
                                     colspan="1" aria-label="d_end: activate to sort column ascending">حالة المشروع</th>
-                                
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                    colspan="1" aria-label="d_end: activate to sort column ascending"> مرحلة المشروع</th>
+
                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
                                     colspan="1" aria-label="d_start: activate to sort column ascending">تاريخ بداية
                                     المشروع</th>
