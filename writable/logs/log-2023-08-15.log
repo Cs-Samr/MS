@@ -82,3 +82,13 @@ CRITICAL - 2023-08-15 01:50:45 --> Class "App\Controllers\Deskapp\ProjectAssignM
 #2 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2023-08-15 02:01:43 --> Undefined array key "id_project"
+#0 C:\xampp\htdocs\MS\app\Views\deskapp\forms\form-wizard.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 161)
+#1 C:\xampp\htdocs\MS\system\View\View.php(223): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MS\system\Common.php(1213): CodeIgniter\View\View->render('deskapp/forms/f...', Array, true)
+#3 C:\xampp\htdocs\MS\app\Controllers\Deskapp\Forms.php(131): view('deskapp/forms/f...', Array)
+#4 C:\xampp\htdocs\MS\system\CodeIgniter.php(935): App\Controllers\Deskapp\Forms->wizard('2')
+#5 C:\xampp\htdocs\MS\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Forms))
+#6 C:\xampp\htdocs\MS\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\MS\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
