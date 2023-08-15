@@ -172,52 +172,180 @@
     </style>
     <!-- _________________________________________________________END CSS________________________________________________________________________________ -->
     <div class="main-container">
-        <div class="pd-ltr-20">
+        <div style="text-align: center;">
+      
+            
+            <!-- Level 1 -->
+            <!-- المرحلة الأولى : استلام طلب المشروع -->
+
+            <!-- Level 2 -->
+            <!--  المرحلة الثانية : دراسة طلب المشروع -->
+
+
+            <!-- Level 3 -->
+            <!-- المرحل الثالثة : جمع متطلبات المشروع  -->
+
+
+            <!-- Level 4 -->
+            <!-- المرحلة الرابعة :متطلبات المشروع -->
+
+            <div class="alert alert-warning">
+                <h4> مشاريع في المرحلة الأولى : استلام طلب المشروع </h4>
+
 
             <div class="row">
-                <link rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === "1"): ?>
 
-                <?php
-    $numProjects = count($project_data['pro_name']);
-    $startIdx = max(0, $numProjects - 3); // Start index for the last three projects
 
-    for ($index = $startIdx; $index < $numProjects; $index++):
-    ?>
                 <!-- Adjust the column width based on your layout -->
                 <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
                     <div class="project-card">
                         <div class="project-info">
-                            <h2><?php echo $project_data['pro_name'][$index]; ?></h2>
+                            <h2><?php echo $pro_name; ?></h2>
                         </div>
                         <div class="project-info">
-                            <?php
-                if ($project_data['state'][$index] === 'قيد الإنشاء') {
-                    echo '<span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>';
-                } else {
-                    echo '<span class="icon"><i class="icon-copy fa fa-check-circle-o" aria-hidden="true"></i></span>';
-                }
-                echo $project_data['state'][$index];
-                ?>
+                            <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <span class="state"
+                                style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
                         </div>
 
                         <div class="project-info">
                             <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
                             <?php echo $project_data['project_code'][$index]; ?>
-
                         </div>
                         <div class="buttons">
                             <a class="btn btn-edit"
                                 href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
                             <a class="btn btn-view"
-                                href="http://localhost/MS/deskapp/forms/pickers/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                                href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
                         </div>
                     </div>
                 </div>
-                <?php endfor; ?>
+
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+            </div>
+ 
+
+
+            <div class="alert alert-danger">
+            <h4> مشاريع في المرحلة الثانية : دراسة طلب المشروع </h4>
+            <div class="row">
+                <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === "2"): ?>
+
+
+                <!-- Adjust the column width based on your layout -->
+                <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2><?php echo $pro_name; ?></h2>
+                        </div>
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <span class="state"
+                                style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
+                            <?php echo $project_data['project_code'][$index]; ?>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-edit"
+                                href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
+                            <a class="btn btn-view"
+                                href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                        </div>
+                    </div>
+                </div>
+
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
             </div>
 
 
+            <div class="alert alert-primary">
+            <h4> مشاريع في المرحلة الثالثة : جمع متطلبات المشروع </h4>
+            <div class="row">
+                <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === "3"): ?>
+
+
+                <!-- Adjust the column width based on your layout -->
+                <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2><?php echo $pro_name; ?></h2>
+                        </div>
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <span class="state"
+                                style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
+                            <?php echo $project_data['project_code'][$index]; ?>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-edit"
+                                href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
+                            <a class="btn btn-view"
+                                href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                        </div>
+                    </div>
+                </div>
+
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+            </div>
+
+
+
+            <div class="alert alert-success">
+            <h4> مشاريع في المرحلة الرابعة : متطلبات المشروع </h4>
+            </div>
+            <div class="row">
+                <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === "4" && ['state'] === "قيد الإنشاء"): ?>
+
+
+                <!-- Adjust the column width based on your layout -->
+                <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2><?php echo $pro_name; ?></h2>
+                        </div>
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <span class="state"
+                                style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
+                            <?php echo $project_data['project_code'][$index]; ?>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-edit"
+                                href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
+                            <a class="btn btn-view"
+                                href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                        </div>
+                    </div>
+                </div>
+
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+
+
+            <div class="alert alert-dark">
 
             <div class="row">
                 <div class="card">
@@ -248,18 +376,18 @@
                         </div>
                     </div>
 
-                    <!-- 
-            <div class="card_footer">
-                Stats data: <span id="statsData">0</span>
-            </div>
-            -->
+                </div>
+
                 </div>
 
 
-            </div>
-            <!-- footer -->
-            <?php echo view('deskapp/includes/_footer'); ?>
+
+
+
         </div>
+        <!-- footer -->
+        <?php echo view('deskapp/includes/_footer'); ?>
+    </div>
     </div>
     <!-- js -->
     <script src="http://localhost/MS/assets/vendors/scripts/core.js"></script>

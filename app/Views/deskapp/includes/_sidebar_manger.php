@@ -19,20 +19,9 @@
 							<span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
 						</a>
 						 <ul class="submenu">
-						    <li><a href="<?php echo base_url('deskapp/dashboard'); ?>">System Manger Dashboard</a></li>
 							<li><a href="<?php echo base_url('deskapp/dashboard/two'); ?>">Manger Dashboard</a></li>
-							<li><a href="<?php echo base_url('deskapp/dashboard/three'); ?>">Member Dashboard</a></li>
 						</ul> 
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw"><i class="icon-copy fa fa-address-book-o" aria-hidden="true"></i></span><span class="mtext">Users</span>
-						</a>
-						<ul class="submenu">
-						<li><a href="<?php echo base_url('deskapp/register'); ?>">Add New User</a></li>
-						<li><a href="<?php echo base_url('deskapp/ui/buttons'); ?>">View All Users</a></li>
-						</ul>
-					</li>
+</li>
 					<li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
 							<span class="micon dw"><i class="icon-copy fa fa-clone" aria-hidden="true"></i></span><span class="mtext">Projects</span>
@@ -43,7 +32,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="<?php echo base_url('deskapp/charts/apexcharts'); ?>" class="dropdown-toggle no-arrow">
+						<a href="<?php echo base_url('deskapp/ui/modals'); ?>" class="dropdown-toggle no-arrow">
 							<span class="micon dw"><i class="icon-copy fa fa-bar-chart" aria-hidden="true"></i></span><span class="mtext">Statistics</span>
 						</a>
 					</li>

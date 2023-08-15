@@ -17,41 +17,64 @@
 
 	    public function auth()
 	    {
-	        $session = session();
-	        $model = new UserModel();
-	        $username = $this->request->getPost('email'); // change the name of the varble $nkjjkk
-	        $password = $this->request->getPost('password');// the same s
+	   
+$session = session();
+$model = new UserModel();
 
-			echo $username;
-			echo  $password;
+$email = $this->request->getPost('email');
+$password = $this->request->getPost('password');
 
-			
-	        $data = $model->where('email', $username)->first();
-	        if($data){
-	            $pass = $data['password'];
-	            $verify_pass = password_verify($password, $pass);
-	            if($verify_pass){
-	                $ses_data = [
-						
-                        `email`   => $data['email'],
-                        `name`   => $data['name'],
-                        `password` => $data['password'],
-                        `rules`   => $data['rules'],
-                        `department` => $data['department'],
-                        `employee_No` => $data['employee_no'],
-	                    'logged_in'     => TRUE
+// Sanitize and validate user inputs before querying the database
 
-	                ];
-	                $session->set($ses_data);
-	                return redirect()->to('./deskapp/dashboard');
-	            }else{
-	                $session->setFlashdata('msg', 'Wrong Password');
-	                return redirect()->to('./deskapp/login');
-	            }
-	        }else{
-	            $session->setFlashdata('msg', 'Username not Found');
-	            return redirect()->to('./deskapp/login');
-	        }
+$user = $model->where('email', $email)->first();
+
+if ($user) {
+    $storedPassword = $user['password'];
+
+    if (password_verify($password, $storedPassword)) {
+        // Password verified successfully
+        
+        $userData = [
+            'id_mem' => $user['id_mem'], // Include the user's ID in session data
+            'email' => $user['email'],
+            'name' => $user['name'],
+            'rules' => $user['rules'],
+            'department' => $user['department'],
+            'employee_No' => $user['employee_no'],
+            'logged_in' => true
+        ];
+
+        // Set user session data
+        $session->set($userData);
+
+        // Redirect based on user's rule and send id_mem
+        $redirectUrl = './deskapp/dashboard';
+        switch ($user['rules']) {
+            case 1:
+                $redirectUrl = './deskapp/dashboard';
+                break;
+            case 2:
+                $redirectUrl = './deskapp/dashboard/two';
+                break;
+            case 3:
+                $redirectUrl = './deskapp/dashboard/three';
+                break;
+            // Add more cases for other rules
+        }
+
+        // Append id_mem (user's ID) to the redirect URL
+        $redirectUrl .= '?id_mem=' . urlencode($user['id_mem']);
+
+        return redirect()->to($redirectUrl);
+    } else {
+        $session->setFlashdata('msg', 'Wrong Password');
+    }
+} else {
+    $session->setFlashdata('msg', 'Username not Found');
+}
+
+// Redirect to login page if authentication fails
+return redirect()->to('./deskapp/login');
 	    }
 
 	   
