@@ -50,10 +50,10 @@
 		echo view('deskapp/includes/_sidebar');
 	?>
 
-    <!-- _________________________________________________________START CSS________________________________________________________________________________ -->
+    <!-- ____________________START CSS___________________________ -->
 
     <style>
-    /* ________________________________project cards CSS__________________________________________ */
+    /* ___________project cards CSS_______________ */
 
     .project-card {
 
@@ -117,7 +117,7 @@
         background-color: #0056b3;
     }
     </style>
-    <!-- _________________________________________________________END CSS________________________________________________________________________________ -->
+    <!-- ____________________END CSS___________________________ -->
     <div class="main-container">
         <div style="text-align: center;">
             <!-- تجربة شكل المراحل  -->
@@ -142,10 +142,9 @@
 
 
             <div class="row">
-                <link rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === "1"): ?>
 
-                <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
 
                 <!-- Adjust the column width based on your layout -->
                 <div class="col-md-4" style="flex: 1; margin-bottom: 20px;">
@@ -154,36 +153,25 @@
                             <h2><?php echo $pro_name; ?></h2>
                         </div>
                         <div class="project-info">
-                            <?php
-                            if ( $project_data['state'][$index] === 'قيد الإنشاء') {
-                                echo '<span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>';
-                                echo $project_data['state'][$index];
-                            } else {
-                                echo '<span class="icon"><i class="icon-copy fa fa-check-circle-o" aria-hidden="true"></i></span>';
-                                echo $project_data['state'][$index]; 
-                            }
-                            ?>
+                            <span class="icon"><i class="icon-copy fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <span class="state"
+                                style="color: blue;"><?php echo $project_data['state'][$index]; ?></span>
                         </div>
 
                         <div class="project-info">
                             <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
                             <?php echo $project_data['project_code'][$index]; ?>
-
-                        </div>
-                        <div class="project-info">
-                            <span class="icon"><i class="icon-copy fa fa-hashtag" aria-hidden="true"></i></span>
-                            <?php echo $project_data['level#'][$index]; ?>
-
                         </div>
                         <div class="buttons">
                             <a class="btn btn-edit"
                                 href="http://localhost/MS/deskapp/ui/tooltip/<?= $project_data['id_project'][$index] ?>">تعديل</a>
                             <a class="btn btn-view"
-                                href="http://localhost/MS/deskapp/forms/pickers/<?= $project_data['id_project'][$index] ?>">عرض</a>
+                                href="http://localhost/MS/deskapp/forms/wizard/<?= $project_data['id_project'][$index] ?>">عرض</a>
                         </div>
                     </div>
                 </div>
 
+                <?php endif; ?>
                 <?php endforeach; ?>
             </div>
 
@@ -206,7 +194,7 @@
             </div>
             <div class="row">
                 <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
-                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === 1): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === "2"): ?>
 
 
                 <!-- Adjust the column width based on your layout -->
@@ -244,7 +232,7 @@
             </div>
             <div class="row">
                 <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
-                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === 3): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === "3"): ?>
 
 
                 <!-- Adjust the column width based on your layout -->
@@ -282,7 +270,7 @@
             </div>
             <div class="row">
                 <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
-                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === 4): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === "4" && ['state'] === "قيد الإنشاء"): ?>
 
 
                 <!-- Adjust the column width based on your layout -->

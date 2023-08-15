@@ -32,32 +32,63 @@
  			$data['username'] = $session->get('user_name');
 			return view('deskapp/forms/advanced-components',$data);
 		}
+
 		public function pickers($id_project) {
+			ini_set('display_errors', 1);
+			ini_set('display_startup_errors', 1);
+			error_reporting(E_ALL);
 
 			$userModel = new UserModel();
 			$ProjectModel = new ProjectModel();
 			$levelsModel = new LevelsModel();
-			$projectAssignModel = new ProjectAssign(); // Correct model instantiation
+		//	$projectAssignModel = new ProjectAssign(); // Correct model instantiation
 		
 			$users = $userModel->getUser();
 			$projects = $ProjectModel->getpro();
 			$levels = $levelsModel->getlevel();
+		//	$projectAssignments = $projectAssignModel->getAssignmentsByProject($id_project);
+          //       $assignedUserIds = array_column($projectAssignments, 'id_memfk');
+
+         //  $assignedUsers = array();
+         //     foreach ($users as $user) {
+         //        if (in_array($user['id_mem'], $assignedUserIds)) {
+         //       $assignedUsers[] = $user;
+          //    }
+      //  }
+
+
 		
+			//$data['assigned_users'] = $assignedUsers;
+
 			$data['users'] = $users;
 			$data['projects'] = $projects;
 			$data['levels'] = $levels;
+			//$data['project_assign'] = $projectAssign;
+
+     // $projectNames = array_column($projects, 'pro_name');
+      //  $data['project_names'] = $projectNames;
+
+       $Projects = $ProjectModel->where('id_project', $id_project)->findAll();
+
+         //  $data['projects'] = $Projects;
+		   $data ['id_project'] = $id_project;
+
 		
 			// Fetch project assignments
-			$projectAssignData = $projectAssignModel->getUser(); // Fetch all assignments
-			$projectAssignDataByProject = $projectAssignModel->getAssignmentsByProject($id_project); // Fetch assignments for a specific project
+			//$projectAssignData = $projectAssignModel->getUser(); // Fetch all assignments
+			//$projectAssignDataByProject = $projectAssignModel->getAssignmentsByProject($id_project); // Fetch assignments for a specific project
 			//$projectAssignByUsers = $userModel->getAssignmentsByProject($projectAssignDataByProject); // Fetch assignments for a specific project
 		
-			$data['project_assign'] = $projectAssignData; // All assignments
-			$data['project_assign_by_project'] = $projectAssignDataByProject; // Assignments for a specific project
+			//$data['project_assign'] = $projectAssignData; // All assignments
+			//$data['project_assign_by_project'] = $projectAssignDataByProject; // Assignments for a specific project
 			//$data['projectAssignByUsers'] = $projectAssignByUsers; // Assignments for a specific project
-			print_r($projectAssignDataByProject);
+			//print_r($projectAssignDataByProject);
 
-		 
+			$Projects =	$ProjectModel->where('id_project', $id_project)->findAll();
+
+
+
+			$data['projects'] = $Projects;
 
 			 // Assuming 'getNames()' is a method of your ProjectModel
 			 $projectNames = array_column($projects, 'pro_name'); // Extract 'pro_name' from each project
@@ -67,7 +98,7 @@
 			       $data ['id_project']= $id_project;
 
 
-            // print_r($data);
+             //print_r($projectAssign);
 			return view('deskapp/forms/form-pickers',$data);
 		}
 

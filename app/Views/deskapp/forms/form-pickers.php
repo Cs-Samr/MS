@@ -79,9 +79,8 @@
                 </div>
 
             </div>
-
         </div>
-        <div class="pd-20 card-box mb-30">
+        <div class="pd-30 card-box mb-40">
 
             <div class="clearfix">
                 <h4 class="text-blue h4">عرض المشروع</h4>
@@ -141,26 +140,24 @@
                                         <?= $project['state'] ?>
                                     </div>
                                 </div>
-
+                               
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>عرض المشروع</label>
-                                        <div class name="selected_names[]" class="custom-select form-control selectpicker" multiple> 
-                                            
-                                    </div>
+                                       <!-- <label>اعضاء المشروع</label>-->
+                                     
                                 </div>
                             </div>
-
+                        </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="d_start">تاريخ البداية </label>
+                                        <label for="d_start">تاريخ البداية </label><br>
                                         <div class name="d_start" type="date" id="d_start" class="form-control">
                                             <?= $project['d_start'] ?>
-
-                                        </div>
+                                          </div>
                                     </div>
-                                </div>
+                                 </div>
+                               
                                 <div class="col-md-6">
 
                                     <div class="form-group">
@@ -171,10 +168,9 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            
                     </div>
             </div>
-            <input class="btn btn-primary btn-lg btn-block" type="submit" value="حفظ">
 
         </div>
 
@@ -208,20 +204,9 @@
 
     <div class="main-container">
         <div class="pd-ltr-20 xs-pd-20-10">
-            <div class="min-height-200px">
-                <div class="page-header">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="title">
-                                <h4>Projects</h4>
-                            </div>
-                            <nav aria-label="breadcrumb" role="navigation">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">المشاريع</li>
-                                    <li class="breadcrumb-item active" aria-current="page">إنشاء مشروع جديد</li>
-                                </ol>
-                            </nav>
-                        </div>
+            <div class="min-height-300px">
+                    
+                      
 
                     </div>
                 </div>

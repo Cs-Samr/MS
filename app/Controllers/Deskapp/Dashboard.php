@@ -68,6 +68,7 @@
 		ini_set('display_errors',1);
 		$model = new UserModel();
 		$projectModel = new projectModel();
+		$projectAssign = new ProjectAssign();
 
         $session = session();
         $data['username'] = $session->get('user_name');
@@ -77,8 +78,24 @@
 		$data['project_data'] = $projectModel->getNames(); 
 		//$data['project_data'] = $projectModel->findAll();
 
-	//print_r($data);
-	 		echo view('deskapp/dashboard/index3',$data);
+    $project = $projectModel->find($id_project);
+	$projectAssign = $ProjectAssign->getAssignmentsByProject();
+
+  //  if (!$project) {
+        // Handle case where project with given ID is not found
+        return redirect()->to('/projects'); // Redirect to a projects list page, for example
+  //  }
+
+    // Get assignments for the given project ID using UserModel's getProjectAssignments method
+   // $projectAssignments = $userModel->getProjectAssignments($id_project);
+
+    // Pass project, assignments, and other data to the view
+   // $data['project'] = $project;
+   // $data['projectAssignments'] = $projectAssignments;
+
+
+	         print_r($data);
+	 		//echo view('deskapp/dashboard/index3',$data);
  	}
  	
  }

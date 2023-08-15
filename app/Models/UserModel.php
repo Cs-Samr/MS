@@ -50,7 +50,14 @@ class UserModel extends Model
     $selectedNames = array_column($selectedNamesQuery->getResultArray(), 'name');
     return $selectedNames;
 }
+public function getProjectAssignments($userId)
+{
+    $query = $this->db->table('project_assign')
+        ->select('*')
+        ->where('id_memfk', $userId)
+        ->get();
 
-
+    return $query->getResultArray();
+}
 
 }

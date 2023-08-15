@@ -23,8 +23,8 @@ class ProjectAssign extends Model
 }
 
 public function getAssignmentsByProject($id_project)
-{
-    return $this->select('id_memfk')->where('id_projectfk', $id_project)->findAll();
-}
+    {
+        return $this->select('id_memfk')->where('id_projectfk', $id_project)->findAll();
+    }
 
 }
