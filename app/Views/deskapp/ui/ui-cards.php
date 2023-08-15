@@ -6,7 +6,7 @@
     <!-- Basic Page Info -->
     <meta charset="utf-8">
     <title>مستشفى قوى الأمن بمكة المكرمة</title>
-   
+
     <!-- Site favicon -->
     <link rel="sfhm-touch-icon" sizes="180x180"
         href="<?php echo base_url(); ?>/assets/vendors/images/sfhm-touch-icon.png">
@@ -87,7 +87,7 @@
 
 
             </div>
-            
+
             <div class="wizard-content">
                 <form method="post" enctype="multipart/form-data" action="/MS/deskapp/forms/save">
                     <div class="content clearfix">
@@ -113,7 +113,7 @@
                                     </div>
                                 </div>
 
-                                <input name="state" type="hidden" value = "قيد الإنشاء" require>
+                                <input name="state" type="hidden" value="قيد الإنشاء" require>
 
                                 <!-- <?php
                                     // Initialize the variable to store selected names as a comma-separated string
@@ -132,9 +132,9 @@
                                         <select name="selected_names[]" class="custom-select form-control selectpicker"
                                             multiple>
                                             <?php foreach ($users as $user): ?>
-                                                <option value="<?= $user['id_mem'] ?>">
-                                                    <?= $user['name'] ?>
-                                                </option>
+                                            <option value="<?= $user['id_mem'] ?>">
+                                                <?= $user['name'] ?>
+                                            </option>
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
@@ -160,15 +160,15 @@
                             </div>
                     </div>
             </div>
-            <input class="btn btn-primary btn-lg btn-block"  type="submit" value="حفظ">
+            <input class="btn btn-primary btn-lg btn-block" type="submit" value="حفظ">
 
         </div>
 
         </form>
     </div>
-    </div><!-- footer -->
     <div> <?php echo view('deskapp/includes/_footer'); ?> </div>
-    </div>
+
+    </div><!-- footer -->
 
     <!-- js -->
     <script src="http://localhost/MS/assets/vendors/scripts/core.js"></script>
