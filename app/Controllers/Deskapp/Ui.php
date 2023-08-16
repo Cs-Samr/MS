@@ -434,6 +434,8 @@
 			$projectModel = new ProjectModel();
 			$projectAssign = new ProjectAssign();
 
+
+			
 			$projectAssign->deleteProject($projectId);
 			$projectModel->deleteProject($projectId);
 			
