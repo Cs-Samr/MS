@@ -271,7 +271,7 @@
             <h4> مشاريع في المرحلة الرابعة : متطلبات المشروع </h4>
             <div class="row">
                 <?php foreach ($project_data['pro_name'] as $index => $pro_name): ?>
-                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === "4" && ['state'] === "قيد الإنشاء"): ?>
+                    <?php if (isset($project_data['level#'][$index]) && $project_data['level#'][$index] === "4" && $project_data['state'][$index] === "قيد الإنشاء"): ?>
 
 
                 <!-- Adjust the column width based on your layout -->
