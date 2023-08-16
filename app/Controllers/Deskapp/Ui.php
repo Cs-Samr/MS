@@ -430,16 +430,22 @@
 			$data['session'] = \Config\Services::session();
 			$data['username'] = $session->get('user_name');
 			
-			//ini_set('display_errors', 1);
+			ini_set('display_errors', 1);
 			$projectModel = new ProjectModel();
 			$projectAssign = new ProjectAssign();
 
+			// $del_project = [
+			// 	'state' => $this->request->getVar('proState')
+			// ];
+			// $projectModel->update($projectId, $del_project);
 
-			
+
+
+
 			$projectAssign->deleteProject($projectId);
 			$projectModel->deleteProject($projectId);
 			
-			$data['alertMessage'] = 'Project has been deleted successfully.';
+			// $data['alertMessage'] = 'Project has been deleted successfully.';
 
 			$projectModel = new ProjectModel();
 			$project = $projectModel->getpro();

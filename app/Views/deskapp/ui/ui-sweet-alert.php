@@ -103,6 +103,8 @@
                             </tr>
                         </thead>
                         <tbody>
+                        <input name="statepro" type="hidden" value = "محذوف" >
+
                             <?php foreach ($projects as $project) : ?>
                             <tr>
                                 <td><?= $project['pro_name'] ?></td>
